@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/global/profile_list</key>
+      <applyto>/system/gstreamer/audio/global/profile_list</applyto>
+      <owner>gnome-media</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default></default>
+      <locale name="C">
+        <short>List of profiles</short>
+        <long>
+          List of audio recording profiles.  The list contains
+          strings naming subdirectories relative to
+          /system/gstreamer/record/profiles.
+        </long>
+      </locale>
+    </schema>
+
+<!-- template schema for each of the profiles -->
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/name</key>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/description</key>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/pipeline</key>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/active</key>
+      <owner>gnome-media</owner>
+      <type>boolean</type>
+      <default></default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+  </schemalist>
+</gconfschemafile>
