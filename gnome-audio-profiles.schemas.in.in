@@ -259,8 +259,7 @@
       <applyto>/system/gstreamer/audio/profiles/voice/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>Used for converting to voice-quality audio. Use this for recording speech.
-      </default>
+      <default>Used for converting to voice-quality audio. Use this for recording speech.</default>
       <locale name="C">
         <short>A description for the audio profile</short>
         <long>

@@ -144,7 +144,6 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       &profile,
                       -1);
   if (profile)
-    g_print ("FIXME: edit profile\n");
   /* FIXME: is this the right function name ? */
   gm_audio_profile_edit_new (profile, audio_profile_get_id (profile));
 }
@@ -360,7 +359,6 @@ edit_button_clicked (GtkWidget   *button,
   GList *profiles;
   AudioProfile *profile;
 
-  g_print ("edit clicked\n");
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->priv->manage_profiles_list));
 
   profiles = NULL;
@@ -375,7 +373,6 @@ edit_button_clicked (GtkWidget   *button,
   if (profiles->next == NULL)
   {
     profile = (AudioProfile *) profiles->data;
-    g_print ("Edit profile with name %s\n", audio_profile_get_name (profile));
     /* connect to profile changed signal so we can update the name in the list
      * if it gets changed */
     g_signal_connect_object (G_OBJECT (profile), "changed",
@@ -921,7 +918,6 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     g_assert (new_profile != NULL);
 
     //audio_profile_edit (new_profile, transient_parent);
-    g_print ("edit profile\n");
 
   cleanup:
     g_free (name);
