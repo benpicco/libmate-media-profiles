@@ -95,8 +95,8 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossy/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>CD Quality, Lossy</default>
       <locale name="C">
+        <default>CD Quality, Lossy</default>
         <short>A short name for the audio profile</short>
         <long>
           A short name for the audio profile, to be used in selections
@@ -110,8 +110,8 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossy/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>Used for converting to CD-quality audio, but with a lossy compression codec. Use this for CD extraction and radio recordings.</default>
       <locale name="C">
+        <default>Used for converting to CD-quality audio, but with a lossy compression codec. Use this for CD extraction and radio recordings.</default>
         <short>A description for the audio profile</short>
         <long>
           A description of the profile, containing more information and
@@ -169,8 +169,8 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossless/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>CD Quality, Lossless</default>
       <locale name="C">
+        <default>CD Quality, Lossless</default>
         <short>A short name for the audio profile</short>
         <long>
           A short name for the audio profile, to be used in selections
@@ -184,8 +184,8 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossless/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>Used for converting to CD-quality audio, but with a lossless compression codec. Use this if you later want to edit the file or burn it to CD.</default>
       <locale name="C">
+        <default>Used for converting to CD-quality audio, but with a lossless compression codec. Use this if you later want to edit the file or burn it to CD.</default>
         <short>A description for the audio profile</short>
         <long>
           A description of the profile, containing more information and
@@ -244,8 +244,8 @@
       <applyto>/system/gstreamer/audio/profiles/voice/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>Voice</default>
       <locale name="C">
+        <default>Voice</default>
         <short>A short name for the audio profile</short>
         <long>
           A short name for the audio profile, to be used in selections
@@ -259,8 +259,8 @@
       <applyto>/system/gstreamer/audio/profiles/voice/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>Used for converting to voice-quality audio. Use this for recording speech.</default>
       <locale name="C">
+        <default>Used for converting to voice-quality audio. Use this for recording speech.</default>
         <short>A description for the audio profile</short>
         <long>
           A description of the profile, containing more information and
