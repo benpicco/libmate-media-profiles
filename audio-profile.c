@@ -978,7 +978,6 @@ gm_audio_profile_create (const char  *name,
   }
   g_free (profile_id);
   profile_id = s;
-  g_free (s);
 
   profile_dir = gconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
                                           profile_id);
