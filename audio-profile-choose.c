@@ -92,3 +92,34 @@ gm_audio_profile_choose_get_active (GtkWidget *choose)
   /* look up gm_audio profile */
   return gm_audio_profile_lookup (id);
 }
+
+gboolean
+gm_audio_profile_choose_set_active (GtkWidget  *choose,
+				    const char *id)
+{
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  char *tmp;
+  
+  g_return_if_fail (GTK_IS_COMBO_BOX (choose));
+
+  model = gtk_combo_box_get_model (GTK_COMBO_BOX (choose));
+  
+  if (!gtk_tree_model_get_iter_first (model, &iter))
+    return FALSE;
+
+  while (1)
+    {
+      gtk_tree_model_get (model, &iter, ID_COLUMN, &tmp, -1);
+      if (!strcmp (tmp, id))
+	{
+	  gtk_combo_box_set_active_iter (GTK_COMBO_BOX (choose), &iter);
+	  return TRUE;
+	}
+      
+      if (!gtk_tree_model_iter_next (model, &iter))
+	break;
+    }
+  
+  return FALSE;
+}
