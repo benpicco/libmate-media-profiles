@@ -114,8 +114,10 @@ gm_audio_profile_choose_set_active (GtkWidget  *choose,
       if (!strcmp (tmp, id))
 	{
 	  gtk_combo_box_set_active_iter (GTK_COMBO_BOX (choose), &iter);
+	  g_free (tmp);
 	  return TRUE;
 	}
+      g_free (tmp);      
       
       if (!gtk_tree_model_iter_next (model, &iter))
 	break;
