@@ -905,7 +905,7 @@ gm_audio_profile_forget (GMAudioProfile *profile)
                              &err);
     if (err)
     {
-      g_printerr (_("There was an error forgetting profile dir %s. (%s)\n"),
+      g_printerr (_("There was an error forgetting profile path %s. (%s)\n"),
                   profile->priv->profile_dir, err->message);
                   g_error_free (err);
     }
