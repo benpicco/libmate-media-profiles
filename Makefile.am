@@ -1,4 +1,5 @@
 bin_PROGRAMS = gnome-audio-profiles-properties
+noinst_PROGRAMS = gnome-audio-profiles-test
 lib_LTLIBRARIES = libgnome-media-profiles.la
 
 @INTLTOOL_DESKTOP_RULE@
@@ -14,6 +15,8 @@ defines = \
 	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\"
 
 
+gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
+gnome_audio_profiles_test_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
 gnome_audio_profiles_properties_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
 
@@ -21,6 +24,7 @@ libgnome_media_profiles_la_SOURCES = \
 	audio-profile.c \
 	audio-profiles-edit.c \
 	audio-profile-edit.c \
+	audio-profile-choose.c \
 	gnome-media-profiles.c \
 	gmp-util.c
 
@@ -30,8 +34,9 @@ noinst_HEADERS = \
 	gmp-util.h
 
 
-gmpincludedir = $(includedir)/gnome-media
+gmpincludedir = $(includedir)/gnome-media/profiles
 gmpinclude_HEADERS = \
+	audio-profile-choose.h \
 	audio-profile-edit.h \
 	audio-profiles-edit.h \
 	gnome-media-profiles.h

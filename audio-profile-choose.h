@@ -1,4 +1,4 @@
-/* gnome-media-profiles.h: public library API */
+/* audio-profile-choose.h: combo box to choose a specific profile */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -19,8 +19,19 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include <profiles/audio-profile.h>
-#include <profiles/audio-profile-edit.h>
-#include <profiles/audio-profiles-edit.h>
+#ifndef GM_AUDIO_PROFILE_CHOOSE_H
+#define GM_AUDIO_PROFILE_CHOOSE_H
 
-void gnome_media_profiles_init (GConfClient *conf);
+#include "audio-profile.h"
+#include <gtk/gtkcombobox.h>
+#include <gconf/gconf-client.h>
+
+G_BEGIN_DECLS
+
+/* create a new Profile Choose Dialog */
+GtkWidget*	gm_audio_profile_choose_new		();
+AudioProfile*	gm_audio_profile_choose_get_active	(GtkWidget *choose);
+
+G_END_DECLS
+
+#endif /* GM_AUDIO_PROFILE_CHOOSE_H */
