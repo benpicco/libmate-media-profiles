@@ -456,11 +456,9 @@ delete_button_clicked (GtkWidget   *button,
   if (count > 1)
   {
     str = g_string_new (NULL);
-    /* for languages with separate forms for 2 vs. many */
-    if (count == 2)
-      g_string_printf (str, _("Delete these two profiles?\n"));
-    else
-      g_string_printf (str, _("Delete these %d profiles?\n"), count);
+    /* the first argument will never be used since we only run for count > 1 */
+    g_string_printf (str, ngettext ("Delete this profile?\n",
+      "Delete these %d profiles?\n", count), count);
 
     tmp = deleted_profiles;
     while (tmp != NULL)
