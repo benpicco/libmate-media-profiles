@@ -20,6 +20,7 @@
  */
 
 #include <profiles/audio-profile.h>
+#include <profiles/audio-profile-choose.h>
 #include <profiles/audio-profile-edit.h>
 #include <profiles/audio-profiles-edit.h>
 

@@ -1,4 +1,4 @@
-/* audio-profiles-edit.c: widget for a profiles edit dialog */
+/* gm_audio-profiles-edit.c: widget for a profiles edit dialog */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -100,7 +100,7 @@ gm_audio_profiles_edit_get_type (void)
 
 /* register custom edit stock icon */
 static void
-audio_profile_manage_register_stock (void)
+gm_audio_profile_manage_register_stock (void)
 {
   static gboolean registered = FALSE;
 
@@ -129,7 +129,7 @@ profile_activated_callback (GtkTreeView       *tree_view,
                             GtkTreeViewColumn *column,
                             gpointer           *ptr)
 {
-  AudioProfile *profile;
+  GMAudioProfile *profile;
   GtkTreeIter iter;
   GtkTreeModel *model;
 
@@ -146,7 +146,7 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       -1);
   if (profile)
   /* FIXME: is this the right function name ? */
-  gm_audio_profile_edit_new (profile, audio_profile_get_id (profile));
+  gm_audio_profile_edit_new (profile, gm_audio_profile_get_id (profile));
 }
 
 static void
@@ -169,7 +169,7 @@ list_selected_profiles_func (GtkTreeModel      *model,
                              gpointer           data)
 {
   GList **list = data;
-  AudioProfile *profile = NULL;
+  GMAudioProfile *profile = NULL;
 
   gtk_tree_model_get (model,
                       iter,
@@ -212,14 +212,14 @@ refill_profile_treeview (GtkWidget *tree_view)
 
   gtk_list_store_clear (model);
 
-  profiles = audio_profile_get_list ();
+  profiles = gm_audio_profile_get_list ();
   tmp = profiles;
   while (tmp != NULL)
   {
-    AudioProfile *profile = tmp->data;
+    GMAudioProfile *profile = tmp->data;
 
     GMP_DEBUG("refill: appending profile with name %s\n",
-             audio_profile_get_name (profile));
+             gm_audio_profile_get_name (profile));
     gtk_list_store_append (model, &iter);
 
     /* We are assuming the list store will hold a reference to
@@ -228,7 +228,7 @@ refill_profile_treeview (GtkWidget *tree_view)
      */
     gtk_list_store_set (model,
                         &iter,
-                        COLUMN_NAME, audio_profile_get_name (profile),
+                        COLUMN_NAME, gm_audio_profile_get_name (profile),
                         COLUMN_PROFILE_OBJECT, profile,
                         -1);
 
@@ -301,8 +301,8 @@ create_profile_list (void)
 
 /* profile callbacks */
 static void
-on_profile_changed (AudioProfile *profile,
-                    const AudioSettingMask *mask,
+on_profile_changed (GMAudioProfile *profile,
+                    const GMAudioSettingMask *mask,
                     GtkWidget *tree_view)
 {
   GtkTreeSelection *selection;
@@ -322,7 +322,7 @@ on_profile_changed (AudioProfile *profile,
     while (valid)
     {
       /* Walk through the list, reading each row */
-      AudioProfile *model_profile;
+      GMAudioProfile *model_profile;
 
       /* Make sure you terminate calls to gtk_tree_model_get()
        * with a '-1' value
@@ -336,7 +336,7 @@ on_profile_changed (AudioProfile *profile,
         /* bingo ! */
         gtk_list_store_set (list_store,
                             &iter,
-                            COLUMN_NAME, audio_profile_get_name (profile),
+                            COLUMN_NAME, gm_audio_profile_get_name (profile),
                             -1);
       }
       valid = gtk_tree_model_iter_next (tree_model, &iter);
@@ -358,7 +358,7 @@ edit_button_clicked (GtkWidget   *button,
 {
   GtkTreeSelection *selection;
   GList *profiles;
-  AudioProfile *profile;
+  GMAudioProfile *profile;
 
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->priv->manage_profiles_list));
 
@@ -373,7 +373,7 @@ edit_button_clicked (GtkWidget   *button,
   /* only one selection ? */
   if (profiles->next == NULL)
   {
-    profile = (AudioProfile *) profiles->data;
+    profile = (GMAudioProfile *) profiles->data;
     /* connect to profile changed signal so we can update the name in the list
      * if it gets changed */
     g_signal_connect_object (G_OBJECT (profile), "changed",
@@ -381,7 +381,7 @@ edit_button_clicked (GtkWidget   *button,
                              dialog->priv->manage_profiles_list, 0);
 
     /* FIXME: is this the right function name ? */
-    gm_audio_profile_edit_new (profile, audio_profile_get_id (profile));
+    gm_audio_profile_edit_new (profile, gm_audio_profile_get_id (profile));
                       //GTK_WINDOW (dialog));
   }
   else
@@ -409,7 +409,7 @@ delete_confirm_response (GtkWidget   *confirm_dialog,
   err = NULL;
   if (response_id == GTK_RESPONSE_ACCEPT)
     {
-      audio_profile_delete_list (dialog->priv->conf, deleted_profiles,
+      gm_audio_profile_delete_list (dialog->priv->conf, deleted_profiles,
                                  &err);
     }
 
@@ -422,7 +422,7 @@ delete_confirm_response (GtkWidget   *confirm_dialog,
   dialog->priv->deleted_profiles_list = NULL;
 
   /* reget from GConf and refill tree view */
-  audio_profile_sync_list (FALSE, NULL);
+  gm_audio_profile_sync_list (FALSE, NULL);
   refill_profile_treeview (dialog->priv->manage_profiles_list);
 
   gtk_widget_destroy (confirm_dialog);
@@ -467,7 +467,7 @@ delete_button_clicked (GtkWidget   *button,
     {
       g_string_append (str, "    ");
       g_string_append (str,
-                       audio_profile_get_name (tmp->data));
+                       gm_audio_profile_get_name (tmp->data));
       if (tmp->next)
         g_string_append (str, "\n");
 
@@ -479,7 +479,7 @@ delete_button_clicked (GtkWidget   *button,
     str = g_string_new (NULL);
     g_string_printf (str,
                      _("Delete profile \"%s\"?"),
-                     audio_profile_get_name (deleted_profiles->data));
+                     gm_audio_profile_get_name (deleted_profiles->data));
   }
 
   confirm_dialog = gtk_message_dialog_new (dialog->priv->transient_parent,
@@ -594,7 +594,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                  NULL);
   */
                                  // FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
-  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit Audio Profiles"));
+  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GMAudio Profiles"));
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
                                  GTK_STOCK_HELP,
                                  GTK_RESPONSE_HELP,
@@ -700,7 +700,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                           _("Click to open new profile dialog"));
 */
 
-  audio_profile_manage_register_stock ();
+  gm_audio_profile_manage_register_stock ();
 
   button = gtk_button_new_from_stock (MANAGE_STOCK_EDIT);
   fix_button_align (button);
@@ -812,7 +812,7 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
  * return the profile manage dialog widget
  */
 GtkWidget*
-audio_profile_manage_dialog (GtkWidget *dialog, GConfClient *conf, GtkWindow *transient_parent)
+gm_audio_profile_manage_dialog (GtkWidget *dialog, GConfClient *conf, GtkWindow *transient_parent)
 {
   GtkWindow *old_transient_parent = NULL;
   GtkWidget *new;
@@ -854,7 +854,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     char *name;
     char *id;
     GtkWidget *base_option_menu;
-    AudioProfile *new_profile;
+    GMAudioProfile *new_profile;
     GList *profiles;
     GList *tmp;
     GtkWindow *transient_parent;
@@ -864,12 +864,12 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     name = gtk_editable_get_chars (GTK_EDITABLE (name_entry), 0, -1);
     g_strstrip (name); /* name will be non empty after stripping */
 
-    profiles = audio_profile_get_list ();
+    profiles = gm_audio_profile_get_list ();
     for (tmp = profiles; tmp != NULL; tmp = tmp->next)
     {
-      AudioProfile *profile = tmp->data;
+      GMAudioProfile *profile = tmp->data;
 
-      if (strcmp (name, audio_profile_get_name (profile)) == 0)
+      if (strcmp (name, gm_audio_profile_get_name (profile)) == 0)
         break;
     }
     if (tmp)
@@ -895,7 +895,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
 
 
     error = NULL;
-    id = audio_profile_create (name, dialog->priv->conf, &error);
+    id = gm_audio_profile_create (name, dialog->priv->conf, &error);
     if (error)
     {
       g_print ("ERROR: %s\n", error->message);
@@ -912,10 +912,10 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     //FIXME: in gnome-terminal, it's TRUE, &n, which then gets overruled
     // by some other sync call with the new list
     //audio_profile_sync_list (TRUE, &n);
-    audio_profile_sync_list (FALSE, NULL);
+    gm_audio_profile_sync_list (FALSE, NULL);
     refill_profile_treeview (dialog->priv->manage_profiles_list);
 
-    new_profile = audio_profile_lookup (id);
+    new_profile = gm_audio_profile_lookup (id);
     g_assert (new_profile != NULL);
 
     //audio_profile_edit (new_profile, transient_parent);

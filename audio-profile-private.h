@@ -6,54 +6,26 @@
 
 G_BEGIN_DECLS
 
-/* mask for lockedness of settings */
-typedef struct
-{
-  unsigned int name : 1;
-  unsigned int description : 1;
-  unsigned int pipeline : 1;
-  unsigned int extension : 1;
-  unsigned int active : 1;
-} AudioSettingMask;
-
-struct _AudioProfile
-{
-  GObject parent_instance;
-
-  AudioProfilePrivate *priv;
-};
-
-struct _AudioProfileClass
-{
-  GObjectClass parent_class;
-
-  void (* changed)   (AudioProfile           *profile,
-                      const AudioSettingMask *mask);
-  void (* forgotten) (AudioProfile           *profile);
-};
-
-GType audio_profile_get_type (void) G_GNUC_CONST;
-
-
-AudioProfile*	audio_profile_new		(const char *name,
+GMAudioProfile*	gm_audio_profile_new		(const char *name,
                                                  GConfClient *conf);
-char *          audio_profile_create            (const char *name,
+char *          gm_audio_profile_create            (const char *name,
                                                  GConfClient *conf,
                                                  GError **error);
 
-void		audio_profile_initialize	(GConfClient *conf);
-GList*		audio_profile_get_list		(void);
-int		audio_profile_get_count		(void);
-void		audio_profile_forget		(AudioProfile *profile);
-void		audio_profile_sync_list         (gboolean use_this_list,
+void		gm_audio_profile_initialize	(GConfClient *conf);
+GList*		gm_audio_profile_get_list		(void);
+int		gm_audio_profile_get_count		(void);
+void		gm_audio_profile_forget		(GMAudioProfile *profile);
+void		gm_audio_profile_sync_list         (gboolean use_this_list,
                                                  GSList  *this_list);
 
 
-gboolean	audio_setting_mask_is_empty	(const AudioSettingMask *mask);
+gboolean	gm_audio_setting_mask_is_empty	(const GMAudioSettingMask *mask);
 
-void		audio_profile_delete_list	(GConfClient *conf,
+void		gm_audio_profile_delete_list	(GConfClient *conf,
 						 GList *deleted_profiles,
 						 GError **error);
 
+G_END_DECLS
 
 #endif /* AUDIO_PROFILE_PRIVATE_H */

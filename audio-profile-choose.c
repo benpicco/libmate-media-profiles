@@ -1,4 +1,4 @@
-/* audio-profile-choose.c: combo box to choose a specific profile */
+/* gm_audio-profile-choose.c: combo box to choose a specific profile */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -49,13 +49,13 @@ gm_audio_profile_choose_new ()
 
   /* Create the model */
   list_store = gtk_list_store_new (N_COLUMNS, G_TYPE_STRING, G_TYPE_STRING);
-  profiles = audio_profile_get_active_list ();
+  profiles = gm_audio_profile_get_active_list ();
   while (profiles) {
-    AudioProfile *profile = profiles->data;
+    GMAudioProfile *profile = profiles->data;
     gtk_list_store_append (list_store, &iter);
     gtk_list_store_set (list_store, &iter,
-                        NAME_COLUMN, audio_profile_get_name (profile),
-                        ID_COLUMN, audio_profile_get_id (profile),
+                        NAME_COLUMN, gm_audio_profile_get_name (profile),
+                        ID_COLUMN, gm_audio_profile_get_id (profile),
                         -1);
     profiles = profiles->next;
   }
@@ -71,12 +71,12 @@ gm_audio_profile_choose_new ()
                                   NULL);
 
   /* activate first one */
-  gtk_combo_box_set_active (combo, 0);
+  gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
   return combo;
 }
 
-/* get the currently active audio profile */
-AudioProfile*
+/* get the currently active gm_audio profile */
+GMAudioProfile*
 gm_audio_profile_choose_get_active (GtkWidget *choose)
 {
   GtkTreeIter iter;
@@ -89,6 +89,6 @@ gm_audio_profile_choose_get_active (GtkWidget *choose)
   gtk_tree_model_get (gtk_combo_box_get_model (combo), &iter,
                       ID_COLUMN, &id, -1);
 
-  /* look up audio profile */
-  return audio_profile_lookup (id);
+  /* look up gm_audio profile */
+  return gm_audio_profile_lookup (id);
 }

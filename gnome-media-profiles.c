@@ -53,7 +53,7 @@ textdomain (GETTEXT_PACKAGE);
   }
 
   /* initialize the audio profiles part */
-  audio_profile_initialize (conf);
+  gm_audio_profile_initialize (conf);
 
   /* register widgets */
   gm_audio_profile_edit_get_type ();

@@ -1,7 +1,7 @@
-#include "audio-profile.h"
-#include "audio-profile-private.h"
 #include "libgnome/gnome-i18n.h"
 #include "gmp-util.h"
+#include "audio-profile.h"
+#include "audio-profile-private.h"
 
 #define KEY_NAME "name"
 #define KEY_DESCRIPTION "description"
@@ -9,7 +9,7 @@
 #define KEY_EXTENSION "extension"
 #define KEY_ACTIVE "active"
 
-struct _AudioProfilePrivate
+struct _GMAudioProfilePrivate
 {
   char *id;		     /* the GConf dir name */
   char *profile_dir;         /* full path in GConf to this profile */
@@ -24,7 +24,7 @@ struct _AudioProfilePrivate
   guint active : 1;
   guint forgotten : 1;
 
-  AudioSettingMask locked;
+  GMAudioSettingMask locked;
 };
 
 static GHashTable *profiles = NULL;
@@ -38,19 +38,19 @@ enum {
   LAST_SIGNAL
 };
 
-static void audio_profile_init        (AudioProfile      *profile);
-static void audio_profile_class_init  (AudioProfileClass *klass);
-static void audio_profile_finalize    (GObject              *object);
+static void gm_audio_profile_init        (GMAudioProfile      *profile);
+static void gm_audio_profile_class_init  (GMAudioProfileClass *klass);
+static void gm_audio_profile_finalize    (GObject              *object);
 
-static void audio_profile_update      (AudioProfile *profile);
+static void gm_audio_profile_update      (GMAudioProfile *profile);
 
 static void profile_change_notify     (GConfClient *client,
                                        guint        cnxn_id,
                                        GConfEntry  *entry,
                                        gpointer     user_data);
 
-static void emit_changed (AudioProfile           *profile,
-                          const AudioSettingMask *mask);
+static void emit_changed (GMAudioProfile           *profile,
+                          const GMAudioSettingMask *mask);
 
 
 static gpointer parent_class;
@@ -64,7 +64,7 @@ static gpointer parent_class;
  */
 
 GType
-audio_profile_get_type (void)
+gm_audio_profile_get_type (void)
 {
   static GType object_type = 0;
 
@@ -74,18 +74,18 @@ audio_profile_get_type (void)
     {
       static const GTypeInfo object_info =
       {
-        sizeof (AudioProfileClass),
+        sizeof (GMAudioProfileClass),
         (GBaseInitFunc) NULL,
         (GBaseFinalizeFunc) NULL,
-        (GClassInitFunc) audio_profile_class_init,
+        (GClassInitFunc) gm_audio_profile_class_init,
         NULL,           /* class_finalize */
         NULL,           /* class_data */
-        sizeof (AudioProfile),
+        sizeof (GMAudioProfile),
         0,              /* n_preallocs */
-        (GInstanceInitFunc) audio_profile_init,
+        (GInstanceInitFunc) gm_audio_profile_init,
       };
       object_type = g_type_register_static (G_TYPE_OBJECT,
-                                            "AudioProfile",
+                                            "GMAudioProfile",
                                             &object_info, 0);
     }
 
@@ -93,11 +93,11 @@ audio_profile_get_type (void)
 }
 
 static void
-audio_profile_init (AudioProfile *profile)
+gm_audio_profile_init (GMAudioProfile *profile)
 {
   g_return_if_fail (profiles != NULL);
 
-  profile->priv = g_new0 (AudioProfilePrivate, 1);
+  profile->priv = g_new0 (GMAudioProfilePrivate, 1);
   profile->priv->name = g_strdup (_("<not named>"));
   profile->priv->description = g_strdup (_("<not described>"));
   profile->priv->pipeline = g_strdup ("identity");
@@ -105,19 +105,19 @@ audio_profile_init (AudioProfile *profile)
 }
 
 static void
-audio_profile_class_init (AudioProfileClass *klass)
+gm_audio_profile_class_init (GMAudioProfileClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
   parent_class = g_type_class_peek_parent (klass);
 
-  object_class->finalize = audio_profile_finalize;
+  object_class->finalize = gm_audio_profile_finalize;
 
   signals[CHANGED] =
     g_signal_new ("changed",
                   G_OBJECT_CLASS_TYPE (object_class),
                   G_SIGNAL_RUN_LAST,
-                  G_STRUCT_OFFSET (AudioProfileClass, changed),
+                  G_STRUCT_OFFSET (GMAudioProfileClass, changed),
                   NULL, NULL,
                   g_cclosure_marshal_VOID__POINTER,
                   G_TYPE_NONE, 1, G_TYPE_POINTER);
@@ -126,20 +126,20 @@ audio_profile_class_init (AudioProfileClass *klass)
     g_signal_new ("forgotten",
                   G_OBJECT_CLASS_TYPE (object_class),
                   G_SIGNAL_RUN_LAST,
-                  G_STRUCT_OFFSET (AudioProfileClass, forgotten),
+                  G_STRUCT_OFFSET (GMAudioProfileClass, forgotten),
                   NULL, NULL,
                   g_cclosure_marshal_VOID__VOID,
                   G_TYPE_NONE, 0);
 }
 
 static void
-audio_profile_finalize (GObject *object)
+gm_audio_profile_finalize (GObject *object)
 {
-  AudioProfile *profile;
+  GMAudioProfile *profile;
 
-  profile = AUDIO_PROFILE (object);
+  profile = GM_AUDIO_PROFILE (object);
 
-  audio_profile_forget (profile);
+  gm_audio_profile_forget (profile);
 
   gconf_client_notify_remove (profile->priv->conf,
                               profile->priv->notify_id);
@@ -156,7 +156,7 @@ audio_profile_finalize (GObject *object)
  * internal stuff to manage profiles
  */
 
-/* sync audio profiles list by either using the given list as the new list
+/* sync gm_audio profiles list by either using the given list as the new list
  * or by getting the list from GConf
  */
 
@@ -169,7 +169,7 @@ find_profile_link (GList      *profiles,
   tmp = profiles;
   while (tmp != NULL)
     {
-      if (strcmp (audio_profile_get_id (AUDIO_PROFILE (tmp->data)),
+      if (strcmp (gm_audio_profile_get_id (GM_AUDIO_PROFILE (tmp->data)),
                   id) == 0)
         return tmp;
 
@@ -183,7 +183,7 @@ find_profile_link (GList      *profiles,
  * if use_this_list is true, then put given profiles to the hash
  * if it's false, then get list from GConf */
 void
-audio_profile_sync_list (gboolean use_this_list,
+gm_audio_profile_sync_list (gboolean use_this_list,
                          GSList  *this_list)
 {
   GList *known;
@@ -192,14 +192,14 @@ audio_profile_sync_list (gboolean use_this_list,
   GSList *tmp_slist;
   GError *err;
   gboolean need_new_default;
-  AudioProfile *fallback;
+  GMAudioProfile *fallback;
 
   GMP_DEBUG("sync_list: start\n");
   if (use_this_list)
     GMP_DEBUG("Using given list of length %d\n", g_slist_length (this_list));
   else
     GMP_DEBUG("using list from gconf\n");
-  known = audio_profile_get_list ();
+  known = gm_audio_profile_get_list ();
     GMP_DEBUG("list of known profiles: size %d\n", g_list_length (known));
 
   if (use_this_list)
@@ -214,7 +214,7 @@ audio_profile_sync_list (gboolean use_this_list,
                                        GCONF_VALUE_STRING,
                                        &err);
       if (err)
-        {           g_printerr (_("There was an error getting the list of audio profiles. (%s)\n"),
+        {           g_printerr (_("There was an error getting the list of gm_audio profiles. (%s)\n"),
                       err->message);
           g_error_free (err);
         }
@@ -240,13 +240,13 @@ audio_profile_sync_list (gboolean use_this_list,
         }
       else
         {
-          AudioProfile *profile;
+          GMAudioProfile *profile;
 
           GMP_DEBUG("adding new profile with id %s to global hash\n",
                    (const char *) tmp_slist->data);
-          profile = audio_profile_new (tmp_slist->data, _conf);
+          profile = gm_audio_profile_new (tmp_slist->data, _conf);
 
-          audio_profile_update (profile);
+          gm_audio_profile_update (profile);
         }
 
       if (!use_this_list)
@@ -264,13 +264,13 @@ audio_profile_sync_list (gboolean use_this_list,
   tmp_list = known;
   while (tmp_list != NULL)
     {
-      AudioProfile *forgotten;
+      GMAudioProfile *forgotten;
 
-      forgotten = AUDIO_PROFILE (tmp_list->data);
+      forgotten = GM_AUDIO_PROFILE (tmp_list->data);
 
       GMP_DEBUG("sync_list: forgetting profile with id %s\n",
-               audio_profile_get_id (forgotten));
-      audio_profile_forget (forgotten);
+               gm_audio_profile_get_id (forgotten));
+      gm_audio_profile_forget (forgotten);
 
       tmp_list = tmp_list->next;
     }
@@ -285,20 +285,20 @@ audio_profile_sync_list (gboolean use_this_list,
  * external API functions
  */
 
-/* create a new AudioProfile structure and add it to the global profiles hash
+/* create a new GMAudioProfile structure and add it to the global profiles hash
  * load settings from GConf tree
  */
-AudioProfile*
-audio_profile_new (const char *id, GConfClient *conf)
+GMAudioProfile*
+gm_audio_profile_new (const char *id, GConfClient *conf)
 {
-  AudioProfile *profile;
+  GMAudioProfile *profile;
   GError *err;
 
-  GMP_DEBUG("creating new AudioProfile for id %s\n", id);
+  GMP_DEBUG("creating new GMAudioProfile for id %s\n", id);
   g_return_val_if_fail (profiles != NULL, NULL);
-  g_return_val_if_fail (audio_profile_lookup (id) == NULL, NULL);
+  g_return_val_if_fail (gm_audio_profile_lookup (id) == NULL, NULL);
 
-  profile = g_object_new (AUDIO_TYPE_PROFILE, NULL);
+  profile = g_object_new (GM_AUDIO_TYPE_PROFILE, NULL);
 
   profile->priv->conf = conf;
   g_object_ref (G_OBJECT (conf));
@@ -331,7 +331,7 @@ audio_profile_new (const char *id, GConfClient *conf)
 
   if (err)
     {
-      g_printerr ("There was an error subscribing to notification of audio profile changes. (%s)\n",
+      g_printerr ("There was an error subscribing to notification of gm_audio profile changes. (%s)\n",
                   err->message);
       g_error_free (err);
     }
@@ -348,19 +348,19 @@ audio_profile_new (const char *id, GConfClient *conf)
  */
 
 const char*
-audio_profile_get_id (AudioProfile *profile)
+gm_audio_profile_get_id (GMAudioProfile *profile)
 {
   return profile->priv->id;
 }
 
 const char*
-audio_profile_get_name (AudioProfile *profile)
+gm_audio_profile_get_name (GMAudioProfile *profile)
 {
   return profile->priv->name;
 }
 
 void
-audio_profile_set_name (AudioProfile *profile,
+gm_audio_profile_set_name (GMAudioProfile *profile,
                         const char      *name)
 {
   char *key;
@@ -379,13 +379,13 @@ audio_profile_set_name (AudioProfile *profile,
 }
 
 const char*
-audio_profile_get_description (AudioProfile *profile)
+gm_audio_profile_get_description (GMAudioProfile *profile)
 {
   return profile->priv->description;
 }
 
 void
-audio_profile_set_description (AudioProfile *profile,
+gm_audio_profile_set_description (GMAudioProfile *profile,
                                const char   *description)
 {
   char *key;
@@ -404,13 +404,13 @@ audio_profile_set_description (AudioProfile *profile,
 }
 
 const char*
-audio_profile_get_pipeline (AudioProfile *profile)
+gm_audio_profile_get_pipeline (GMAudioProfile *profile)
 {
   return profile->priv->pipeline;
 }
 
 void
-audio_profile_set_pipeline (AudioProfile *profile,
+gm_audio_profile_set_pipeline (GMAudioProfile *profile,
                             const char   *pipeline)
 {
   char *key;
@@ -429,13 +429,13 @@ audio_profile_set_pipeline (AudioProfile *profile,
 }
 
 const char*
-audio_profile_get_extension (AudioProfile *profile)
+gm_audio_profile_get_extension (GMAudioProfile *profile)
 {
   return profile->priv->extension;
 }
 
 void
-audio_profile_set_extension (AudioProfile *profile,
+gm_audio_profile_set_extension (GMAudioProfile *profile,
                                const char   *extension)
 {
   char *key;
@@ -454,13 +454,13 @@ audio_profile_set_extension (AudioProfile *profile,
 }
 
 const gboolean
-audio_profile_get_active (AudioProfile *profile)
+gm_audio_profile_get_active (GMAudioProfile *profile)
 {
   return profile->priv->active;
 }
 
 void
-audio_profile_set_active (AudioProfile *profile,
+gm_audio_profile_set_active (GMAudioProfile *profile,
                           gboolean active)
 {
   char *key;
@@ -482,7 +482,7 @@ audio_profile_set_active (AudioProfile *profile,
  */
 
 static gboolean
-set_name (AudioProfile *profile,
+set_name (GMAudioProfile *profile,
           const char *candidate_name)
 {
   /* don't update if it's the same as the old one */
@@ -502,7 +502,7 @@ set_name (AudioProfile *profile,
 }
 
 static gboolean
-set_description (AudioProfile *profile,
+set_description (GMAudioProfile *profile,
                  const char *candidate_description)
 {
   /* don't update if it's the same as the old one */
@@ -522,7 +522,7 @@ set_description (AudioProfile *profile,
 }
 
 static gboolean
-set_pipeline (AudioProfile *profile,
+set_pipeline (GMAudioProfile *profile,
               const char *candidate_pipeline)
 {
   /* don't update if it's the same as the old one */
@@ -542,7 +542,7 @@ set_pipeline (AudioProfile *profile,
 }
 
 static gboolean
-set_extension (AudioProfile *profile,
+set_extension (GMAudioProfile *profile,
                const char *candidate_extension)
 {
   /* don't update if it's the same as the old one */
@@ -579,12 +579,12 @@ profile_change_notify (GConfClient *client,
                        GConfEntry  *entry,
                        gpointer     user_data)
 {
-  AudioProfile *profile;
+  GMAudioProfile *profile;
   const char *key;
   GConfValue *val;
-  AudioSettingMask mask; /* to keep track of what has changed */
+  GMAudioSettingMask mask; /* to keep track of what has changed */
 
-  profile = AUDIO_PROFILE (user_data);
+  profile = GM_AUDIO_PROFILE (user_data);
   GMP_DEBUG("profile_change_notify: start in profile with name %s\n",
            profile->priv->name);
 
@@ -636,7 +636,7 @@ else if (strcmp (key, KName) == 0)                                      \
 #undef UPDATE_STRING
 #undef UPDATE_BOOLEAN
 
-  if (!(audio_setting_mask_is_empty (&mask)))
+  if (!(gm_audio_setting_mask_is_empty (&mask)))
   {
     GMP_DEBUG("emit changed\n");
     emit_changed (profile, &mask);
@@ -646,10 +646,10 @@ else if (strcmp (key, KName) == 0)                                      \
 
 /* GConf notification callback for profile_list */
 static void
-audio_profile_list_notify (GConfClient *client,
-                           guint        cnxn_id,
-                           GConfEntry  *entry,
-                           gpointer     user_data)
+gm_audio_profile_list_notify (GConfClient *client,
+                              guint        cnxn_id,
+                              GConfEntry  *entry,
+                              gpointer     user_data)
 {
   GConfValue *val;
   GSList *value_list;
@@ -678,7 +678,7 @@ audio_profile_list_notify (GConfClient *client,
 
   string_list = g_slist_reverse (string_list);
 
-  audio_profile_sync_list (TRUE, string_list);
+  gm_audio_profile_sync_list (TRUE, string_list);
 
   g_slist_foreach (string_list, (GFunc) g_free, NULL);
   g_slist_free (string_list);
@@ -690,7 +690,7 @@ audio_profile_list_notify (GConfClient *client,
  * safe to call more than once
  */
 void
-audio_profile_initialize (GConfClient *conf)
+gm_audio_profile_initialize (GConfClient *conf)
 {
   GError *err;
 /*
@@ -703,13 +703,13 @@ audio_profile_initialize (GConfClient *conf)
 
   if (_conf == NULL) _conf = conf;
   /* sync it for the first time */
-  audio_profile_sync_list (FALSE, NULL);
+  gm_audio_profile_sync_list (FALSE, NULL);
 
   /* subscribe to changes to profile list */
   err = NULL;
   gconf_client_notify_add (conf,
                            CONF_GLOBAL_PREFIX"/profile_list",
-                           audio_profile_list_notify,
+                           gm_audio_profile_list_notify,
                            NULL,
                            NULL, &err);
 
@@ -749,8 +749,8 @@ audio_profile_initialize (GConfClient *conf)
 }
 
 static void
-emit_changed (AudioProfile           *profile,
-              const AudioSettingMask *mask)
+emit_changed (GMAudioProfile           *profile,
+              const GMAudioSettingMask *mask)
 {
   profile->priv->in_notification_count += 1;
   g_signal_emit (G_OBJECT (profile), signals[CHANGED], 0, mask);
@@ -758,12 +758,12 @@ emit_changed (AudioProfile           *profile,
 }
 
 
-/* update the given AudioProfile from GConf */
+/* update the given GMAudioProfile from GConf */
 static void
-audio_profile_update (AudioProfile *profile)
+gm_audio_profile_update (GMAudioProfile *profile)
 {
-  AudioSettingMask locked;
-  AudioSettingMask mask;
+  GMAudioSettingMask locked;
+  GMAudioSettingMask mask;
 
   memset (&mask, '\0', sizeof (mask));
   memset (&locked, '\0', sizeof (locked));
@@ -824,15 +824,15 @@ static int
 alphabetic_cmp (gconstpointer a,
                 gconstpointer b)
 {
-  AudioProfile *ap = (AudioProfile*) a;
-  AudioProfile *bp = (AudioProfile*) b;
+  GMAudioProfile *ap = (GMAudioProfile*) a;
+  GMAudioProfile *bp = (GMAudioProfile*) b;
 
-  return g_utf8_collate (audio_profile_get_name (ap),
-                         audio_profile_get_name (bp));
+  return g_utf8_collate (gm_audio_profile_get_name (ap),
+                         gm_audio_profile_get_name (bp));
 }
 
 GList*
-audio_profile_get_list (void)
+gm_audio_profile_get_list (void)
 {
   GList *list;
 
@@ -844,22 +844,22 @@ audio_profile_get_list (void)
   return list;
 }
 
-/* Return a GList of active AudioProfile's only */
+/* Return a GList of active GMAudioProfile's only */
 GList*
-audio_profile_get_active_list (void)
+gm_audio_profile_get_active_list (void)
 {
   GList *list;
   GList *new_list;
 
-  list = audio_profile_get_list ();
+  list = gm_audio_profile_get_list ();
 
   new_list = NULL;
   while (list)
   {
-    AudioProfile *profile;
+    GMAudioProfile *profile;
 
-    profile = (AudioProfile *) list->data;
-    if (audio_profile_get_active (profile))
+    profile = (GMAudioProfile *) list->data;
+    if (gm_audio_profile_get_active (profile))
       new_list = g_list_append (new_list, list->data);
     list = g_list_next (list);
   }
@@ -868,13 +868,13 @@ audio_profile_get_active_list (void)
 }
 
 int
-audio_profile_get_count (void)
+gm_audio_profile_get_count (void)
 {
   return g_hash_table_size (profiles);
 }
 
-AudioProfile*
-audio_profile_lookup (const char *id)
+GMAudioProfile*
+gm_audio_profile_lookup (const char *id)
 {
   g_return_val_if_fail (id != NULL, NULL);
 
@@ -888,10 +888,10 @@ audio_profile_lookup (const char *id)
 }
 
 void
-audio_profile_forget (AudioProfile *profile)
+gm_audio_profile_forget (GMAudioProfile *profile)
 {
   GMP_DEBUG("audio_profile_forget: forgetting name %s\n",
-           audio_profile_get_name (profile));
+           gm_audio_profile_get_name (profile));
   if (!profile->priv->forgotten)
   {
     GError *err;
@@ -920,10 +920,10 @@ audio_profile_forget (AudioProfile *profile)
 }
 
 gboolean
-audio_setting_mask_is_empty (const AudioSettingMask *mask)
+gm_audio_setting_mask_is_empty (const GMAudioSettingMask *mask)
 {
   const unsigned int *p = (const unsigned int *) mask;
-  const unsigned int *end = p + (sizeof (AudioSettingMask) /
+  const unsigned int *end = p + (sizeof (GMAudioSettingMask) /
                                  sizeof (unsigned int));
 
   while (p < end)
@@ -936,11 +936,11 @@ audio_setting_mask_is_empty (const AudioSettingMask *mask)
   return TRUE;
 }
 
-/* audio_profile_create returns the unique id of the created profile,
+/* gm_audio_profile_create returns the unique id of the created profile,
  * which is used for looking up profiles later on.
  * Caller should free the returned id */
 char *
-audio_profile_create (const char  *name,
+gm_audio_profile_create (const char  *name,
                       GConfClient *conf,
                       GError      **error)
 {
@@ -968,7 +968,7 @@ audio_profile_create (const char  *name,
   s = g_strdup (profile_id);
   GMP_DEBUG("profile_id: %s\n", s);
   i = 0;
-  while (audio_profile_lookup (s))
+  while (gm_audio_profile_lookup (s))
   {
     g_free (s);
     s = g_strdup_printf ("%s-%d", profile_id, i);
@@ -1028,12 +1028,12 @@ audio_profile_create (const char  *name,
    * a race condition where we and someone else set at the same time,
    * but I am just going to punt on this issue.
    */
-  profiles = audio_profile_get_list ();
+  profiles = gm_audio_profile_get_list ();
   tmp = profiles;
   while (tmp != NULL)
   {
     id_list = g_slist_prepend (id_list,
-                               g_strdup (audio_profile_get_id (tmp->data)));
+                               g_strdup (gm_audio_profile_get_id (tmp->data)));
     tmp = tmp->next;
   }
 
@@ -1110,7 +1110,7 @@ audio_profile_create (const char  *name,
 
 /* delete the given list of profiles from the gconf profile_list key */
 void
-audio_profile_delete_list (GConfClient *conf,
+gm_audio_profile_delete_list (GConfClient *conf,
                            GList       *deleted_profiles,
                            GError      **error)
 {
@@ -1119,13 +1119,13 @@ audio_profile_delete_list (GConfClient *conf,
   GSList *id_list;
   GError *err;
 
-  current_profiles = audio_profile_get_list ();
+  current_profiles = gm_audio_profile_get_list ();
 
   /* remove deleted profiles from list */
   tmp = deleted_profiles;
   while (tmp != NULL)
   {
-    AudioProfile *profile = tmp->data;
+    GMAudioProfile *profile = tmp->data;
 
     current_profiles = g_list_remove (current_profiles, profile);
 
@@ -1138,7 +1138,7 @@ audio_profile_delete_list (GConfClient *conf,
   while (tmp != NULL)
   {
     id_list = g_slist_prepend (id_list,
-                               g_strdup (audio_profile_get_id (tmp->data)));
+                               g_strdup (gm_audio_profile_get_id (tmp->data)));
 
     tmp = tmp->next;
   }

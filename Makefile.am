@@ -15,8 +15,8 @@ defines = \
 	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\"
 
 
-gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_test_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
+gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(GSR_CFLAGS) $(defines) -I$(top_srcdir)
+gnome_audio_profiles_test_LDADD = $(GMP_LIBS) $(GSR_LIBS) libgnome-media-profiles.la
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
 gnome_audio_profiles_properties_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
 
@@ -29,13 +29,14 @@ libgnome_media_profiles_la_SOURCES = \
 	gmp-util.c
 
 noinst_HEADERS = \
-	audio-profile.h \
+	audio-profile-private.h \
 	gmp-conf.h \
 	gmp-util.h
 
 
 gmpincludedir = $(includedir)/gnome-media/profiles
 gmpinclude_HEADERS = \
+	audio-profile.h \
 	audio-profile-choose.h \
 	audio-profile-edit.h \
 	audio-profiles-edit.h \

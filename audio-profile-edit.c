@@ -1,4 +1,4 @@
-/* audio-profile-edit.c: dialog to edit a specific profile */
+/* gm_audio-profile-edit.c: dialog to edit a specific profile */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -32,7 +32,7 @@ struct _GMAudioProfileEditPrivate
 {
   GConfClient *conf;
   GladeXML *xml;
-  AudioProfile *profile;
+  GMAudioProfile *profile;
   GtkWidget *content;
 };
 
@@ -50,18 +50,18 @@ static GtkWidget*
 		gm_audio_profile_edit_get_widget	(GMAudioProfileEdit *dialog,
 							 const char *widget_name);
 static void	gm_audio_profile_edit_update_name	(GMAudioProfileEdit *dialog,
-							 AudioProfile *profile);
+							 GMAudioProfile *profile);
 static void	gm_audio_profile_edit_update_description
 							(GMAudioProfileEdit *dialog,
-							 AudioProfile *profile);
+							 GMAudioProfile *profile);
 static void	gm_audio_profile_edit_update_pipeline	(GMAudioProfileEdit *dialog,
-							 AudioProfile *profile);
+							 GMAudioProfile *profile);
 static void	gm_audio_profile_edit_update_extension	(GMAudioProfileEdit *dialog,
-							 AudioProfile *profile);
+							 GMAudioProfile *profile);
 static void	gm_audio_profile_edit_update_active	(GMAudioProfileEdit *dialog,
-							 AudioProfile *profile);
-static void	on_profile_changed			(AudioProfile *profile,
-							 const AudioSettingMask *mask,
+							 GMAudioProfile *profile);
+static void	on_profile_changed			(GMAudioProfile *profile,
+							 const GMAudioSettingMask *mask,
 							 GMAudioProfileEdit *dialog);
 
 static gpointer parent_class;
@@ -194,7 +194,7 @@ on_gm_audio_profile_edit_response (GMAudioProfileEdit *dialog,
 }
 
 static void
-on_gm_audio_profile_edit_destroy (GtkWidget *dialog, AudioProfile *profile)
+on_gm_audio_profile_edit_destroy (GtkWidget *dialog, GMAudioProfile *profile)
 {
   g_signal_handlers_disconnect_by_func (G_OBJECT (profile),
                                         G_CALLBACK (on_profile_changed),
@@ -203,8 +203,8 @@ on_gm_audio_profile_edit_destroy (GtkWidget *dialog, AudioProfile *profile)
 /* profile callbacks */
 
 static void
-on_profile_changed (AudioProfile           *profile,
-                    const AudioSettingMask *mask,
+on_profile_changed (GMAudioProfile           *profile,
+                    const GMAudioSettingMask *mask,
                     GMAudioProfileEdit         *dialog)
 {
   if (mask->name)
@@ -222,60 +222,60 @@ on_profile_changed (AudioProfile           *profile,
 /* ui callbacks */
 static void
 on_profile_name_changed (GtkWidget       *entry,
-                               AudioProfile *profile)
+                               GMAudioProfile *profile)
 {
   char *text;
 
   text = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
 
-  audio_profile_set_name (profile, text);
+  gm_audio_profile_set_name (profile, text);
 
   g_free (text);
 }
 
 static void
 on_profile_description_changed (GtkWidget       *entry,
-                                AudioProfile *profile)
+                                GMAudioProfile *profile)
 {
   char *text;
 
   text = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
 
-  audio_profile_set_description (profile, text);
+  gm_audio_profile_set_description (profile, text);
 
   g_free (text);
 }
 
 static void
 on_profile_pipeline_changed (GtkWidget       *entry,
-                             AudioProfile *profile)
+                             GMAudioProfile *profile)
 {
   char *text;
 
   text = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
 
-  audio_profile_set_pipeline (profile, text);
+  gm_audio_profile_set_pipeline (profile, text);
 
   g_free (text);
 }
 
 static void
 on_profile_extension_changed (GtkWidget       *entry,
-                                AudioProfile *profile)
+                                GMAudioProfile *profile)
 {
   char *text;
 
   text = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
 
-  audio_profile_set_extension (profile, text);
+  gm_audio_profile_set_extension (profile, text);
 
   g_free (text);
 }
 
 static void
-on_profile_active_toggled (GtkWidget *button, AudioProfile *profile)
+on_profile_active_toggled (GtkWidget *button, GMAudioProfile *profile)
 {
-  audio_profile_set_active (profile, gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button)));
+  gm_audio_profile_set_active (profile, gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button)));
 }
 
 /* create and return a new Profile Edit Dialog
@@ -310,7 +310,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   g_object_ref (G_OBJECT (conf));
   dialog->priv->conf = conf;
 
-  dialog->priv->profile = audio_profile_lookup (id);
+  dialog->priv->profile = gm_audio_profile_lookup (id);
   g_assert (dialog->priv->profile);
   /* connect callbacks */
   g_signal_connect (G_OBJECT (dialog),
@@ -379,13 +379,13 @@ entry_set_text_if_changed (GtkEntry   *entry,
 
 static void
 gm_audio_profile_edit_update_name (GMAudioProfileEdit *dialog,
-                              AudioProfile *profile)
+                              GMAudioProfile *profile)
 {
   char *s;
   GtkWidget *w;
 
   s = g_strdup_printf (_("Editing profile \"%s\""),
-                       audio_profile_get_name (profile));
+                       gm_audio_profile_get_name (profile));
   GMP_DEBUG("g_p_e_u_n: title %s\n", s);
 
   gtk_window_set_title (GTK_WINDOW (dialog), s);
@@ -396,12 +396,12 @@ gm_audio_profile_edit_update_name (GMAudioProfileEdit *dialog,
   g_assert (GTK_IS_WIDGET (w));
 
   entry_set_text_if_changed (GTK_ENTRY (w),
-                             audio_profile_get_name (profile));
+                             gm_audio_profile_get_name (profile));
 }
 
 static void
 gm_audio_profile_edit_update_description (GMAudioProfileEdit *dialog,
-                              AudioProfile *profile)
+                              GMAudioProfile *profile)
 {
   GtkWidget *w;
 
@@ -409,12 +409,12 @@ gm_audio_profile_edit_update_description (GMAudioProfileEdit *dialog,
   g_assert (GTK_IS_WIDGET (w));
 
   entry_set_text_if_changed (GTK_ENTRY (w),
-                             audio_profile_get_description (profile));
+                             gm_audio_profile_get_description (profile));
 }
 
 static void
 gm_audio_profile_edit_update_pipeline (GMAudioProfileEdit *dialog,
-                              AudioProfile *profile)
+                              GMAudioProfile *profile)
 {
   GtkWidget *w;
 
@@ -422,12 +422,12 @@ gm_audio_profile_edit_update_pipeline (GMAudioProfileEdit *dialog,
   g_assert (GTK_IS_WIDGET (w));
 
   entry_set_text_if_changed (GTK_ENTRY (w),
-                             audio_profile_get_pipeline (profile));
+                             gm_audio_profile_get_pipeline (profile));
 }
 
 static void
 gm_audio_profile_edit_update_extension (GMAudioProfileEdit *dialog,
-                              AudioProfile *profile)
+                              GMAudioProfile *profile)
 {
   GtkWidget *w;
 
@@ -435,12 +435,12 @@ gm_audio_profile_edit_update_extension (GMAudioProfileEdit *dialog,
   g_assert (GTK_IS_WIDGET (w));
 
   entry_set_text_if_changed (GTK_ENTRY (w),
-                             audio_profile_get_extension (profile));
+                             gm_audio_profile_get_extension (profile));
 }
 
 static void
 gm_audio_profile_edit_update_active (GMAudioProfileEdit *dialog,
-                                AudioProfile *profile)
+                                GMAudioProfile *profile)
 {
   GtkWidget *w;
 
@@ -448,7 +448,7 @@ gm_audio_profile_edit_update_active (GMAudioProfileEdit *dialog,
   g_assert (GTK_IS_WIDGET (w));
 
   gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (w),
-                                audio_profile_get_active (profile));
+                                gm_audio_profile_get_active (profile));
 }
 
 static GtkWidget*
