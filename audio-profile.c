@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "libgnome/gnome-i18n.h"
 #include "gmp-util.h"
 #include "audio-profile.h"
@@ -948,7 +950,6 @@ gm_audio_profile_create (const char  *name,
   char *profile_dir = NULL;
   int i;
   char *s;
-  const char *cs;
   char *key = NULL;
   GError *err = NULL;
   GList *profiles = NULL;
@@ -976,6 +977,7 @@ gm_audio_profile_create (const char  *name,
   }
   g_free (profile_id);
   profile_id = s;
+  g_free (s);
 
   profile_dir = gconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
                                           profile_id);

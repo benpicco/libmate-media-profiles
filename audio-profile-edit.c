@@ -20,6 +20,8 @@
  */
 
 #include "config.h"
+
+#include <string.h>
 #include "libgnome/gnome-i18n.h"
 #include "gmp-util.h"
 #include "audio-profile-edit.h"
@@ -36,15 +38,16 @@ struct _GMAudioProfileEditPrivate
   GtkWidget *content;
 };
 
+#if 0
 static GObject*
 gm_audio_profile_edit_constructor (GType type,
                                    guint n_construct_properties,
                                    GObjectConstructParam *construct_properties);
+#endif
 
 static void	gm_audio_profile_edit_init		(GMAudioProfileEdit *edit);
 static void	gm_audio_profile_edit_class_init	(GMAudioProfileEditClass *klass);
 static void	gm_audio_profile_edit_finalize		(GObject *object);
-static void	gm_audio_profile_edit_destroy		(GtkObject *object);
 
 static GtkWidget*
 		gm_audio_profile_edit_get_widget	(GMAudioProfileEdit *dialog,
@@ -96,38 +99,12 @@ gm_audio_profile_edit_get_type (void)
 return object_type;
 }
 
-/* widget callbacks */
-
-//FIXME
-static void
-fix_button_align (GtkWidget *button)
-{
-  GtkWidget *child;
-
-  child = gtk_bin_get_child (GTK_BIN (button));
-
-  if (GTK_IS_ALIGNMENT (child))
-    g_object_set (G_OBJECT (child), "xalign", 0.0, NULL);
-  else if (GTK_IS_LABEL (child))
-    g_object_set (G_OBJECT (child), "xalign", 0.0, NULL);
-}
-
 /* ui callbacks */
-
-/* FIXME: do we need this ? */
-static void
-gap_remove (GtkWidget *widget, gpointer *data)
-{
-  gtk_container_remove (GTK_CONTAINER (data), widget);
-}
 
 /* initialize a dialog widget from the glade xml file */
 static void
 gm_audio_profile_edit_init (GMAudioProfileEdit *dialog)
 {
-  GladeXML *xml;
-  GtkWidget *vbox;
-
   dialog->priv = g_new0 (GMAudioProfileEditPrivate, 1);
 }
 
@@ -144,6 +121,7 @@ gm_audio_profile_edit_class_init (GMAudioProfileEditClass *klass)
   object_class->finalize = gm_audio_profile_edit_finalize;
 }
 
+#if 0
 static GObject*
 gm_audio_profile_edit_constructor (GType                  type,
                               guint                  n_construct_properties,
@@ -151,6 +129,7 @@ gm_audio_profile_edit_constructor (GType                  type,
 {
   return NULL;
 }
+#endif
 
 static void
 gm_audio_profile_edit_finalize (GObject *object)

@@ -29,7 +29,7 @@
 G_BEGIN_DECLS
 
 /* create a new Profile Choose Dialog */
-GtkWidget*      gm_audio_profile_choose_new		();
+GtkWidget*      gm_audio_profile_choose_new		(void);
 GMAudioProfile* gm_audio_profile_choose_get_active	(GtkWidget  *choose);
 gboolean        gm_audio_profile_choose_set_active	(GtkWidget  *choose,
 							 const char *id);

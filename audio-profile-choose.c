@@ -20,6 +20,8 @@
  */
 
 #include "config.h"
+
+#include <string.h>
 #include "libgnome/gnome-i18n.h"
 #include "gmp-util.h"
 #include "audio-profile-choose.h"
@@ -39,7 +41,7 @@ enum
  */
 
 GtkWidget*
-gm_audio_profile_choose_new ()
+gm_audio_profile_choose_new (void)
 {
   GtkListStore *list_store;
   GtkTreeIter iter;
@@ -84,7 +86,7 @@ gm_audio_profile_choose_get_active (GtkWidget *choose)
   gchar *id;
   GMAudioProfile *profile;
   
-  g_return_if_fail (GTK_IS_COMBO_BOX (choose));
+  g_return_val_if_fail (GTK_IS_COMBO_BOX (choose), NULL);
   /* get active id */
   gtk_combo_box_get_active_iter (combo, &iter);
   gtk_tree_model_get (gtk_combo_box_get_model (combo), &iter,
@@ -105,7 +107,7 @@ gm_audio_profile_choose_set_active (GtkWidget  *choose,
   GtkTreeIter iter;
   char *tmp;
   
-  g_return_if_fail (GTK_IS_COMBO_BOX (choose));
+  g_return_val_if_fail (GTK_IS_COMBO_BOX (choose), FALSE);
 
   model = gtk_combo_box_get_model (GTK_COMBO_BOX (choose));
   

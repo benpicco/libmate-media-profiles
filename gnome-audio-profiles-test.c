@@ -12,6 +12,8 @@ edit_cb (GtkButton *button, GtkWindow *window)
   edit_dialog = gm_audio_profiles_edit_new (gconf_client_get_default (), window);
   g_assert (edit_dialog != NULL);
   gtk_widget_show_all (GTK_WIDGET (edit_dialog));
+
+  return FALSE;
 }
 
 static gboolean
@@ -43,7 +45,7 @@ test_cb (GtkButton *button, GtkWidget *combo)
   {
     g_print ("Error parsing pipeline: %s\n", error->message);
     g_error_free (error);
-    return;
+    return FALSE;
   }
 
   gst_element_set_state (pipeline, GST_STATE_PLAYING);
@@ -54,13 +56,14 @@ test_cb (GtkButton *button, GtkWidget *combo)
   g_free (pipeline);
   g_free (extension);
   g_free (partialpipe);
+
+  return FALSE;
 }
 
 int
 main (int argc, char **argv)
 {
   GtkWidget *window, *hbox, *combo, *edit, *test;
-  GList *profiles = NULL;
   GConfClient *gconf;
 
   gst_init (&argc, &argv);
@@ -87,4 +90,6 @@ main (int argc, char **argv)
   gtk_container_add (GTK_CONTAINER (window), hbox);
   gtk_widget_show_all (window);
   gtk_main ();
+
+  return 0;
 }

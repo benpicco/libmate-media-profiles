@@ -23,6 +23,8 @@
 #include <config.h>
 #endif
 
+#include "audio-profile-private.h"
+#include "audio-profile-edit.h"
 #include "gmp-conf.h"
 #include "gmp-util.h"
 #include <gconf/gconf-client.h>

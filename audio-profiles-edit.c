@@ -20,8 +20,11 @@
  */
 
 #include "config.h"
+
+#include <string.h>
 #include <libgnome/gnome-i18n.h>
 #include "audio-profile.h"
+#include "audio-profile-edit.h"
 #include "audio-profile-private.h"
 #include "gmp-util.h"
 #include "audio-profiles-edit.h"
@@ -45,7 +48,6 @@ struct _GMAudioProfilesEditPrivate
 static void gm_audio_profiles_edit_init		(GMAudioProfilesEdit *edit);
 static void gm_audio_profiles_edit_class_init	(GMAudioProfilesEditClass *klass);
 static void gm_audio_profiles_edit_finalize	(GObject *object);
-static void gm_audio_profiles_edit_destroy	(GtkObject *object);
 
 
 /* responses */
@@ -146,7 +148,7 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       -1);
   if (profile)
   /* FIXME: is this the right function name ? */
-  gm_audio_profile_edit_new (profile, gm_audio_profile_get_id (profile));
+  gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
 }
 
 static void
@@ -305,7 +307,6 @@ on_profile_changed (GMAudioProfile *profile,
                     const GMAudioSettingMask *mask,
                     GtkWidget *tree_view)
 {
-  GtkTreeSelection *selection;
   GtkListStore *list_store;
   GtkTreeIter iter;
   GtkTreeModel *tree_model;
@@ -381,7 +382,7 @@ edit_button_clicked (GtkWidget   *button,
                              dialog->priv->manage_profiles_list, 0);
 
     /* FIXME: is this the right function name ? */
-    gm_audio_profile_edit_new (profile, gm_audio_profile_get_id (profile));
+    gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
                       //GTK_WINDOW (dialog));
   }
   else
@@ -548,6 +549,7 @@ on_gm_audio_profiles_edit_destroy (GtkWidget *dialog, gpointer *user_data)
   /* FIXME: set stuff to NULL here */
 }
 
+#if 0
 /* GConf notification callback for profile_list */
 static void
 gm_audio_profiles_list_notify (GConfClient *client,
@@ -563,7 +565,7 @@ gm_audio_profiles_list_notify (GConfClient *client,
 
   refill_profile_treeview (dialog->priv->manage_profiles_list);
 }
-
+#endif
 
 /* create a dialog widget from scratch */
 static void
@@ -773,7 +775,7 @@ GtkWidget*
 gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
 {
   GMAudioProfilesEdit *dialog;
-  GError *err;
+  /*GError *err;*/
 
   dialog = g_object_new (GM_AUDIO_TYPE_PROFILES_EDIT, NULL);
 
@@ -851,7 +853,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     GtkWidget *name_entry;
     char *name;
     char *id;
-    GtkWidget *base_option_menu;
+    /*GtkWidget *base_option_menu;*/
     GMAudioProfile *new_profile;
     GList *profiles;
     GList *tmp;

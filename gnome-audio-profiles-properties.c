@@ -19,6 +19,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
+#include <gtk/gtkmain.h>
 #include "gnome-media-profiles.h"
 
 static void
@@ -31,10 +32,7 @@ on_dialog_destroy (GtkWidget *dialog, gpointer *user_data)
 int
 main (int argc, char *argv[])
 {
-  gint count;
-  GList *profiles;
   GtkWidget *widget;
-  GtkWidget *window;
   static GConfClient *conf;
 
   gtk_init (&argc, &argv);
@@ -52,4 +50,6 @@ main (int argc, char *argv[])
 
   gtk_widget_show_all (widget);
   gtk_main ();
+
+  return 0;
 }

@@ -68,9 +68,16 @@ const char*     gm_audio_profile_get_name	(GMAudioProfile *profile);
 const char*     gm_audio_profile_get_description(GMAudioProfile *profile);
 const char*     gm_audio_profile_get_pipeline	(GMAudioProfile *profile);
 const char*     gm_audio_profile_get_extension	(GMAudioProfile *profile);
+const gboolean  gm_audio_profile_get_active     (GMAudioProfile *profile);
 
 GList*		gm_audio_profile_get_active_list(void);
 GMAudioProfile*	gm_audio_profile_lookup		(const char *id);
+
+void gm_audio_profile_set_name (GMAudioProfile *profile, const char *name);
+void gm_audio_profile_set_description (GMAudioProfile *profile, const char *name);
+void gm_audio_profile_set_pipeline (GMAudioProfile *profile, const char *name);
+void gm_audio_profile_set_extension (GMAudioProfile *profile, const char *name);
+void gm_audio_profile_set_active (GMAudioProfile *profile, gboolean active);
 
 G_END_DECLS
 
