@@ -79,7 +79,7 @@
       <key>/schemas/system/gstreamer/audio/profiles/active</key>
       <owner>gnome-media</owner>
       <type>bool</type>
-      <default></default>
+      <default>true</default>
       <locale name="C">
         <short>Whether or not this profile is to be used</short>
         <long>
