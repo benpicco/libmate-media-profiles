@@ -8,13 +8,13 @@
       <owner>gnome-media</owner>
       <type>list</type>
       <list_type>string</list_type>
-      <default></default>
+      <default>[cdlossy,cdlossless,voice]</default>
       <locale name="C">
         <short>List of profiles</short>
         <long>
           List of audio recording profiles.  The list contains
           strings naming subdirectories relative to
-          /system/gstreamer/record/profiles.
+          /system/gstreamer/audio/profiles.
         </long>
       </locale>
     </schema>
@@ -62,10 +62,249 @@
     </schema>
 
     <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/extension</key>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default></default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
       <key>/schemas/system/gstreamer/audio/profiles/active</key>
       <owner>gnome-media</owner>
-      <type>boolean</type>
+      <type>bool</type>
       <default></default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+<!-- each of the profiles we supply by default -->
+    <!-- CD quality, lossy compression -->
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/name</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossy/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>CD Quality, Lossy</default>
+      <locale name="C">
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/description</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossy/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>Used for converting to CD-quality audio, but with a lossy compression codec. Use this for CD extraction and radio recordings.</default>
+      <locale name="C">
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/pipeline</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossy/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>vorbisenc name=enc quality=5</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/extension</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossy/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>ogg</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/active</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossy/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <!-- CD quality, lossless compression -->
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/name</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossless/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>CD Quality, Lossless</default>
+      <locale name="C">
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/description</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossless/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>Used for converting to CD-quality audio, but with a lossless compression codec. Use this if you later want to edit the file or burn it to CD.</default>
+      <locale name="C">
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/pipeline</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossless/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>flacenc name=enc</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/extension</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossless/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>ogg</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/active</key>
+      <applyto>/system/gstreamer/audio/profiles/cdlossless/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+
+    <!-- Voice quality -->
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/voice/name</key>
+      <applyto>/system/gstreamer/audio/profiles/voice/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>Voice</default>
+      <locale name="C">
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/voice/description</key>
+      <applyto>/system/gstreamer/audio/profiles/voice/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>Used for converting to voice-quality audio. Use this for recording speech.
+      </default>
+      <locale name="C">
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/voice/pipeline</key>
+      <applyto>/system/gstreamer/audio/profiles/voice/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>audio/x-raw-int,rate=22050 ! wavenc name=enc</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/voice/extension</key>
+      <applyto>/system/gstreamer/audio/profiles/voice/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>wav</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/audio/profiles/active</key>
+      <applyto>/system/gstreamer/audio/profiles/voice/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
       <locale name="C">
         <short>Whether or not this profile is to be used</short>
         <long>

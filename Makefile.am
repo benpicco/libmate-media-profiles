@@ -43,7 +43,7 @@ schemadir = $(sysconfdir)/gconf/schemas
 schema_DATA = gnome-audio-profiles.schemas
 
 install-schemas:
-	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/profile/$(schema_DATA) || true
+	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/profiles/$(schema_DATA) || true
 
 install-data-local: install-schemas
 
