@@ -88,7 +88,8 @@ gm_audio_profile_choose_get_active (GtkWidget *choose)
   gtk_combo_box_get_active_iter (combo, &iter);
   gtk_tree_model_get (gtk_combo_box_get_model (combo), &iter,
                       ID_COLUMN, &id, -1);
-
+  g_free (id);
+  
   /* look up gm_audio profile */
   return gm_audio_profile_lookup (id);
 }
