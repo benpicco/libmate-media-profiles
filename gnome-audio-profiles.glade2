@@ -198,7 +198,7 @@
   </child>
 </widget>
 
-<widget class="GapProfileEdit" id="profile-edit-dialog">
+<widget class="GMAudioProfileEdit" id="profile-edit-dialog">
   <property name="visible">True</property>
   <property name="title" translatable="yes">Edit Audio Profile</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>

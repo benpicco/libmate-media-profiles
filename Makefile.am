@@ -53,3 +53,5 @@ pkgconfig_DATA = gnome-media-profiles.pc
 EXTRA_DIST = $(glade_DATA) $(schema_DATA) $(pkgconfig_DATA)
 
 CLEANFILES = $(schema_DATA)
+
+SUBDIRS = glade
