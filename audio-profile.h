@@ -62,7 +62,7 @@ void		audio_profile_initialize	(GConfClient *conf);
 GList*		audio_profile_get_list		(void);
 GList*		audio_profile_get_active_list	(void);
 int		audio_profile_get_count		(void);
-AudioProfile*	audio_profile_lookup		(const char *name);
+AudioProfile*	audio_profile_lookup		(const char *id);
 void		audio_profile_forget		(AudioProfile *profile);
 void		audio_profile_sync_list         (gboolean use_this_list,
                                                  GSList  *this_list);

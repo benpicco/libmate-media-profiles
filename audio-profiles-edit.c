@@ -770,7 +770,7 @@ gm_audio_profiles_edit_finalize (GObject *object)
   G_OBJECT_CLASS (parent_class)->finalize (object);
 }
 
-GMAudioProfilesEdit*
+GtkWidget*
 gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
 {
   GMAudioProfilesEdit *dialog;
@@ -803,7 +803,7 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
       g_error_free (err);
     }
 */
-  return dialog;
+  return GTK_WIDGET (dialog);
 }
 
 /* show the given profile manage dialog

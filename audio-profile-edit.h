@@ -56,7 +56,7 @@ struct _GMAudioProfileEditClass
 GType gm_audio_profile_edit_get_type (void) G_GNUC_CONST;
 
 /* create a new Profile Edit Dialog */
-GMAudioProfileEdit* gm_audio_profile_edit_new (GConfClient *conf, const char *name);
+GtkWidget* gm_audio_profile_edit_new (GConfClient *conf, const char *name);
 
 G_END_DECLS
 

@@ -55,7 +55,7 @@ struct _GMAudioProfilesEditClass
 
 GType gm_audio_profiles_edit_get_type (void) G_GNUC_CONST;
 
-GMAudioProfilesEdit*	gm_audio_profiles_edit_new	(GConfClient *conf,
+GtkWidget*		gm_audio_profiles_edit_new	(GConfClient *conf,
                                                  GtkWindow *transient_parent);
 
 void			gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,

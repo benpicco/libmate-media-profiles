@@ -66,4 +66,6 @@ gm_audio_profile_choose ()
 
 TODO
 ----
-rename GapProfileEdit to something like GMAudioProfileEdit
+* make audio-profile.h have public functions, and move rest to .c
+* rename all functions in there to gnome_... so they won't clash in the
+  future

@@ -128,23 +128,6 @@ gm_audio_profile_edit_init (GMAudioProfileEdit *dialog)
   GtkWidget *vbox;
 
   dialog->priv = g_new0 (GMAudioProfileEditPrivate, 1);
-
-#ifdef DONT
-  /* load ui from XML */
-  xml = gmp_util_load_glade_file (GM_AUDIO_GLADE_FILE,
-                                  "profile-edit-dialog", NULL);
-  dialog->priv->content = glade_xml_get_widget (xml, "profile-edit-dialog");
-  /* connect callbacks */
-
-  /* finish up ui bits */
-  /* gtkdialog.h says vbox is public, yay ! */
-  vbox = GTK_DIALOG (dialog)->vbox;
-  gtk_container_remove (GTK_CONTAINER (dialog), vbox);
-
-  GTK_DIALOG(dialog)->vbox = dialog->priv->content;
-  gtk_widget_reparent (dialog->priv->content, GTK_WIDGET (dialog));
-  gtk_widget_show (dialog->priv->content);
-#endif
 }
 
 static void
@@ -236,7 +219,7 @@ on_profile_changed (AudioProfile           *profile,
 }
 
 /* ui callbacks */
-void
+static void
 on_profile_name_changed (GtkWidget       *entry,
                                AudioProfile *profile)
 {
@@ -249,7 +232,7 @@ on_profile_name_changed (GtkWidget       *entry,
   g_free (text);
 }
 
-void
+static void
 on_profile_description_changed (GtkWidget       *entry,
                                 AudioProfile *profile)
 {
@@ -262,7 +245,7 @@ on_profile_description_changed (GtkWidget       *entry,
   g_free (text);
 }
 
-void
+static void
 on_profile_pipeline_changed (GtkWidget       *entry,
                              AudioProfile *profile)
 {
@@ -275,7 +258,7 @@ on_profile_pipeline_changed (GtkWidget       *entry,
   g_free (text);
 }
 
-void
+static void
 on_profile_extension_changed (GtkWidget       *entry,
                                 AudioProfile *profile)
 {
@@ -288,7 +271,7 @@ on_profile_extension_changed (GtkWidget       *entry,
   g_free (text);
 }
 
-void
+static void
 on_profile_active_toggled (GtkWidget *button, AudioProfile *profile)
 {
   audio_profile_set_active (profile, gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button)));
@@ -296,11 +279,8 @@ on_profile_active_toggled (GtkWidget *button, AudioProfile *profile)
 
 /* create and return a new Profile Edit Dialog
  * given the GConf connection and the id of the profile
- * the new dialog gets presented and can be kept around
- * FIXME: maybe we don't need name yet, and should have a different function
- * to fix up the profile for the given name ?
  */
-GMAudioProfileEdit*
+GtkWidget*
 gm_audio_profile_edit_new (GConfClient *conf, const char *id)
 {
   GMAudioProfileEdit *dialog;
@@ -376,7 +356,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
 
   gtk_window_present (GTK_WINDOW (dialog));
 
-  return dialog;
+  return GTK_WIDGET (dialog);
 }
 
 /* UI consistency update functions */
