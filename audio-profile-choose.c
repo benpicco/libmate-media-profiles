@@ -85,18 +85,18 @@ gm_audio_profile_choose_get_active (GtkWidget *choose)
   GtkTreeIter iter;
   GtkComboBox *combo = GTK_COMBO_BOX (choose);
   gchar *id;
-  GMAudioProfile *profile;
+  GMAudioProfile *profile = NULL;
   
   g_return_val_if_fail (GTK_IS_COMBO_BOX (choose), NULL);
   /* get active id */
-  gtk_combo_box_get_active_iter (combo, &iter);
-  gtk_tree_model_get (gtk_combo_box_get_model (combo), &iter,
-                      ID_COLUMN, &id, -1);
-  
-  /* look up gm_audio profile */
-  profile = gm_audio_profile_lookup (id);
-  g_free (id);
-
+  if (gtk_combo_box_get_active_iter (combo, &iter)) {
+    gtk_tree_model_get (gtk_combo_box_get_model (combo), &iter,
+                        ID_COLUMN, &id, -1);
+    
+    /* look up gm_audio profile */
+    profile = gm_audio_profile_lookup (id);
+    g_free (id);
+  }
   return profile;
 }
 
