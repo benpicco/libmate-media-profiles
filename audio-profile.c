@@ -455,7 +455,7 @@ gm_audio_profile_set_extension (GMAudioProfile *profile,
   g_free (key);
 }
 
-const gboolean
+gboolean
 gm_audio_profile_get_active (GMAudioProfile *profile)
 {
   return profile->priv->active;
