@@ -41,13 +41,16 @@ gnome_media_profiles_init (GConfClient *conf)
 #ifdef HAVE_BIND_TEXTDOMAIN_CODESET
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 #endif
-textdomain (GETTEXT_PACKAGE);
 
-  if (conf == NULL) conf = gconf_client_get_default ();
-  /* initialize GConf */
-  gconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
-                        GCONF_CLIENT_PRELOAD_ONELEVEL,
-                        &err);
+  if (conf == NULL) 
+    conf = gconf_client_get_default ();
+  else
+    g_object_ref (G_OBJECT (conf));
+
+    /* initialize GConf */
+    gconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
+			  GCONF_CLIENT_PRELOAD_ONELEVEL,
+			  &err);
   if (err)
   {
     g_printerr ("There was an error loading config from %s. (%s)\n",
@@ -60,4 +63,6 @@ textdomain (GETTEXT_PACKAGE);
 
   /* register widgets */
   gm_audio_profile_edit_get_type ();
+
+  g_object_unref (G_OBJECT (conf));
 }

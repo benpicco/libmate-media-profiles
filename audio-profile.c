@@ -850,10 +850,10 @@ gm_audio_profile_get_list (void)
 GList*
 gm_audio_profile_get_active_list (void)
 {
-  GList *list;
+  GList *list, *orig;
   GList *new_list;
 
-  list = gm_audio_profile_get_list ();
+  orig = list = gm_audio_profile_get_list ();
 
   new_list = NULL;
   while (list)
@@ -862,11 +862,12 @@ gm_audio_profile_get_active_list (void)
 
     profile = (GMAudioProfile *) list->data;
     if (gm_audio_profile_get_active (profile))
-      new_list = g_list_append (new_list, list->data);
+      new_list = g_list_prepend (new_list, list->data);
     list = g_list_next (list);
   }
 
-  return new_list;
+  g_list_free (orig);
+  return g_list_reverse (new_list);
 }
 
 int
@@ -990,8 +991,8 @@ gm_audio_profile_create (const char  *name,
                            key,
                            name,
                            &err);
-  BAIL_OUT_CHECK ();
   if (err != NULL) g_print ("ERROR: msg: %s\n", err->message);
+  BAIL_OUT_CHECK ();
   g_free (key);
 
   key = gconf_concat_dir_and_key (profile_dir,
@@ -1001,8 +1002,8 @@ gm_audio_profile_create (const char  *name,
                            key,
                            _("<no description>"),
                            &err);
-  BAIL_OUT_CHECK ();
   if (err != NULL) g_print ("ERROR: msg: %s\n", err->message);
+  BAIL_OUT_CHECK ();
   g_free (key);
 
   key = gconf_concat_dir_and_key (profile_dir,
@@ -1012,8 +1013,8 @@ gm_audio_profile_create (const char  *name,
                            key,
                            _("identity"),
                            &err);
-  BAIL_OUT_CHECK ();
   if (err != NULL) g_print ("ERROR: msg: %s\n", err->message);
+  BAIL_OUT_CHECK ();
   g_free (key);
 
   key = gconf_concat_dir_and_key (profile_dir,
@@ -1023,8 +1024,8 @@ gm_audio_profile_create (const char  *name,
                            key,
                            _("wav"),
                            &err);
-  BAIL_OUT_CHECK ();
   if (err != NULL) g_print ("ERROR: msg: %s\n", err->message);
+  BAIL_OUT_CHECK ();
 
   /* Add new profile to the profile list; the method for doing this has
    * a race condition where we and someone else set at the same time,
@@ -1048,7 +1049,6 @@ gm_audio_profile_create (const char  *name,
                          GCONF_VALUE_STRING,
                          id_list,
                          &err);
-
   BAIL_OUT_CHECK ();
 
  cleanup:

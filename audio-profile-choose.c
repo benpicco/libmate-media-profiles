@@ -46,12 +46,12 @@ gm_audio_profile_choose_new (void)
   GtkListStore *list_store;
   GtkTreeIter iter;
   GtkCellRenderer *renderer;
-  GList *profiles = NULL;
+  GList *profiles, *orig;
   GtkWidget *combo;
 
   /* Create the model */
   list_store = gtk_list_store_new (N_COLUMNS, G_TYPE_STRING, G_TYPE_STRING);
-  profiles = gm_audio_profile_get_active_list ();
+  orig = profiles = gm_audio_profile_get_active_list ();
   while (profiles) {
     GMAudioProfile *profile = profiles->data;
     gtk_list_store_append (list_store, &iter);
@@ -61,6 +61,7 @@ gm_audio_profile_choose_new (void)
                         -1);
     profiles = profiles->next;
   }
+  g_list_free (orig);
   combo = gtk_combo_box_new_with_model (GTK_TREE_MODEL (list_store));
 
   /* display name in the combobox */
