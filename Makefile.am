@@ -45,13 +45,17 @@ gmpinclude_HEADERS = \
 libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(defines)
 libgnome_media_profiles_la_LIBADD = $(GMP_LIBS)
 
-schemadir = $(sysconfdir)/gconf/schemas
+schemadir = $(GCONF_SCHEMA_FILE_DIR)
 schema_DATA = gnome-audio-profiles.schemas
 
 install-schemas:
 	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/profiles/$(schema_DATA) || true
 
+if GCONF_SCHEMAS_INSTALL
 install-data-local: install-schemas
+else
+install-data-local:
+endif
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gnome-media-profiles.pc
