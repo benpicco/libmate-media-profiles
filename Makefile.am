@@ -47,6 +47,9 @@ install-schemas:
 
 install-data-local: install-schemas
 
-EXTRA_DIST = $(glade_DATA) $(schema_DATA)
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = gnome-media-profiles.pc
+
+EXTRA_DIST = $(glade_DATA) $(schema_DATA) $(pkgconfig_DATA)
 
 CLEANFILES = $(schema_DATA)
