@@ -125,7 +125,7 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossy/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>vorbisenc name=enc quality=5</default>
+      <default> audio/x-raw-int,rate=44100,channels=2 ! vorbisenc name=enc quality=0.5</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
@@ -199,7 +199,7 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossless/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>flacenc name=enc</default>
+      <default>audio/x-raw-int,rate=44100,channels=2 ! flacenc name=enc</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
@@ -213,7 +213,7 @@
       <applyto>/system/gstreamer/audio/profiles/cdlossless/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>ogg</default>
+      <default>flac</default>
       <locale name="C">
         <short>The default file extension for this profile</short>
         <long>
@@ -274,7 +274,7 @@
       <applyto>/system/gstreamer/audio/profiles/voice/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>audio/x-raw-int,rate=22050 ! wavenc name=enc</default>
+      <default>audio/x-raw-int,rate=22050,channels=1 ! wavenc name=enc</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
