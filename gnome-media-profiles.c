@@ -41,6 +41,7 @@ gnome_media_profiles_init (GConfClient *conf)
 #endif
 textdomain (GETTEXT_PACKAGE);
 
+  if (conf == NULL) conf = gconf_client_get_default ();
   /* initialize GConf */
   gconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
                         GCONF_CLIENT_PRELOAD_ONELEVEL,
