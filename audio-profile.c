@@ -715,7 +715,7 @@ gm_audio_profile_initialize (GConfClient *conf)
 
   if (err)
     {
-      g_printerr (_("There was an error subscribing to notification of terminal profile list changes. (%s)\n"),
+      g_printerr (_("There was an error subscribing to notification of audio profile list changes. (%s)\n"),
                   err->message);
       g_error_free (err);
     }
