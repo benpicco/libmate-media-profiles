@@ -8,7 +8,7 @@ gladedir = $(pkgdatadir)/glade
 glade_DATA = gnome-audio-profiles.glade2
 
 defines = \
-	-DG_LOG_DOMAIN=\"gap\" \
+	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
 	-DGMP_GLADE_DIR=\"$(gladedir)\" \
 	-DGM_AUDIO_GLADE_FILE=\"gnome-audio-profiles.glade2\" \
 	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\"

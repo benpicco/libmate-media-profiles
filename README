@@ -46,12 +46,12 @@ This provides:
 a) a function to get a dialog to edit audio profiles
 
 GapProfilesEdit *
-gap_profiles_edit_new ()
+gm_audio_profiles_edit_new ()
 
 b) a function to get a dialog to edit a specific audio profile based on its id
 
 GapProfileEdit *
-gap_profile_edit_new (const char *id)
+gm_audio_profile_edit_new (const char *id)
 {
 }
 
@@ -61,7 +61,7 @@ c) functions to manipulate the profiles
     
 d) a function to get a dialog to choose a profile from
 GtkDialog *
-gap_profile_choose ()
+gm_audio_profile_choose ()
 
 
 TODO
