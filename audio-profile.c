@@ -1,4 +1,5 @@
 #include "audio-profile.h"
+#include "audio-profile-private.h"
 #include "libgnome/gnome-i18n.h"
 #include "gmp-util.h"
 

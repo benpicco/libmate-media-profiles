@@ -24,6 +24,7 @@
 #include "gmp-util.h"
 #include "audio-profile-edit.h"
 #include "audio-profile.h"
+#include "audio-profile-private.h"
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
 

@@ -22,6 +22,7 @@
 #include "config.h"
 #include <libgnome/gnome-i18n.h>
 #include "audio-profile.h"
+#include "audio-profile-private.h"
 #include "gmp-util.h"
 #include "audio-profiles-edit.h"
 #include <gtk/gtk.h>
