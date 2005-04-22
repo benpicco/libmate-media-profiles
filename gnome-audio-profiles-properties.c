@@ -19,6 +19,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
+#include <config.h>
 #include <gtk/gtkmain.h>
 #include "gnome-media-profiles.h"
 #include <glade/glade.h>
@@ -93,6 +94,7 @@ main (int argc, char *argv[])
 			 gtk_dialog_build_children,
 			 dialog_find_internal_child);
   conf = gconf_client_get_default ();
+  textdomain (GETTEXT_PACKAGE);
   gnome_media_profiles_init (conf);
 
   widget = GTK_WIDGET (gm_audio_profiles_edit_new (conf, NULL));
