@@ -54,12 +54,21 @@ gm_audio_profile_choose_new (void)
   orig = profiles = gm_audio_profile_get_active_list ();
   while (profiles) {
     GMAudioProfile *profile = profiles->data;
+    char *profile_name, *temp_file_name;
+    const char* mime_type;
+
+    temp_file_name = g_strdup_printf (".%s", gm_audio_profile_get_extension (profile));
+    mime_type = gnome_vfs_mime_type_from_name (temp_file_name);
+    g_free (temp_file_name);
+
+    profile_name = g_strdup_printf (gettext ("%s (%s)"), gm_audio_profile_get_name (profile), gnome_vfs_mime_get_description (mime_type));
     gtk_list_store_append (list_store, &iter);
     gtk_list_store_set (list_store, &iter,
-                        NAME_COLUMN, gm_audio_profile_get_name (profile),
+                        NAME_COLUMN, profile_name,
                         ID_COLUMN, gm_audio_profile_get_id (profile),
                         -1);
     profiles = profiles->next;
+    g_free (profile_name);
   }
   g_list_free (orig);
   combo = gtk_combo_box_new_with_model (GTK_TREE_MODEL (list_store));
