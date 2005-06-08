@@ -100,8 +100,8 @@ gm_audio_profile_init (GMAudioProfile *profile)
   g_return_if_fail (profiles != NULL);
 
   profile->priv = g_new0 (GMAudioProfilePrivate, 1);
-  profile->priv->name = g_strdup (_("<not named>"));
-  profile->priv->description = g_strdup (_("<not described>"));
+  profile->priv->name = g_strdup (_("<no name>"));
+  profile->priv->description = g_strdup (_("<no description>"));
   profile->priv->pipeline = g_strdup ("identity");
   profile->priv->extension = g_strdup ("wav");
 }
