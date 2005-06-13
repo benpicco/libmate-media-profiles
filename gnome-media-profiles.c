@@ -27,8 +27,8 @@
 #include "audio-profile-edit.h"
 #include "gmp-conf.h"
 #include "gmp-util.h"
+#include <glib/gi18n.h>
 #include <gconf/gconf-client.h>
-#include <libgnome/gnome-i18n.h>
 
 /* do all necessary initialization to use this simple helper library */
 void

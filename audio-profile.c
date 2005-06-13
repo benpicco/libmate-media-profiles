@@ -1,6 +1,6 @@
 #include <string.h>
 
-#include "libgnome/gnome-i18n.h"
+#include <glib/gi18n.h>
 #include "gmp-util.h"
 #include "audio-profile.h"
 #include "audio-profile-private.h"

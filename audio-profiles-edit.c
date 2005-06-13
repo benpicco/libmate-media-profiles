@@ -22,7 +22,7 @@
 #include "config.h"
 
 #include <string.h>
-#include <libgnome/gnome-i18n.h>
+#include <glib/gi18n.h>
 #include "audio-profile.h"
 #include "audio-profile-edit.h"
 #include "audio-profile-private.h"
