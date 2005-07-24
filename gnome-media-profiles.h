@@ -23,5 +23,13 @@
 #include <profiles/audio-profile-choose.h>
 #include <profiles/audio-profile-edit.h>
 #include <profiles/audio-profiles-edit.h>
+#include <glade/glade.h>
+#include <glade/glade-build.h>
 
 void gnome_media_profiles_init (GConfClient *conf);
+void gtk_dialog_build_children (GladeXML *self, GtkWidget *w,
+				              GladeWidgetInfo *info);
+GtkWidget *dialog_find_internal_child (GladeXML *xml,
+				GtkWidget *parent,
+				const gchar *childname);
+

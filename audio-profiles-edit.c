@@ -134,6 +134,7 @@ profile_activated_callback (GtkTreeView       *tree_view,
   GMAudioProfile *profile;
   GtkTreeIter iter;
   GtkTreeModel *model;
+  GtkWidget *edit_dialog;
 
   model = gtk_tree_view_get_model (tree_view);
 
@@ -148,7 +149,10 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       -1);
   if (profile)
   /* FIXME: is this the right function name ? */
-  gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
+  edit_dialog = gm_audio_profile_edit_new ((GConfClient *) profile, gm_audio_profile_get_id (profile));
+  g_return_if_fail (edit_dialog != NULL);
+  gtk_widget_show_all (GTK_WIDGET (edit_dialog));
+  gtk_dialog_run (GTK_DIALOG (edit_dialog));
 }
 
 static void
@@ -374,6 +378,7 @@ edit_button_clicked (GtkWidget   *button,
   /* only one selection ? */
   if (profiles->next == NULL)
   {
+    GtkWidget *edit_dialog;	  
     profile = (GMAudioProfile *) profiles->data;
     /* connect to profile changed signal so we can update the name in the list
      * if it gets changed */
@@ -382,8 +387,11 @@ edit_button_clicked (GtkWidget   *button,
                              dialog->priv->manage_profiles_list, 0);
 
     /* FIXME: is this the right function name ? */
-    gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
-                      //GTK_WINDOW (dialog));
+    edit_dialog = gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
+                       //GTK_WINDOW (dialog));
+    g_return_if_fail (edit_dialog != NULL);
+    gtk_widget_show_all (GTK_WIDGET (edit_dialog));
+    gtk_dialog_run (GTK_DIALOG(edit_dialog));
   }
   else
   {
@@ -507,9 +515,10 @@ delete_button_clicked (GtkWidget   *button,
 
   g_signal_connect (G_OBJECT (confirm_dialog), "response",
                     G_CALLBACK (delete_confirm_response),
-                    dialog->priv->transient_parent);
-
+                    dialog);
+  g_return_if_fail (confirm_dialog != NULL);
   gtk_widget_show_all (confirm_dialog);
+  gtk_dialog_run (GTK_DIALOG (confirm_dialog));
 }
 
 /* ui callbacks */
@@ -1030,4 +1039,5 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
 
   gtk_widget_show_all (dialog->priv->new_profile_dialog);
   gtk_window_present (GTK_WINDOW (dialog->priv->new_profile_dialog));
+  gtk_dialog_run (GTK_DIALOG (dialog->priv->new_profile_dialog));
 }
