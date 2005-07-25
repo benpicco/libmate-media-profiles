@@ -22,6 +22,7 @@
 #include <config.h>
 #include <gtk/gtkmain.h>
 #include "gnome-media-profiles.h"
+#include "audio-profile-private.h"
 
 static void
 on_dialog_destroy (GtkWidget *dialog, gpointer *user_data)
