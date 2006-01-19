@@ -125,6 +125,35 @@ gm_audio_profile_manage_register_stock (void)
 }
 
 /* widget callbacks */
+
+static void
+count_selected_profiles_func (GtkTreeModel      *model,
+                              GtkTreePath       *path,
+                              GtkTreeIter       *iter,
+                              gpointer           data)
+{
+  int *count = data;
+
+  *count += 1;
+}
+
+static void
+selection_changed_callback (GtkTreeSelection *selection,
+                            GMAudioProfilesEditPrivate *priv)
+{
+  int count;
+
+  count = 0;
+  gtk_tree_selection_selected_foreach (selection,
+                                       count_selected_profiles_func,
+                                       &count);
+
+  gtk_widget_set_sensitive (priv->edit_button,
+                            count == 1);
+  gtk_widget_set_sensitive (priv->delete_button,
+                            count > 0);
+}
+
 static void
 profile_activated_callback (GtkTreeView       *tree_view,
                             GtkTreePath       *path,
@@ -147,12 +176,15 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       COLUMN_PROFILE_OBJECT,
                       &profile,
                       -1);
-  if (profile)
-  /* FIXME: is this the right function name ? */
-  edit_dialog = gm_audio_profile_edit_new ((GConfClient *) profile, gm_audio_profile_get_id (profile));
-  g_return_if_fail (edit_dialog != NULL);
-  gtk_widget_show_all (GTK_WIDGET (edit_dialog));
-  gtk_dialog_run (GTK_DIALOG (edit_dialog));
+  if (profile) {
+    /* FIXME: is this the right function name ? */
+    edit_dialog = gm_audio_profile_edit_new ((GConfClient *) profile, gm_audio_profile_get_id (profile));
+    g_return_if_fail (edit_dialog != NULL);
+    gtk_widget_show_all (GTK_WIDGET (edit_dialog));
+    gtk_dialog_run (GTK_DIALOG (edit_dialog));
+  } else {
+    g_warning ("Could not retrieve profile");
+  }
 }
 
 static void
@@ -603,7 +635,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                  NULL);
   */
                                  // FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
-  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GMAudio Profiles"));
+  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GNOME Audio Profiles"));
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
                                  GTK_STOCK_HELP,
                                  GTK_RESPONSE_HELP,
@@ -717,6 +749,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                      button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
                     G_CALLBACK (edit_button_clicked), dialog);
+  gtk_widget_set_sensitive (button, FALSE);
   dialog->priv->edit_button = button;
 /*
   terminal_util_set_atk_name_description (app->manage_profiles_edit_button, NULL,
@@ -729,6 +762,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                       button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
                     G_CALLBACK (delete_button_clicked), dialog);
+  gtk_widget_set_sensitive (button, FALSE);
   dialog->priv->delete_button = button;
 /*
   terminal_util_set_atk_name_description (app->manage_profiles_delete_button, NULL,
@@ -747,15 +781,15 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                MIN (req.height + 190, 400));
 
   gtk_widget_grab_focus (dialog->priv->manage_profiles_list);
-  g_object_unref (G_OBJECT (size_group));       /* Monitor selection for sensitivity */
+  g_object_unref (G_OBJECT (size_group));
+
+  /* Monitor selection for sensitivity */
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->priv->manage_profiles_list));
-  /* FIXME: callback for changed
-  selection_changed_callback (selection, app);
+
+  selection_changed_callback (selection, dialog->priv);
   g_signal_connect (G_OBJECT (selection), "changed",
                     G_CALLBACK (selection_changed_callback),
-                    app);
-  */
-
+                    dialog->priv);
 }
 
 static void

@@ -3,25 +3,25 @@
   <schemalist>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/global/profile_list</key>
-      <applyto>/system/gstreamer/audio/global/profile_list</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/global/profile_list</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/global/profile_list</applyto>
       <owner>gnome-media</owner>
       <type>list</type>
       <list_type>string</list_type>
-      <default>[cdlossy,cdlossless,voice]</default>
+      <default>[cdlossy,cdlossless,voicelossy,voicelossless]</default>
       <locale name="C">
         <short>List of profiles</short>
         <long>
           List of audio recording profiles.  The list contains
           strings naming subdirectories relative to
-          /system/gstreamer/audio/profiles.
+          /system/gstreamer/@GST_MAJORMINOR@/audio/profiles.
         </long>
       </locale>
     </schema>
 
 <!-- template schema for each of the profiles -->
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/name</key>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/name</key>
       <owner>gnome-media</owner>
       <type>string</type>
       <default></default>
@@ -35,7 +35,7 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/description</key>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/description</key>
       <owner>gnome-media</owner>
       <type>string</type>
       <default></default>
@@ -49,7 +49,7 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/pipeline</key>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/pipeline</key>
       <owner>gnome-media</owner>
       <type>string</type>
       <default></default>
@@ -62,7 +62,7 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/extension</key>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/extension</key>
       <owner>gnome-media</owner>
       <type>string</type>
       <default></default>
@@ -76,7 +76,7 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/active</key>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
       <owner>gnome-media</owner>
       <type>bool</type>
       <default>true</default>
@@ -91,8 +91,8 @@
 <!-- each of the profiles we supply by default -->
     <!-- CD quality, lossy compression -->
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/name</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossy/name</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
@@ -106,8 +106,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/description</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossy/description</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
@@ -121,11 +121,11 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/pipeline</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossy/pipeline</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default> audio/x-raw-int,rate=44100,channels=2 ! vorbisenc name=enc quality=0.5</default>
+      <default> audio/x-raw-float,rate=44100,channels=2 ! vorbisenc name=enc quality=0.5 ! oggmux</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
@@ -135,8 +135,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossy/extension</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossy/extension</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <default>ogg</default>
@@ -150,8 +150,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/active</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossy/active</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/active</applyto>
       <owner>gnome-media</owner>
       <type>bool</type>
       <default>true</default>
@@ -165,8 +165,8 @@
 
     <!-- CD quality, lossless compression -->
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/name</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossless/name</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
@@ -180,8 +180,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/description</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossless/description</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
@@ -195,8 +195,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/pipeline</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossless/pipeline</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <default>audio/x-raw-int,rate=44100,channels=2 ! flacenc name=enc</default>
@@ -209,8 +209,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/cdlossless/extension</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossless/extension</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <default>flac</default>
@@ -224,8 +224,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/active</key>
-      <applyto>/system/gstreamer/audio/profiles/cdlossless/active</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossless/active</applyto>
       <owner>gnome-media</owner>
       <type>bool</type>
       <default>true</default>
@@ -238,14 +238,14 @@
     </schema>
 
 
-    <!-- Voice quality -->
+    <!-- Voice quality, lossless compression -->
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/voice/name</key>
-      <applyto>/system/gstreamer/audio/profiles/voice/name</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/name</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
-        <default>Voice</default>
+        <default>Voice, Lossless</default>
         <short>A short name for the audio profile</short>
         <long>
           A short name for the audio profile, to be used in selections
@@ -255,12 +255,12 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/voice/description</key>
-      <applyto>/system/gstreamer/audio/profiles/voice/description</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/description</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <locale name="C">
-        <default>Used for converting to voice-quality audio. Use this for recording speech.</default>
+        <default>Used for converting to lossless voice-quality audio. Use this for recording and editing speech.</default>
         <short>A description for the audio profile</short>
         <long>
           A description of the profile, containing more information and
@@ -270,8 +270,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/voice/pipeline</key>
-      <applyto>/system/gstreamer/audio/profiles/voice/pipeline</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <default>audio/x-raw-int,rate=22050,channels=1 ! wavenc name=enc</default>
@@ -284,8 +284,8 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/voice/extension</key>
-      <applyto>/system/gstreamer/audio/profiles/voice/extension</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
       <default>wav</default>
@@ -299,8 +299,82 @@
     </schema>
 
     <schema>
-      <key>/schemas/system/gstreamer/audio/profiles/active</key>
-      <applyto>/system/gstreamer/audio/profiles/voice/active</applyto>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossless/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <!-- Voice quality, lossy compression -->
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>Voice, Lossy</default>
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>Used for converting to lossy voice-quality audio. Use this for recording speech that doesn't need to be edited.</default>
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>speexenc name=enc ! oggmux</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>ogg</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/active</applyto>
       <owner>gnome-media</owner>
       <type>bool</type>
       <default>true</default>

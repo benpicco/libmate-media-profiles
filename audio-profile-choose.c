@@ -28,6 +28,8 @@
 #include "audio-profile.h"
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
+#include <libgnomevfs/gnome-vfs-mime-handlers.h>
+#include <libgnomevfs/gnome-vfs-mime.h>
 
 enum
 {

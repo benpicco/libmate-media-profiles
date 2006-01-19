@@ -20,7 +20,7 @@
  */
 
 /* #define DEBUG */
-#define CONF_PREFIX "/system/gstreamer/audio"
-#define CONF_GLOBAL_PREFIX CONF_PREFIX"/global"
-#define CONF_PROFILES_PREFIX CONF_PREFIX"/profiles"
+#define CONF_PREFIX "/system/gstreamer/" GST_MAJORMINOR_QUOTED "/audio"
+#define CONF_GLOBAL_PREFIX CONF_PREFIX "/global"
+#define CONF_PROFILES_PREFIX CONF_PREFIX "/profiles"
 

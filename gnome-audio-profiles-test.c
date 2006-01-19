@@ -5,28 +5,29 @@
 #include <libgnomeui/libgnomeui.h>
 #include <profiles/gnome-media-profiles.h>
 
-static gboolean
-edit_cb (GtkButton *button, GtkWindow *window)
+static void
+edit_clicked_cb (GtkButton *button, GtkWindow *window)
 {
   GtkWidget *edit_dialog = NULL;
   edit_dialog = gm_audio_profiles_edit_new (gconf_client_get_default (), window);
   g_assert (edit_dialog != NULL);
   gtk_widget_show_all (GTK_WIDGET (edit_dialog));
-
-  return FALSE;
 }
 
-static gboolean
-test_cb (GtkButton *button, GtkWidget *combo)
+static void
+test_clicked_cb (GtkButton *button, GtkWidget *combo)
 {
+  GstStateChangeReturn ret;
   gchar *partialpipe = NULL;
   gchar *extension = NULL;
   gchar *pipeline_desc;
   GError *error = NULL;
-  int i;
-  GstElement *pipeline;
   GMAudioProfile *profile;
+  GstElement *pipeline = NULL;
+  GstMessage *msg = NULL;
+  GstBus *bus = NULL;
 
+  gtk_widget_set_sensitive (GTK_WIDGET (button), FALSE);
 
   profile = gm_audio_profile_choose_get_active (combo);
   extension = g_strdup (gm_audio_profile_get_extension (profile));
@@ -36,28 +37,84 @@ test_cb (GtkButton *button, GtkWidget *combo)
            gm_audio_profile_get_name (profile),
            gm_audio_profile_get_pipeline (profile));
 
-  pipeline_desc = g_strdup_printf ("sinesrc ! audioconvert ! %s ! filesink location=test.%s",
+  pipeline_desc = g_strdup_printf ("audiotestsrc wave=sine num-buffers=4096 "
+                                   " ! audioconvert "
+                                   " ! %s "
+                                   " ! filesink location=test.%s",
                                    partialpipe, extension);
+
   g_print ("Going to run pipeline %s\n", pipeline_desc);
 
   pipeline = gst_parse_launch (pipeline_desc, &error);
   if (error)
   {
-    g_print ("Error parsing pipeline: %s\n", error->message);
-    g_error_free (error);
-    return FALSE;
+    g_warning ("Error parsing pipeline: %s", error->message);
+    goto done;
   }
 
-  gst_element_set_state (pipeline, GST_STATE_PLAYING);
-  g_print ("Writing test sound to test.%s\n", extension);
-  for (i = 0; i < 100; ++i)
-    gst_bin_iterate (GST_BIN (pipeline));
-  gst_element_set_state (pipeline, GST_STATE_NULL);
-  g_free (pipeline);
-  g_free (extension);
-  g_free (partialpipe);
+  bus = gst_element_get_bus (pipeline);
 
-  return FALSE;
+  gst_element_set_state (pipeline, GST_STATE_PLAYING);
+
+  /* wait for state change to complete or to have failed */
+  ret = gst_element_get_state (pipeline, NULL, NULL, -1);
+  if (ret == GST_STATE_CHANGE_FAILURE) {
+    /* check if an error was posted on the bus */
+    if ((msg = gst_bus_poll (bus, GST_MESSAGE_ERROR, 0))) {
+      gst_message_parse_error (msg, &error, NULL);
+    }
+	                  
+    g_warning ("Error starting pipeline: %s",
+        (error) ? error->message : "UNKNOWN ERROR");
+
+    goto done;
+  }  
+
+  g_print ("Writing test sound to test.%s ...\n", extension);
+
+  /* wait for it finish (error or EOS), but no more than 30 secs */
+  msg = gst_bus_poll (bus, GST_MESSAGE_ERROR | GST_MESSAGE_EOS, 30*GST_SECOND);
+
+  if (msg) {
+    switch (GST_MESSAGE_TYPE (msg)) {
+      case GST_MESSAGE_EOS:
+        g_print ("Test finished successfully.\n");
+        break;
+      case GST_MESSAGE_ERROR:
+        gst_message_parse_error (msg, &error, NULL);
+        g_warning ("Error starting pipeline: %s",
+            (error) ? error->message : "UNKNOWN ERROR");
+        break;
+      default:
+        g_assert_not_reached ();
+    }
+  } else {
+    g_warning ("Test did not finish within 30 seconds!\n");
+  }
+
+done:
+
+  g_print ("==============================================================\n");
+
+  if (error)
+    g_error_free (error);
+
+  if (pipeline) {
+    gst_element_set_state (pipeline, GST_STATE_NULL);
+    gst_object_unref (pipeline);
+  }
+
+  if (msg)
+    gst_message_unref (msg);
+
+  if (bus)
+    gst_object_unref (bus);
+
+  g_free (pipeline_desc);
+  g_free (partialpipe);
+  g_free (extension);
+
+  gtk_widget_set_sensitive (GTK_WIDGET (button), TRUE);
 }
 
 int
@@ -79,8 +136,8 @@ main (int argc, char **argv)
 
   edit = gtk_button_new_with_mnemonic ("_Edit Profiles");
   test = gtk_button_new_with_mnemonic ("_Test");
-  g_signal_connect (edit, "clicked", (GCallback) edit_cb, window);
-  g_signal_connect (test, "clicked", (GCallback) test_cb, combo);
+  g_signal_connect (edit, "clicked", (GCallback) edit_clicked_cb, window);
+  g_signal_connect (test, "clicked", (GCallback) test_clicked_cb, combo);
   g_signal_connect (edit, "destroy", (GCallback) gtk_main_quit, NULL);
 
   hbox = gtk_hbox_new (FALSE, 7);
