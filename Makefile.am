@@ -1,5 +1,15 @@
 bin_PROGRAMS = gnome-audio-profiles-properties
-noinst_PROGRAMS = gnome-audio-profiles-test
+
+if HAVE_GSTREAMER
+profiles_test = gnome-audio-profiles-test
+gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(GSR_CFLAGS) $(defines) -I$(top_srcdir)
+gnome_audio_profiles_test_LDADD = $(GMP_LIBS) $(GSR_LIBS) libgnome-media-profiles.la
+else
+profiles_test =
+endif
+
+noinst_PROGRAMS = $(profiles_test)
+
 lib_LTLIBRARIES = libgnome-media-profiles.la
 
 @INTLTOOL_DESKTOP_RULE@
@@ -15,8 +25,6 @@ defines = \
 	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\"
 
 
-gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(GSR_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_test_LDADD = $(GMP_LIBS) $(GSR_LIBS) libgnome-media-profiles.la
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
 gnome_audio_profiles_properties_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
 
