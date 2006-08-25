@@ -52,6 +52,7 @@ gmpinclude_HEADERS = \
 
 libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(defines)
 libgnome_media_profiles_la_LIBADD = $(GMP_LIBS)
+libgnome_media_profiles_la_LDFLAGS = -no-undefined
 
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
 schema_DATA = gnome-audio-profiles.schemas
