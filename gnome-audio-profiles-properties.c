@@ -49,6 +49,8 @@ main (int argc, char *argv[])
   textdomain (GETTEXT_PACKAGE);
   gnome_media_profiles_init (conf);
 
+  gtk_window_set_default_icon_name ("gnome-mime-audio");
+
   widget = GTK_WIDGET (gm_audio_profiles_edit_new (conf, NULL));
   g_assert (GTK_IS_WIDGET (widget));
 
