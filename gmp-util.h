@@ -28,10 +28,15 @@ GladeXML*
 gmp_util_load_glade_file (const char *filename,
                           const char *widget_root,
                           GtkWindow  *error_dialog_parent);
+
 void
 gmp_util_show_error_dialog (GtkWindow *transient_parent,
                             GtkWidget **weak_ptr,
                             const char *message_format, ...);
+
+void
+gmp_util_run_error_dialog (GtkWindow *transient_parent,
+                           const char *message_format, ...);
 
 #ifdef DEBUG
 #define GMP_DEBUG(...) G_STMT_START{ \

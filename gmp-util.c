@@ -69,6 +69,32 @@ gmp_util_load_glade_file (const char *filename,
   return xml;
 }
 
+void
+gmp_util_run_error_dialog (GtkWindow *transient_parent, const char *message_format, ...)
+{
+  char *message;
+  va_list args;
+
+  if (message_format)
+  {
+    va_start (args, message_format);
+    message = g_strdup_vprintf (message_format, args);
+    va_end (args);
+  }
+  else message = NULL;
+
+  GtkWidget *dialog;
+  dialog = gtk_message_dialog_new (transient_parent,
+                                 GTK_DIALOG_DESTROY_WITH_PARENT,
+                                 GTK_MESSAGE_ERROR,
+                                 GTK_BUTTONS_CLOSE,
+                                 message);
+
+  gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+  gtk_dialog_run (GTK_DIALOG (dialog));
+  gtk_widget_destroy(GTK_DIALOG (dialog));
+}
+
 /**
  * gmp_util_show_error_dialog:
  * @transient_parent: parent of the future dialog window;

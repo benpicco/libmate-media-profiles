@@ -487,12 +487,6 @@ delete_button_clicked (GtkWidget   *button,
                                        list_selected_profiles_func,
                                        &deleted_profiles);
 
-  if (deleted_profiles == NULL)
-  {
-    gmp_util_show_error_dialog (dialog->priv->transient_parent, NULL, _("You must select one or more profiles to delete."));
-    return;
-  }
-
   count = g_list_length (deleted_profiles);
   if (count > 1)
   {
@@ -521,7 +515,7 @@ delete_button_clicked (GtkWidget   *button,
                      gm_audio_profile_get_name (deleted_profiles->data));
   }
 
-  confirm_dialog = gtk_message_dialog_new (dialog->priv->transient_parent,
+  confirm_dialog = gtk_message_dialog_new (GTK_WINDOW (dialog),
                                    GTK_DIALOG_DESTROY_WITH_PARENT,
                                    GTK_MESSAGE_QUESTION,
                                    GTK_BUTTONS_NONE,
@@ -917,7 +911,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     }
     if (tmp)
     {
-      gmp_util_show_error_dialog (GTK_WINDOW (new_profile_dialog), NULL,
+      gmp_util_run_error_dialog (GTK_WINDOW (new_profile_dialog),
                                    _("You already have a profile called \"%s\""), name);
       goto cleanup;
     }
@@ -942,7 +936,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     if (error)
     {
       g_print ("ERROR: %s\n", error->message);
-      gmp_util_show_error_dialog (GTK_WINDOW (transient_parent), NULL,
+      gmp_util_run_error_dialog (GTK_WINDOW (transient_parent),
                                   _("GConf Error (FIXME): %s\n"),
                                   error->message);
       g_error_free (error);
@@ -998,6 +992,7 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
 {
   GtkWindow *old_transient_parent;
   GtkWidget *create_button;
+  gint response;
 
   if (dialog->priv->new_profile_dialog == NULL)
   {
@@ -1073,5 +1068,9 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
 
   gtk_widget_show_all (dialog->priv->new_profile_dialog);
   gtk_window_present (GTK_WINDOW (dialog->priv->new_profile_dialog));
-  gtk_dialog_run (GTK_DIALOG (dialog->priv->new_profile_dialog));
+  
+  //keep running the dialog until the response is GTK_RESPONSE_NONE
+  do {
+    response = gtk_dialog_run (GTK_DIALOG (dialog->priv->new_profile_dialog));
+  } while (response != GTK_RESPONSE_NONE);
 }
