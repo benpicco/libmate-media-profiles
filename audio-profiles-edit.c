@@ -66,39 +66,7 @@ enum
   COLUMN_LAST
 };
 
-
-static gpointer parent_class;
-
-GType
-gm_audio_profiles_edit_get_type (void)
-{
-  static GType object_type = 0;
-
-  g_type_init ();
-
-  if (!object_type)
-  {
-    static const GTypeInfo object_info =
-    {
-      sizeof (GMAudioProfilesEditClass),
-      (GBaseInitFunc) NULL,
-      (GBaseFinalizeFunc) NULL,
-      (GClassInitFunc) gm_audio_profiles_edit_class_init,
-      NULL,           /* class_finalize */
-      NULL,           /* class_data */
-      sizeof (GMAudioProfilesEdit),
-      0,              /* n_preallocs */
-      (GInstanceInitFunc) gm_audio_profiles_edit_init,
-    };
-
-    object_type = g_type_register_static (GTK_TYPE_DIALOG,
-                                          "GMAudioProfilesEdit",
-                                          &object_info, 0);
-  }
-
-  return object_type;
-}
-
+G_DEFINE_TYPE (GMAudioProfilesEdit, gm_audio_profiles_edit, GTK_TYPE_DIALOG);
 
 /* register custom edit stock icon */
 static void
@@ -111,7 +79,7 @@ gm_audio_profile_manage_register_stock (void)
     GtkIconFactory *factory;
     GtkIconSet     *icons;
 
-    static GtkStockItem edit_item [] = {
+    const GtkStockItem edit_item [] = {
       { MANAGE_STOCK_EDIT, N_("_Edit"), 0, 0, GETTEXT_PACKAGE },
     };
 
@@ -553,28 +521,26 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
                                int        id,
                                void      *data)
 {
-/* FIXME: add help
   if (id == GTK_RESPONSE_HELP)
     {
-      GError *err;
-      err = NULL;
-      gnome_help_display ("gnome-terminal", "gnome-terminal-manage-profiles",
-                          &err);
+      GError *err = NULL;
+
+      gnome_help_display_on_screen ("gnome-audio-profiles",
+                                    "gnome-audio-profiles-profile-edit",
+				    gtk_widget_get_screen (GTK_WIDGET (dialog)),
+				    &err);
+
 
       if (err)
         {
-          terminal_util_show_error_dialog (GTK_WINDOW (app->manage_profiles_dialog), NULL,
-                                           _("There was an error displaying help: %s"),
-                                           err->message);
+          gmp_util_show_error_dialog  (GTK_WINDOW (dialog), NULL,
+                                       _("There was an error displaying help: %s"), err->message);
           g_error_free (err);
         }
+      return;
     }
-  else
-*/
-    {
-      GMP_DEBUG("destroying dialog widget\n");
-      gtk_widget_destroy (GTK_WIDGET (dialog));
-    }
+      
+    gtk_widget_destroy (dialog);
 }
 
 static void
@@ -606,17 +572,19 @@ gm_audio_profiles_list_notify (GConfClient *client,
 static void
 gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
 {
+  GtkDialog *gdialog = GTK_DIALOG (dialog);
   GtkWidget *vbox;
   GtkWidget *label;
   GtkWidget *sw;
   GtkWidget *hbox;
+  GtkWidget *bbox;
   GtkWidget *button;
   GtkWidget *spacer;
   GtkRequisition req;
-  GtkSizeGroup *size_group;
   GtkTreeSelection *selection;
 
-  dialog->priv = g_new0 (GMAudioProfilesEditPrivate, 1);
+  dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, GM_AUDIO_TYPE_PROFILES_EDIT, GMAudioProfilesEditPrivate);
+
   /*
   dialog =
     gtk_dialog_new_with_buttons (_("Edit Profiles"),
@@ -630,13 +598,20 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
   */
                                  // FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
   gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GNOME Audio Profiles"));
+  gtk_window_set_default_size (GTK_WINDOW (dialog), 320, 240);
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
                                  GTK_STOCK_HELP,
                                  GTK_RESPONSE_HELP,
                                  GTK_STOCK_CLOSE,
                                  GTK_RESPONSE_ACCEPT,
                                  NULL);
-   gtk_dialog_set_default_response (GTK_DIALOG (dialog),                                       GTK_RESPONSE_ACCEPT);
+
+  gtk_dialog_set_has_separator (gdialog, FALSE);
+  gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
+  gtk_box_set_spacing (GTK_BOX (gdialog->vbox), 2); /* 2 * 5 + 2 = 12 */
+  gtk_container_set_border_width (GTK_CONTAINER (gdialog->action_area), 5);
+  gtk_box_set_spacing (GTK_BOX (gdialog->action_area), 6);
+
   g_signal_connect (GTK_DIALOG (dialog),
                     "response",
                     G_CALLBACK (on_gm_audio_profiles_edit_response),
@@ -647,11 +622,9 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                     G_CALLBACK (on_gm_audio_profiles_edit_destroy),
                     NULL);
 
-#define PADDING 5
-
-  vbox = gtk_vbox_new (FALSE, PADDING);
-  gtk_container_set_border_width (GTK_CONTAINER (vbox), PADDING);
-  gtk_box_pack_start (GTK_BOX (GTK_DIALOG (dialog)->vbox),
+  vbox = gtk_vbox_new (FALSE, 6);
+  gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+  gtk_box_pack_start (GTK_BOX (gdialog->vbox),
                       vbox, TRUE, TRUE, 0);
 
   /* FIXME
@@ -671,20 +644,13 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                     app->manage_profiles_default_menu, FALSE, FALSE, 0);
   */
 
-  hbox = gtk_hbox_new (FALSE, PADDING);
+  label = gtk_label_new_with_mnemonic (_("_Profiles:"));
+  gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
+  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+
+  hbox = gtk_hbox_new (FALSE, 6);
   gtk_box_pack_start (GTK_BOX (vbox),
                       hbox, TRUE, TRUE, 0);
-
-  vbox = gtk_vbox_new (FALSE, PADDING);
-  gtk_box_pack_start (GTK_BOX (hbox),
-                      vbox, TRUE, TRUE, 0);
-
-  size_group = gtk_size_group_new (GTK_SIZE_GROUP_VERTICAL);
-
-
-  label = gtk_label_new_with_mnemonic (_("_Profiles:"));       gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
-  gtk_size_group_add_widget (size_group, label);
-  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
 
   dialog->priv->manage_profiles_list = create_profile_list ();
 
@@ -705,27 +671,23 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
   gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (sw),
                                        GTK_SHADOW_IN);
 
-  gtk_box_pack_start (GTK_BOX (vbox), sw, TRUE, TRUE, 0);
+  gtk_box_pack_start (GTK_BOX (hbox), sw, TRUE, TRUE, 0);
 
   gtk_container_add (GTK_CONTAINER (sw), dialog->priv->manage_profiles_list);
 
-  gtk_dialog_set_default_response (GTK_DIALOG (dialog),                                       RESPONSE_CREATE);
+  gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_ACCEPT);
 
   gtk_label_set_mnemonic_widget (GTK_LABEL (label),
                                  dialog->priv->manage_profiles_list);
 
-  vbox = gtk_vbox_new (FALSE, PADDING);
-  gtk_box_pack_start (GTK_BOX (hbox),
-                      vbox, FALSE, FALSE, 0);
-
-  spacer = gtk_alignment_new (0.5, 0.5, 1.0, 1.0);
-  gtk_size_group_add_widget (size_group, spacer);
-  gtk_box_pack_start (GTK_BOX (vbox),
-                      spacer, FALSE, FALSE, 0);
+  bbox = gtk_vbutton_box_new ();
+  gtk_button_box_set_layout (GTK_BUTTON_BOX (bbox), GTK_BUTTONBOX_START);
+  gtk_box_set_spacing (GTK_BOX (bbox), 6);
+  gtk_box_pack_end (GTK_BOX (hbox), bbox, FALSE, FALSE, 0);
 
   button = gtk_button_new_from_stock (GTK_STOCK_NEW);
   fix_button_align (button);
-  gtk_box_pack_start (GTK_BOX (vbox),
+  gtk_box_pack_start (GTK_BOX (bbox),
                       button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
                     G_CALLBACK (new_button_clicked), dialog);
@@ -739,7 +701,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
 
   button = gtk_button_new_from_stock (MANAGE_STOCK_EDIT);
   fix_button_align (button);
-  gtk_box_pack_start (GTK_BOX (vbox),
+  gtk_box_pack_start (GTK_BOX (bbox),
                      button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
                     G_CALLBACK (edit_button_clicked), dialog);
@@ -752,7 +714,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
 
   button = gtk_button_new_from_stock (GTK_STOCK_DELETE);
   fix_button_align (button);
-  gtk_box_pack_start (GTK_BOX (vbox),
+  gtk_box_pack_start (GTK_BOX (bbox),
                       button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
                     G_CALLBACK (delete_button_clicked), dialog);
@@ -763,19 +725,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                           _("Click to delete selected profile"));
   */
 
-  /* Set default size of profile list */
-  gtk_window_set_geometry_hints (GTK_WINDOW (dialog),
-                                 dialog->priv->manage_profiles_list,                                      NULL, 0);
-
-  /* Incremental reflow makes this a bit useless, I guess. */
-  gtk_widget_size_request (dialog->priv->manage_profiles_list, &req);
-
-  gtk_window_set_default_size (GTK_WINDOW (dialog),
-                               MIN (req.width + 140, 450),
-                               MIN (req.height + 190, 400));
-
   gtk_widget_grab_focus (dialog->priv->manage_profiles_list);
-  g_object_unref (G_OBJECT (size_group));
 
   /* Monitor selection for sensitivity */
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (dialog->priv->manage_profiles_list));
@@ -791,9 +741,9 @@ gm_audio_profiles_edit_class_init (GMAudioProfilesEditClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
 
-  parent_class = g_type_class_peek_parent (klass);
-
   object_class->finalize = gm_audio_profiles_edit_finalize;
+
+  g_type_class_add_private (object_class, sizeof (GMAudioProfilesEditPrivate));
 }
 
 static void
@@ -802,10 +752,7 @@ gm_audio_profiles_edit_finalize (GObject *object)
   GMAudioProfilesEdit *dialog;
 
   dialog = GM_AUDIO_PROFILES_EDIT (object);
-
-  g_free (dialog->priv);
-
-  G_OBJECT_CLASS (parent_class)->finalize (object);
+  G_OBJECT_CLASS (gm_audio_profiles_edit_parent_class)->finalize (object);
 }
 
 GtkWidget*

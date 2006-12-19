@@ -29,6 +29,7 @@
 #include "audio-profile-private.h"
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
+#include <libgnomeui/gnome-help.h>
 
 struct _GMAudioProfileEditPrivate
 {
@@ -38,17 +39,12 @@ struct _GMAudioProfileEditPrivate
   GtkWidget *content;
 };
 
-#if 0
-static GObject*
-gm_audio_profile_edit_constructor (GType type,
-                                   guint n_construct_properties,
-                                   GObjectConstructParam *construct_properties);
-#endif
-
 static void	gm_audio_profile_edit_init		(GMAudioProfileEdit *edit);
 static void	gm_audio_profile_edit_class_init	(GMAudioProfileEditClass *klass);
-static void	gm_audio_profile_edit_finalize		(GObject *object);
+static void	gm_audio_profile_edit_dispose		(GObject *object);
 
+static void     gm_audio_profile_edit_response          (GtkDialog *dialog,
+			                                 int        id);
 static GtkWidget*
 		gm_audio_profile_edit_get_widget	(GMAudioProfileEdit *dialog,
 							 const char *widget_name);
@@ -67,37 +63,7 @@ static void	on_profile_changed			(GMAudioProfile *profile,
 							 const GMAudioSettingMask *mask,
 							 GMAudioProfileEdit *dialog);
 
-static gpointer parent_class;
-
-GType
-gm_audio_profile_edit_get_type (void)
-{
-  static GType object_type = 0;
-
-  g_type_init ();
-
-  if (!object_type)
-  {
-    static const GTypeInfo object_info =
-    {
-      sizeof (GMAudioProfileEditClass),
-      (GBaseInitFunc) NULL,
-      (GBaseFinalizeFunc) NULL,
-      (GClassInitFunc) gm_audio_profile_edit_class_init,
-      NULL,           /* class_finalize */
-      NULL,           /* class_data */
-      sizeof (GMAudioProfileEdit),
-      0,              /* n_preallocs */
-      (GInstanceInitFunc) gm_audio_profile_edit_init,
-    };
-
-    object_type = g_type_register_static (GTK_TYPE_DIALOG,
-                                          "GMAudioProfileEdit",
-                                          &object_info, 0);
-  }
-
-return object_type;
-}
+G_DEFINE_TYPE (GMAudioProfileEdit, gm_audio_profile_edit, GTK_TYPE_DIALOG)
 
 /* ui callbacks */
 
@@ -105,31 +71,21 @@ return object_type;
 static void
 gm_audio_profile_edit_init (GMAudioProfileEdit *dialog)
 {
-  dialog->priv = g_new0 (GMAudioProfileEditPrivate, 1);
+  dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, GM_AUDIO_TYPE_PROFILE_EDIT, GMAudioProfileEditPrivate);
 }
 
 static void
 gm_audio_profile_edit_class_init (GMAudioProfileEditClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
+  GtkDialogClass *dialog_class = GTK_DIALOG_CLASS (klass);
 
-  parent_class = g_type_class_peek_parent (klass);
+  object_class->dispose = gm_audio_profile_edit_dispose;
 
-  /* FIXME: this code tries to override the constructor so it doesn't
-     actually create the gtkdialog yet ! */
-//  object_class->constructor = gm_audio_profile_edit_constructor;
-  object_class->finalize = gm_audio_profile_edit_finalize;
+  dialog_class->response = gm_audio_profile_edit_response;
+
+  g_type_class_add_private (object_class, sizeof (GMAudioProfileEditPrivate));
 }
-
-#if 0
-static GObject*
-gm_audio_profile_edit_constructor (GType                  type,
-                              guint                  n_construct_properties,
-                              GObjectConstructParam *construct_properties)
-{
-  return NULL;
-}
-#endif
 
 static void
 gm_audio_profile_edit_finalize (GObject *object)
@@ -138,44 +94,44 @@ gm_audio_profile_edit_finalize (GObject *object)
 
   dialog = GM_AUDIO_PROFILE_EDIT (object);
 
-  g_free (dialog->priv);
-
-  G_OBJECT_CLASS (parent_class)->finalize (object);
+  G_OBJECT_CLASS (gm_audio_profile_edit_parent_class)->finalize (object);
 }
 
 /* ui callbacks */
 static void
-on_gm_audio_profile_edit_response (GMAudioProfileEdit *dialog,
-                              int        id,
-                              void      *data)
+gm_audio_profile_edit_response (GtkDialog *dialog,
+                                int        id)
 {
   if (id == GTK_RESPONSE_HELP)
     {
-      GError *err;
-      err = NULL;
-/*
-      gnome_help_display ("gnome-audio-profiles",
-                          "gnome-audio-profiles-profile-edit",
-                          &err);
-*/
+      GError *err = NULL;
+
+      gnome_help_display_on_screen ("gnome-audio-profiles",
+                                    "gnome-audio-profiles-profile-edit",
+				    gtk_widget_get_screen (GTK_WIDGET (dialog)),
+				    &err);
+
       if (err)
         {
           gmp_util_show_error_dialog  (GTK_WINDOW (dialog), NULL,
                                        _("There was an error displaying help: %s"), err->message);
           g_error_free (err);
         }
+
+      return;
     }
-  else
-    {
-      /* FIXME: hide or destroy ? */
-      gtk_widget_hide (GTK_WIDGET (dialog));
-    }
+      
+  /* FIXME: hide or destroy ? */
+  gtk_widget_hide (GTK_WIDGET (dialog));
 }
 
 static void
-on_gm_audio_profile_edit_destroy (GtkWidget *dialog, GMAudioProfile *profile)
+gm_audio_profile_edit_dispose (GObject *object)
 {
-  g_signal_handlers_disconnect_by_func (G_OBJECT (profile),
+  GMAudioProfileEdit *dialog = GM_AUDIO_PROFILE_EDIT (object);
+  GMAudioProfileEditPrivate *priv = dialog->priv;
+
+  g_signal_handlers_disconnect_by_func (priv->profile,
                                         G_CALLBACK (on_profile_changed),
                                         dialog);
 }
@@ -286,21 +242,10 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   dialog->priv->xml = xml;
 
   /* save the GConf stuff and get the profile belonging to this id */
-  g_object_ref (G_OBJECT (conf));
-  dialog->priv->conf = conf;
+  dialog->priv->conf = g_object_ref (conf);
 
   dialog->priv->profile = gm_audio_profile_lookup (id);
   g_assert (dialog->priv->profile);
-  /* connect callbacks */
-  g_signal_connect (G_OBJECT (dialog),
-                    "response",
-                    G_CALLBACK (on_gm_audio_profile_edit_response),
-                    dialog);
-
-  g_signal_connect (G_OBJECT (dialog),
-                    "destroy",
-                    G_CALLBACK (on_gm_audio_profile_edit_destroy),
-                    dialog);
 
   /* autoconnect doesn't handle data pointers, sadly, so do by hand */
   w = glade_xml_get_widget (xml, "profile-name-entry");

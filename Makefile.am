@@ -1,14 +1,19 @@
 bin_PROGRAMS = gnome-audio-profiles-properties
+noinst_PROGRAMS =
+
+defines = \
+	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
+	-DDATADIR="\"$(pkgdatadir)\"" \
+	-DGMP_GLADE_DIR=\"$(gladedir)\" \
+	-DGM_AUDIO_GLADE_FILE=\"gnome-audio-profiles.glade2\" \
+	-DGNOMELOCALEDIR=\""$(datadir)/locale"\"
 
 if HAVE_GSTREAMER
-profiles_test = gnome-audio-profiles-test
+noinst_PROGRAMS += gnome-audio-profiles-test
+gnome_audio_profiles_test_SOURCES = gnome-audio-profiles-test.c
 gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(GSR_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_test_LDADD = $(GMP_LIBS) $(GSR_LIBS) libgnome-media-profiles.la
-else
-profiles_test =
+gnome_audio_profiles_test_LDADD = libgnome-media-profiles.la $(GMP_LIBS) $(GSR_LIBS)
 endif
-
-noinst_PROGRAMS = $(profiles_test)
 
 lib_LTLIBRARIES = libgnome-media-profiles.la
 
@@ -18,15 +23,9 @@ lib_LTLIBRARIES = libgnome-media-profiles.la
 gladedir = $(pkgdatadir)/glade
 glade_DATA = gnome-audio-profiles.glade2
 
-defines = \
-	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
-	-DGMP_GLADE_DIR=\"$(gladedir)\" \
-	-DGM_AUDIO_GLADE_FILE=\"gnome-audio-profiles.glade2\" \
-	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\"
-
-
+gnome_audio_profiles_properties_SOURCES = gnome-audio-profiles-properties.c
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_properties_LDADD = $(GMP_LIBS) libgnome-media-profiles.la
+gnome_audio_profiles_properties_LDADD = libgnome-media-profiles.la $(GMP_LIBS)
 
 libgnome_media_profiles_la_SOURCES = \
 	audio-profile.c \

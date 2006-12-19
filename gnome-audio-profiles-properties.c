@@ -21,6 +21,8 @@
 
 #include <config.h>
 #include <gtk/gtkmain.h>
+#include <libgnome/gnome-program.h>
+#include <libgnomeui/gnome-ui-init.h>
 #include "gnome-media-profiles.h"
 #include "audio-profile-private.h"
 
@@ -35,9 +37,16 @@ int
 main (int argc, char *argv[])
 {
   GtkWidget *widget;
-  static GConfClient *conf;
+  GConfClient *conf;
+  GnomeProgram *program;
 
-  gtk_init (&argc, &argv);
+  program = gnome_program_init ("gnome-audio-profiles-properties",
+			        VERSION,
+			        LIBGNOMEUI_MODULE,
+			        argc, argv,
+				GNOME_PARAM_APP_DATADIR, DATADIR,
+			        GNOME_PARAM_NONE);
+
   /* FIXME: add a comment why we need this at all, until then
      we comment it out
   gm_audio_profile_edit_get_type (); */
@@ -59,6 +68,9 @@ main (int argc, char *argv[])
 
   gtk_widget_show_all (widget);
   gtk_main ();
+
+  g_object_unref (conf);
+  g_object_unref (program);
 
   return 0;
 }

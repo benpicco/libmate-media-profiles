@@ -32,7 +32,7 @@ gmp_util_load_glade_file (const char *filename,
 void
 gmp_util_show_error_dialog (GtkWindow *transient_parent,
                             GtkWidget **weak_ptr,
-                            const char *message_format, ...);
+                            const char *message_format, ...) G_GNUC_PRINTF (3, 4);
 
 void
 gmp_util_run_error_dialog (GtkWindow *transient_parent,
