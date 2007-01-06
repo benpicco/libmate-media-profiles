@@ -74,6 +74,7 @@ gmp_util_run_error_dialog (GtkWindow *transient_parent, const char *message_form
 {
   char *message;
   va_list args;
+  GtkWidget *dialog;
 
   if (message_format)
   {
@@ -83,7 +84,6 @@ gmp_util_run_error_dialog (GtkWindow *transient_parent, const char *message_form
   }
   else message = NULL;
 
-  GtkWidget *dialog;
   dialog = gtk_message_dialog_new (transient_parent,
                                  GTK_DIALOG_DESTROY_WITH_PARENT,
                                  GTK_MESSAGE_ERROR,
