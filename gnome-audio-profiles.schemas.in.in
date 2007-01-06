@@ -362,7 +362,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>ogg</default>
+      <default>spx</default>
       <locale name="C">
         <short>The default file extension for this profile</short>
         <long>
