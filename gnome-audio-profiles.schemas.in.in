@@ -8,7 +8,7 @@
       <owner>gnome-media</owner>
       <type>list</type>
       <list_type>string</list_type>
-      <default>[cdlossy,cdlossless,voicelossy,voicelossless]</default>
+      <default>[cdlossy,cdlossless,aac,mp3,voicelossy,voicelossless]</default>
       <locale name="C">
         <short>List of profiles</short>
         <long>
@@ -125,7 +125,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default> audio/x-raw-float,rate=44100,channels=2 ! vorbisenc name=enc quality=0.5 ! oggmux</default>
+      <default>audio/x-raw-float,rate=44100,channels=2 ! vorbisenc name=enc quality=0.5 ! oggmux</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
@@ -375,6 +375,154 @@
     <schema>
       <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <!-- MP3 -->
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>CD Quality, MP3</default>
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>Used for converting to CD-quality audio, but with the lossy MP3 codec. Use this for preparing files for copying to devices that only support the MP3 codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice.</default>
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>audio/x-raw-int,rate=44100,channels=2 ! lame name=enc mode=0 vbr-quality=6 ! id3v2mux</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>mp3</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/active</applyto>
+      <owner>gnome-media</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether or not this profile is to be used</short>
+        <long>
+          Whether or not to use and display this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <!-- AAC -->
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/name</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/name</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>CD Quality, AAC</default>
+        <short>A short name for the audio profile</short>
+        <long>
+          A short name for the audio profile, to be used in selections
+          and uniquely identifying the profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/description</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/description</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <locale name="C">
+        <default>Used for converting to CD-quality audio, but with the lossy AAC codec. Use this for preparing files for copying to devices that only support the AAC codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice.</default>
+        <short>A description for the audio profile</short>
+        <long>
+          A description of the profile, containing more information and
+          describing when to use this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/pipeline</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/pipeline</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>audio/x-raw-int,rate=44100,channels=2 ! faac ! ffmux_mp4</default>
+      <locale name="C">
+        <short>The partial GStreamer pipeline used</short>
+        <long>
+          A partial GStreamer pipeline to use for this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/extension</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/extension</applyto>
+      <owner>gnome-media</owner>
+      <type>string</type>
+      <default>m4a</default>
+      <locale name="C">
+        <short>The default file extension for this profile</short>
+        <long>
+          A filename extension to be used when storing files encoded
+          with this profile.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/active</key>
+      <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/active</applyto>
       <owner>gnome-media</owner>
       <type>bool</type>
       <default>true</default>

@@ -1,4 +1,5 @@
 #include <string.h>
+#include <gst/gst.h>
 
 #include <glib/gi18n.h>
 #include "gmp-util.h"
@@ -861,8 +862,20 @@ gm_audio_profile_get_active_list (void)
     GMAudioProfile *profile;
 
     profile = (GMAudioProfile *) list->data;
-    if (gm_audio_profile_get_active (profile))
-      new_list = g_list_prepend (new_list, list->data);
+    if (gm_audio_profile_get_active (profile)) {
+      const gchar *pipe = gm_audio_profile_get_pipeline (profile);
+      gchar *test = g_strdup_printf ("fakesrc ! %s ! fakesink", pipe);
+      GstElement *p;
+      GError *err = NULL;
+      if ((p = gst_parse_launch (test, &err)) && err == NULL) {
+        new_list = g_list_prepend (new_list, list->data);
+        g_object_unref (p);
+      } else {
+        g_object_unref (p);
+        g_error_free (err);
+      }
+      g_free (test);
+    }
     list = g_list_next (list);
   }
 
