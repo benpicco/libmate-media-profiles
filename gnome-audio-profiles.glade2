@@ -236,24 +236,11 @@
 	  <property name="layout_style">GTK_BUTTONBOX_END</property>
 
 	  <child>
-	    <widget class="GtkButton" id="profile-edit-cancel">
+	    <widget class="GtkButton" id="profile-edit-close">
 	      <property name="visible">True</property>
 	      <property name="can_default">True</property>
 	      <property name="can_focus">True</property>
-	      <property name="label">gtk-cancel</property>
-	      <property name="use_stock">True</property>
-	      <property name="relief">GTK_RELIEF_NORMAL</property>
-	      <property name="focus_on_click">True</property>
-	      <property name="response_id">-6</property>
-	    </widget>
-	  </child>
-
-	  <child>
-	    <widget class="GtkButton" id="profile-edit-ok">
-	      <property name="visible">True</property>
-	      <property name="can_default">True</property>
-	      <property name="can_focus">True</property>
-	      <property name="label">gtk-ok</property>
+	      <property name="label">gtk-close</property>
 	      <property name="use_stock">True</property>
 	      <property name="relief">GTK_RELIEF_NORMAL</property>
 	      <property name="focus_on_click">True</property>
