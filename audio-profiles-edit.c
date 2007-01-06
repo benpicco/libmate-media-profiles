@@ -149,7 +149,6 @@ profile_activated_callback (GtkTreeView       *tree_view,
     edit_dialog = gm_audio_profile_edit_new ((GConfClient *) profile, gm_audio_profile_get_id (profile));
     g_return_if_fail (edit_dialog != NULL);
     gtk_widget_show_all (GTK_WIDGET (edit_dialog));
-    gtk_dialog_run (GTK_DIALOG (edit_dialog));
   } else {
     g_warning ("Could not retrieve profile");
   }
@@ -391,7 +390,6 @@ edit_button_clicked (GtkWidget   *button,
                        //GTK_WINDOW (dialog));
     g_return_if_fail (edit_dialog != NULL);
     gtk_widget_show_all (GTK_WIDGET (edit_dialog));
-    gtk_dialog_run (GTK_DIALOG(edit_dialog));
   }
   else
   {
