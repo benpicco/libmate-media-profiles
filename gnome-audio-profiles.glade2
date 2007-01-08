@@ -499,6 +499,7 @@
 
 	  <child>
 	    <widget class="GtkEntry" id="profile-name-entry">
+	      <property name="width_request">300</property>
 	      <property name="visible">True</property>
 	      <property name="can_focus">True</property>
 	      <property name="editable">True</property>
