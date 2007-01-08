@@ -169,15 +169,13 @@ on_profile_name_changed (GtkWidget       *entry,
 }
 
 static void
-on_profile_description_changed (GtkWidget       *entry,
+on_profile_description_changed (GtkTextBuffer  *tb,
                                 GMAudioProfile *profile)
 {
   char *text;
 
-  text = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
-
+  g_object_get (G_OBJECT (tb), "text", &text, NULL);
   gm_audio_profile_set_description (profile, text);
-
   g_free (text);
 }
 
@@ -222,6 +220,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   GMAudioProfileEdit *dialog;
   GladeXML *xml;
   GtkWidget *w;
+  GtkTextBuffer *tb;
 
   /* get the dialog */
   xml = gmp_util_load_glade_file (GM_AUDIO_GLADE_FILE,
@@ -252,9 +251,10 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   gm_audio_profile_edit_update_name (dialog, dialog->priv->profile);
   g_signal_connect (G_OBJECT (w), "changed",
                     G_CALLBACK (on_profile_name_changed), dialog->priv->profile);
-  w = glade_xml_get_widget (xml, "profile-description-entry");
+  w = glade_xml_get_widget (xml, "profile-description-textview");
   gm_audio_profile_edit_update_description (dialog, dialog->priv->profile);
-  g_signal_connect (G_OBJECT (w), "changed",
+  tb = gtk_text_view_get_buffer (GTK_TEXT_VIEW (w));
+  g_signal_connect (G_OBJECT (tb), "changed",
                     G_CALLBACK (on_profile_description_changed), dialog->priv->profile);
    w = glade_xml_get_widget (xml, "profile-pipeline-entry");
   gm_audio_profile_edit_update_pipeline (dialog, dialog->priv->profile);
@@ -302,6 +302,24 @@ entry_set_text_if_changed (GtkEntry   *entry,
 }
 
 static void
+textview_set_text_if_changed (GtkTextView *view, const char *text)
+{
+  char *s;
+  GtkTextBuffer *tb;
+
+  GMP_DEBUG("textview_set_text_if_changed on textview %p with text %s\n",
+	    view, text);
+  tb = gtk_text_view_get_buffer (view);
+  g_object_get (G_OBJECT (tb), "text", &s, NULL);
+  GMP_DEBUG("got textview text %s\n", s);
+  if (s && strcmp (s, text) != 0)
+    g_object_set (G_OBJECT (tb), "text", text, NULL);
+  GMP_DEBUG("textview_set_text_if_changed: got %s\n", s);
+
+  g_free (s);
+}
+
+static void
 gm_audio_profile_edit_update_name (GMAudioProfileEdit *dialog,
                               GMAudioProfile *profile)
 {
@@ -329,10 +347,10 @@ gm_audio_profile_edit_update_description (GMAudioProfileEdit *dialog,
 {
   GtkWidget *w;
 
-  w = gm_audio_profile_edit_get_widget (dialog, "profile-description-entry");
+  w = gm_audio_profile_edit_get_widget (dialog, "profile-description-textview");
   g_assert (GTK_IS_WIDGET (w));
 
-  entry_set_text_if_changed (GTK_ENTRY (w),
+  textview_set_text_if_changed (GTK_TEXT_VIEW (w),
                              gm_audio_profile_get_description (profile));
 }
 
