@@ -1034,7 +1034,7 @@ gm_audio_profile_create (const char  *name,
 
   gconf_client_set_string (conf,
                            key,
-                           _("wav"),
+                           "wav",
                            &err);
   if (err != NULL) g_print ("ERROR: msg: %s\n", err->message);
   BAIL_OUT_CHECK ();
