@@ -387,8 +387,8 @@ edit_button_clicked (GtkWidget   *button,
 
     /* FIXME: is this the right function name ? */
     edit_dialog = gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
-                       //GTK_WINDOW (dialog));
     g_return_if_fail (edit_dialog != NULL);
+    gtk_window_set_modal (GTK_WINDOW (edit_dialog), TRUE);
     gtk_widget_show_all (GTK_WIDGET (edit_dialog));
   }
   else
@@ -482,7 +482,7 @@ delete_button_clicked (GtkWidget   *button,
   }
 
   confirm_dialog = gtk_message_dialog_new (GTK_WINDOW (dialog),
-                                   GTK_DIALOG_DESTROY_WITH_PARENT,
+                                   GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
                                    GTK_MESSAGE_QUESTION,
                                    GTK_BUTTONS_NONE,
                                    "%s",
@@ -769,6 +769,8 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
   else
     dialog->priv->transient_parent = GTK_WINDOW (dialog);
 
+  gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
+
   /* subscribe to changes to profile list */
 /*
   err = NULL;
@@ -787,38 +789,6 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
     }
 */
   return GTK_WIDGET (dialog);
-}
-
-/* show the given profile manage dialog
- * if it doesn't exist, create it
- * return the profile manage dialog widget
- */
-GtkWidget*
-gm_audio_profile_manage_dialog (GtkWidget *dialog, GConfClient *conf, GtkWindow *transient_parent)
-{
-  GtkWindow *old_transient_parent = NULL;
-  GtkWidget *new;
-
-  if (dialog == NULL)
-  {
-    new = GTK_WIDGET (gm_audio_profiles_edit_new (conf, transient_parent));
-
-    return new;
-  }
-
-  /* do stuff with the already existing dialog */
-
-  old_transient_parent = gtk_window_get_transient_for (GTK_WINDOW (dialog));
-
-  if (old_transient_parent != transient_parent)
-  {
-    gtk_window_set_transient_for (GTK_WINDOW (dialog), transient_parent);
-    gtk_widget_hide (dialog); /* re-show the window on its new parent */
-  }
-
-  gtk_widget_show_all (dialog);
-  gtk_window_present (GTK_WINDOW (dialog));
-  return dialog;
 }
 
 /*
@@ -1011,6 +981,7 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
   create_button = g_object_get_data (G_OBJECT (dialog->priv->new_profile_dialog), "create_button");
   gtk_widget_set_sensitive (create_button, FALSE);
 
+  gtk_window_set_modal (GTK_WINDOW (dialog->priv->new_profile_dialog), TRUE);
   gtk_widget_show_all (dialog->priv->new_profile_dialog);
   gtk_window_present (GTK_WINDOW (dialog->priv->new_profile_dialog));
   

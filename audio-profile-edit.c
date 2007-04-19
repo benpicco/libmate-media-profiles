@@ -270,6 +270,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
                     G_CALLBACK (on_profile_active_toggled), dialog->priv->profile);
 
 
+  gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
   gtk_window_set_destroy_with_parent (GTK_WINDOW (dialog), TRUE);
 
   /* connect to profile changes */
