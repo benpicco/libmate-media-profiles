@@ -22,7 +22,7 @@
 #include "config.h"
 
 #include <string.h>
-#include <glib/gi18n.h>
+#include <glib/gi18n-lib.h>
 #include "audio-profile.h"
 #include "audio-profile-edit.h"
 #include "audio-profile-private.h"
