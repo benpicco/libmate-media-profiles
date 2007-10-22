@@ -79,7 +79,7 @@ gm_audio_profile_manage_register_stock (void)
     GtkIconFactory *factory;
     GtkIconSet     *icons;
 
-    const GtkStockItem edit_item [] = {
+    static const GtkStockItem edit_item [] = {
       { MANAGE_STOCK_EDIT, N_("_Edit"), 0, 0, GETTEXT_PACKAGE },
     };
 
