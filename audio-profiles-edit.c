@@ -87,7 +87,7 @@ gm_audio_profile_manage_register_stock (void)
     factory = gtk_icon_factory_new ();
     gtk_icon_factory_add (factory, MANAGE_STOCK_EDIT, icons);
     gtk_icon_factory_add_default (factory);
-    gtk_stock_add_static (edit_item, 1);
+    gtk_stock_add (edit_item, 1);
     registered = TRUE;
   }
 }
