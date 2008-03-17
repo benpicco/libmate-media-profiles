@@ -642,11 +642,12 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                     app->manage_profiles_default_menu, FALSE, FALSE, 0);
   */
 
+  hbox = gtk_hbox_new (FALSE, 6);
+
   label = gtk_label_new_with_mnemonic (_("_Profiles:"));
   gtk_misc_set_alignment (GTK_MISC (label), 0.0, 0.5);
   gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
 
-  hbox = gtk_hbox_new (FALSE, 6);
   gtk_box_pack_start (GTK_BOX (vbox),
                       hbox, TRUE, TRUE, 0);
 
