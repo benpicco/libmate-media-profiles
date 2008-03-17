@@ -581,8 +581,6 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
   GtkRequisition req;
   GtkTreeSelection *selection;
 
-  dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, GM_AUDIO_TYPE_PROFILES_EDIT, GMAudioProfilesEditPrivate);
-
   /*
   dialog =
     gtk_dialog_new_with_buttons (_("Edit Profiles"),
@@ -595,6 +593,8 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                  NULL);
   */
                                  // FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
+  dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, GM_AUDIO_TYPE_PROFILES_EDIT, GMAudioProfilesEditPrivate);
+
   gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GNOME Audio Profiles"));
   gtk_window_set_default_size (GTK_WINDOW (dialog), 320, 240);
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
