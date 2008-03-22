@@ -19,10 +19,14 @@
  * Boston, MA 02111-1307, USA.
  */
 
+#ifdef HAVE_CONFIG_H
 #include <config.h>
+#endif
+
 #include <gtk/gtkmain.h>
 #include <libgnome/gnome-program.h>
 #include <libgnomeui/gnome-ui-init.h>
+
 #include "gnome-media-profiles.h"
 #include "audio-profile-private.h"
 

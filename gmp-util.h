@@ -19,7 +19,10 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include "config.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <gtk/gtk.h>
 #include <glade/glade.h>
 
@@ -36,11 +39,3 @@ gmp_util_show_error_dialog (GtkWindow *transient_parent,
 void
 gmp_util_run_error_dialog (GtkWindow *transient_parent,
                            const char *message_format, ...);
-
-#ifdef DEBUG
-#define GMP_DEBUG(...) G_STMT_START{ \
-  { g_print ("DEBUG: "); g_print (__VA_ARGS__); } \
-  } G_STMT_END
-#else
-#define GMP_DEBUG(...)
-#endif

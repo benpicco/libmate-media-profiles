@@ -19,17 +19,21 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include "config.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 
 #include <string.h>
 #include <glib/gi18n.h>
+#include <gtk/gtk.h>
+#include <glade/glade-xml.h>
+#include <libgnomeui/gnome-help.h>
+#include <gst/gst.h>
+
 #include "gmp-util.h"
 #include "audio-profile-edit.h"
 #include "audio-profile.h"
 #include "audio-profile-private.h"
-#include <gtk/gtk.h>
-#include <glade/glade-xml.h>
-#include <libgnomeui/gnome-help.h>
 
 struct _GMAudioProfileEditPrivate
 {
@@ -292,12 +296,12 @@ entry_set_text_if_changed (GtkEntry   *entry,
 {
   char *s;
 
-  GMP_DEBUG("entry_set_text_if_changed on entry %p with text %s\n", entry, text);
+  GST_DEBUG ("entry_set_text_if_changed on entry %p with text %s\n", entry, text);
   s = gtk_editable_get_chars (GTK_EDITABLE (entry), 0, -1);
-  GMP_DEBUG("got editable text %s\n", s);
+  GST_DEBUG ("got editable text %s\n", s);
   if (text && strcmp (s, text) != 0)
     gtk_entry_set_text (GTK_ENTRY (entry), text);
-  GMP_DEBUG("entry_set_text_if_changed: got %s\n", s);
+  GST_DEBUG ("entry_set_text_if_changed: got %s\n", s);
 
   g_free (s);
 }
@@ -308,14 +312,14 @@ textview_set_text_if_changed (GtkTextView *view, const char *text)
   char *s;
   GtkTextBuffer *tb;
 
-  GMP_DEBUG("textview_set_text_if_changed on textview %p with text %s\n",
+  GST_DEBUG ("textview_set_text_if_changed on textview %p with text %s\n",
 	    view, text);
   tb = gtk_text_view_get_buffer (view);
   g_object_get (G_OBJECT (tb), "text", &s, NULL);
-  GMP_DEBUG("got textview text %s\n", s);
+  GST_DEBUG ("got textview text %s\n", s);
   if (s && strcmp (s, text) != 0)
     g_object_set (G_OBJECT (tb), "text", text, NULL);
-  GMP_DEBUG("textview_set_text_if_changed: got %s\n", s);
+  GST_DEBUG ("textview_set_text_if_changed: got %s\n", s);
 
   g_free (s);
 }
@@ -329,7 +333,7 @@ gm_audio_profile_edit_update_name (GMAudioProfileEdit *dialog,
 
   s = g_strdup_printf (_("Editing profile \"%s\""),
                        gm_audio_profile_get_name (profile));
-  GMP_DEBUG("g_p_e_u_n: title %s\n", s);
+  GST_DEBUG ("g_p_e_u_n: title %s\n", s);
 
   gtk_window_set_title (GTK_WINDOW (dialog), s);
 

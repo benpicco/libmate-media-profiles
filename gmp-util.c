@@ -19,11 +19,15 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include "config.h"
-#include "gmp-util.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
+
+#include "gmp-util.h"
 
 GladeXML*
 gmp_util_load_glade_file (const char *filename,

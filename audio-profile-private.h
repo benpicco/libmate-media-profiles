@@ -22,11 +22,12 @@
 #ifndef AUDIO_PROFILE_PRIVATE_H
 #define AUDIO_PROFILE_PRIVATE_H
 
-#include "audio-profile.h"
 #include <gconf/gconf-client.h>
-#include "gmp-conf.h"
 #include <glade/glade.h>
 #include <glade/glade-build.h>
+
+#include "gmp-conf.h"
+#include "audio-profile.h"
 
 G_BEGIN_DECLS
 

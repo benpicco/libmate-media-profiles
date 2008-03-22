@@ -20,9 +20,9 @@
  */
 
 #include <string.h>
+#include <glib/gi18n.h>
 #include <gst/gst.h>
 
-#include <glib/gi18n.h>
 #include "gmp-util.h"
 #include "audio-profile.h"
 #include "audio-profile-private.h"
@@ -218,13 +218,13 @@ gm_audio_profile_sync_list (gboolean use_this_list,
   gboolean need_new_default;
   GMAudioProfile *fallback;
 
-  GMP_DEBUG("sync_list: start\n");
+  GST_DEBUG ("sync_list: start\n");
   if (use_this_list)
-    GMP_DEBUG("Using given list of length %d\n", g_slist_length (this_list));
+    GST_DEBUG ("Using given list of length %d\n", g_slist_length (this_list));
   else
-    GMP_DEBUG("using list from gconf\n");
+    GST_DEBUG ("using list from gconf\n");
   known = gm_audio_profile_get_list ();
-    GMP_DEBUG("list of known profiles: size %d\n", g_list_length (known));
+    GST_DEBUG ("list of known profiles: size %d\n", g_list_length (known));
 
   if (use_this_list)
     {
@@ -244,7 +244,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
         }
     }
 
-  GMP_DEBUG("updated: slist of %d items\n", g_slist_length (updated));
+  GST_DEBUG ("updated: slist of %d items\n", g_slist_length (updated));
   /* Add any new ones; ie go through updated and if any of them isn't in
    * the hash yet, add it.  If it is in the list of known profiles,  remove
    * it from our copy of that list. */
@@ -258,7 +258,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
       if (link)
         {
           /* make known point to profiles we didn't find in the list */
-          GMP_DEBUG("id %s found in known profiles list, deleting from known\n",
+          GST_DEBUG ("id %s found in known profiles list, deleting from known\n",
                     (char *) tmp_slist->data);
           known = g_list_delete_link (known, link);
         }
@@ -266,7 +266,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
         {
           GMAudioProfile *profile;
 
-          GMP_DEBUG("adding new profile with id %s to global hash\n",
+          GST_DEBUG ("adding new profile with id %s to global hash\n",
                    (const char *) tmp_slist->data);
           profile = gm_audio_profile_new (tmp_slist->data, _conf);
 
@@ -292,7 +292,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
 
       forgotten = GM_AUDIO_PROFILE (tmp_list->data);
 
-      GMP_DEBUG("sync_list: forgetting profile with id %s\n",
+      GST_DEBUG ("sync_list: forgetting profile with id %s\n",
                gm_audio_profile_get_id (forgotten));
       gm_audio_profile_forget (forgotten);
 
@@ -300,7 +300,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
     }
 
   g_list_free (known);
-  GMP_DEBUG("sync_list: stop\n");
+  GST_DEBUG ("sync_list: stop\n");
 
   //FIXME: g_assert (terminal_profile_get_count () > 0);
 }
@@ -318,7 +318,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
   GMAudioProfile *profile;
   GError *err;
 
-  GMP_DEBUG("creating new GMAudioProfile for id %s\n", id);
+  GST_DEBUG ("creating new GMAudioProfile for id %s\n", id);
   g_return_val_if_fail (profiles != NULL, NULL);
   g_return_val_if_fail (gm_audio_profile_lookup (id) == NULL, NULL);
 
@@ -332,7 +332,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
                                                          profile->priv->id);
 
   err = NULL;
-  GMP_DEBUG("loading config from GConf dir %s\n",
+  GST_DEBUG ("loading config from GConf dir %s\n",
            profile->priv->profile_dir);
   gconf_client_add_dir (conf, profile->priv->profile_dir,
                         GCONF_CLIENT_PRELOAD_ONELEVEL,
@@ -345,7 +345,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
     }
 
   err = NULL;
-  GMP_DEBUG("adding notify for GConf profile\n");
+  GST_DEBUG ("adding notify for GConf profile\n");
   profile->priv->notify_id =
     gconf_client_notify_add (conf,
                              profile->priv->profile_dir,
@@ -360,9 +360,9 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
       g_error_free (err);
     }
 
-  GMP_DEBUG("inserting in hash table done\n");
+  GST_DEBUG ("inserting in hash table done\n");
   g_hash_table_insert (profiles, profile->priv->id, profile);
-  GMP_DEBUG("audio_profile_new done\n");
+  GST_DEBUG ("audio_profile_new done\n");
 
   return profile;
 }
@@ -609,7 +609,7 @@ profile_change_notify (GConfClient *client,
   GMAudioSettingMask mask; /* to keep track of what has changed */
 
   profile = GM_AUDIO_PROFILE (user_data);
-  GMP_DEBUG("profile_change_notify: start in profile with name %s\n",
+  GST_DEBUG ("profile_change_notify: start in profile with name %s\n",
            profile->priv->name);
 
   val = gconf_entry_get_value (entry);
@@ -662,10 +662,10 @@ else if (strcmp (key, KName) == 0)                                      \
 
   if (!(gm_audio_setting_mask_is_empty (&mask)))
   {
-    GMP_DEBUG("emit changed\n");
+    GST_DEBUG ("emit changed\n");
     emit_changed (profile, &mask);
   }
-  GMP_DEBUG("PROFILE_CHANGE_NOTIFY: changed stuff\n");
+  GST_DEBUG ("PROFILE_CHANGE_NOTIFY: changed stuff\n");
 }
 
 /* GConf notification callback for profile_list */
@@ -680,7 +680,7 @@ gm_audio_profile_list_notify (GConfClient *client,
   GSList *string_list;
   GSList *tmp;
 
-  GMP_DEBUG("profile_list changed\n");
+  GST_DEBUG ("profile_list changed\n");
   val = gconf_entry_get_value (entry);
 
   if (val == NULL ||
@@ -917,7 +917,7 @@ gm_audio_profile_lookup (const char *id)
 
   if (profiles)
   {
-    GMP_DEBUG("a_p_l: profiles exists, returning hash table lookup of %s\n", id);
+    GST_DEBUG ("a_p_l: profiles exists, returning hash table lookup of %s\n", id);
     return g_hash_table_lookup (profiles, id);
   }
   else
@@ -927,14 +927,14 @@ gm_audio_profile_lookup (const char *id)
 void
 gm_audio_profile_forget (GMAudioProfile *profile)
 {
-  GMP_DEBUG("audio_profile_forget: forgetting name %s\n",
+  GST_DEBUG ("audio_profile_forget: forgetting name %s\n",
            gm_audio_profile_get_name (profile));
   if (!profile->priv->forgotten)
   {
     GError *err;
 
     err = NULL;
-    GMP_DEBUG("audio_profile_forget: removing from gconf\n");
+    GST_DEBUG ("audio_profile_forget: removing from gconf\n");
     /* FIXME: remove_dir doesn't actually work.  Either unset all keys
      * manually or use recursive_unset on HEAD */
     gconf_client_remove_dir (profile->priv->conf,
@@ -953,7 +953,7 @@ gm_audio_profile_forget (GMAudioProfile *profile)
     g_signal_emit (G_OBJECT (profile), signals[FORGOTTEN], 0);
   }
   else
-    GMP_DEBUG("audio_profile_forget: profile->priv->forgotten\n");
+    GST_DEBUG ("audio_profile_forget: profile->priv->forgotten\n");
 }
 
 gboolean
@@ -991,7 +991,7 @@ gm_audio_profile_create (const char  *name,
   GSList *id_list = NULL;
   GList *tmp;
 
-  GMP_DEBUG("a_p_c: Creating profile for %s\n", name);
+  GST_DEBUG ("a_p_c: Creating profile for %s\n", name);
   /* This is for extra bonus paranoia against CORBA reentrancy */
   //g_object_ref (G_OBJECT (transient_parent));
 #define BAIL_OUT_CHECK() do {                           \
@@ -1002,7 +1002,7 @@ gm_audio_profile_create (const char  *name,
   /* Pick a unique name for storing in gconf (based on visible name) */
   profile_id = gconf_escape_key (name, -1);
   s = g_strdup (profile_id);
-  GMP_DEBUG("profile_id: %s\n", s);
+  GST_DEBUG ("profile_id: %s\n", s);
   i = 0;
   while (gm_audio_profile_lookup (s))
   {
@@ -1075,7 +1075,7 @@ gm_audio_profile_create (const char  *name,
 
   id_list = g_slist_prepend (id_list, g_strdup (profile_id));
 
-  GMP_DEBUG("setting gconf list\n");
+  GST_DEBUG ("setting gconf list\n");
   err = NULL;
   gconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
@@ -1134,12 +1134,12 @@ gm_audio_profile_create (const char  *name,
   */
   if (err)
   {
-    GMP_DEBUG("WARNING: error: %s !\n", err->message);
+    GST_DEBUG ("WARNING: error: %s !\n", err->message);
     *error = err;
   }
 
   //g_object_unref (G_OBJECT (transient_parent));
-  GMP_DEBUG("a_p_c: done\n");
+  GST_DEBUG ("a_p_c: done\n");
   return profile_id;
 }
 
@@ -1180,7 +1180,7 @@ gm_audio_profile_delete_list (GConfClient *conf,
 
   g_list_free (current_profiles);
   err = NULL;
-  GMP_DEBUG("setting profile_list in GConf\n");
+  GST_DEBUG ("setting profile_list in GConf\n");
   gconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
                          GCONF_VALUE_STRING,

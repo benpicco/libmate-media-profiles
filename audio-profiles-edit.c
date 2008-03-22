@@ -19,17 +19,21 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include "config.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 
 #include <string.h>
 #include <glib/gi18n-lib.h>
+#include <gtk/gtk.h>
+#include <glade/glade-xml.h>
+#include <gst/gst.h>
+
 #include "audio-profile.h"
 #include "audio-profile-edit.h"
 #include "audio-profile-private.h"
 #include "gmp-util.h"
 #include "audio-profiles-edit.h"
-#include <gtk/gtk.h>
-#include <glade/glade-xml.h>
 
 #define MANAGE_STOCK_EDIT "manage-edit"
 
@@ -206,7 +210,7 @@ refill_profile_treeview (GtkWidget *tree_view)
   GList *selected_profiles;
   GtkTreeIter iter;
 
-  GMP_DEBUG("refill_profile_treeview: start\n");
+  GST_DEBUG ("refill_profile_treeview: start\n");
   selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (tree_view));
   model = GTK_LIST_STORE (gtk_tree_view_get_model (GTK_TREE_VIEW (tree_view)));
 
@@ -223,7 +227,7 @@ refill_profile_treeview (GtkWidget *tree_view)
   {
     GMAudioProfile *profile = tmp->data;
 
-    GMP_DEBUG("refill: appending profile with name %s\n",
+    GST_DEBUG ("refill: appending profile with name %s\n",
              gm_audio_profile_get_name (profile));
     gtk_list_store_append (model, &iter);
 
@@ -255,7 +259,7 @@ refill_profile_treeview (GtkWidget *tree_view)
   }
 
   free_profiles_list (selected_profiles);
-  GMP_DEBUG("refill_profile_treeview: stop\n");
+  GST_DEBUG ("refill_profile_treeview: stop\n");
 }
 
 
@@ -544,7 +548,7 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
 static void
 on_gm_audio_profiles_edit_destroy (GtkWidget *dialog, gpointer *user_data)
 {
-      GMP_DEBUG("on_destroy: destroying dialog widget\n");
+      GST_DEBUG ("on_destroy: destroying dialog widget\n");
   /* FIXME: set stuff to NULL here */
 }
 
@@ -559,7 +563,7 @@ gm_audio_profiles_list_notify (GConfClient *client,
   GMAudioProfilesEdit *dialog;
 
   dialog = (GMAudioProfilesEdit *) user_data;
-  GMP_DEBUG("profile_list changed, notified from gconf, redrawing\n");
+  GST_DEBUG ("profile_list changed, notified from gconf, redrawing\n");
   /* refill the profile tree view */
 
   refill_profile_treeview (dialog->priv->manage_profiles_list);
@@ -775,7 +779,7 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
   /* subscribe to changes to profile list */
 /*
   err = NULL;
-  GMP_DEBUG("gap_p_e_new: subscribing to profile_list changes\n");
+  GST_DEBUG ("gap_p_e_new: subscribing to profile_list changes\n");
   gconf_client_notify_add (dialog->priv->conf,
                            CONF_GLOBAL_PREFIX"/profile_list",
                            gm_audio_profiles_list_notify,
@@ -861,7 +865,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     gtk_widget_destroy (new_profile_dialog);
 
     /* FIXME: hm, not very proud of having to unstatic this function */
-    GMP_DEBUG("new profile callback: syncing list\n");
+    GST_DEBUG ("new profile callback: syncing list\n");
     //FIXME: in gnome-terminal, it's TRUE, &n, which then gets overruled
     // by some other sync call with the new list
     //audio_profile_sync_list (TRUE, &n);
@@ -880,7 +884,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
   {
     gtk_widget_destroy (new_profile_dialog);
   }
-  GMP_DEBUG("done creating new profile\n");
+  GST_DEBUG ("done creating new profile\n");
 }
 
 static void

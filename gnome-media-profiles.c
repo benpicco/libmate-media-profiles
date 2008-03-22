@@ -23,15 +23,16 @@
 #include <config.h>
 #endif
 
-#include "audio-profile-private.h"
-#include "audio-profile-edit.h"
-#include "gmp-conf.h"
-#include "gmp-util.h"
 #include <glade/glade.h>
 #include <glade/glade-build.h>
 #include <string.h>
 #include <glib/gi18n.h>
 #include <gconf/gconf-client.h>
+
+#include "audio-profile-private.h"
+#include "audio-profile-edit.h"
+#include "gmp-conf.h"
+#include "gmp-util.h"
 
 void
 gtk_dialog_build_children (GladeXML *self, GtkWidget *w,

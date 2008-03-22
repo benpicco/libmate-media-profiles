@@ -19,17 +19,21 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include "config.h"
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 
 #include <string.h>
 #include <glib/gi18n.h>
-#include "gmp-util.h"
-#include "audio-profile-choose.h"
-#include "audio-profile.h"
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
 #include <libgnomevfs/gnome-vfs-mime-handlers.h>
 #include <libgnomevfs/gnome-vfs-mime.h>
+#include <gst/gst.h>
+
+#include "gmp-util.h"
+#include "audio-profile-choose.h"
+#include "audio-profile.h"
 
 enum
 {
@@ -37,6 +41,41 @@ enum
   ID_COLUMN,
   N_COLUMNS
 };
+
+static void
+audio_profile_forgotten (GMAudioProfile *profile, GtkWidget *combo)
+{
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  char *tmp;
+  const char *id;
+
+  g_return_if_fail (GTK_IS_COMBO_BOX (combo));
+  g_return_if_fail (GM_AUDIO_PROFILE (profile));
+
+  id = gm_audio_profile_get_id (profile);
+  GST_DEBUG ("forgotten id: %s", id);
+
+  model = gtk_combo_box_get_model (GTK_COMBO_BOX (combo));
+
+  if (!gtk_tree_model_get_iter_first (model, &iter))
+    return;
+
+  while (1)
+    {
+      gtk_tree_model_get (model, &iter, ID_COLUMN, &tmp, -1);
+      if (g_str_equal (tmp, id))
+	{
+	  gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+	  g_free (tmp);
+	  return;
+	}
+      g_free (tmp);
+
+      if (!gtk_tree_model_iter_next (model, &iter))
+	break;
+    }
+}
 
 /* create and return a new Profile Choose combobox widget
  * given the GConf connection
@@ -54,6 +93,8 @@ gm_audio_profile_choose_new (void)
   /* Create the model */
   list_store = gtk_list_store_new (N_COLUMNS, G_TYPE_STRING, G_TYPE_STRING);
   orig = profiles = gm_audio_profile_get_active_list ();
+  combo = gtk_combo_box_new_with_model (GTK_TREE_MODEL (list_store));
+
   while (profiles) {
     GMAudioProfile *profile = profiles->data;
     char *profile_name, *temp_file_name;
@@ -69,11 +110,13 @@ gm_audio_profile_choose_new (void)
                         NAME_COLUMN, profile_name,
                         ID_COLUMN, gm_audio_profile_get_id (profile),
                         -1);
+
+    g_signal_connect (profile, "forgotten", G_CALLBACK (audio_profile_forgotten), combo);
+
     profiles = profiles->next;
     g_free (profile_name);
   }
   g_list_free (orig);
-  combo = gtk_combo_box_new_with_model (GTK_TREE_MODEL (list_store));
 
   /* display name in the combobox */
   renderer = gtk_cell_renderer_text_new ();
@@ -86,6 +129,7 @@ gm_audio_profile_choose_new (void)
 
   /* activate first one */
   gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
+
   return combo;
 }
 
