@@ -51,9 +51,11 @@ test_clicked_cb (GtkButton *button, GtkWidget *combo)
   GstMessage *msg = NULL;
   GstBus *bus = NULL;
 
+  profile = gm_audio_profile_choose_get_active (combo);
+  g_return_if_fail (profile != NULL);
+
   gtk_widget_set_sensitive (GTK_WIDGET (button), FALSE);
 
-  profile = gm_audio_profile_choose_get_active (combo);
   extension = g_strdup (gm_audio_profile_get_extension (profile));
   partialpipe = g_strdup (gm_audio_profile_get_pipeline (profile));
 
