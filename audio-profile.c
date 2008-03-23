@@ -992,8 +992,7 @@ gm_audio_profile_create (const char  *name,
   GList *tmp;
 
   GST_DEBUG ("a_p_c: Creating profile for %s\n", name);
-  /* This is for extra bonus paranoia against CORBA reentrancy */
-  //g_object_ref (G_OBJECT (transient_parent));
+
 #define BAIL_OUT_CHECK() do {                           \
       if (err != NULL)					\
        goto cleanup;                                    \
@@ -1104,42 +1103,14 @@ gm_audio_profile_create (const char  *name,
     g_slist_free (id_list);
   }
 
-  /* FIXME
-  if (err)
-    {
-      if (GTK_WIDGET_VISIBLE (transient_parent))
-        {
-          GtkWidget *dialog;
-
-          dialog = gtk_message_dialog_new (GTK_WINDOW (transient_parent),
-                                           GTK_DIALOG_DESTROY_WITH_PARENT,
-                                           GTK_MESSAGE_ERROR,
-                                           GTK_BUTTONS_CLOSE,
-                                           _("There was an error creating the profile \"%s\""),
-                                           visible_id);
-          g_signal_connect (G_OBJECT (dialog), "response",
-                            G_CALLBACK (gtk_widget_destroy),
-                            NULL);
-
-          dialog_add_details (GTK_DIALOG (dialog),
-                              err->message);
-
-          gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-
-          gtk_widget_show (dialog);
-        }
-
-      g_error_free (err);
-    }
-  */
   if (err)
   {
     GST_DEBUG ("WARNING: error: %s !\n", err->message);
     *error = err;
   }
 
-  //g_object_unref (G_OBJECT (transient_parent));
   GST_DEBUG ("a_p_c: done\n");
+
   return profile_id;
 }
 
