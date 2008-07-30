@@ -139,7 +139,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/cdlossy/extension</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>ogg</default>
+      <default>oga</default>
       <locale name="C">
         <short>The default file extension for this profile</short>
         <long>
