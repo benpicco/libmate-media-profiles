@@ -27,8 +27,7 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
-#include <libgnomevfs/gnome-vfs-mime-handlers.h>
-#include <libgnomevfs/gnome-vfs-mime.h>
+#include <gio/gio.h>
 #include <gst/gst.h>
 
 #include "gmp-util.h"
@@ -98,13 +97,14 @@ gm_audio_profile_choose_new (void)
   while (profiles) {
     GMAudioProfile *profile = profiles->data;
     char *profile_name, *temp_file_name;
-    const char* mime_type;
+    char* mime_type_description;
 
     temp_file_name = g_strdup_printf (".%s", gm_audio_profile_get_extension (profile));
-    mime_type = gnome_vfs_mime_type_from_name (temp_file_name);
+    mime_type_description = g_content_type_get_description (temp_file_name);
     g_free (temp_file_name);
 
-    profile_name = g_strdup_printf (gettext ("%s (%s)"), gm_audio_profile_get_name (profile), gnome_vfs_mime_get_description (mime_type));
+    profile_name = g_strdup_printf (gettext ("%s (%s)"), gm_audio_profile_get_name (profile), mime_type_description);
+    g_free (mime_type_description);
     gtk_list_store_append (list_store, &iter);
     gtk_list_store_set (list_store, &iter,
                         NAME_COLUMN, profile_name,
