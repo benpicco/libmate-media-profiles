@@ -92,11 +92,12 @@ gmp_util_run_error_dialog (GtkWindow *transient_parent, const char *message_form
                                  GTK_DIALOG_DESTROY_WITH_PARENT,
                                  GTK_MESSAGE_ERROR,
                                  GTK_BUTTONS_CLOSE,
+                                 "%s",
                                  message);
 
   gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
   gtk_dialog_run (GTK_DIALOG (dialog));
-  gtk_widget_destroy(GTK_DIALOG (dialog));
+  gtk_widget_destroy(GTK_WIDGET (dialog));
 }
 
 /**
@@ -137,6 +138,7 @@ gmp_util_show_error_dialog (GtkWindow *transient_parent,
                                      GTK_DIALOG_DESTROY_WITH_PARENT,
                                      GTK_MESSAGE_ERROR,
                                      GTK_BUTTONS_CLOSE,
+                                     "%s",
                                      message);
 
     g_signal_connect (G_OBJECT (dialog), "response",

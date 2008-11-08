@@ -23,6 +23,7 @@
 #include <config.h>
 #endif
 
+#include <libintl.h>
 #include <gtk/gtkmain.h>
 #include <libgnome/gnome-program.h>
 #include <libgnomeui/gnome-ui-init.h>

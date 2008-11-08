@@ -34,6 +34,7 @@
 #include "audio-profile-private.h"
 #include "gmp-util.h"
 #include "audio-profiles-edit.h"
+#include <libgnomeui/libgnomeui.h>
 
 #define MANAGE_STOCK_EDIT "manage-edit"
 
@@ -581,8 +582,6 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
   GtkWidget *hbox;
   GtkWidget *bbox;
   GtkWidget *button;
-  GtkWidget *spacer;
-  GtkRequisition req;
   GtkTreeSelection *selection;
 
   /*

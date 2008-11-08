@@ -23,6 +23,8 @@
 #include <config.h>
 #endif
 
+#include "gnome-media-profiles.h"
+
 #include <glade/glade.h>
 #include <glade/glade-build.h>
 #include <string.h>

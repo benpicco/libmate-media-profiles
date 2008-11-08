@@ -20,7 +20,7 @@ GLADE_MODULE_CHECK_INIT
 void
 glade_module_register_widgets (void)
 {
-  gm_audio_profile_edit_get_type ();
+  /* FIXME: Why is this here? gm_audio_profile_edit_get_type (); */
   glade_register_widget (GM_AUDIO_TYPE_PROFILE_EDIT,
                          gm_audio_profile_edit_new_2,
                          NULL, NULL);

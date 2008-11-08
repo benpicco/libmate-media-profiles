@@ -91,6 +91,7 @@ gm_audio_profile_edit_class_init (GMAudioProfileEditClass *klass)
   g_type_class_add_private (object_class, sizeof (GMAudioProfileEditPrivate));
 }
 
+#if 0
 static void
 gm_audio_profile_edit_finalize (GObject *object)
 {
@@ -100,6 +101,7 @@ gm_audio_profile_edit_finalize (GObject *object)
 
   G_OBJECT_CLASS (gm_audio_profile_edit_parent_class)->finalize (object);
 }
+#endif
 
 /* ui callbacks */
 static void

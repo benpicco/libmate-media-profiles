@@ -148,11 +148,12 @@ main (int argc, char **argv)
 {
   GtkWidget *window, *hbox, *combo, *edit, *test;
   GConfClient *gconf;
+  GnomeProgram *program;
 
   gst_init (&argc, &argv);
-  gnome_program_init ("gnome-audio-profiles-test", VERSION,
-                      LIBGNOMEUI_MODULE, argc, argv,
-                      NULL);
+  program = gnome_program_init ("gnome-audio-profiles-test", VERSION,
+                                LIBGNOMEUI_MODULE, argc, argv,
+                                NULL);
 
   gconf = gconf_client_get_default ();
   gnome_media_profiles_init (gconf);
@@ -173,6 +174,8 @@ main (int argc, char **argv)
   gtk_container_add (GTK_CONTAINER (window), hbox);
   gtk_widget_show_all (window);
   gtk_main ();
+
+  g_object_unref (program);
 
   return 0;
 }
