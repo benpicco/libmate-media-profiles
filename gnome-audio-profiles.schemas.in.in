@@ -348,7 +348,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/voicelossy/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>speexenc name=enc ! oggmux</default>
+      <default>audio/x-raw-int,rate=44100,channels=1 ! speexenc name=enc ! oggmux</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
