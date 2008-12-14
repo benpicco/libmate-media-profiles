@@ -496,7 +496,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/aac/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>audio/x-raw-int,rate=44100,channels=2 ! faac ! ffmux_mp4</default>
+      <default>audio/x-raw-int,rate=44100,channels=2 ! faac profile=2 ! ffmux_mp4</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
