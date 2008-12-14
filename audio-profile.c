@@ -914,7 +914,7 @@ gm_audio_profile_forget (GMAudioProfile *self)
                   g_error_free (err);
     }
 
-    g_hash_table_remove (profiles, self->priv->name);
+    g_hash_table_remove (profiles, self->priv->id);
     self->priv->forgotten = TRUE;
 
     g_signal_emit (G_OBJECT (self), signals[FORGOTTEN], 0);
