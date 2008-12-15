@@ -49,7 +49,7 @@ gmpinclude_HEADERS = \
 	audio-profiles-edit.h \
 	gnome-media-profiles.h
 
-libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(defines)
+libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
 libgnome_media_profiles_la_LIBADD = $(GMP_LIBS)
 libgnome_media_profiles_la_LDFLAGS = -no-undefined
 
