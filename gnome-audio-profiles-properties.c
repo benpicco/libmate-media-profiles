@@ -24,7 +24,7 @@
 #endif
 
 #include <libintl.h>
-#include <gtk/gtkmain.h>
+#include <gtk/gtk.h>
 #include <libgnome/gnome-program.h>
 #include <libgnomeui/gnome-ui-init.h>
 

@@ -22,7 +22,7 @@
 #ifndef GM_AUDIO_PROFILE_EDIT_H
 #define GM_AUDIO_PROFILE_EDIT_H
 
-#include <gtk/gtkdialog.h>
+#include <gtk/gtk.h>
 #include <gconf/gconf-client.h>
 
 G_BEGIN_DECLS

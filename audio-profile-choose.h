@@ -23,7 +23,7 @@
 #define GM_AUDIO_PROFILE_CHOOSE_H
 
 #include "audio-profile.h"
-#include <gtk/gtkcombobox.h>
+#include <gtk/gtk.h>
 #include <gconf/gconf-client.h>
 
 G_BEGIN_DECLS
