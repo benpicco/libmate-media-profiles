@@ -27,7 +27,6 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <glade/glade-xml.h>
-#include <libgnomeui/gnome-help.h>
 #include <gst/gst.h>
 
 #include "gmp-util.h"
@@ -112,10 +111,10 @@ gm_audio_profile_edit_response (GtkDialog *dialog,
     {
       GError *err = NULL;
 
-      gnome_help_display_on_screen ("gnome-audio-profiles",
-                                    "gnome-audio-profiles-profile-edit",
-				    gtk_widget_get_screen (GTK_WIDGET (dialog)),
-				    &err);
+      gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
+		    "ghelp:gnome-audio-profiles?gnome-audio-profiles-edit",
+		    gtk_get_current_event_time (),
+		    &err);
 
       if (err)
         {

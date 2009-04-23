@@ -22,9 +22,9 @@
 #include <config.h>
 #endif
 
+#include <stdlib.h>
 #include <gtk/gtk.h>
 #include <gconf/gconf-client.h>
-#include <libgnomeui/libgnomeui.h>
 #include <gst/gst.h>
 
 #include <profiles/gnome-media-profiles.h>
@@ -148,12 +148,21 @@ main (int argc, char **argv)
 {
   GtkWidget *window, *hbox, *combo, *edit, *test;
   GConfClient *gconf;
-  GnomeProgram *program;
+  GOptionContext *context;
+  GError *error = NULL;
 
-  gst_init (&argc, &argv);
-  program = gnome_program_init ("gnome-audio-profiles-test", VERSION,
-                                LIBGNOMEUI_MODULE, argc, argv,
-                                NULL);
+  g_thread_init (NULL);
+  context = g_option_context_new (NULL);
+  g_option_context_add_group (context, gst_init_get_option_group ());
+  g_option_context_add_group (context, gtk_get_option_group (TRUE));
+  if (g_option_context_parse (context, &argc, &argv, &error) == FALSE) {
+	  g_print ("%s\nRun '%s --help' to see a full list of available command line options.\n",
+		   error->message, argv[0]);
+	  g_error_free (error);
+	  g_option_context_free (context);
+	  exit (1);
+  }
+  g_option_context_free (context);
 
   gconf = gconf_client_get_default ();
   gnome_media_profiles_init (gconf);
@@ -174,8 +183,6 @@ main (int argc, char **argv)
   gtk_container_add (GTK_CONTAINER (window), hbox);
   gtk_widget_show_all (window);
   gtk_main ();
-
-  g_object_unref (program);
 
   return 0;
 }

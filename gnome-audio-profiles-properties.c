@@ -23,10 +23,10 @@
 #include <config.h>
 #endif
 
+#include <stdlib.h>
 #include <libintl.h>
 #include <gtk/gtk.h>
-#include <libgnome/gnome-program.h>
-#include <libgnomeui/gnome-ui-init.h>
+#include <glib/gi18n.h>
 
 #include "gnome-media-profiles.h"
 #include "audio-profile-private.h"
@@ -43,18 +43,22 @@ main (int argc, char *argv[])
 {
   GtkWidget *widget;
   GConfClient *conf;
-  GnomeProgram *program;
+  GOptionContext *context;
+  GError *error = NULL;
 
-  program = gnome_program_init ("gnome-audio-profiles-properties",
-			        VERSION,
-			        LIBGNOMEUI_MODULE,
-			        argc, argv,
-				GNOME_PARAM_APP_DATADIR, DATADIR,
-			        GNOME_PARAM_NONE);
+  g_thread_init (NULL);
 
-  /* FIXME: add a comment why we need this at all, until then
-     we comment it out
-  gm_audio_profile_edit_get_type (); */
+  context = g_option_context_new (NULL);
+  g_option_context_add_group (context, gtk_get_option_group (TRUE));
+  if (g_option_context_parse (context, &argc, &argv, &error) == FALSE) {
+	  g_print (_("%s\nRun '%s --help' to see a full list of available command line options.\n"),
+		   error->message, argv[0]);
+	  g_error_free (error);
+	  g_option_context_free (context);
+	  exit (1);
+  }
+  g_option_context_free (context);
+
   glade_register_widget (gm_audio_profile_edit_get_type (),
 			 NULL,
 			 gtk_dialog_build_children,
@@ -75,7 +79,6 @@ main (int argc, char *argv[])
   gtk_main ();
 
   g_object_unref (conf);
-  g_object_unref (program);
 
   return 0;
 }

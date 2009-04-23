@@ -34,7 +34,6 @@
 #include "audio-profile-private.h"
 #include "gmp-util.h"
 #include "audio-profiles-edit.h"
-#include <libgnomeui/libgnomeui.h>
 
 #define MANAGE_STOCK_EDIT "manage-edit"
 
@@ -528,11 +527,10 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
     {
       GError *err = NULL;
 
-      gnome_help_display_on_screen ("gnome-audio-profiles",
-                                    "gnome-audio-profiles-profile-edit",
-				    gtk_widget_get_screen (GTK_WIDGET (dialog)),
-				    &err);
-
+      gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
+		    "ghelp:gnome-audio-profiles?gnome-audio-profiles-profile-edit",
+		    gtk_get_current_event_time (),
+		    &err);
 
       if (err)
         {
