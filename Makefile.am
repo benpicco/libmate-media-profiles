@@ -73,4 +73,4 @@ EXTRA_DIST = $(glade_DATA) $(schema_DATA) $(pkgconfig_DATA)
 CLEANFILES = $(schema_DATA)
 
 # "." is dirty hack to first build our .la in this dir before moving to glade
-SUBDIRS =  . glade
+SUBDIRS =  . help glade
