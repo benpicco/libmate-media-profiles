@@ -26,7 +26,6 @@
 #include <string.h>
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <glade/glade-xml.h>
 #include <gst/gst.h>
 
 #include "gmp-util.h"
@@ -37,7 +36,7 @@
 struct _GMAudioProfileEditPrivate
 {
   GConfClient *conf;
-  GladeXML *xml;
+  GtkBuilder *builder;
   GMAudioProfile *profile;
   GtkWidget *content;
 };
@@ -70,7 +69,7 @@ G_DEFINE_TYPE (GMAudioProfileEdit, gm_audio_profile_edit, GTK_TYPE_DIALOG)
 
 /* ui callbacks */
 
-/* initialize a dialog widget from the glade xml file */
+/* initialize a dialog widget from the ui builder file */
 static void
 gm_audio_profile_edit_init (GMAudioProfileEdit *dialog)
 {
@@ -125,7 +124,7 @@ gm_audio_profile_edit_response (GtkDialog *dialog,
 
       return;
     }
-      
+
   /* FIXME: hide or destroy ? */
   gtk_widget_hide (GTK_WIDGET (dialog));
 }
@@ -223,14 +222,21 @@ GtkWidget*
 gm_audio_profile_edit_new (GConfClient *conf, const char *id)
 {
   GMAudioProfileEdit *dialog;
-  GladeXML *xml;
+  GtkBuilder *builder;
   GtkWidget *w;
   GtkTextBuffer *tb;
+  GError *error = NULL;
 
   /* get the dialog */
-  xml = gmp_util_load_glade_file (GM_AUDIO_GLADE_FILE,
-                                  "profile-edit-dialog", NULL);
-  dialog = (GMAudioProfileEdit *) glade_xml_get_widget (xml, "profile-edit-dialog");
+  builder = gmp_util_load_builder_file ("gnome-audio-profile-edit.ui", NULL, &error);
+  if (error != NULL) {
+    g_warning (error->message);
+    g_error_free (error);
+    return NULL;
+  }
+
+  dialog = GM_AUDIO_PROFILE_EDIT (gtk_builder_get_object (builder, "profile-edit-dialog"));
+  g_return_val_if_fail (dialog != NULL, NULL);
 
   /* make sure we have priv */
   if (dialog->priv == NULL)
@@ -243,7 +249,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
      * smell to good to me */
     dialog->priv = g_new0 (GMAudioProfileEditPrivate, 1);
   }
-  dialog->priv->xml = xml;
+  dialog->priv->builder = builder;
 
   /* save the GConf stuff and get the profile belonging to this id */
   dialog->priv->conf = g_object_ref (conf);
@@ -252,24 +258,24 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   g_assert (dialog->priv->profile);
 
   /* autoconnect doesn't handle data pointers, sadly, so do by hand */
-  w = glade_xml_get_widget (xml, "profile-name-entry");
+  w = GTK_WIDGET (gtk_builder_get_object (builder, "profile-name-entry"));
   gm_audio_profile_edit_update_name (dialog, dialog->priv->profile);
   g_signal_connect (G_OBJECT (w), "changed",
                     G_CALLBACK (on_profile_name_changed), dialog->priv->profile);
-  w = glade_xml_get_widget (xml, "profile-description-textview");
+  w = GTK_WIDGET (gtk_builder_get_object (builder, "profile-description-textview"));
   gm_audio_profile_edit_update_description (dialog, dialog->priv->profile);
   tb = gtk_text_view_get_buffer (GTK_TEXT_VIEW (w));
   g_signal_connect (G_OBJECT (tb), "changed",
                     G_CALLBACK (on_profile_description_changed), dialog->priv->profile);
-   w = glade_xml_get_widget (xml, "profile-pipeline-entry");
+  w = GTK_WIDGET (gtk_builder_get_object (builder, "profile-pipeline-entry"));
   gm_audio_profile_edit_update_pipeline (dialog, dialog->priv->profile);
   g_signal_connect (G_OBJECT (w), "changed",
                     G_CALLBACK (on_profile_pipeline_changed), dialog->priv->profile);
-  w = glade_xml_get_widget (xml, "profile-extension-entry");
+  w = GTK_WIDGET (gtk_builder_get_object (builder, "profile-extension-entry"));
   gm_audio_profile_edit_update_extension (dialog, dialog->priv->profile);
   g_signal_connect (G_OBJECT (w), "changed",
                     G_CALLBACK (on_profile_extension_changed), dialog->priv->profile);
-  w = glade_xml_get_widget (xml, "profile-active-button");
+  w = GTK_WIDGET (gtk_builder_get_object (builder, "profile-active-button"));
   gm_audio_profile_edit_update_active (dialog, dialog->priv->profile);
   g_signal_connect (G_OBJECT (w), "toggled",
                     G_CALLBACK (on_profile_active_toggled), dialog->priv->profile);
@@ -403,14 +409,14 @@ static GtkWidget*
 gm_audio_profile_edit_get_widget (GMAudioProfileEdit *dialog,
                              const char *widget_name)
 {
-  GladeXML *xml;
+  GtkBuilder *builder;
   GtkWidget *w;
 
-  xml = dialog->priv->xml;
+  builder = dialog->priv->builder;
 
-  g_return_val_if_fail (xml, NULL);
+  g_return_val_if_fail (builder, NULL);
 
-  w = glade_xml_get_widget (xml, widget_name);
+  w = GTK_WIDGET (gtk_builder_get_object (builder, widget_name));
 
   if (w == NULL)
     g_error ("No such widget %s", widget_name);

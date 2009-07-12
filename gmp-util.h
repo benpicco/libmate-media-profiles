@@ -24,12 +24,11 @@
 #endif
 
 #include <gtk/gtk.h>
-#include <glade/glade.h>
 
-GladeXML*
-gmp_util_load_glade_file (const char *filename,
-                          const char *widget_root,
-                          GtkWindow  *error_dialog_parent);
+GtkBuilder *
+gmp_util_load_builder_file (const char *filename,
+			    GtkWindow  *error_dialog_parent,
+			    GError **error);
 
 void
 gmp_util_show_error_dialog (GtkWindow *transient_parent,

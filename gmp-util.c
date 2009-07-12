@@ -25,52 +25,51 @@
 
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <glade/glade-xml.h>
 
 #include "gmp-util.h"
 
-GladeXML*
-gmp_util_load_glade_file (const char *filename,
-                          const char *widget_root,
-                          GtkWindow  *error_dialog_parent)
+GtkBuilder *
+gmp_util_load_builder_file (const char *filename,
+			    GtkWindow  *error_dialog_parent,
+			    GError **err)
 {
-  char *path;
-  GladeXML *xml;
+  static GtkWidget *no_glade_dialog = NULL;
+  gchar *path;
+  GtkBuilder *builder;
+  GError *error = NULL;
 
-  xml = NULL;
   path = g_strconcat ("./", filename, NULL);
 
-  if (g_file_test (path,
-                   G_FILE_TEST_EXISTS))
-    {
-      /* Try current dir, for debugging */
-      xml = glade_xml_new (path,
-                           widget_root,
-                           GETTEXT_PACKAGE);
-    }
+  builder = gtk_builder_new ();
 
-  if (xml == NULL)
-    {
-      g_free (path);
+  /* Try current dir, for debugging */
+  if (g_file_test (path, G_FILE_TEST_EXISTS) && gtk_builder_add_from_file (builder, path, &error))
+    goto end;
 
-      path = g_build_filename (GMP_GLADE_DIR, filename, NULL);
-
-      xml = glade_xml_new (path,
-                           widget_root,
-                           GETTEXT_PACKAGE);
-    }
-
-  if (xml == NULL)
-    {
-      static GtkWidget *no_glade_dialog = NULL;
-
-      gmp_util_show_error_dialog (error_dialog_parent, &no_glade_dialog,
-                                       _("The file \"%s\" is missing. This indicates that the application is installed incorrectly, so the dialog can't be displayed."), path);
-    }
+  if (error != NULL) {
+    g_warning (error->message);
+    g_error_free (error);
+    error = NULL;
+  }
 
   g_free (path);
+  path = g_build_filename (GMP_UIDIR, filename, NULL);
+  if (g_file_test (path, G_FILE_TEST_EXISTS) && gtk_builder_add_from_file (builder, path, &error))
+    goto end;
 
-  return xml;
+  gmp_util_show_error_dialog (error_dialog_parent, &no_glade_dialog,
+			      _("The file \"%s\" is missing. This indicates that the application is installed incorrectly, so the dialog can't be displayed."), path);
+  g_free (path);
+  if (error != NULL) {
+    g_propagate_error (err, error);
+  }
+
+  return builder;
+
+ end:
+  g_free (path);
+
+  return builder;
 }
 
 void

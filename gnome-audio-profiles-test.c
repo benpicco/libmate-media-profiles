@@ -1,4 +1,4 @@
-/* gnome-audio-profiles-test.c: */ 
+/* gnome-audio-profiles-test.c: */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -89,12 +89,12 @@ test_clicked_cb (GtkButton *button, GtkWidget *combo)
     if ((msg = gst_bus_poll (bus, GST_MESSAGE_ERROR, 0))) {
       gst_message_parse_error (msg, &error, NULL);
     }
-	                  
+
     g_warning ("Error starting pipeline: %s",
         (error) ? error->message : "UNKNOWN ERROR");
 
     goto done;
-  }  
+  }
 
   g_print ("Writing test sound to test.%s ...\n", extension);
 

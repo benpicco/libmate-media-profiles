@@ -59,12 +59,9 @@ main (int argc, char *argv[])
   }
   g_option_context_free (context);
 
-  glade_register_widget (gm_audio_profile_edit_get_type (),
-			 NULL,
-			 gtk_dialog_build_children,
-			 dialog_find_internal_child);
   conf = gconf_client_get_default ();
   textdomain (GETTEXT_PACKAGE);
+
   gnome_media_profiles_init (conf);
 
   gtk_window_set_default_icon_name ("gnome-mime-audio");

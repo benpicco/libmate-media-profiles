@@ -4,8 +4,7 @@ noinst_PROGRAMS =
 defines = \
 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
 	-DDATADIR="\"$(pkgdatadir)\"" \
-	-DGMP_GLADE_DIR=\"$(gladedir)\" \
-	-DGM_AUDIO_GLADE_FILE=\"gnome-audio-profiles.glade2\" \
+	-DGMP_UIDIR=\"$(uidir)\" \
 	-DGNOMELOCALEDIR=\""$(datadir)/locale"\"
 
 if HAVE_GSTREAMER
@@ -20,8 +19,8 @@ lib_LTLIBRARIES = libgnome-media-profiles.la
 @INTLTOOL_DESKTOP_RULE@
 @INTLTOOL_SCHEMAS_RULE@
 
-gladedir = $(pkgdatadir)/glade
-glade_DATA = gnome-audio-profiles.glade2
+uidir = $(pkgdatadir)
+ui_DATA = gnome-audio-profile-new.ui gnome-audio-profile-edit.ui
 
 gnome_audio_profiles_properties_SOURCES = gnome-audio-profiles-properties.c
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
@@ -67,12 +66,15 @@ endif
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = gnome-media-profiles.pc
-
-EXTRA_DIST = $(glade_DATA) $(schema_DATA) $(pkgconfig_DATA)
+EXTRA_DIST = $(ui_DATA) $(schema_DATA) $(pkgconfig_DATA)
 
 CLEANFILES = $(schema_DATA)
 
 # "." is dirty hack to first build our .la in this dir before moving to glade
-SUBDIRS =  . help glade
+SUBDIRS =  . help
+
+if HAVE_GLADEUI
+SUBDIRS += glade
+endif
 
 -include $(top_srcdir)/git.mk

@@ -26,7 +26,6 @@
 #include <string.h>
 #include <glib/gi18n-lib.h>
 #include <gtk/gtk.h>
-#include <glade/glade-xml.h>
 #include <gst/gst.h>
 
 #include "audio-profile.h"
@@ -53,14 +52,6 @@ static void gm_audio_profiles_edit_init		(GMAudioProfilesEdit *edit);
 static void gm_audio_profiles_edit_class_init	(GMAudioProfilesEditClass *klass);
 static void gm_audio_profiles_edit_finalize	(GObject *object);
 
-
-/* responses */
-enum
-{
-  RESPONSE_CREATE = GTK_RESPONSE_ACCEPT, /* Arghhh: Glade wants a GTK_RESPONSE_* for dialog buttons */
-  RESPONSE_CANCEL,
-  RESPONSE_DELETE
-};
 
 /* profile list column names */
 enum
@@ -802,7 +793,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
                                int        response_id,
                                GMAudioProfilesEdit *dialog)
 {
-  if (response_id == RESPONSE_CREATE)
+  if (response_id == GTK_RESPONSE_ACCEPT)
   {
     GtkWidget *name_entry;
     char *name;
@@ -910,25 +901,29 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
   GtkWindow *old_transient_parent;
   GtkWidget *create_button;
   gint response;
+  GError *error = NULL;
 
   if (dialog->priv->new_profile_dialog == NULL)
   {
-    GladeXML *xml;
+    GtkBuilder *builder;
     GtkWidget *w, *wl;
     GtkWidget *create_button;
     GtkSizeGroup *size_group, *size_group_labels;
 
-    xml = gmp_util_load_glade_file (GM_AUDIO_GLADE_FILE, "new-profile-dialog", transient_parent);
+    builder = gmp_util_load_builder_file ("gnome-audio-profile-new.ui", transient_parent, &error);
 
-    if (xml == NULL)
+    if (error != NULL) {
+      g_warning (error->message);
+      g_error_free (error);
       return;
+    }
 
-    dialog->priv->new_profile_dialog = glade_xml_get_widget (xml, "new-profile-dialog");
+    dialog->priv->new_profile_dialog = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-dialog"));
     g_signal_connect (G_OBJECT (dialog->priv->new_profile_dialog), "response", G_CALLBACK (new_profile_response_callback), dialog);
 
     g_object_add_weak_pointer (G_OBJECT (dialog->priv->new_profile_dialog), (void**) &dialog->priv->new_profile_dialog);
 
-    create_button = glade_xml_get_widget (xml, "new-profile-create-button");
+    create_button = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-create-button"));
     g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "create_button", create_button);
     gtk_widget_set_sensitive (create_button, FALSE);
 
@@ -936,7 +931,7 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
     size_group_labels = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
     /* the name entry */
-    w = glade_xml_get_widget (xml, "new-profile-name-entry");
+    w = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-name-entry"));
     g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "name_entry", w);
     g_signal_connect (G_OBJECT (w), "changed", G_CALLBACK (new_profile_name_entry_changed_callback), create_button);
     gtk_entry_set_activates_default (GTK_ENTRY (w), TRUE);
@@ -944,32 +939,32 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
     // FIXME terminal_util_set_atk_name_description (w, _("Enter profile name"), NULL);
     gtk_size_group_add_widget (size_group, w);
 
-    wl = glade_xml_get_widget (xml, "new-profile-name-label");
+    wl = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-name-label"));
     gtk_label_set_mnemonic_widget (GTK_LABEL (wl), w);
     // FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
     gtk_size_group_add_widget (size_group_labels, wl);
 
 #ifdef BASE
     /* the base profile option menu */
-    w = glade_xml_get_widget (xml, "new-profile-base-option-menu");
+    w = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-base-option-menu"));
     g_object_set_data (G_OBJECT (dialog->priv->new_profile_dialog), "base_option_menu", w);
     // FIXME terminal_util_set_atk_name_description (w, _("Choose base profile"), NULL);
     //FIXME profile_optionmenu_refill (w);
     gtk_size_group_add_widget (size_group, w);
 
-    wl = glade_xml_get_widget (xml, "new-profile-base-label");
+    wl = GTK_WIDGET (gtk_builder_get_object (builder, "new-profile-base-label"));
     gtk_label_set_mnemonic_widget (GTK_LABEL (wl), w);
     // FIXME terminal_util_set_labelled_by (w, GTK_LABEL (wl));
     gtk_size_group_add_widget (size_group_labels, wl);
 #endif
 
 
-    gtk_dialog_set_default_response (GTK_DIALOG (dialog->priv->new_profile_dialog), RESPONSE_CREATE);
+    /* gtk_dialog_set_default_response (GTK_DIALOG (dialog->priv->new_profile_dialog), GTK_RESPONSE_CREATE); */
 
     g_object_unref (G_OBJECT (size_group));
     g_object_unref (G_OBJECT (size_group_labels));
 
-    g_object_unref (G_OBJECT (xml));
+    g_object_unref (G_OBJECT (builder));
   }
 
   old_transient_parent = gtk_window_get_transient_for (GTK_WINDOW (dialog->priv->new_profile_dialog));

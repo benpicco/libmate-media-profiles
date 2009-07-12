@@ -23,8 +23,6 @@
 #define AUDIO_PROFILE_PRIVATE_H
 
 #include <gconf/gconf-client.h>
-#include <glade/glade.h>
-#include <glade/glade-build.h>
 
 #include "gmp-conf.h"
 #include "audio-profile.h"
@@ -50,11 +48,6 @@ gboolean	gm_audio_setting_mask_is_empty	(const GMAudioSettingMask *mask);
 void		gm_audio_profile_delete_list	(GConfClient *conf,
 						 GList *deleted_profiles,
 						 GError **error);
-void        gtk_dialog_build_children (GladeXML *self, GtkWidget *w,
-						GladeWidgetInfo *info);
-GtkWidget*  dialog_find_internal_child (GladeXML *xml,
-						GtkWidget *parent,
-						const gchar *childname);
 
 G_END_DECLS
 

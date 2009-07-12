@@ -1,0 +1,10 @@
+<glade-catalog supports="gtkbuilder" name="gnome-media-profiles" library="gnome-media-profiles" depends="gtk+">
+
+  <init-function>gnome_media_profiles_catalog_init</init-function>
+
+  <glade-widget-classes>
+    <glade-widget-class name="GMAudioProfileEdit" get-type-function="gm_audio_profile_edit_get_type"
+                        generic-name="audio-profile-edit" title="AudioProfileEdit"/>
+  </glade-widget-classes>
+
+</glade-catalog>
