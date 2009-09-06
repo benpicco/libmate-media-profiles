@@ -74,3 +74,5 @@ CLEANFILES = $(schema_DATA)
 
 # "." is dirty hack to first build our .la in this dir before moving to glade
 SUBDIRS =  . help glade
+
+-include $(top_srcdir)/git.mk
