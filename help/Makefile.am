@@ -6,6 +6,6 @@ DOC_INCLUDES =
 DOC_FIGURES = \
 	figures/gnome-audio-profiles-profiles-window.png \
 	figures/gnome-audio-profiles-profile-window.png
-DOC_LINGUAS =
+DOC_LINGUAS = es
 
 -include $(top_srcdir)/git.mk
