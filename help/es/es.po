@@ -1,4 +1,4 @@
-# translation of gnome-media.audio-profiles.master.po to Español
+# translation of audio-profiles.master.po to Español
 # Spanish translation for gnome-media.
 # Copyright (C) 2009 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
@@ -7,9 +7,9 @@
 # Jorge González <jorgegonz@svn.gnome.org>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media.audio-profiles.master\n"
-"POT-Creation-Date: 2009-11-03 18:32+0000\n"
-"PO-Revision-Date: 2009-11-04 20:31+0100\n"
+"Project-Id-Version: audio-profiles.master\n"
+"POT-Creation-Date: 2009-11-04 19:36+0000\n"
+"PO-Revision-Date: 2009-11-08 13:55+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -47,6 +47,8 @@ msgid ""
 "<application>GNOME Audio Profiles</application> is a set of audio encoding "
 "configurations for GStreamer based applications."
 msgstr ""
+"Los <application>Perfiles de sonido de GNOME</application> son un conjunto de configuraciones "
+"de sonido para las aplicaciones basadas en GStreamer."
 
 #: C/gnome-audio-profiles.xml:33(year)
 msgid "2008-2009"
@@ -88,7 +90,7 @@ msgstr "Rellenar algunos espacios vacíos, añadir capturas de pantalla."
 
 #: C/gnome-audio-profiles.xml:78(para)
 msgid "Release with GNOME Media 2.27.3"
-msgstr ""
+msgstr "Publicado con GNOME Media 2.27.3"
 
 #: C/gnome-audio-profiles.xml:79(para) C/gnome-audio-profiles.xml:87(para)
 msgid "Marc-Andre Lureau"
@@ -117,6 +119,10 @@ msgid ""
 "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
 "section of the GNOME User Guide</ulink>."
 msgstr ""
+"Para informar de un fallo, o hacer alguna sugerencia concerniente la "
+"aplicación <application>Perfiles de sonido de GNOME</application> o este manual, siga las "
+"indicaciones en la <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Página "
+"de comentarios de GNOME</ulink>."
 
 #: C/gnome-audio-profiles.xml:106(primary)
 #: C/gnome-audio-profiles.xml:0(application)
@@ -133,38 +139,41 @@ msgid ""
 "list of pre-defined encoding formats. By default, <application>GNOME Audio "
 "Profiles</application> provides the following audio format:"
 msgstr ""
+"Los <application>Perfiles de sonido de GNOME</application> le permiten seleccionar y modificar "
+"una lista de formatos de codificación predefinidos. De forma predeterminada los <application>Perfiles "
+"de sonido de GNOME</application> proporcionan los siguientes formatos de sonido:"
 
 #: C/gnome-audio-profiles.xml:118(para)
 msgid "AAC-MP4 - The new standard of lossy compression."
-msgstr "AAC-MP4: El nuevo estándar de compresión con pérdida."
+msgstr "AAC-MP4: el nuevo estándar de compresión con pérdida."
 
 #: C/gnome-audio-profiles.xml:121(para)
 msgid "Ogg Vorbis - Xiph.Org lossy compression."
-msgstr "Ogg Vorbis: Compresión con pérdida de Xiph.Org."
+msgstr "Ogg Vorbis: compresión con pérdida de Xiph.Org."
 
 #: C/gnome-audio-profiles.xml:124(para)
 msgid "Speex - Xiph.Org lossy compression optimized for voice."
-msgstr ""
+msgstr "Speex: compresión con pérdida de Xiph.Org optimizada para voz."
 
 #: C/gnome-audio-profiles.xml:127(para)
 msgid "FLAC - Xiph.Org lossless audio compression."
-msgstr ""
+msgstr "FLAC: compresión sin pérdida de Xiph.Org."
 
 #: C/gnome-audio-profiles.xml:130(para)
 msgid "MP3 - The popular lossy compression format."
-msgstr ""
+msgstr "MP3: el popular formato de compresión con pérdida."
 
 #: C/gnome-audio-profiles.xml:133(para)
 msgid "MP2 - MPEG-1 Audio Layer II, largely supported."
-msgstr ""
+msgstr "MP2: sonido MPEG-1 Layer II, ampliamente soportado."
 
 #: C/gnome-audio-profiles.xml:136(para)
 msgid "WAV - Lossless."
-msgstr "WAV: Sin pérdida."
+msgstr "WAV: sin pérdida."
 
 #: C/gnome-audio-profiles.xml:141(para)
 msgid "Some format may be illegal in your jurisdiction."
-msgstr ""
+msgstr "Algunos formatos pueden ser ilegales en su jurisdicción."
 
 #: C/gnome-audio-profiles.xml:146(title)
 msgid "Usage"
@@ -175,6 +184,8 @@ msgid ""
 "Use <application>GNOME Audio Profiles</application> to modify a list of pre-"
 "defined encoding formats."
 msgstr ""
+"Use los <application>Perfiles de sonido de GNOME</application> para modificar "
+"una lista de formatos de codificación predefinidos."
 
 #: C/gnome-audio-profiles.xml:150(title)
 msgid "Profile selection dialog"
@@ -185,6 +196,8 @@ msgid ""
 "The following window is displayed to modify, add or remove the pre-defined "
 "formats."
 msgstr ""
+"La siguiente ventana se muestra para modificar, añadir o quitar los formatos "
+"predefinidos."
 
 #: C/gnome-audio-profiles.xml:157(title)
 msgid "<application>GNOME Audio Profiles</application> Window"
@@ -194,7 +207,9 @@ msgstr "Ventana de los <application>Perfiles de sonido de GNOME</application>"
 msgid ""
 "Shows <placeholder-1/> main window. Contains list of profiles and "
 "modification options."
-msgstr "Muestra la ventana principal de <placeholder-1/>. Contiene una lista de perfiles y las opciones de modificación."
+msgstr ""
+"Muestra la ventana principal de <placeholder-1/>. Contiene una lista de "
+"perfiles y las opciones de modificación."
 
 #. ==== End of Figure ====
 #: C/gnome-audio-profiles.xml:172(para)
@@ -202,18 +217,20 @@ msgid ""
 "Select one of the profiles and click \"Edit\" to modify it. The \"Profile "
 "modification window\" will be displayed."
 msgstr ""
+"Seleccione uno de los perfiles y pulse «Editar» para modificarlo. Se mostrará "
+"la «Ventana de modificación de perfil»."
 
 #: C/gnome-audio-profiles.xml:175(para)
 msgid ""
 "\"Delete\" will remove the currently selected profile from the list of "
 "profiles."
-msgstr ""
+msgstr "«Borrar» quitará de la lista de perfiles el perfil actualmente seleccionado."
 
 #: C/gnome-audio-profiles.xml:178(para)
 msgid ""
 "To create a new profile, click \"New\". The \"Profile 5~ modification window"
 "\" will be displayed."
-msgstr ""
+msgstr "Para crear un perfil nuevo pulse «Nuevo». Se mostrará la «Ventana de modificación de perfil»."
 
 #: C/gnome-audio-profiles.xml:184(title)
 msgid "Profile editing"
@@ -224,6 +241,8 @@ msgid ""
 "<application>GNOME Audio Profiles</application> let you modify the "
 "parameters of an audio profile."
 msgstr ""
+"Los <application>Perfiles de sonido de GNOME</application> le permiten "
+"modificar los parámetros de un perfil de sonido."
 
 #: C/gnome-audio-profiles.xml:190(title)
 msgid "Profile modification window"
@@ -235,19 +254,19 @@ msgstr "Muestra la ventana de perfil de <placeholder-1/>."
 
 #: C/gnome-audio-profiles.xml:206(para)
 msgid "Profile name - user friendly name of the profile."
-msgstr ""
+msgstr "Nombre del perfil: nombre amigable del perfil."
 
 #: C/gnome-audio-profiles.xml:209(para)
 msgid "Profile description - long description of this profile."
-msgstr ""
+msgstr "Descripción del perfil: descripción larga de este perfil."
 
 #: C/gnome-audio-profiles.xml:212(para)
 msgid "GStreamer pipeline - the GStreamer encoding pipeline."
-msgstr ""
+msgstr "Tubería GStreamer: la tubería de codificación de GStreamer."
 
 #: C/gnome-audio-profiles.xml:215(para)
 msgid "File extension - the filename extension associated to this profile."
-msgstr ""
+msgstr "Extensión de archivo: la extensión de archivo asociada con este perfil."
 
 #: C/gnome-audio-profiles.xml:219(para)
 msgid "Active - whether this profile is listed in client application."
@@ -277,6 +296,12 @@ msgid ""
 "this documentation; another can be found in the file COPYING included with "
 "the source code of this program."
 msgstr ""
+"Este programa se distribuye bajo los términos de la Licencia Pública General "
+"GNU tal como la publica la Free Software Foundation; en cualquiera de las "
+"versiones 2 de la Licencia o (a su elección) cualquier versión posterior. "
+"Se incluye una <ulink url=\"ghelp:lgpl\" type=\"help\">copia de esta licencia</ulink> "
+"en esta documentación; puede encontrar otra copia en en el archivo COPYING incluido con el código "
+"fuente de este programa."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/gnome-audio-profiles.xml:0(None)
