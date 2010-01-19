@@ -63,7 +63,7 @@ gnome_media_profiles_init (GConfClient *conf)
   }
 
  /* Register GMAudioProfieEdit widget for GtkBuilder */
-  (void)GM_AUDIO_PROFILE_EDIT(NULL);
+  volatile GType dummy = GM_AUDIO_PROFILE_EDIT(NULL);
   /* initialize the audio profiles part */
   gm_audio_profile_initialize (conf);
 
