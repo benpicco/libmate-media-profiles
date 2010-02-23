@@ -19,4 +19,7 @@ gladecatalog_DATA = gnome-media-profiles.xml
 check-catalog:
 	xmllint --dtdvalid glade-catalog.dtd --noout $(gladecatalog_DATA)
 
+EXTRA_DIST = \
+	$(gladecatalog_DATA)
+
 -include $(top_srcdir)/git.mk
