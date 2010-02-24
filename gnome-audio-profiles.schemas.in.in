@@ -81,9 +81,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -156,9 +156,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -230,9 +230,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -305,9 +305,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -379,9 +379,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -453,9 +453,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -527,9 +527,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
@@ -601,9 +601,9 @@
       <type>bool</type>
       <default>true</default>
       <locale name="C">
-        <short>Whether or not this profile is to be used</short>
+        <short>Whether this profile is to be used</short>
         <long>
-          Whether or not to use and display this profile.
+          Whether to use and display this profile.
         </long>
       </locale>
     </schema>
