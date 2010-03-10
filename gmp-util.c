@@ -157,8 +157,7 @@ gmp_util_show_error_dialog (GtkWindow *transient_parent,
   {
     g_return_if_fail (GTK_IS_MESSAGE_DIALOG (*weak_ptr));
 
-    gtk_label_set_text (GTK_LABEL (GTK_MESSAGE_DIALOG (*weak_ptr)->label),
-                        message);
+    g_object_set (*weak_ptr, "text", message);
 
     gtk_window_present (GTK_WINDOW (*weak_ptr));
   }

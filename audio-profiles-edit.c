@@ -598,9 +598,9 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
 
   gtk_dialog_set_has_separator (gdialog, FALSE);
   gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-  gtk_box_set_spacing (GTK_BOX (gdialog->vbox), 2); /* 2 * 5 + 2 = 12 */
-  gtk_container_set_border_width (GTK_CONTAINER (gdialog->action_area), 5);
-  gtk_box_set_spacing (GTK_BOX (gdialog->action_area), 6);
+  gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (gdialog)), 2); /* 2 * 5 + 2 = 12 */
+  gtk_container_set_border_width (GTK_CONTAINER (gtk_dialog_get_action_area (gdialog)), 5);
+  gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_action_area (gdialog)), 6);
 
   g_signal_connect (GTK_DIALOG (dialog),
                     "response",
@@ -614,7 +614,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
 
   vbox = gtk_vbox_new (FALSE, 6);
   gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
-  gtk_box_pack_start (GTK_BOX (gdialog->vbox),
+  gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (gdialog)),
                       vbox, TRUE, TRUE, 0);
 
   /* FIXME
