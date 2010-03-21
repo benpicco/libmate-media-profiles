@@ -5,6 +5,6 @@ DOC_INCLUDES = legal.xml
 DOC_FIGURES = \
 	figures/gnome-audio-profiles-profiles-window.png \
 	figures/gnome-audio-profiles-profile-window.png
-DOC_LINGUAS = de es sv
+DOC_LINGUAS = de es fr sv
 
 -include $(top_srcdir)/git.mk
