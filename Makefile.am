@@ -5,7 +5,8 @@ defines = \
 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
 	-DDATADIR="\"$(pkgdatadir)\"" \
 	-DGMP_UIDIR=\"$(uidir)\" \
-	-DGNOMELOCALEDIR=\""$(datadir)/locale"\"
+	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+	$(DISABLE_DEPRECATED)
 
 if HAVE_GSTREAMER
 noinst_PROGRAMS += gnome-audio-profiles-test
