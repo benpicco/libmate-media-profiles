@@ -24,15 +24,50 @@
 
 #include "audio-profile.h"
 #include <gtk/gtk.h>
-#include <gconf/gconf-client.h>
 
 G_BEGIN_DECLS
 
-/* create a new Profile Choose Dialog */
-GtkWidget*      gm_audio_profile_choose_new		(void);
-GMAudioProfile* gm_audio_profile_choose_get_active	(GtkWidget  *choose);
-gboolean        gm_audio_profile_choose_set_active	(GtkWidget  *choose,
-							 const char *id);
+/* Standard macros */
+#define GM_AUDIO_TYPE_PROFILE_CHOOSE            (gm_audio_profile_choose_get_type ())
+#define GM_AUDIO_PROFILE_CHOOSE(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GM_AUDIO_TYPE_PROFILE_CHOOSE, GMAudioProfileChoose))
+#define GM_AUDIO_PROFILE_CHOOSE_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST  ((klass), GM_AUDIO_TYPE_PROFILE_CHOOSE, GMAudioProfileChooseClass))
+#define GM_AUDIO_IS_PROFILE_CHOOSE(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GM_AUDIO_TYPE_PROFILE_CHOOSE))
+#define GM_AUDIO_IS_PROFILE_CHOOSE_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE  ((klass), GM_AUDIO_TYPE_PROFILE_CHOOSE))
+#define GM_AUDIO_PROFILE_CHOOSE_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS  ((obj), GM_AUDIO_TYPE_PROFILE_CHOOSE, GMAudioProfileChooseClass))
+
+/* Structs */
+typedef struct _GMAudioProfileChoose        GMAudioProfileChoose;
+typedef struct _GMAudioProfileChooseClass   GMAudioProfileChooseClass;
+typedef struct _GMAudioProfileChoosePrivate GMAudioProfileChoosePrivate;
+
+struct _GMAudioProfileChoose
+{
+  GtkComboBox parent;
+
+  /*< Private >*/
+  GMAudioProfileChoosePrivate *priv;
+};
+
+struct _GMAudioProfileChooseClass
+{
+  GtkComboBoxClass parent_class;
+
+  /* Signals */
+  void (*profile_changed) (GMAudioProfileChoose *choose,
+			   GMAudioProfile       *profile);
+};
+
+/* Public API */
+GType           gm_audio_profile_choose_get_type           (void) G_GNUC_CONST;
+GtkWidget      *gm_audio_profile_choose_new                (void);
+GMAudioProfile *gm_audio_profile_choose_get_active_profile (GMAudioProfileChoose *choose);
+gboolean        gm_audio_profile_choose_set_active_profile (GMAudioProfileChoose *choose,
+							    const gchar          *id);
+
+/* Deprecated API */
+GMAudioProfile *gm_audio_profile_choose_get_active         (GtkWidget            *choose);
+gboolean        gm_audio_profile_choose_set_active         (GtkWidget            *choose,
+							    const char           *id);
 
 G_END_DECLS
 
