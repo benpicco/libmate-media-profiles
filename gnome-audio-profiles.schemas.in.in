@@ -496,7 +496,7 @@
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/profiles/mp3/pipeline</applyto>
       <owner>gnome-media</owner>
       <type>string</type>
-      <default>audio/x-raw-int,rate=44100,channels=2 ! lame name=enc mode=0 vbr-quality=6 ! id3v2mux</default>
+      <default>audio/x-raw-int,rate=44100,channels=2 ! lamemp3enc name=enc target=0 quality=6 ! xingmux ! id3v2mux</default>
       <locale name="C">
         <short>The partial GStreamer pipeline used</short>
         <long>
