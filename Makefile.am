@@ -12,10 +12,10 @@ if HAVE_GSTREAMER
 noinst_PROGRAMS += gnome-audio-profiles-test
 gnome_audio_profiles_test_SOURCES = gnome-audio-profiles-test.c
 gnome_audio_profiles_test_CFLAGS = $(GMP_CFLAGS) $(GSR_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_test_LDADD = libgnome-media-profiles.la $(GMP_LIBS) $(GSR_LIBS)
+gnome_audio_profiles_test_LDADD = libgnome-media-profiles-3.0.la $(GMP_LIBS) $(GSR_LIBS)
 endif
 
-lib_LTLIBRARIES = libgnome-media-profiles.la
+lib_LTLIBRARIES = libgnome-media-profiles-3.0.la
 
 @INTLTOOL_DESKTOP_RULE@
 @INTLTOOL_SCHEMAS_RULE@
@@ -25,9 +25,9 @@ ui_DATA = gnome-audio-profile-new.ui gnome-audio-profile-edit.ui
 
 gnome_audio_profiles_properties_SOURCES = gnome-audio-profiles-properties.c
 gnome_audio_profiles_properties_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
-gnome_audio_profiles_properties_LDADD = libgnome-media-profiles.la $(GMP_LIBS)
+gnome_audio_profiles_properties_LDADD = libgnome-media-profiles-3.0.la $(GMP_LIBS)
 
-libgnome_media_profiles_la_SOURCES = \
+libgnome_media_profiles_3_0_la_SOURCES = \
 	audio-profile.c \
 	audio-profiles-edit.c \
 	audio-profile-edit.c \
@@ -41,7 +41,7 @@ noinst_HEADERS = \
 	gmp-util.h
 
 
-gmpincludedir = $(includedir)/gnome-media/profiles
+gmpincludedir = $(includedir)/gnome-media-3.0/profiles
 gmpinclude_HEADERS = \
 	audio-profile.h \
 	audio-profile-choose.h \
@@ -49,9 +49,9 @@ gmpinclude_HEADERS = \
 	audio-profiles-edit.h \
 	gnome-media-profiles.h
 
-libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
-libgnome_media_profiles_la_LIBADD = $(GMP_LIBS)
-libgnome_media_profiles_la_LDFLAGS = -no-undefined
+libgnome_media_profiles_3_0_la_CFLAGS = $(GMP_CFLAGS) $(defines) -I$(top_srcdir)
+libgnome_media_profiles_3_0_la_LIBADD = $(GMP_LIBS)
+libgnome_media_profiles_3_0_la_LDFLAGS = -no-undefined
 
 schemadir = $(GCONF_SCHEMA_FILE_DIR)
 schema_DATA = gnome-audio-profiles.schemas
@@ -66,7 +66,7 @@ install-data-local:
 endif
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = gnome-media-profiles.pc
+pkgconfig_DATA = gnome-media-profiles-3.0.pc
 EXTRA_DIST = $(ui_DATA) $(schema_DATA) $(pkgconfig_DATA)
 
 CLEANFILES = $(schema_DATA)
