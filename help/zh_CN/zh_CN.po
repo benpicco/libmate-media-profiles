@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-media master\n"
-"POT-Creation-Date: 2010-07-08 15:11+0000\n"
-"PO-Revision-Date: 2010-07-12 13:12+0800\n"
-"Last-Translator: Zhang Miao <mymzhang@gmail.com>\n"
+"POT-Creation-Date: 2010-07-22 15:09+0000\n"
+"PO-Revision-Date: 2010-07-23 19:15+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -165,7 +165,6 @@ msgid "June 2009"
 msgstr "2009年6月"
 
 #: C/gnome-audio-profiles.xml:77(para)
-#, fuzzy
 msgid "Fill some blanks, add screenshots."
 msgstr "填充一些空白，添加截图。"
 
