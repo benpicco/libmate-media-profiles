@@ -1,5 +1,5 @@
 # French translation for gnome-media.
-# Copyright (C) 2009 gnome-media's COPYRIGHT HOLDER
+# Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 #
 # Laurent Coudeur <laurentc@iol.ie>, 2009.
@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-media master\n"
-"POT-Creation-Date: 2009-11-09 14:17+0000\n"
+"POT-Creation-Date: 2010-09-28 19:45+0000\n"
 "PO-Revision-Date: 2010-03-20 15:39+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
@@ -148,8 +148,7 @@ msgid ""
 "configurations for GStreamer based applications."
 msgstr ""
 "<application>GNOME Audio Profiles</application> est un ensemble de "
-"configurations "
-"de codage audio pour les applications utilisant GStreamer."
+"configurations de codage audio pour les applications utilisant GStreamer."
 
 #: C/gnome-audio-profiles.xml:33(year)
 msgid "2008-2009"
@@ -220,13 +219,10 @@ msgid ""
 "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
 "section of the GNOME User Guide</ulink>."
 msgstr ""
-"Pour rapporter une anomalie ou émettre une suggestion concernant <"
-"application>GNOME Audio "
-"Profiles</application> ou ce manuel, procédez selon les instructions de <"
-"ulink url="
-"\"ghelp:user-guide?feedback-bugs\" type=\"help\">la section « Votre avis » "
-"du "
-"Guide d'utilisation du bureau GNOME</ulink>."
+"Pour rapporter une anomalie ou émettre une suggestion concernant "
+"<application>GNOME Audio Profiles</application> ou ce manuel, procédez selon "
+"les instructions de <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">la section « Votre avis » du Guide d'utilisation du bureau GNOME</ulink>."
 
 #: C/gnome-audio-profiles.xml:106(primary)
 #: C/gnome-audio-profiles.xml:0(application)
@@ -244,9 +240,9 @@ msgid ""
 "Profiles</application> provides the following audio format:"
 msgstr ""
 "<application>GNOME Audio Profiles</application> vous permet de sélectionner "
-"et de modifier la "
-"liste de format de codage prédéfinis. Par défaut, <application>GNOME Audio "
-"Profile</application> fournit les format audio suivants :"
+"et de modifier la liste de format de codage prédéfinis. Par défaut, "
+"<application>GNOME Audio Profile</application> fournit les format audio "
+"suivants :"
 
 #: C/gnome-audio-profiles.xml:118(para)
 msgid "AAC-MP4 - The new standard of lossy compression."
@@ -332,13 +328,12 @@ msgid ""
 "profiles."
 msgstr "« Supprimer » enlève le profil sélectionné de la liste des profils."
 
-# incorrect a first naming window opens
 #: C/gnome-audio-profiles.xml:178(para)
 msgid ""
-"To create a new profile, click \"New\". The \"Profile 5~ modification window"
-"\" will be displayed."
+"To create a new profile, click \"New\". The \"Profile modification window\" "
+"will be displayed."
 msgstr ""
-"Pour créer un nouveau profil, cliquez sur « Nouveau ». La fenêtre « Nouveau "
+"Pour créer un nouveau profil, cliquez sur « Nouveau ». La « fenêtre modification du "
 "profil » s'affiche."
 
 #: C/gnome-audio-profiles.xml:184(title)
@@ -395,10 +390,8 @@ msgid ""
 "bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
 msgstr ""
 "Pour rapporter une anomalie ou émettre une suggestion concernant cette "
-"application "
-"ou ce manuel, procédez selon les instructions de "
-"<ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">la section "
-"« Votre avis » du "
+"application ou ce manuel, procédez selon les instructions de <ulink url="
+"\"ghelp:user-guide?feedback-bugs\" type=\"help\">la section « Votre avis » du "
 "Guide d'utilisation du bureau GNOME</ulink>."
 
 #: C/gnome-audio-profiles.xml:253(para)
@@ -410,13 +403,12 @@ msgid ""
 "this documentation; another can be found in the file COPYING included with "
 "the source code of this program."
 msgstr ""
-"Ce programme est distribué selon les termes de la GNU Library General "
-"Public license, tels que publiés par la Free Software Foundation ; soit la "
-"version 2 de "
-"cette licence ou (à votre choix) toute version ultérieure. Vous trouverez "
-"une <ulink url=\"ghelp:lgpl\" type=\"help\">copie de cette licence</ulink> "
-"dans cette documentation ou dans le fichier COPYING fourni avec la source du "
-"code de ce programme."
+"Ce programme est distribué selon les termes de la GNU Library General Public "
+"license, tels que publiés par la Free Software Foundation ; soit la version "
+"2 de cette licence ou (à votre choix) toute version ultérieure. Vous "
+"trouverez une <ulink url=\"ghelp:lgpl\" type=\"help\">copie de cette "
+"licence</ulink> dans cette documentation ou dans le fichier COPYING fourni "
+"avec la source du code de ce programme."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/gnome-audio-profiles.xml:0(None)
@@ -424,4 +416,3 @@ msgid "translator-credits"
 msgstr ""
 "Laurent Coudeur <laurentc@iol.ie>, 2009\n"
 "Bruno Brouard <annoa.b@gmail.com>, 2010"
-
