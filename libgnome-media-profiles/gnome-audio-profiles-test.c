@@ -27,7 +27,7 @@
 #include <gconf/gconf-client.h>
 #include <gst/gst.h>
 
-#include <profiles/gnome-media-profiles.h>
+#include <libgnome-media-profiles/gnome-media-profiles.h>
 
 static void
 edit_clicked_cb (GtkButton *button, GtkWindow *window)

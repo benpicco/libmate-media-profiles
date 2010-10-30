@@ -11,7 +11,7 @@ defines = \
 
 libgnome_media_profiles_la_SOURCES = gnome-media-profiles-catalog.c
 libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(GLADEUI_CFLAGS) $(defines) -I$(top_srcdir)
-libgnome_media_profiles_la_LIBADD = $(GMP_LIBS) $(GLADEUI_LIBS) $(top_builddir)/profiles/libgnome-media-profiles.la
+libgnome_media_profiles_la_LIBADD = $(GMP_LIBS) $(GLADEUI_LIBS) $(top_builddir)/libgnome-media-profiles/libgnome-media-profiles-3.0.la
 libgnome_media_profiles_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
 
 gladecatalogdir = @GLADEUI_CATALOG_DIR@

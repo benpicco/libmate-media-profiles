@@ -1,4 +1,4 @@
-#include <profiles/audio-profile-edit.h>
+#include <libgnome-media-profiles/audio-profile-edit.h>
 
 void gnome_media_profiles_catalog_init (void);
 

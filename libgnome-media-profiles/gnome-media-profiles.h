@@ -19,9 +19,9 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include <profiles/audio-profile.h>
-#include <profiles/audio-profile-choose.h>
-#include <profiles/audio-profile-edit.h>
-#include <profiles/audio-profiles-edit.h>
+#include <libgnome-media-profiles/audio-profile.h>
+#include <libgnome-media-profiles/audio-profile-choose.h>
+#include <libgnome-media-profiles/audio-profile-edit.h>
+#include <libgnome-media-profiles/audio-profiles-edit.h>
 
 void gnome_media_profiles_init (GConfClient *conf);

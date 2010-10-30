@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+libgnome-media-profiles/audio-profile-edit.c
+libgnome-media-profiles/audio-profile.c
+libgnome-media-profiles/audio-profiles-edit.c
+libgnome-media-profiles/gmp-util.c
+libgnome-media-profiles/gnome-audio-profiles-properties.c
+[type: gettext/glade]data/gnome-audio-profile-edit.ui
+[type: gettext/glade]data/gnome-audio-profile-new.ui
+data/gnome-media-profiles.schemas.in.in
