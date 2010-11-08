@@ -35,7 +35,7 @@ noinst_HEADERS = \
 	gmp-util.h
 
 
-gmpincludedir = $(includedir)/gnome-media-3.0/profiles
+gmpincludedir = $(includedir)/libgnome-media-profiles-3.0/libgnome-media-profiles
 gmpinclude_HEADERS = \
 	audio-profile.h \
 	audio-profile-choose.h \
