@@ -957,6 +957,8 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
     gtk_size_group_add_widget (size_group_labels, wl);
 #endif
 
+    gtk_window_set_transient_for (GTK_WINDOW (dialog->priv->new_profile_dialog),
+                                  transient_parent);
 
     /* gtk_dialog_set_default_response (GTK_DIALOG (dialog->priv->new_profile_dialog), GTK_RESPONSE_CREATE); */
 
