@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([libgnome-media-profiles], [2.91.0],
+AC_INIT([libgnome-media-profiles], [2.91.2],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-bzip2 no-dist-gzip])
