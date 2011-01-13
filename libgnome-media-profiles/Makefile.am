@@ -1,6 +1,8 @@
 bin_PROGRAMS = gnome-audio-profiles-properties
 noinst_PROGRAMS =
 
+uidir = $(pkgdatadir)
+
 defines = \
 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
 	-DDATADIR="\"$(pkgdatadir)\"" \
