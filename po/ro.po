@@ -1,0 +1,319 @@
+# translation of gnome-media.HEAD.ro.po to Română
+# translation of gnome-media.HEAD.ro.po to
+# Romanian translation for gnome-media.
+# Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+# Mugurel Tudor <mugurelu@gnome.ro>, 2002-2003, 2004, 2005, 2006, 2007.
+# Adi Roiban https://launchpad.net/~adiroiban, 2008, 2009
+# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media.HEAD.ro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-09-26 12:08+0300\n"
+"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
+"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "A intervenit o eroare la afișarea ajutorului: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Se editeză profilul „%s”"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<fără nume>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<nici o descriere>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "A intervenit o eroare la obținerea listei de profile gm_audio. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"A intervenit o eroare la subscrierea pentru notificarea schimbărilor listei "
+"de profile audio. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "A intervenit o eroare la uitarea căii de profil %s. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Editare"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Ștergeți acest profil?\n"
+msgstr[1] "Ștergeți aceste %d profile?\n"
+msgstr[2] "Ștergeți aceste %d de profile?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Ștergeți profilul „%s”?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Ștergere profil"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Editare profile audio GNOME"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Profile:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Aveți deja un profil numit „%s”"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "Eroare GCONF (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Fișierul „%s” lipsește. Acest lucru indică faptul că aplicația este "
+"instalată incorect, și ca atare dialogul nu poate fi afișat."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"Porniți „%s --help” pentru a vizualiza lista completă a opțiunilor din linia "
+"de comandă.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Editare profil audio"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "_Descriere profil:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_Activ?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "Extensie _fișier:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "Conexiune _GStreamer:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "Nume _profil:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Profil nou"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Creează"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "O descriere pentru profilul audio"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"O descriere pentru profil, conținând mai multe informații și descriind când "
+"să fie folosit acest profil."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"O extensie de fișier ce va fi folosită la stocarea fișierelor codate cu "
+"acest profil."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "O conexiune parțială GStreamer ce va fi folosit pentru acest profil."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Un nume scurt pentru profilul audio"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"Un nume scurt pentru profilul audio, ce va fi folosit în selecții și va "
+"identifica în mod unic profilul."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "Calitate CD, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "Calitate CD, fara pierderi"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "Calitate CD, cu pierderi"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "Calitate CD, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "Calitate CD, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Listă a profilelor de înregistrare audio. Lista conține șiruri de caractere "
+"descriind subdosare relative la /system/gstreamer/@GST_MAJORMINOR@/audio/"
+"profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Listă a profilelor"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Extensia de fișier implicită pentru acest profil"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Conexiunea parțială GStreamer folosit"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Folosit la conversia audio de calitate CD, dar cu un codec fără pierderi la "
+"compresie. Folosiți-l în cazul în care doriți să editați mai târziu fișierul "
+"sau să îl scrieți pe un CD."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Folosit la conversia audio de calitate CD, dar cu un codec cu pierderi la "
+"compresie. Folosiți-l pentru extragerea melodiilor de pe CD și înregistrări "
+"radio."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Folosit pentru convertirea la calitate audio CD, dar cu codecul cu pierderi "
+"AAC. Folosiți asta doar pentru a copia către dispozitivele care suportă doar "
+"codecul AAC. Rețineți faptul că utilizarea aceastui codec ar putea fi "
+"ilegală în țara dumneavoastră, contactați avocatul dumneavoastră pentru mai "
+"multe sfaturi."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Folosit pentru convertirea la calitate audio CD, dar cu codecul cu pierderi "
+"MP2. Folosiți asta doar pentru a copia către dispozitivele care suportă doar "
+"codecul MP2. Rețineți faptul că utilizarea aceastui codec ar putea fi "
+"ilegală în țara dumneavoastră, contactați avocatul dumneavoastră pentru mai "
+"multe sfaturi."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Folosit pentru convertirea la calitate audio CD, dar cu codecul cu pierderi "
+"MP3. Folosiți asta doar pentru a copia către dispozitivele care suportă doar "
+"codecul MP3. Rețineți faptul că utilizarea aceastui codec ar putea fi "
+"ilegală în țara dumneavoastră, contactați avocatul dumneavoastră pentru mai "
+"multe sfaturi."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Folosit la conversia audio de calitate voce fără pierderi. Folosiți-l pentru "
+"înregistrarea și editarea vocii."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Folosit la conversia audio de calitate voce cu pierderi. Folosiți-l pentru "
+"înregistrarea vocii când editarea nu este necesară."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Voce, fara pierderi"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Voce, cu pierderi"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr "Dacă acest profil să fie folosit"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr "Dacă acest profil să fie folosit și afișat."
+

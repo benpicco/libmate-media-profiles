@@ -1,0 +1,296 @@
+# Persian translation of gnome-media.
+# Copyright (C) 2003, 2005 Sharif FarsiWeb, Inc.
+# Roozbeh Pournader <roozbeh@farsiweb.info>, 2003, 2005.
+# Sara Khalatbari <sara@bamdad.org>, 2005.
+# Alireza Kheirkhahan <kheirkhahan@gmail.com>, 2005.
+# Meelad Zakaria <meelad@farsiweb.info>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2005-08-20 18:40+0430\n"
+"Last-Translator: Roozbeh Pournader <roozbeh@farsiweb.info>\n"
+"Language-Team: Persian <farsi@lists.sharif.edu>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "خطا در نمایش راهنما: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "ویرایش مجموعه تنظیمات «%s»"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<بدون نام>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<بدون شرح>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "در گرفتن فهرست مجموعه‌های تنظیمات gm_audio خطایی رخ داد. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "در فراموش کردن مسیر مجموعه تنظیمات %s خطایی رخ داد. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_ویرایش"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "این %Id مجموعه تنظیمات حذف شون؟\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "مجموعه تنظیمات «%s» حذف شود؟"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "حذف مجموعه تنظیمات"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#, fuzzy
+msgid "Edit GNOME Audio Profiles"
+msgstr "ویرایش مجموعه تنظیمات GMAudio"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_مجموعه‌های تنظیمات:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "شما از قبل مجموعه تنظیماتی با نام «%s» دارید"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "خطای GConf (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "ویرایش مجموعه تنظیمات صوتی"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr ""
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_فعال شود؟"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr ""
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr ""
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "نام _مجموعه تنظیمات:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "مجموعه تنظیمات جدید"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_ایجاد"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "شرحی برای مجموعه تنظیمات صوتی"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"شرحی بر مجموعه تنظیمات، حاوی اطلاعات بیشتری است و توضیح می‌دهد چه زمان‌هایی از "
+"این مجموعه تنظیمات استفاده شود."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"یک پسوند نام پرونده که هنگام ذخیره کردن پرونده‌هایی که با این مجموعه تنظیمات "
+"کدگذاری شده‌اند استفاده شود."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "یک خط لوله‌ی جزئی GStreamer برای استفاده‌ی این مجموعه تنظیمات."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "یک نام کوتاه برای مجموعه تنظیمات صوتی"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"یک نام کوتاه برای مجموعه تنظیمات صوتی، که در انتخاب‌ها و تعیین هویت یکتای "
+"مجموعه تنظیمات استفاده شود."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "کیفیت سی‌دی، بدون خسارت"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "کیفیت سی‌دی، خسارت‌دار"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#, fuzzy
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"فهرست مجموعه تنظیمات ضبط صدا. فهرست شامل رشته‌هایی است که زیرشاخه‌ها را به طور "
+"نسبی از /system/gstreamer/audio/profiles ذکر می‌کنند."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "فهرست مجموعه‌های تنظیمات"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "پسوند پرونده‌ی پیش‌فرض برای این مجموعه تنظیمات"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "خط لوله‌ی جزئی GStreamer استفاده شده"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"برای تبدیل به صدای با کیفیت سی‌دی، اما با یک کُدِک فشرده‌سازی بدون خسارت استفاده "
+"می‌شود. اگر می‌خواهید بعداً پرونده را ویرایش کنید یا در سی‌دی ذخیره کنید از این "
+"استفاده کنید."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"برای تبدیل به صدای با کیفیت سی‌دی، اما با یک کُدِک فشرده‌سازی خسارت‌دار استفاده "
+"می‌شود. برای استخراج سی‌دی یا ضبط رادیو از این استفاده کنید."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#, fuzzy
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"برای تبدیل به صدا با کیفیت صدای انسان استفاده می‌شود. برای ضبط سخنرانی‌ها از "
+"این استفاده کنید."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#, fuzzy
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"برای تبدیل به صدا با کیفیت صدای انسان استفاده می‌شود. برای ضبط سخنرانی‌ها از "
+"این استفاده کنید."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#, fuzzy
+msgid "Voice, Lossless"
+msgstr "کیفیت سی‌دی، بدون خسارت"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr ""
+

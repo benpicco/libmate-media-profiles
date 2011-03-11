@@ -1,0 +1,318 @@
+# gnome-media Italian translation
+# Copyright (C) 2000-2009, 2010 Free Software Foundation, Inc.
+# This file is distributed under the same licence of the gnome-media package
+# Salvatore Isaja <salvois@it.gnome.org>, 2000-2002.
+# Luca Ferretti <elle.uca@infinito.it>.
+# Alessio Frusciante <algol@firenze.linux.it>, 2004.
+# Salvatore Isaja <salvois@it.gnome.org>, 2004, 2005.
+#
+# Milo Casagrande <milo@ubuntu.com>, 2006-2009, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-08-29 19:20+0200\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italian <tp@lists.linux.it>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Si è verificato un errore nel visualizzare il manuale: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Modifica del profilo «%s»"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<nessun nome>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<nessuna descrizione>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "Errore nell'acquisizione dell'elenco dei profili gm_audio. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"Errore durante l'iscrizione alla notifica delle modifiche dell'elenco dei "
+"profili audio. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "Errore nell'abbandonare la directory dei profili %s. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Modifica"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Eliminare questo profilo?\n"
+msgstr[1] "Eliminare questi %d profili?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Eliminare il profilo «%s»?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Elimina profilo"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Modifica i profili audio di GNOME"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Profili:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Esiste già un profilo di nome «%s»"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "Errore di GConf (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Il file «%s» è mancante. L'applicazione non è stata installata "
+"correttamente, quindi la finestra di dialogo non può essere visualizzata."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"Eseguire \"%s --help\" per l'elenco delle opzioni disponibili alla riga di "
+"comando.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Modifica profilo audio"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "_Descrizione profilo:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_Attivo?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "_Estensione file:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "Pipeline _GStreamer:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "Nome del _profilo:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Nuovo profilo"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Crea"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "Descrizione per il profilo audio"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"Una descrizione del profilo, contenente più informazioni e indicazioni su "
+"quando usarlo."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"L'estensione da usare per salvare i file codificati con questo profilo."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "Una pipeline GStreamer parziale da usare con questo profilo."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Nome breve per il profilo audio"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"Un nome breve per il profilo audio, che identifichi univocamente il profilo, "
+"da usare nelle selezioni."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "Qualità CD, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "Qualità CD, senza perdita"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "Qualità CD, con perdita"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "Qualità CD, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "Qualità CD, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Elenco dei profili di registrazione audio. Le stringhe contenute nell'elenco "
+"rappresentano nomi di sottodirectory relative a /system/gstreamer/"
+"@GST_MAJORMINOR@/audio/profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Elenco dei profili"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Estensione predefinita per i file di questo profilo"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Pipeline GStreamer parziale utilizzata"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Per convertire in qualità CD audio, ma con un codec con compressione senza "
+"perdita. Consigliato se in seguito si intende modificare il file o "
+"masterizzarlo in un CD."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Per convertire in qualità CD audio, ma con un codec con compressione con "
+"perdita. Consigliato per l'estrazione da CD e registrazioni radio."
+
+# (NdT) mi sembra un po' esagerato...
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Per convertire in qualità CD audio, ma con il codec AAC con perdita. "
+"Consigliato per la preparazione di file da copiare su dispositivi che "
+"supportano solamente il codec AAC. L'uso di questo formato potrebbe essere "
+"illegale nel proprio paese, contattare il proprio avvocato per maggiori "
+"informazioni."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Per convertire in qualità CD audio, ma con il codec MP2 con perdita. "
+"Consigliato per la preparazione di file da copiare su dispositivi che "
+"supportano solamente il codec MP2. L'uso di questo formato potrebbe essere "
+"illegale nel proprio paese, contattare il proprio avvocato per maggiori "
+"informazioni."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Per convertire in qualità CD audio, ma con il codec MP3 con perdita. "
+"Consigliato per la preparazione di file da copiare su dispositivi che "
+"supportano solamente il codec MP3. L'uso di questo formato potrebbe essere "
+"illegale nel proprio paese, contattare il proprio avvocato per maggiori "
+"informazioni."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Per convertire a un audio di qualità vocale. Consigliato per la "
+"registrazione e modifica del parlato."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Per convertire a un audio di qualità vocale. Consigliato per la "
+"registrazione del parlato che non necessita modifiche."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Voce, senza perdita"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Voce, con perdita"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr "Indica se utilizzare o meno questo profilo"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr "Indica se usare e mostrare questo profilo oppure no."
+
+

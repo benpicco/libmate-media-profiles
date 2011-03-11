@@ -1,0 +1,311 @@
+# Finnish translation of the gnome-media module.
+# Copyright (C) 1998-2009 Free Software Foundation, Inc.
+# Tuomas J. Lukka <lukka@iki.fi>, 1998.
+# Mikko Rauhala <mjr@iki.fi>, 1999.
+# Jarkko Ranta <jjranta@cc.joensuu.fi>, 2000-2004.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2009.
+# Tommi Vainikainen <thv@iki.fi>, 2009-2010.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-03-23 11:50+0200\n"
+"Last-Translator: Tommi Vainikainen <thv@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Virhe näytettäessä ohjetta: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Muokataan profiilia ”%s”"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<ei nimeä>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<ei kuvausta>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "Virhe haettaessa luetteloa gm_audio-profiileista. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"Virhe tilattaessa ilmoituksia ääniprofiililuettelon muutoksista. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "Virhe unohdettaessa profiilipolkua %s. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Muokkaa"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Poistetaanko tämä profiili?\n"
+msgstr[1] "Poistetaanko nämä %d profiilia?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Poistetaanko profiili ”%s”?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Poista profiili"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Muokkaa Gnomen ääniprofiileja"
+
+#
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Profiilit:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Sinulla on jo profiili nimeltä ”%s”"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "GConf-virhe (KORJAA): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Tiedostoa ”%s” ei ole. Sovellus on todennäköisesti asennettu väärin. Ikkunan "
+"näyttäminen ei onnistu."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"Suorita ”%s --help”, jos haluat nähdä kaikki mahdolliset "
+"komentorivivalitsimet.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Muokkaa ääniprofiilia"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "Profiilin _kuvaus:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_Käytössä?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "Tiedosto_pääte:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "_GStreamer-putki:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "_Profiilin nimi:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Uusi profiili"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Luo"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "Ääniprofiilin kuvaus"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"Profiilin kuvaus. Sisältää enemmän tietoa ja kuvauksen siitä milloin tätä "
+"profiilia käytetään."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"Tiedostopääte jota käytetään tallennettaessa tällä profiililla koodattuja "
+"tiedostoja."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "Tämän profiilin kanssa käytettävä osittainen GStreamer-putki."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Lyhyt nimi ääniprofiilille"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"Ääniprofiilin lyhyt nimi jota käytetään valinnoissa ja joka nimeää profiilin "
+"yksiselitteisesti."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "CD-taso, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "CD-taso, häviötön"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "CD-taso, häviöllinen"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "CD-taso, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "CD-taso, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Luettelo nauhoitusprofiileista. Luettelo sisältää merkkijonoja, jotka "
+"nimeävät alihakemistoja suhteessa polkuun /system/gstreamer/$GST_MAJORMINOR/"
+"audio/profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Profiililuettelo"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Profiilin oletustiedostopääte"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Käytetty osittainen GStreamer-putki"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Käytetään CD-tasoisen äänen tuomiseen käyttäen häviötöntä pakkausta. Käytä "
+"tätä mikäli haluat myöhemmin muokata tuomaasi tiedostoa tai polttaa sen CD:"
+"lle."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Käytetään CD-tasoisen äänen tuomiseen, mutta häviöllisellä pakkauksella. "
+"Käytä tätä CD-levyjen ja radio-ohjelmien tuontiin."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Käytetään CD-tasoisen äänen tuomiseen häviöllisellä AAC-koodekilla. Käytä "
+"tätä, kun haluat viedä tiedostoja laitteille, jotka tukevat vain AAC-muotoa. "
+"Huomaa, että tämän muunnoksen käyttö saattaa olla maassasi laitonta."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Käytetään CD-tasoisen äänen tuomiseen häviöllisellä MP2-koodekilla. Käytä "
+"tätä, kun haluat viedä tiedostoja laitteille, jotka tukevat vain MP2-muotoa. "
+"Huomaa, että tämän muunnoksen käyttö saattaa olla maassasi laitonta."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Käytetään CD-tasoisen äänen tuomiseen häviöllisellä MP3-koodekilla. Käytä "
+"tätä, kun haluat viedä tiedostoja laitteille, jotka tukevat vain MP3-muotoa. "
+"Huomaa, että tämän muunnoksen käyttö saattaa olla maassasi laitonta."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Käytetään muuntamaan häviöttömäksi puhetasoiseksi ääneksi. Käytä tätä puheen "
+"äänittämiseen ja muokkaamiseen."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Käytetään muuntamaan häviölliseksi puhetasoiseksi ääneksi. Käytä tätä puheen "
+"äänittämiseen, kun puhetta ei tarvitse enää muokata."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Puhe, häviötön"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Puhe, häviöllinen"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr ""
+

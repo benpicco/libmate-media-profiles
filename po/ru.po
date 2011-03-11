@@ -1,0 +1,323 @@
+# translation of gnome-media.master.ru.po to Russian
+# Russian translation of gnome-media
+# Copyright (C) 1998-2008, 2010 Free Software Foundation, Inc.
+#
+# Valek Filippov <frob@df.ru>, 2000-2002.
+# Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+# Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+# Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+# Valery Inozemtsev <inozemtsev@gmail.com>, 2009.
+# Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2009.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010.
+# Max Valianskiy <maxcom@vinchi.ru> 1998-99
+# Sergey Panov <sipan@mit.edu> 1999
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-09-26 10:35+0300\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Произошла ошибка при отображении справки: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Изменение профиля «%s»"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<без имени>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<без описания>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "Произошла ошибка при получении списка аудио-профилей. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"Произошла ошибка при подписке на уведомление об изменении списка звуковых "
+"профилей. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "Произошла ошибка при отмене пути профилей \"%s\". (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Изменить"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Удалить этот %d профиль?\n"
+msgstr[1] "Удалить эти %d профиля?\n"
+msgstr[2] "Удалить эти %d профилей?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Удалить профиль «%s»?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Удаление профиля"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Изменение звуковых профилей GNOME"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Профили:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Профиль с именем «%s» уже существует"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "Произошла ошибка системы GConf: %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Файл «%s» отсутствует. Это означает, что приложение установлено некорректно, "
+"так что диалог не может быть отображён."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"Запустите '%s --help' для просмотра полного списка доступных ключей "
+"командной строки.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Изменение аудио-профилей"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "_Описание:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_Активный?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "Рас_ширение файла:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "Конвейер _GStreamer:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "_Профиль:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Новый профиль"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Создать"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "Описание аудио-профиля"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"Описание профиля, содержащее дополнительную информацию и использование "
+"профиля."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"Расширение файла, используемое для сохранения файлов, закодированных этим "
+"профилем."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "Частичный канал для использования с этим профилем."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Краткое имя для этого аудио-профиля"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"Краткое имя для этого аудио-профиля, используемое для выбора и уникальной "
+"идентификации профиля."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "CD-качество, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "CD-качество, без потерь"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "CD-качество, с потерями"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "CD-качество, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "CD-качество, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Список профилей записи звука. Список содержит строки, именующие подкатологи "
+"относительно /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Список профилей"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Расширение файла по умолчанию для этого профиля"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Используемый частичный канал"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Используется для преобразования звука CD-качества, со сжатием без потерь. "
+"Используйте это сжатие, если вы захотите позже отредактировать файл или "
+"записать его на CD."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Используется для преобразования в звук CD-качества, но с потерями. "
+"Используйте для оцифровки CD и записи радио."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Используется для преобразования в звук CD-качества, но с кодеком AAC, "
+"который не обеспечивает полного сохранения. Таким образом можно подготовить "
+"файлы для устройств, которые поддерживают только кодек AAC. Заметьте, что "
+"использование этого кодека может быть нелегальным в некоторых странах, для "
+"получения дополнительной информации обратитесь к юристу."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Используется для преобразования в звук CD-качества, но с кодеком MP2, "
+"который не обеспечивает полного сохранения. Таким образом можно подготовить "
+"файлы для устройств, которые поддерживают только кодек MP2. Заметьте, что "
+"использование этого кодека может быть нелегальным в некоторых странах, для "
+"получения дополнительной информации обратитесь к юристу."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Используется для преобразования в звук CD-качества, но с кодеком MP3, "
+"который не обеспечивает полного сохранения. Таким образом можно подготовить "
+"файлы для устройств, которые поддерживают только кодек MP3. Заметьте, что "
+"использование этого кодека может быть нелегальным в некоторых странах, для "
+"получения дополнительной информации обратитесь к юристу."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Преобразование звука голосового качества без потерь. Используется для записи "
+"и редактирования речи."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Преобразование звука голосового качества с потерями. Используйте для записи "
+"речи, которую не придётся редактировать."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Голос, без потерь"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Голос, с потерями"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr "Используется ли данный профиль"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr "Использовать и показывать ли данный профиль."
+

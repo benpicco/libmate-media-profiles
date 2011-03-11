@@ -1,0 +1,322 @@
+# Danish translation of the gnome-media.
+# Copyright (C) 1998-99, 2000-10 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-media package.
+# Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000
+# Keld Simonsen <keld@dkuug.dk>, 2000-2001.
+# Ole Laursen <olau@hardworking.dk>, 2001-2004, 06.
+# Martin Willemoes Hansen <mwh@sysrq.dk>, 2004-2006.
+# Peter Bach <bach.peter@gmail.com>, 2007.
+# Kenneth Nielsen <k.nielsen81@gmail.com>. 2008.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2010.
+#
+# Konventioner:
+#
+#   Gnome-CD -> cd-afspiller
+#   sample -> (oftest) lydklip
+#   sink -> destination
+#   track -> spor
+#
+# Husk at tilføje dig i credit-listen (besked id "translator-credits")
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-08-22 00:28+0200\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Der opstod en fejl ved visning af hjælp: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Redigerer profil \"%s\""
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<ikke navngivet>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<ingen beskrivelse>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "Der opstod en fejl ved hentning af listen af gm_audio-profiler. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"Der opstod en fejl ved abonnering på bekendtgørelse af "
+"lydprofillisteændringer. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "Der opstod en fejl ved glemning af profilstien %s. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Redigér"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Slet denne profil?\n"
+msgstr[1] "Slet disse %d profiler?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Slet profilen \"%s\"?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Slet profil"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Redigér Gnome-lydprofiler"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Profiler:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Du har allerede en profil ved navn \"%s\""
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "GConf-fejl (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Filen \"%s\" mangler. Dette indikerer at programmet er installeret forkert "
+"så vinduet ikke kan vises."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"Kør \"%s --help\" for at se den fulde liste af tilgængelige "
+"kommandolinjetilvalg.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Redigér lydprofil"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "Profil_beskrivelse:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "_Aktiv?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "Fil_type:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "_GStreamer-datakanal:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "_Profilnavn:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Ny profil"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Opret"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "En beskrivelse til lydprofilen"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"En beskrivelse af profilen med yderligere oplysninger og information om "
+"hvornår profilen skal benyttes."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"En filnavnsendelse som skal bruges når filer kodet med denne profil gemmes."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "En delvis GStreamer-datakanal som skal bruges til denne profil."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Et kort navn til lydprofilen"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr "Et kort navn til lydprofilen til at identificere den."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "Cd-kvalitet, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "Cd-kvalitet, tabsfri"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "Cd-kvalitet, med tab"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "Cd-kvalitet, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "Cd-kvalitet, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Liste af lydoptagelsesprofiler. Listen indeholder strenge der navngiver "
+"undermapper relativt til /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Liste af profiler"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Den forvalgte filendelse for denne profil"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Delvis GStreamer-datakanal"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Bruges til at konvertere til lyd af cd-kvalitet, men med en tabsfri "
+"komprimeringskodek. Benyt denne, hvis du senere vil redigere filen eller "
+"brænde den til en cd."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Konverterer til lyd af cd-kvalitet, men med en komprimeringskodek med "
+"kvalitetstab. Benyt denne til cd- eller radio-optagelser."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Til brug for konvertering til cd-kvalitetslyd, men med det tabsgivende AAC-"
+"codec. Brug dette for at forberede filer til kopiering til enheder der kun "
+"understøtter AAC-codec'et. Vær opmærksom på at brug af dette format kan være "
+"ulovligt i din retskreds; kontakt din advokat for rådgivning."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Til brug for konvertering til cd-kvalitetslyd, men med det tabsgivende MP2-"
+"codec. Brug dette for at forberede filer til kopiering til enheder der kun "
+"understøtter MP2-codec'et. Vær opmærksom på at brug af dette format kan være "
+"ulovligt i din retskreds; kontakt din advokat for rådgivning."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Til brug for konvertering til cd-kvalitetslyd, men med det tabsgivende MP3-"
+"codec. Brug dette for at forberede filer til kopiering til enheder der kun "
+"understøtter MP3-codec'et. Vær opmærksom på at brug af dette format kan være "
+"ulovligt i din retskreds; kontakt din advokat for rådgivning."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Konverterer til tabsfri talekvalitetslyd. Benyt denne til optagelse og "
+"redigering af tale."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Konverterer til talekvalitetslyd med tab. Benyt denne til taleoptagelser der "
+"ikke skal redigeres."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Tale, tabsfri"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Tale, med tab"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr "Om denne profil skal bruges"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr "Om denne profil skal bruges og vises."
+
+

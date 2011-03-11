@@ -1,0 +1,302 @@
+# translation of mr.po to Marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Rahul Bhalerao <b.rahul.pm@gmail.com>, 2006.
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: mr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2010-04-13 12:08+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <maajhe-sanganak@freelists.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "मदत दर्शवण्यात चूक झाली: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "प्रोफाइल \"%s\" संपादित करत आहे"
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<नाव नाही>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<काही वर्णन नाही>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "gm_audio प्रोफाइलं ची यादी प्राप्त करण्यात चूक झाली. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr "ऑडियो प्रोफाइल सूची बदल करीता सूचना सब्सक्राइब करतेवेळी त्रुटी आढळली. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "प्रोफाइल मार्ग %s विसरतेवेळी त्रुटी आढळली. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "संपादन (_E)"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "%d प्रोफाइल काढून टाकायचे?\n"
+msgstr[1] "%d प्रोफाइल काढून टाकायचे?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "\"%s\" प्रोफाइल काढून टाकायचे?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "प्रोफाइल काढून टाका"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "GNOME ऑडिओ प्रोफाइल संपादन करा"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "प्रोफाइलं (_P):"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "तुमच्याकडे आधिपासूनच प्रोफाइल \"%s\" आहे"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "जी-कॉन्फ त्रुटी (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"फाइल \"%s\" आढळले नाही. याचा अनुप्रयोग योग्यारित्या प्रतिष्ठापीत नाही, ज्यामुळे संवाद "
+"दर्शविले जाऊ शकत नाही."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"%s\n"
+"उपलब्ध आदेश ओळ पर्यायची संपूर्ण सूची पहाण्याकरीता '%s --help' चालवा.\n"
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "ऑडियो प्रोफाइल संपादित करा"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "प्रोफाइल वर्णन (_d):"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "सक्रीय (_A)?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "फाइल विस्तार (_F):"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "GStreamer पाइपलाईन (_G):"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "प्रोफाइल नाव (_P):"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "नविन प्रोफाइल"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "बनवा (_C)"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "आडिओ प्रोफाइल करीता वर्णन"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"अधिक माहिती समाविष्टीत, प्रोफाइलचे वर्णन व तसे प्रोफाइल कधी वापरायचे त्याचे वर्णन."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr "या प्रोफाइल सह ऐंकोडेड फाइल संचयन करतेवेळी वापरण्याजोगी फाइलनाव विस्तार."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "हे प्रोफाइल वापरण्याजोगी आंशिक जी-स्ट्रीमर पाइपलाइन."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "ऑडिओ फाइल हेतु एक छोटे नाव"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"ऑडियो प्रोफाइल करीताचे लहान नाव, ज्याचा वापर निवड व मजबूतरीत्या प्रोफाइल "
+"ओळखण्याकरीता केला जातो."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "सीडी दर्जा, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "सीडी दर्जा, हानी विना"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "सीडी दर्जा, हानीयुक्त"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "CD दर्जा, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "सीडी दर्जा, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"ऑडिओ रेकॉर्डींग प्रोफाइलची यादी. यादी मध्ये अक्षरमाळा ज्यामधील /system/gstreamer/"
+"@GST_MAJORMINOR@/audio/ संबंधीतप्रोफाइल समाविष्टीत असते."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "प्रोफाइलंची यादी"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "या प्रोफाइल करीता पूर्वनिर्धारीत फाइल विस्तार"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "आंशिक GStreamer पाइपलाइन वापरले गेले"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"सीडी-दर्जा ऑडियो मध्ये रूपांतर करीता वापरले जाते, परंतु हानिरहित संकुचन कोडेक सह. याचा "
+"वापर पुढे फाइल संपादन करीता किंवा CD ची प्रत बनविण्याकरीता करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"सीडी-दर्जा ऑडियो मध्ये रूपांतर करीता वापरले जाते, परंतु हानियुक्त संकुचन कोडेक सह. CD "
+"प्राप्ती व रेडियो रेकॉर्डिंग करीता याचा वापर करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"CD-दर्जा ऑडिओच्या रूपांतर करीता वापरले जाते, पण हानीरहीत AAC कोडेक सह. याचा वापर "
+"फक्त AAC कोडक वरील साधन करीता फाइल बनविण्या करीता करा. लक्ष्यात ठेवा या स्वरूपचा "
+"वापर तुमच्या अधिकारिता अंतर्गत कायदेशीर नसावे; तुमच्या वकीलाचा सल्ला करीता संपर्क करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"CD-दर्जा ऑडिओच्या रूपांतर करीता वापरले जाते, पण हानीरहीत MP2 कोडेक सह. याचा वापर "
+"फक्त MP2 कोडक वरील साधन करीता फाइल बनविण्या करीता करा. लक्ष्यात ठेवा या स्वरूपचा "
+"वापर तुमच्या अधिकारिता अंतर्गत कायदेशीर नसावे; तुमच्या वकीलाचा सल्ला करीता संपर्क करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"CD-दर्जा ऑडिओच्या रूपांतर करीता वापरले जाते, पण हानीरहीत MP3 कोडेक सह. याचा वापर "
+"फक्त MP3 कोडक वरील साधन करीता फाइल बनविण्या करीता करा. लक्ष्यात ठेवा या स्वरूपचा "
+"वापर तुमच्या अधिकारिता अंतर्गत कायदेशीर नसावे; तुमच्या वकीलाचा सल्ला करीता संपर्क करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"हानीविना आवाज-दर्जा ऑडिओ रूपांतर करीता वापरले जाते. याचा वापर भाष्य रेकॉर्ड व संपादन "
+"करीता करा."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"हानीरहीत आवाज-दर्जा ऑडिओ रूपांतर करीता वापरले जाते. याचा वापर भाष्य रेकॉर्ड करीता "
+"करा ज्यास संपादनची आवश्यकता नाही."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "ध्वनी, हानीविना"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "ध्वनी, हानीरहीत"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr ""
+

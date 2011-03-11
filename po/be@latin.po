@@ -1,0 +1,310 @@
+# Biełaruski pierakład gnome-media 
+# Alaksandar Navicki <zolak@lacinka.org>, 2007. Łacinka.org
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 05:19+0200\n"
+"PO-Revision-Date: 2009-02-25 23:59+0200\n"
+"Last-Translator: Alaksandar Navicki <zolak@lacinka.org>\n"
+"Language-Team: Belarusian Latin <be-latin.open-tran.eu>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarusian Latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Zdaryłasia pamyłka padčas pakazu dapamohi: %s"
+
+#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#, c-format
+msgid "Editing profile \"%s\""
+msgstr "Redahavańnie profilu \"%s\""
+
+#: ../libgnome-media-profiles/audio-profile.c:92
+msgid "<no name>"
+msgstr "<biaz nazvy>"
+
+#: ../libgnome-media-profiles/audio-profile.c:93
+#: ../libgnome-media-profiles/audio-profile.c:1002
+msgid "<no description>"
+msgstr "<biez apisańnia>"
+
+#: ../libgnome-media-profiles/audio-profile.c:208
+#, c-format
+msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
+msgstr "Adbyłasia pamyłka pry atrymańni śpisu profilaŭ gm_audio. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:709
+#, c-format
+msgid ""
+"There was an error subscribing to notification of audio profile list "
+"changes. (%s)\n"
+msgstr ""
+"Adbyłasia pamyłka padčas padpiski na źmieny śpisu profilaŭ huku. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profile.c:912
+#, c-format
+msgid "There was an error forgetting profile path %s. (%s)\n"
+msgstr "Adbyłasia pamyłka padčas zabyćcia ściežki profilu %s. (%s)\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+msgid "_Edit"
+msgstr "_Redahuj"
+
+#. the first argument will never be used since we only run for count > 1
+#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#, c-format
+msgid "Delete this profile?\n"
+msgid_plural "Delete these %d profiles?\n"
+msgstr[0] "Vydalić hety %d profil?\n"
+msgstr[1] "Vydalić hetyja %d profili?\n"
+msgstr[2] "Vydalić hetyja %d profilaŭ?\n"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#, c-format
+msgid "Delete profile \"%s\"?"
+msgstr "Vydalić profil \"%s\"?"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+msgid "Delete Profile"
+msgstr "Vydal profil"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+msgid "Edit GNOME Audio Profiles"
+msgstr "Redahuj profili huku GNOME"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+msgid "_Profiles:"
+msgstr "_Profili:"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#, c-format
+msgid "You already have a profile called \"%s\""
+msgstr "Profil z nazvaj \"%s\" užo isnuje"
+
+#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#, c-format
+msgid "GConf Error (FIXME): %s\n"
+msgstr "Pamyłka GConf (FIXME): %s\n"
+
+#: ../libgnome-media-profiles/gmp-util.c:61
+#, c-format
+msgid ""
+"The file \"%s\" is missing. This indicates that the application is installed "
+"incorrectly, so the dialog can't be displayed."
+msgstr ""
+"Nie staje fajłu \"%s\". Heta śviedčyć pra niapravilnuju instalacyju "
+"aplikacyi, tamu niama mahčymaści pakazać akno dyjalohu."
+
+#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#: ../data/gnome-audio-profile-edit.ui.h:1
+msgid "Edit Audio Profile"
+msgstr "Redahuj profil huku"
+
+#: ../data/gnome-audio-profile-edit.ui.h:2
+msgid "Profile _description:"
+msgstr "Ap_isańnie profilu:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:3
+msgid "_Active?"
+msgstr "A_ktyŭny?"
+
+#: ../data/gnome-audio-profile-edit.ui.h:4
+msgid "_File extension:"
+msgstr "P_ašyreńnie fajłu:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:5
+msgid "_GStreamer pipeline:"
+msgstr "Płyń _GStreamer:"
+
+#: ../data/gnome-audio-profile-edit.ui.h:6
+#: ../data/gnome-audio-profile-new.ui.h:3
+msgid "_Profile name:"
+msgstr "Naz_va profilu:"
+
+#: ../data/gnome-audio-profile-new.ui.h:1
+msgid "New Profile"
+msgstr "Novy profil"
+
+#: ../data/gnome-audio-profile-new.ui.h:2
+msgid "_Create"
+msgstr "_Stvary"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:1
+msgid "A description for the audio profile"
+msgstr "Apisańnie hukavoha profilu"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:2
+msgid ""
+"A description of the profile, containing more information and describing "
+"when to use this profile."
+msgstr ""
+"Apisańnie hukavoha profilu, jakoje ŭtrymlivaje dadatkovuju infarmacyju "
+"adnosna taho, kali hety profil pavinien być užyty."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:3
+msgid ""
+"A filename extension to be used when storing files encoded with this profile."
+msgstr ""
+"Pašyreńnie nazvy fajłu, užyvanaje pry zapisie fajłaŭ, kadavanych pry ŭžyćci "
+"hetaha profilu."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:4
+msgid "A partial GStreamer pipeline to use for this profile."
+msgstr "Častkovaja płyń GStreamer, užyvanaja z hetym profilem."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:5
+msgid "A short name for the audio profile"
+msgstr "Karotkaja nazva hukavoha profilu"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:6
+msgid ""
+"A short name for the audio profile, to be used in selections and uniquely "
+"identifying the profile."
+msgstr ""
+"Karotkaja nazva hukavoha profilu, užyvanaja pry vybary, jakaja identyfikuje "
+"profil."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:7
+msgid "CD Quality, AAC"
+msgstr "Jakaść CD, AAC"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:8
+msgid "CD Quality, Lossless"
+msgstr "Jakaść CD, biasstratnaja"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:9
+msgid "CD Quality, Lossy"
+msgstr "Jakaść CD, stratnaja"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:10
+msgid "CD Quality, MP2"
+msgstr "Jakaść CD, MP2"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:11
+msgid "CD Quality, MP3"
+msgstr "Jakaść CD, MP3"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:12
+msgid ""
+"List of audio recording profiles. The list contains strings naming "
+"subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+msgstr ""
+"Śpis profilaŭ zapisu huku. U śpisie znachodziacca nazvy padkatalohaŭ "
+"adnosna /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:13
+msgid "List of profiles"
+msgstr "Śpis profilaŭ"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:14
+msgid "The default file extension for this profile"
+msgstr "Zmoŭčanaje pašyreńnie fajłu dla hetaha profilu"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:15
+msgid "The partial GStreamer pipeline used"
+msgstr "Častkovaja płyń GStreamer"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:16
+msgid ""
+"Used for converting to CD-quality audio, but with a lossless compression "
+"codec. Use this if you later want to edit the file or burn it to CD."
+msgstr ""
+"Užyvany dla kanvertavańnia huku da jakaści CD, ale z kodekam biasstratnaj "
+"kampresii. Naležyć užyć, kali ŭ budučyni ty chočaš redahavać fajł albo "
+"zapisvać na dysku CD."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:17
+msgid ""
+"Used for converting to CD-quality audio, but with a lossy compression codec. "
+"Use this for CD extraction and radio recordings."
+msgstr ""
+"Užyvany dla kanvertavańnia huku da jakaści CD, ale z kodekam stratnaj "
+"kampresii. Naležyć užyć dla zdabyvańnia huku z dyskaŭ CD albo z radyjo."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:18
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
+"this for preparing files for copying to devices that only support the AAC "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Užyvany dla kanvertavańnia huku da jakaści CD, ale z kodekam stratnaj "
+"kampresii AAC. Naležyć užyć dla padrychtoŭki fajłaŭ da kapijavańnia na "
+"pryłady, jakija absłuhoŭvajuć tolki kodek AAC. Uvaha: u niekatorych krainach "
+"vykarystańnie hetaha farmatu moža być zabaronienym, tamu lepiej parajsia ź "
+"jurystam."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#, fuzzy
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
+"this for preparing files for copying to devices that only support the MP2 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Užyvany dla kanvertavańnia huku da jakaści CD, ale z kodekam stratnaj "
+"kampresii MP3. Naležyć užyć dla padrychtoŭki fajłaŭ da kapijavańnia na "
+"pryłady, jakija absłuhoŭvajuć tolki kodek MP3. Uvaha: u niekatorych krainach "
+"vykarystańnie hetaha farmatu moža być zabaronienym, tamu lepiej parajsia ź "
+"jurystam."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:20
+msgid ""
+"Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
+"this for preparing files for copying to devices that only support the MP3 "
+"codec. Note that using this format may be illegal in your jurisdiction; "
+"contact your lawyer for advice."
+msgstr ""
+"Užyvany dla kanvertavańnia huku da jakaści CD, ale z kodekam stratnaj "
+"kampresii MP3. Naležyć užyć dla padrychtoŭki fajłaŭ da kapijavańnia na "
+"pryłady, jakija absłuhoŭvajuć tolki kodek MP3. Uvaha: u niekatorych krainach "
+"vykarystańnie hetaha farmatu moža być zabaronienym, tamu lepiej parajsia ź "
+"jurystam."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:21
+msgid ""
+"Used for converting to lossless voice-quality audio. Use this for recording "
+"and editing speech."
+msgstr ""
+"Užyvany dla biasstratnaha kanvertavańnia huku da jakaści hołasu. Karystajsia "
+"hetym dla zapisu j redahavańnia hołasu."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:22
+msgid ""
+"Used for converting to lossy voice-quality audio. Use this for recording "
+"speech that doesn't need to be edited."
+msgstr ""
+"Užyvany dla stratnaha kanvertavańnia huku da jakaści hołasu. Karystajsia "
+"hetym dla zapisu hołasu, jaki potym nia treba madyfikavać."
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:23
+msgid "Voice, Lossless"
+msgstr "Hołas, biasstratnaja"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:24
+msgid "Voice, Lossy"
+msgstr "Hołas, stratnaja"
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:25
+msgid "Whether this profile is to be used"
+msgstr ""
+
+#: ../data/gnome-media-profiles.schemas.in.in.h:26
+msgid "Whether to use and display this profile."
+msgstr ""
+
