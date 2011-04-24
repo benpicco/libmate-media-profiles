@@ -2,21 +2,22 @@
 # Copyright (C) 2000,2001,2002,2003, 2004, 2005 Free Software Foundation, Inc.
 # Fatih Demir <kabalak@gtranslator.org>, 2000.
 # Arman Aksoy (Armish) <armish@linux-sevenler.de>, 2003.
-# Baris Cicek <baris@teamforce.name.tr>, 2004, 2005.
+# Baris Cicek <baris@teamforce.name.tr>, 2004, 2005, 2008, 2009.
+# Muhammet Kara <muhammet.k@gmail.com>, 2011.
 #
-# Baris Cicek <baris@teamforce.name.tr>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-media\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-11 05:19+0200\n"
-"PO-Revision-Date: 2009-08-30 21:37+0300\n"
-"Last-Translator: Baris Cicek <baris@teamforce.name.tr>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-23 19:05+0000\n"
+"PO-Revision-Date: 2011-04-24 03:19+0300\n"
+"Last-Translator: Muhammet Kara <muhammet.k@gmail.com>\n"
 "Language-Team: Turkish <gnome-turk@gnome.org>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../libgnome-media-profiles/audio-profile-edit.c:121
@@ -30,21 +31,21 @@ msgstr "Yardım görüntülenirken hata oluştu: %s"
 msgid "Editing profile \"%s\""
 msgstr "Düzenlenen profil: \"%s\""
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libgnome-media-profiles/audio-profile.c:96
 msgid "<no name>"
 msgstr "<isimsiz>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libgnome-media-profiles/audio-profile.c:97
+#: ../libgnome-media-profiles/audio-profile.c:1006
 msgid "<no description>"
 msgstr "<açıklama yok>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libgnome-media-profiles/audio-profile.c:212
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "gm_audio profilleri listesi alınırken hata oluştu. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libgnome-media-profiles/audio-profile.c:713
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -53,7 +54,7 @@ msgstr ""
 "Ses profilleri listesi değişikliklerinin uyarılarına kaydolurken bir hata "
 "oluştu. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libgnome-media-profiles/audio-profile.c:916
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Profil yolu %s unutulurken bir hata oluştu. (%s)\n"
@@ -311,9 +312,8 @@ msgstr "Ses, Kayıplı"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
-msgstr ""
+msgstr "Bu profilin kullanılıp kullanılmayacağı"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
-msgstr ""
-
+msgstr "Bu profilin kullanılımı ve listede gösterilip gösterilmeyeceği."
