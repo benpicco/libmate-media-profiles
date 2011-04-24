@@ -1,18 +1,18 @@
 # Thai translation of gnome-media.
 # This file is distributed under the same license as the gnome-media package.
-# Copyright (C) 2003-2010 Free Software Foundation, Inc.
+# Copyright (C) 2003-2011 Free Software Foundation, Inc.
 # Sawit Kasuriya <sawitk@hotmail.com>, 2003.
 # Sapa <sapac@hotmail.com>, 2003, 2004.
 # Chanchai Junlouchai <taz@opentle.org>, 2004.
 # Supranee Thirawatthanasuk <supranee@opentle.org>, 2004.
-# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2010.
+# Theppitak Karoonboonyanan <thep@linux.thai.net>, 2005-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: th\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
-"PO-Revision-Date: 2010-02-07 21:28+0700\n"
+"PO-Revision-Date: 2011-04-24 16:28+0700\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "Language: th\n"
@@ -288,10 +288,10 @@ msgstr "เสียงพูด, เสียรายละเอียด"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
-msgstr ""
+msgstr "ใช้โพรไฟล์นี้หรือไม่"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
-msgstr ""
+msgstr "จะใช้และแสดงโพรไฟล์นี้หรือไม่"
 
 
