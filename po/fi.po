@@ -4,15 +4,15 @@
 # Mikko Rauhala <mjr@iki.fi>, 1999.
 # Jarkko Ranta <jjranta@cc.joensuu.fi>, 2000-2004.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2009.
-# Tommi Vainikainen <thv@iki.fi>, 2009-2010.
+# Tommi Vainikainen <thv@iki.fi>, 2009-2011.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-media\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-11 05:19+0200\n"
-"PO-Revision-Date: 2010-03-23 11:50+0200\n"
+"POT-Creation-Date: 2011-06-09 16:43+0300\n"
+"PO-Revision-Date: 2011-06-09 16:42+0300\n"
 "Last-Translator: Tommi Vainikainen <thv@iki.fi>\n"
 "Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -32,21 +32,21 @@ msgstr "Virhe näytettäessä ohjetta: %s"
 msgid "Editing profile \"%s\""
 msgstr "Muokataan profiilia ”%s”"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libgnome-media-profiles/audio-profile.c:96
 msgid "<no name>"
 msgstr "<ei nimeä>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libgnome-media-profiles/audio-profile.c:97
+#: ../libgnome-media-profiles/audio-profile.c:1006
 msgid "<no description>"
 msgstr "<ei kuvausta>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libgnome-media-profiles/audio-profile.c:212
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "Virhe haettaessa luetteloa gm_audio-profiileista. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libgnome-media-profiles/audio-profile.c:713
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -54,7 +54,7 @@ msgid ""
 msgstr ""
 "Virhe tilattaessa ilmoituksia ääniprofiililuettelon muutoksista. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libgnome-media-profiles/audio-profile.c:916
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Virhe unohdettaessa profiilipolkua %s. (%s)\n"
@@ -303,9 +303,8 @@ msgstr "Puhe, häviöllinen"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
-msgstr ""
+msgstr "Käytetäänkö tätä profiilia"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
-msgstr ""
-
+msgstr "Käytetäänkö ja näytetäänkö tätä profiilia."
