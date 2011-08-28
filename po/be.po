@@ -1,65 +1,63 @@
-# Беларускі пераклад gnome-media.HEAD.
-# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
 # Vital Khilko <dojlid@mova.org>, 2003.
 # Ales Nyakhaychyk <nab@mail.by>, 2004.
-# Ihar Hrachyshka <boox.svaboda2006@gmail.com>, 2006
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media.HEAD\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-11 05:19+0200\n"
-"PO-Revision-Date: 2007-01-31 23:59+0300\n"
+"Project-Id-Version: gnome-media-profiles.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-23 19:05+0000\n"
+"PO-Revision-Date: 2011-08-28 23:54+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
-"Language-Team: Belarusian <i18n@mova.org>\n"
-"Language: be\n"
+"Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../libgnome-media-profiles/audio-profile-edit.c:121
 #: ../libgnome-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
-msgstr "Памылка паказу даведкі: %s"
+msgstr "Узнікла памылка паказу даведкі: %s"
 
 #: ../libgnome-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
-msgstr "Зьмяненьне профіля \"%s\""
+msgstr "Рэдагаванне профіля \"%s\""
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libgnome-media-profiles/audio-profile.c:96
 msgid "<no name>"
-msgstr "<бяз назвы>"
+msgstr "<няма назвы>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libgnome-media-profiles/audio-profile.c:97
+#: ../libgnome-media-profiles/audio-profile.c:1006
 msgid "<no description>"
-msgstr "<без апісаньня>"
+msgstr "<няма апісання>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libgnome-media-profiles/audio-profile.c:212
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
-msgstr "Памылка атрыманьня сьпіса профіляў gm_audio. (%s)\n"
+msgstr "Узнікла памылка атрымання спіса профіляў \"gm_audio\": %s\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libgnome-media-profiles/audio-profile.c:713
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr ""
-"Памылка падпіскі на нагадваньне пра зьмены сьпіса аўдыёпрофіляў. (%s)\n"
+"Узнікла памылка падпіскі на апавяшчэнні аб зменах у спісе аўдыяпрофіляў: %s\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libgnome-media-profiles/audio-profile.c:916
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
-msgstr "Памылка забыцьця тэчкі профіля %s. (%s)\n"
+msgstr "Узнікла памылка пры спробе забыць сцежку профіля %s: %s\n"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
-msgstr "_Зьмяніць"
+msgstr "_Рэдагаваць"
 
 #. the first argument will never be used since we only run for count > 1
 #: ../libgnome-media-profiles/audio-profiles-edit.c:456
@@ -77,11 +75,11 @@ msgstr "Выдаліць профіль \"%s\"?"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
-msgstr "Выдаліць профіль"
+msgstr "Выдаленне профіля"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 msgid "Edit GNOME Audio Profiles"
-msgstr "Зьмяніць профілі GNOME Audio"
+msgstr "Рэдагаванне аўдыяпрофіляў GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
@@ -95,7 +93,7 @@ msgstr "Вы ўжо маеце профіль з назвай \"%s\""
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "GConf Error (FIXME): %s\n"
-msgstr "Памылка GConf (трэба выправіць): %s\n"
+msgstr "Памылка GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
 #, c-format
@@ -103,8 +101,8 @@ msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
 "incorrectly, so the dialog can't be displayed."
 msgstr ""
-"Прапушчаны файл \"%s\". Гэта сьведчыць пра тое, што дастасаваньне ўсталявана "
-"няправільна; дыялёг ня можа быць паказаны."
+"Файл \"%s\" адсутнічае. Гэта сведчыць пра тое, што праграма была ўсталявана "
+"з памылкамі, і таму немагчыма паказаць дыялогавае акенца."
 
 #: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
 #, c-format
@@ -112,31 +110,33 @@ msgid ""
 "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"%s\n"
+"Выканайце \"%s --help\", каб убачыць спіс усіх вядомых опцый загаднага радка.\n"
 
 #: ../data/gnome-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
-msgstr "Зьмяніць аўдыёпрофіль"
+msgstr "Рэдагаванне аўдыяпрофіля"
 
 #: ../data/gnome-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
-msgstr "Апіс_аньне профіля:"
+msgstr "_Апісанне профіля:"
 
 #: ../data/gnome-audio-profile-edit.ui.h:3
 msgid "_Active?"
-msgstr "_Задзейнічаны?"
+msgstr "_Уключаны?"
 
 #: ../data/gnome-audio-profile-edit.ui.h:4
 msgid "_File extension:"
-msgstr "Па_шырэньне файла:"
+msgstr "_Пашырэнне файла:"
 
 #: ../data/gnome-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
-msgstr "Трубаправод _GStreamer:"
+msgstr "_Канвеер GStreamer:"
 
 #: ../data/gnome-audio-profile-edit.ui.h:6
 #: ../data/gnome-audio-profile-new.ui.h:3
 msgid "_Profile name:"
-msgstr "Назва _профіля:"
+msgstr "_Назва профіля:"
 
 #: ../data/gnome-audio-profile-new.ui.h:1
 msgid "New Profile"
@@ -148,94 +148,91 @@ msgstr "_Стварыць"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
-msgstr "Апісаньне аўдыёпрофіля"
+msgstr "Апісанне аўдыяпрофіля"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
 msgstr ""
-"Апісаньне аўдыёпрофіля, утрымлівае зьвесткі пра прызначэньне і выкарыстаньне "
-"профіля."
+"Апісанне аўдыяпрофіля, якое змяшчае больш звестак аб профілі і сферы яго выкарыстання."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
-"Пашырэньне файлаў, якое выкарыстоўваецца пры кадаваньні гэтым профілем."
+"Пашырэнне файлаў, закадаваных з выкарыстаннем гэтага профіля."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
-msgstr "Частковы GStreamer трубаправод для выкарыстаньня гэтым профілем."
+msgstr "Частковы канвеер GStreamer для гэтага профіля."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
-msgstr "Кароткая назва аўдыёпрофіля"
+msgstr "Кароткая назва аўдыяпрофіля"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
 msgstr ""
-"Кароткая назва для аўдыёпрофіля, выкарыстоўваецца ў вылучэньнях для "
-"непаўторнага ідэнтыфікаваньня профіля)."
+"Кароткая назва аўдыяпрофіля, якая выкарыстоўваецца пры выбары профіляў і адрознівае "
+"яго ад іншых."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
-msgstr "Якасьць CD, AAC"
+msgstr "Якасць CD-дыска, AAC"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
-msgstr "Якасьць CD, без памяншэньня якасьці"
+msgstr "Якасць CD-дыска, без стратаў"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
-msgstr "Якасьць CD, з памяншэньнем якасьці"
+msgstr "Якасць CD-дыска, са стратамі"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
-msgstr ""
+msgstr "Якасць CD-дыска, MP2"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
-msgstr "Якасьць CD, MP3"
+msgstr "Якасць CD-дыска, MP3"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 msgstr ""
-"Сьпіс профіляў гуказапісу. Сьпіс зьмяшчае радкі з назвамі падтэчак адносна /"
+"Спіс профіляў гуказапісу. Гэты спіс змяшчае адрасы падкаталогаў адносна /"
 "system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
-msgstr "Сьпіс профіляў"
+msgstr "Спіс профіляў"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
-msgstr "Прадывызначанае пашырэньне файлаў для гэтага профіля"
+msgstr "Прадывызначанае пашырэнне файлаў для гэтага профіля"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
-msgstr "Выкарыстоўваецца частковы трубаправод GStreamer"
+msgstr "Частковы канвеер GStreamer"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
 msgstr ""
-"Выкарыстоўваецца для пераўтварэньня ў аўдыёфайлы якасьці CD, але з дапамогай "
-"кодэка, які не памяншае якасьць. Выкарыстоўвайце яго, калі пазьней вы хочаце "
-"зьмяніць файл ці запісаць яго на CD."
+"Выкарыстоўваецца для пераўтварэння ў аўдыяфайлы з якасцю CD-дыска з дапамогай бясстратнага кодэка. Гэты профіль карысны, калі вы збіраецеся пасля рэдагаваць атрыманыя файлы або запісваць іх на CD-дыскі."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
 msgstr ""
-"Выкарыстоўваецца для пераўтварэньня ў аўдыёфайлы якасьці CD, але з дапамогай "
-"кодэка, які памяншае якасьць. Выкарыстоўвайце яго для капіяваньня з CD і "
+"Выкарыстоўваецца для пераўтварэння ў аўдыяфайлы з якасцю CD-дыска з дапамогай "
+"стратнага кодэка. Гэты профіль карысны для капіравання гуку з CD-дыскаў і "
 "радыёзапісаў."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:18
@@ -245,11 +242,10 @@ msgid ""
 "codec. Note that using this format may be illegal in your jurisdiction; "
 "contact your lawyer for advice."
 msgstr ""
-"Для пераўтварэньня ў гук CD-якасьці, але з згубным кодэкам AAC. "
-"Выкарыстоўвайце толькі для падрыхтоўкі файлаў для капіяваньня на прылады, "
-"якія падтрымліваюць толькі кодэк AAC. Увага: выкарыстаньне гэтага кодэка "
-"можа быць нелегальным у Вашай краіне; зьвярніцеся да юрыста для "
-"высьвятленьня сытуацыі."
+"Выкарыстоўваецца для пераўтварэння ў аўдыяфайлы з якасцю CD-дыска з дапамогай стратнага кодэка AAC. "
+"Гэты профіль карысны для падрыхтоўкі файлаў да капіравання на прыстасаванні, "
+"якія падтрымліваюць толькі кодэк AAC. Звярніце ўвагу на тое, што выкарыстаньне гэтага кодэка "
+"можа быць нелегальным у вашай краіне. Падрабязнасці пытайце ў свайго юрыста."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:19
 msgid ""
@@ -258,6 +254,9 @@ msgid ""
 "codec. Note that using this format may be illegal in your jurisdiction; "
 "contact your lawyer for advice."
 msgstr ""
+"Выкарыстоўваецца для пераўтварэння ў аўдыяфайлы з якасцю CD-дыска з дапамогай стратнага кодэка MP2. Гэты профіль карысны для падрыхтоўкі файлаў да капіравання на прыстасаванні, "
+"якія падтрымліваюць толькі кодэк MP2. Звярніце ўвагу на тое, што выкарыстаньне гэтага кодэка "
+"можа быць нелегальным у вашай краіне. Падрабязнасці пытайце ў свайго юрыста."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:20
 msgid ""
@@ -266,41 +265,36 @@ msgid ""
 "codec. Note that using this format may be illegal in your jurisdiction; "
 "contact your lawyer for advice."
 msgstr ""
-"Для пераўтварэньня ў гук CD-якасьці, але з згубным кодэкам MP3. "
-"Выкарыстоўвайце толькі для падрыхтоўкі файлаў для капіяваньня на прылады, "
-"якія падтрымліваюць толькі кодэк MP3. Увага: выкарыстаньне гэтага кодэка "
-"можа быць нелегальным у Вашай краіне; зьвярніцеся да юрыста для "
-"высьвятленьня сытуацыі."
+"Выкарыстоўваецца для пераўтварэння ў аўдыяфайлы з якасцю CD-дыска з дапамогай стратнага кодэка MP3. Гэты профіль карысны для падрыхтоўкі файлаў да капіравання на прыстасаванні, "
+"якія падтрымліваюць толькі кодэк MP3. Звярніце ўвагу на тое, што выкарыстаньне гэтага кодэка "
+"можа быць нелегальным у вашай краіне. Падрабязнасці пытайце ў свайго юрыста."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
 msgstr ""
-"Выкарыстоўваецца для пераўтварэньня ў аўдыёзапісы голасу без памяншэньня "
-"якасьці. Выкарыстоўвайце яго для запісу і зьмены голасу."
+"Выкарыстоўваецца для пераўтварэння ў галасавыя аўдыяфайлы без стратаў якасці. Гэты профіль карысны для запісу ці рэдагавання голасу."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
 msgstr ""
-"Выкарыстоўваецца для пераўтварэньня ў аўдыёзапісы голасу з памяншэньнем "
-"якасьці. Выкарыстоўвайце яго для запісу голасу, які ня трэба потым зьмяняць."
+"Выкарыстоўваецца для пераўтварэння ў галасавыя аўдыяфайлы са стратай якасці. Гэты профіль карысны для запісу голасу, які не прыйдзецца пазней рэдагаваць."
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
-msgstr "Голас, без памяншэньня якасьці"
+msgstr "Голас, без стратаў"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
-msgstr "Голас, з памяншэньнем якасьці"
+msgstr "Голас, са стратамі"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
-msgstr ""
+msgstr "Ці трэба выкарыстоўваць гэты профіль"
 
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
-msgstr ""
-
+msgstr "Ці трэба выкарыстоўваць і паказваць гэты профіль."
