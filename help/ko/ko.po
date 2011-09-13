@@ -1,0 +1,400 @@
+# Korean translation for libgnome-media-profiles.
+# Copyright (C) 2011 libgnome-media-profiles's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libgnome-media-profiles package.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnome-media-profiles master\n"
+"POT-Creation-Date: 2011-08-28 20:54+0000\n"
+"PO-Revision-Date: 2011-09-04 22:02+0900\n"
+"Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
+"Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: C/legal.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"전면 표지와 후면 표지, 그리고 변경되지 않는 섹션을 제외한 이 문서의 복제, 배"
+"포 및 수정은 재단에 의해 작성된 Version 1.1 이후의 GNU Free Documentation "
+"License(GFDL)에 의해 허용됩니다. GFDL의 복제본은 <ulink type=\"help\" url="
+"\"ghelp:fdl\">이 링크</ulink>, 혹은 설명서와 함께 배포되는 COPYING-DOCS 파일"
+"에서 찾을 수 있습니다."
+
+#: C/legal.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"이 설명서는 GFDL에 의해 배포되는 그놈 메뉴얼 모음의 한 부분입니다. 모음으로부"
+"터 이 설명서를 개별적으로 배포하고 싶으시다면 라이선스의 6장에 기술된 대로 "
+"이 메뉴얼에 라이선스를 추가함으로써 가능합니다."
+
+#: C/legal.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"회사에서의 제품이나 서비스를 구분하기 위해 사용되는 수많은 이름들은 등록상표 "
+"입니다. 어떤 그놈 문서에 나타나는 등록상표 명칭이나 등록상표로 인지되는 그>"
+"놈 문서 프로젝트의 구성원의 이름이 존재하는 곳에는 대문자로 표기하거나 대문"
+"자 약자로 표기됩니다."
+
+#: C/legal.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+
+#: C/legal.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-audio-profiles.xml:161(None)
+msgid ""
+"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"md5=08874167dcd48db9a9c2e9623706bb1b"
+msgstr ""
+"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"md5=08874167dcd48db9a9c2e9623706bb1b"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-audio-profiles.xml:194(None)
+msgid ""
+"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"md5=21171454e8a63a62c751ce8fc3a8d11e"
+msgstr ""
+"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"md5=21171454e8a63a62c751ce8fc3a8d11e"
+
+#: C/gnome-audio-profiles.xml:26(title)
+msgid "<application>GNOME Audio Profiles</application> Manual"
+msgstr "<application>그놈 오디오 프로파일</application> 설명서"
+
+#: C/gnome-audio-profiles.xml:28(para)
+msgid ""
+"<application>GNOME Audio Profiles</application> is a set of audio encoding "
+"configurations for GStreamer based applications."
+msgstr ""
+"<application>그놈 오디오 프로파일</application>은 GStreamer 기반 프로그램을 "
+"위한 오디오 인코딩 설정의 모음입니다."
+
+#: C/gnome-audio-profiles.xml:33(year)
+msgid "2008-2009"
+msgstr "2008-2009"
+
+#: C/gnome-audio-profiles.xml:34(holder)
+#: C/gnome-audio-profiles.xml:39(publishername)
+#: C/gnome-audio-profiles.xml:80(para) C/gnome-audio-profiles.xml:88(para)
+msgid "GNOME Documentation Project"
+msgstr "그놈 문서 프로젝트"
+
+#: C/gnome-audio-profiles.xml:49(firstname)
+msgid "Marc-Andre"
+msgstr "Marc-Andre"
+
+#: C/gnome-audio-profiles.xml:50(surname)
+msgid "Lureau"
+msgstr "Lureau"
+
+#: C/gnome-audio-profiles.xml:52(orgname)
+msgid "GNOME Project"
+msgstr "그놈 프로젝트"
+
+#: C/gnome-audio-profiles.xml:53(email)
+msgid "marcandre.lureau@gmail.com"
+msgstr "marcandre.lureau@gmail.com"
+
+#: C/gnome-audio-profiles.xml:74(revnumber)
+msgid "Audio Profiles Manual V2.27.0"
+msgstr "오디오 프로파일 설명서 V2.27.0"
+
+#: C/gnome-audio-profiles.xml:75(date)
+msgid "June 2009"
+msgstr "2009년 6월"
+
+#: C/gnome-audio-profiles.xml:77(para)
+msgid "Fill some blanks, add screenshots."
+msgstr "빈 칸을 채우고, 스크린샷을 추가하십시오."
+
+#: C/gnome-audio-profiles.xml:78(para)
+msgid "Release with GNOME Media 2.27.3"
+msgstr "그놈 미디어 2.27.3과 함께 출시"
+
+#: C/gnome-audio-profiles.xml:79(para) C/gnome-audio-profiles.xml:87(para)
+msgid "Marc-Andre Lureau"
+msgstr "Marc-Andre Lureau"
+
+#: C/gnome-audio-profiles.xml:84(revnumber)
+msgid "Audio Profiles Manual V0.1"
+msgstr "오디오 프로파일 설명서 V0.1"
+
+#: C/gnome-audio-profiles.xml:85(date)
+msgid "December 2008"
+msgstr "2008년 12월"
+
+#: C/gnome-audio-profiles.xml:93(releaseinfo)
+msgid "This manual describes version 2.27.3 of GNOME Audio Profiles."
+msgstr "이 설명서는 그놈 오디오 프로파일 2.27.3을 설명합니다."
+
+#: C/gnome-audio-profiles.xml:96(title)
+msgid "Feedback"
+msgstr "피드백"
+
+#: C/gnome-audio-profiles.xml:97(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>GNOME Audio "
+"Profiles</application> application or this manual, follow the directions in "
+"the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
+"section of the GNOME User Guide</ulink>."
+msgstr ""
+"<application>그놈 오디오 프로파일</application>이나 이 설명서에 대한 버그나 "
+"제안을 보고하려면, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
+"\">그놈 사용자 안내서의 피드백 장</ulink>의 지시를 따릅니다."
+
+#: C/gnome-audio-profiles.xml:106(primary)
+#: C/gnome-audio-profiles.xml:0(application)
+msgid "GNOME Audio Profiles"
+msgstr "그놈 오디오 프로파일"
+
+#: C/gnome-audio-profiles.xml:113(title)
+msgid "Introduction"
+msgstr "개요"
+
+#: C/gnome-audio-profiles.xml:114(para)
+msgid ""
+"<application>GNOME Audio Profiles</application> let you select and modify a "
+"list of pre-defined encoding formats. By default, <application>GNOME Audio "
+"Profiles</application> provides the following audio format:"
+msgstr ""
+"<application>그놈 오디오 프로파일</application>은 미리 정의된 인코딩 형식의 "
+"목록을 선택하고 수정할 수 있게 합니다. 기본적으로 <application>그놈 오디오 프"
+"로파일</application>은 다음 오디오 형식을 제공합니다:"
+
+#: C/gnome-audio-profiles.xml:118(para)
+msgid "AAC-MP4 - The new standard of lossy compression."
+msgstr "AAC-MP4 - 새로운 손실압축 표준."
+
+#: C/gnome-audio-profiles.xml:121(para)
+msgid "Ogg Vorbis - Xiph.Org lossy compression."
+msgstr "Ogg Vorbis - Xiph.Org 손실 압축."
+
+#: C/gnome-audio-profiles.xml:124(para)
+msgid "Speex - Xiph.Org lossy compression optimized for voice."
+msgstr "Speex - Xiph.Org 음성을 위해 최적화된 손실 압축."
+
+#: C/gnome-audio-profiles.xml:127(para)
+msgid "FLAC - Xiph.Org lossless audio compression."
+msgstr "FLAC - Xiph.Org 무손실 오디오 압축."
+
+#: C/gnome-audio-profiles.xml:130(para)
+msgid "MP3 - The popular lossy compression format."
+msgstr "MP3 - 인기있는 손실 압축 형식."
+
+#: C/gnome-audio-profiles.xml:133(para)
+msgid "MP2 - MPEG-1 Audio Layer II, largely supported."
+msgstr "MP2 - MPEG-1 오디오 계층 II, 널리 제공됨."
+
+#: C/gnome-audio-profiles.xml:136(para)
+msgid "WAV - Lossless."
+msgstr "WAV - 무손실."
+
+#: C/gnome-audio-profiles.xml:141(para)
+msgid "Some format may be illegal in your jurisdiction."
+msgstr "어떤 형식은 관할 거주지역에서의 사용은 불법이 될 수 있습니다."
+
+#: C/gnome-audio-profiles.xml:146(title)
+msgid "Usage"
+msgstr "사용법"
+
+#: C/gnome-audio-profiles.xml:147(para)
+msgid ""
+"Use <application>GNOME Audio Profiles</application> to modify a list of pre-"
+"defined encoding formats."
+msgstr ""
+"미리 정의된 인코딩 형식을 수정하려면 <application>그놈 오디오 프로파일</"
+"application>을 사용합니다."
+
+#: C/gnome-audio-profiles.xml:150(title)
+msgid "Profile selection dialog"
+msgstr "프로파일 선택 대화상자"
+
+#: C/gnome-audio-profiles.xml:152(para)
+msgid ""
+"The following window is displayed to modify, add or remove the pre-defined "
+"formats."
+msgstr ""
+"다음 창은 미리 정의된 형식을 수정하거나 추가 혹은 제거하는 모습을 보여줍니다."
+
+#: C/gnome-audio-profiles.xml:157(title)
+msgid "<application>GNOME Audio Profiles</application> Window"
+msgstr "<application>그놈 오디오 프로파일</application> 창"
+
+#: C/gnome-audio-profiles.xml:164(phrase)
+msgid ""
+"Shows <placeholder-1/> main window. Contains list of profiles and "
+"modification options."
+msgstr ""
+"<placeholder-1/> 메인 창을 보입니다. 프로파일의 목록과 수정 옵션이 들어있습니"
+"다."
+
+#. ==== End of Figure ====
+#: C/gnome-audio-profiles.xml:172(para)
+msgid ""
+"Select one of the profiles and click \"Edit\" to modify it. The \"Profile "
+"modification window\" will be displayed."
+msgstr ""
+"프로파일중 하나를 선택하고 \"편집\"을 눌러 수정합니다. \"프로파일 수정 창"
+"\"이 표시될 것입니다."
+
+#: C/gnome-audio-profiles.xml:175(para)
+msgid ""
+"\"Delete\" will remove the currently selected profile from the list of "
+"profiles."
+msgstr ""
+"\"삭제\"는 프로파일 목록으로부터 현재 선택된 프로파일을 제거할 것입니다."
+
+#: C/gnome-audio-profiles.xml:178(para)
+msgid ""
+"To create a new profile, click \"New\". The \"Profile modification window\" "
+"will be displayed."
+msgstr ""
+"새 프로파일을 만드려면, \"새로 만들기\"를 누릅니다. \"프로파일 수정 창\"이 표"
+"시될 것입니다."
+
+#: C/gnome-audio-profiles.xml:184(title)
+msgid "Profile editing"
+msgstr "프로파일 편집"
+
+#: C/gnome-audio-profiles.xml:186(para)
+msgid ""
+"<application>GNOME Audio Profiles</application> let you modify the "
+"parameters of an audio profile."
+msgstr ""
+"<application>그놈 오디오 프로파일</application>은 오디오 프로파일의 인자를 수"
+"정할 수 있도록 해줍니다."
+
+#: C/gnome-audio-profiles.xml:190(title)
+msgid "Profile modification window"
+msgstr "프로파일 수정 창"
+
+#: C/gnome-audio-profiles.xml:197(phrase)
+msgid "Shows <placeholder-1/> profile window."
+msgstr "<placeholder-1/> 프로파일 창을 보입니다."
+
+#: C/gnome-audio-profiles.xml:206(para)
+msgid "Profile name - user friendly name of the profile."
+msgstr "프로파일 명칭 - 현재 프로파일에 대한 사용자 친화적 명칭."
+
+#: C/gnome-audio-profiles.xml:209(para)
+msgid "Profile description - long description of this profile."
+msgstr "프로파일 설명 - 현재 프로파일에 대한 긴 설명."
+
+#: C/gnome-audio-profiles.xml:212(para)
+msgid "GStreamer pipeline - the GStreamer encoding pipeline."
+msgstr "GStreamer 파이프라인 - GStreamer 인코딩 파이프라인."
+
+#: C/gnome-audio-profiles.xml:215(para)
+msgid "File extension - the filename extension associated to this profile."
+msgstr "파일 확장자 - 프로파일과 관련된 파일 이름 확장자."
+
+#: C/gnome-audio-profiles.xml:219(para)
+msgid "Active - whether this profile is listed in client application."
+msgstr "활성 - 현재 프로파일이 클라이언트 프로그램에 조회되었는지에 대한 여부."
+
+#: C/gnome-audio-profiles.xml:246(title)
+msgid "About <application>GNOME Audio Profiles</application>"
+msgstr "<application>그놈 오디오 프로파일</application> 정보"
+
+#: C/gnome-audio-profiles.xml:247(para)
+msgid ""
+"To report a bug or make a suggestion regarding this application or this "
+"manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-"
+"bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+msgstr ""
+"이 프로그램이나 설명서에 대한 버그나 제안을 보고하려면, <ulink url=\"ghelp:"
+"user-guide?feedback-bugs\" type=\"help\">그놈 사용자 안내서의 피드백 장</"
+"ulink>의 지시를 따릅니다."
+
+#: C/gnome-audio-profiles.xml:253(para)
+msgid ""
+"This program is distributed under the terms of the GNU Library General "
+"Public license as published by the Free Software Foundation; either version "
+"2 of the License, or (at your option) any later version. A <ulink url="
+"\"ghelp:lgpl\" type=\"help\">copy of this license</ulink> is included with "
+"this documentation; another can be found in the file COPYING included with "
+"the source code of this program."
+msgstr ""
+"이 프로그램은 자유 소프트웨어 재단이 공표한 일반 공중 사용 허가서의 조항에 따"
+"라 배포되며, 허가서 판 번호 2 혹은, (여러분의 선택에 따라) 그 이후의 버전에 "
+"따릅니다. <ulink url=\"ghelp:lgpl\" type=\"help\">이 허가서의 복제본</ulink>"
+"은 이 문서를 포함하고 있으며 다른 허가서는 이 프로그램의 원본 코드에 포함된 "
+"COPYING파일에서 찾을 수 있습니다."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnome-audio-profiles.xml:0(None)
+msgid "translator-credits"
+msgstr "Seong-ho, Cho <darkcircle.0426@gmail.com>, 2011"
