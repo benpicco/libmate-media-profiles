@@ -1,6 +1,7 @@
 SUBDIRS = \
 	libgnome-media-profiles	\
 	data			\
+	glade			\
 	po			\
 	help
 

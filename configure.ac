@@ -42,15 +42,15 @@ dnl Profiles glade ui: needed to edit .ui files with glade3
 have_gladeui=no
 
 # gladeui-3.0 is hypothetical
-PKG_CHECK_MODULES(GLADEUI, [gladeui-3.0], have_gladeui=yes, have_gladeui=no)
+PKG_CHECK_MODULES(GLADEUI, [gladeui-2.0], have_gladeui=yes, have_gladeui=no)
 AC_SUBST(GLADEUI_CFLAGS)
 AC_SUBST(GLADEUI_LIBS)
 AM_CONDITIONAL(HAVE_GLADEUI, [test x$have_gladeui = xyes])
 
-GLADEUI_CATALOG_DIR="`$PKG_CONFIG --variable=catalogdir gladeui-3.0`"
+GLADEUI_CATALOG_DIR="`$PKG_CONFIG --variable=catalogdir gladeui-2.0`"
 AC_SUBST(GLADEUI_CATALOG_DIR)
 
-GLADEUI_MODULE_DIR="`$PKG_CONFIG --variable=moduledir gladeui-3.0`"
+GLADEUI_MODULE_DIR="`$PKG_CONFIG --variable=moduledir gladeui-2.0`"
 AC_SUBST(GLADEUI_MODULE_DIR)
 
 dnl=======================================================================
@@ -90,6 +90,7 @@ Makefile
 libgnome-media-profiles/Makefile
 data/Makefile
 data/gnome-media-profiles.schemas.in
+glade/Makefile
 help/Makefile
 po/Makefile.in
 ])
