@@ -96,7 +96,7 @@ msgstr "Ja teniu un perfil anomenat «%s»"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "S'ha produït un error en el GConf: %s\n"
+msgstr "S'ha produït un error en el MateConf: %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

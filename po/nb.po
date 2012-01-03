@@ -93,7 +93,7 @@ msgstr "Du har allerede en profil med navn «%s»"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf-feil (FIKSMEG): %s\n"
+msgstr "MateConf-feil (FIKSMEG): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

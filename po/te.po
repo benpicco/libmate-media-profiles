@@ -94,7 +94,7 @@ msgstr "మీరు ఇప్పటికే \"%s\" అనబడే ప్ర�
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf దోషం (FIXME): %s\n"
+msgstr "MateConf దోషం (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

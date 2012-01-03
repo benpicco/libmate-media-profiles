@@ -96,7 +96,7 @@ msgstr "\"%s\" নামৰ এটা আলেখ্য আপোনাৰ ই�
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf ত্ৰুটি (FIXME): %s\n"
+msgstr "MateConf ত্ৰুটি (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

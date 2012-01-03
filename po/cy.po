@@ -108,7 +108,7 @@ msgstr "Mae gennych broffil o'r enw \"%s\" yn barod"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "Gwall GConf (CYWIRWCHFI): %s\n"
+msgstr "Gwall MateConf (CYWIRWCHFI): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

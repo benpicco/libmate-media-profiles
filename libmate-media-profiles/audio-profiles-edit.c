@@ -141,7 +141,7 @@ profile_activated_callback (GtkTreeView       *tree_view,
                       -1);
   if (profile) {
     /* FIXME: is this the right function name ? */
-    edit_dialog = gm_audio_profile_edit_new ((GConfClient *) profile, gm_audio_profile_get_id (profile));
+    edit_dialog = gm_audio_profile_edit_new ((MateConfClient *) profile, gm_audio_profile_get_id (profile));
     g_return_if_fail (edit_dialog != NULL);
     gtk_widget_show_all (GTK_WIDGET (edit_dialog));
   } else {
@@ -381,7 +381,7 @@ edit_button_clicked (GtkWidget   *button,
                              dialog->priv->manage_profiles_list, 0);
 
     /* FIXME: is this the right function name ? */
-    edit_dialog = gm_audio_profile_edit_new ((GConfClient *)profile, gm_audio_profile_get_id (profile));
+    edit_dialog = gm_audio_profile_edit_new ((MateConfClient *)profile, gm_audio_profile_get_id (profile));
     g_return_if_fail (edit_dialog != NULL);
     gtk_window_set_modal (GTK_WINDOW (edit_dialog), TRUE);
     gtk_widget_show_all (GTK_WIDGET (edit_dialog));
@@ -423,7 +423,7 @@ delete_confirm_response (GtkWidget   *confirm_dialog,
 
   dialog->priv->deleted_profiles_list = NULL;
 
-  /* reget from GConf and refill tree view */
+  /* reget from MateConf and refill tree view */
   gm_audio_profile_sync_list (FALSE, NULL);
   refill_profile_treeview (dialog->priv->manage_profiles_list);
 
@@ -543,11 +543,11 @@ on_gm_audio_profiles_edit_destroy (GtkWidget *dialog, gpointer *user_data)
 }
 
 #if 0
-/* GConf notification callback for profile_list */
+/* MateConf notification callback for profile_list */
 static void
-gm_audio_profiles_list_notify (GConfClient *client,
+gm_audio_profiles_list_notify (MateConfClient *client,
                           guint        cnxn_id,
-                          GConfEntry  *entry,
+                          MateConfEntry  *entry,
                           gpointer    user_data)
 {
   GMAudioProfilesEdit *dialog;
@@ -746,7 +746,7 @@ gm_audio_profiles_edit_finalize (GObject *object)
 }
 
 GtkWidget*
-gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
+gm_audio_profiles_edit_new (MateConfClient *conf, GtkWindow *transient_parent)
 {
   GMAudioProfilesEdit *dialog;
   /*GError *err;*/
@@ -844,7 +844,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
     {
       g_print ("ERROR: %s\n", error->message);
       gmp_util_run_error_dialog (GTK_WINDOW (transient_parent),
-                                  _("GConf Error (FIXME): %s\n"),
+                                  _("MateConf Error (FIXME): %s\n"),
                                   error->message);
       g_error_free (error);
       goto cleanup;

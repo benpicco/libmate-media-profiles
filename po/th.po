@@ -94,7 +94,7 @@ msgstr "คุณมีโพรไฟล์ที่เรียกว่า \"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "เกิดข้อผิดพลาดใน GConf (FIXME): %s\n"
+msgstr "เกิดข้อผิดพลาดใน MateConf (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

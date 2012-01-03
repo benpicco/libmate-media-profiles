@@ -93,7 +93,7 @@ msgstr "\"%s\" ಎಂಬ ಹೆಸರಿನ ಒಂದು ಪ್ರೊಫೈಲ�
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf ದೋಷ (FIXME): %s\n"
+msgstr "MateConf ದೋಷ (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

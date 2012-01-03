@@ -94,7 +94,7 @@ msgstr "Já possui um perfil denominado \"%s\""
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "Erro GConf (CORRIGE-ME): %s\n"
+msgstr "Erro MateConf (CORRIGE-ME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

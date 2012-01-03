@@ -99,7 +99,7 @@ msgstr "Танд \"%s\" профил хэдийнэ байна"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf Алдаа (НАМАЙГЗАС): %s\n"
+msgstr "MateConf Алдаа (НАМАЙГЗАС): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

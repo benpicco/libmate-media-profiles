@@ -51,7 +51,7 @@ mate_media_profiles_init (MateConfClient *conf)
   else
     g_object_ref (G_OBJECT (conf));
 
-    /* initialize GConf */
+    /* initialize MateConf */
     mateconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
 			  MATECONF_CLIENT_PRELOAD_ONELEVEL,
 			  &err);

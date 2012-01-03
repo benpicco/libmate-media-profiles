@@ -96,7 +96,7 @@ msgstr "您已经有名为“%s”的配置文件了"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf 错误(待修正)：%s\n"
+msgstr "MateConf 错误(待修正)：%s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

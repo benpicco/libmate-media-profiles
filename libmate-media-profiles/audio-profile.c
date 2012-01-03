@@ -40,8 +40,8 @@
 struct _GMAudioProfilePrivate
 {
   char *id;		     /* the MateConf dir name */
-  char *profile_dir;         /* full path in GConf to this profile */
-  GConfClient *conf;
+  char *profile_dir;         /* full path in MateConf to this profile */
+  MateConfClient *conf;
   guint notify_id;
 
   int in_notification_count; /* don't understand, see terminal-profile.c */
@@ -56,7 +56,7 @@ struct _GMAudioProfilePrivate
 };
 
 static GHashTable *profiles = NULL;
-static GConfClient *_conf = NULL;
+static MateConfClient *_conf = NULL;
 
 #define RETURN_IF_NOTIFYING(profile) if ((profile)->priv->in_notification_count) return
 
@@ -70,9 +70,9 @@ static void gm_audio_profile_finalize    (GObject              *object);
 
 static void gm_audio_profile_update      (GMAudioProfile *profile);
 
-static void profile_change_notify     (GConfClient *client,
+static void profile_change_notify     (MateConfClient *client,
                                        guint        cnxn_id,
-                                       GConfEntry  *entry,
+                                       MateConfEntry  *entry,
                                        gpointer     user_data);
 
 static void emit_changed (GMAudioProfile           *profile,
@@ -152,7 +152,7 @@ gm_audio_profile_finalize (GObject *object)
  */
 
 /* sync gm_audio profiles list by either using the given list as the new list
- * or by getting the list from GConf
+ * or by getting the list from MateConf
  */
 
 static GList*
@@ -176,7 +176,7 @@ find_profile_link (GList      *profiles,
 
 /* synchronize global profiles hash through accessor functions
  * if use_this_list is true, then put given profiles to the hash
- * if it's false, then get list from GConf */
+ * if it's false, then get list from MateConf */
 void
 gm_audio_profile_sync_list (gboolean use_this_list,
                          GSList  *this_list)
@@ -281,10 +281,10 @@ gm_audio_profile_sync_list (gboolean use_this_list,
  */
 
 /* create a new GMAudioProfile structure and add it to the global profiles hash
- * load settings from GConf tree
+ * load settings from MateConf tree
  */
 GMAudioProfile*
-gm_audio_profile_new (const char *id, GConfClient *conf)
+gm_audio_profile_new (const char *id, MateConfClient *conf)
 {
   GMAudioProfile *self;
   GError *err;
@@ -303,7 +303,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
                                                          self->priv->id);
 
   err = NULL;
-  GST_DEBUG ("loading config from GConf dir %s\n",
+  GST_DEBUG ("loading config from MateConf dir %s\n",
            self->priv->profile_dir);
   mateconf_client_add_dir (conf, self->priv->profile_dir,
                         GCONF_CLIENT_PRELOAD_ONELEVEL,
@@ -316,7 +316,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
     }
 
   err = NULL;
-  GST_DEBUG ("adding notify for GConf profile\n");
+  GST_DEBUG ("adding notify for MateConf profile\n");
   self->priv->notify_id =
     mateconf_client_notify_add (conf,
                              self->priv->profile_dir,
@@ -569,14 +569,14 @@ find_key (const gchar* key)
 }
 
 static void
-profile_change_notify (GConfClient *client,
+profile_change_notify (MateConfClient *client,
                        guint        cnxn_id,
-                       GConfEntry  *entry,
+                       MateConfEntry  *entry,
                        gpointer     user_data)
 {
   GMAudioProfile *self;
   const char *key;
-  GConfValue *val;
+  MateConfValue *val;
   GMAudioSettingMask mask; /* to keep track of what has changed */
 
   self = GM_AUDIO_PROFILE (user_data);
@@ -639,14 +639,14 @@ else if (strcmp (key, KName) == 0)                                      \
   GST_DEBUG ("PROFILE_CHANGE_NOTIFY: changed stuff\n");
 }
 
-/* GConf notification callback for profile_list */
+/* MateConf notification callback for profile_list */
 static void
-gm_audio_profile_list_notify (GConfClient *client,
+gm_audio_profile_list_notify (MateConfClient *client,
                               guint        cnxn_id,
-                              GConfEntry  *entry,
+                              MateConfEntry  *entry,
                               gpointer     user_data)
 {
-  GConfValue *val;
+  MateConfValue *val;
   GSList *value_list;
   GSList *string_list;
   GSList *tmp;
@@ -666,7 +666,7 @@ gm_audio_profile_list_notify (GConfClient *client,
   while (tmp != NULL)
     {
       string_list = g_slist_prepend (string_list,
-                                     g_strdup (mateconf_value_get_string ((GConfValue*) tmp->data)));
+                                     g_strdup (mateconf_value_get_string ((MateConfValue*) tmp->data)));
 
       tmp = tmp->next;
     }
@@ -685,7 +685,7 @@ gm_audio_profile_list_notify (GConfClient *client,
  * safe to call more than once
  */
 void
-gm_audio_profile_initialize (GConfClient *conf)
+gm_audio_profile_initialize (MateConfClient *conf)
 {
   GError *err;
 /*
@@ -753,7 +753,7 @@ emit_changed (GMAudioProfile           *self,
 }
 
 
-/* update the given GMAudioProfile from GConf */
+/* update the given GMAudioProfile from MateConf */
 static void
 gm_audio_profile_update (GMAudioProfile *self)
 {
@@ -949,7 +949,7 @@ gm_audio_setting_mask_is_empty (const GMAudioSettingMask *mask)
  * Caller should free the returned id */
 char *
 gm_audio_profile_create (const char  *name,
-                      GConfClient *conf,
+                      MateConfClient *conf,
                       GError      **error)
 {
   char *profile_id = NULL;
@@ -1087,7 +1087,7 @@ gm_audio_profile_create (const char  *name,
 
 /* delete the given list of profiles from the mateconf profile_list key */
 void
-gm_audio_profile_delete_list (GConfClient *conf,
+gm_audio_profile_delete_list (MateConfClient *conf,
                            GList       *deleted_profiles,
                            GError      **error)
 {
@@ -1122,7 +1122,7 @@ gm_audio_profile_delete_list (GConfClient *conf,
 
   g_list_free (current_profiles);
   err = NULL;
-  GST_DEBUG ("setting profile_list in GConf\n");
+  GST_DEBUG ("setting profile_list in MateConf\n");
   mateconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
                          GCONF_VALUE_STRING,

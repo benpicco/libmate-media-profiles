@@ -102,7 +102,7 @@ msgstr "\"%s\" নামের একটি প্রোফাইল বর্�
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf ত্রুটি (FIXME): %s\n"
+msgstr "MateConf ত্রুটি (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

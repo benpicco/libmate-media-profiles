@@ -95,7 +95,7 @@ msgstr "\"%s\" izeneko profila badaukazu"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf errorea (finkatzeko): %s\n"
+msgstr "MateConf errorea (finkatzeko): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

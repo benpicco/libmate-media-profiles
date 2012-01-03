@@ -98,7 +98,7 @@ msgstr "Profiil nimega \"%s\" on juba olemas"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf viga (PARANDA): %s\n"
+msgstr "MateConf viga (PARANDA): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

@@ -93,7 +93,7 @@ msgstr "Profil z nazvaj \"%s\" užo isnuje"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "Pamyłka GConf (FIXME): %s\n"
+msgstr "Pamyłka MateConf (FIXME): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

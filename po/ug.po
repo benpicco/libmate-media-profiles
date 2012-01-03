@@ -94,7 +94,7 @@ msgstr "\"%s\" ئاتلىق سەپلىمە ھۆججىتىڭىز بار"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "GConf خاتالىقى(ئوڭشاڭ): %s\n"
+msgstr "MateConf خاتالىقى(ئوڭشاڭ): %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

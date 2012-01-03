@@ -104,7 +104,7 @@ msgstr "Профиль с именем «%s» уже существует"
 #: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
-msgstr "Произошла ошибка системы GConf: %s\n"
+msgstr "Произошла ошибка системы MateConf: %s\n"
 
 #: ../libmate-media-profiles/gmp-util.c:61
 #, c-format

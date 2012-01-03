@@ -216,10 +216,10 @@ on_profile_active_toggled (GtkWidget *button, GMAudioProfile *profile)
 }
 
 /* create and return a new Profile Edit Dialog
- * given the GConf connection and the id of the profile
+ * given the MateConf connection and the id of the profile
  */
 GtkWidget*
-gm_audio_profile_edit_new (GConfClient *conf, const char *id)
+gm_audio_profile_edit_new (MateConfClient *conf, const char *id)
 {
   GMAudioProfileEdit *dialog;
   GtkBuilder *builder;
@@ -251,7 +251,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   }
   dialog->priv->builder = builder;
 
-  /* save the GConf stuff and get the profile belonging to this id */
+  /* save the MateConf stuff and get the profile belonging to this id */
   dialog->priv->conf = g_object_ref (conf);
 
   dialog->priv->profile = gm_audio_profile_lookup (id);
