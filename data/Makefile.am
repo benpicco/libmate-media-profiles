@@ -9,7 +9,7 @@ schemas_in_files = mate-media-profiles.schemas.in
 schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
 
 install-schemas:
-	MATECONF_CONFIG_SOURCE=$(MATECONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(top_builddir)/profiles/$(schema_DATA) || true
+	MATECONF_CONFIG_SOURCE=$(MATECONF_SCHEMA_CONFIG_SOURCE) $(MATECONFTOOL) --makefile-install-rule $(top_builddir)/profiles/$(schema_DATA) || true
 
 if MATECONF_SCHEMAS_INSTALL
 install-data-local: install-schemas
