@@ -1,48 +1,48 @@
 # Përkthimi i mesazheve të mate-media në shqip
 # Copyright (C) 2003-2006, 2008 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-media package.
+# This file is distributed under the same license as the mate-media package.
 #
 # Laurent Dhima  <laurenti@alblinux.net>, 2003-2006, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media HEAD\n"
+"Project-Id-Version: mate-media HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2008-09-23 17:50+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
-"Language-Team: albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"Language-Team: albanian <mate-albanian-perkthyesit@lists.sourceforge.net>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "U verifikua një gabim gjatë shfaqjes së ndihmës: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "Duke ndryshuar profilin \"%s\""
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<pa emër>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<asnjë përshkrim>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "Gabim gjatë marrjes së listës me profilet gm_audio. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -50,51 +50,51 @@ msgid ""
 msgstr ""
 "Gabim gjatë regjistrimit të ndryshimeve të listës së profilit audio. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Gabim gjatë fshirjes nga kujtesa të pozicionit të profilit %s. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "_Ndrysho"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "Eleminoj këtë profil?\n"
 msgstr[1] "Eleminoj këto %d profile?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "Eleminoj profilin \"%s\"?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "Elemino profilin"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
-msgstr "Ndrysho profilet audio të GNOME"
+msgstr "Ndrysho profilet audio të MATE"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "_Profilet:"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "Një profil me emrin \"%s\" ekziston"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "Gabim GConf (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -103,51 +103,51 @@ msgstr ""
 "File \"%s\" mungon. Kjo do të thotë që programi nuk është instaluar si "
 "duhet, prandaj dritarja e dialogut nuk mund të hapet."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "Ndrysho profilin audio"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "Pë_rshkrimi i profilit:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "_Aktivoj?"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "Mbrapashtesa e _file:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "Pipeline _GStreamer:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "Emri i _Profilit:"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "Profil i ri"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "_Krijo"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "Një përshkrim për profilin audio"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -155,22 +155,22 @@ msgstr ""
 "Një përshkrim i profilit, përmban informacione më të hollësishme dhe "
 "përshkruan kur duhet përdorur ky profil."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
 "Një mbrapashtesë e emrit të file që duhet përdorur kur ruhen files e koduar "
 "me këtë profil."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "Një pipeline GStreamer e pjesëshme e përdorur për këtë profil."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "Një emër i shkurtër për profilin audio"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -178,27 +178,27 @@ msgstr ""
 "Një emër i shkurtër për profilin audio, për tu përdorur gjatë zgjedhjeve dhe "
 "që identifikon në menyrë të qartë profilin."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "Kualitet CD, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "Kualitet CD, pak humbje"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "Kualitet CD, me humbje"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "Kualitet CD, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -206,19 +206,19 @@ msgstr ""
 "Lista e profileve të regjistrimit audio. Lista përmban emrat e nën-"
 "directories relative me /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "Lista e profileve"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "Mbrapashtesa e prezgjedhur e file për këtë profil"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "Pipeline GStreamer e pjesëshme e përdorur"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -227,7 +227,7 @@ msgstr ""
 "kompresimi për pak humbje. Përdorni këtë nëse më vonë dëshironi të ndryshoni "
 "këtë file apo t'a shkruani në CD."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -236,7 +236,7 @@ msgstr ""
 "kompresimi me humbje. Përdorni këtë për nxjerrje nga CD dhe regjistrime nga "
 "radio."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -248,7 +248,7 @@ msgstr ""
 "suportojnë vetëm codec AAC. Përdorimi i këtij formati mund të jetë ilegal në "
 "shtetin tuaj, pyesni avokatin tuaj për informacione më të hollësishme."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -256,7 +256,7 @@ msgid ""
 "contact your lawyer for advice."
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -268,7 +268,7 @@ msgstr ""
 "suportojnë vetëm codec MP3. Përdorimi i këtij formati mund të jetë ilegal në "
 "shtetin tuaj, pyesni avokatin tuaj për informacione më të hollësishme."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -276,7 +276,7 @@ msgstr ""
 "Përdoret për konvertim në kualitet audio e folur. Përdore për regjistrime të "
 "dhe ndryshime të të folurit."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -284,18 +284,18 @@ msgstr ""
 "Përdoret për konvertim në kualitet të ulët audio e folur. Përdore për "
 "regjistrime të të folurit që nuk ka nevojë për përpunime."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "Zë, pak humbje"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "Zë, kualitet i ulët"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""

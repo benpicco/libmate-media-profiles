@@ -27,7 +27,7 @@
 #include <mateconf/gconf-client.h>
 #include <gst/gst.h>
 
-#include <libgnome-media-profiles/gnome-media-profiles.h>
+#include <libmate-media-profiles/mate-media-profiles.h>
 
 static void
 edit_clicked_cb (GtkButton *button, GtkWindow *window)
@@ -165,7 +165,7 @@ main (int argc, char **argv)
   g_option_context_free (context);
 
   gconf = gconf_client_get_default ();
-  gnome_media_profiles_init (gconf);
+  mate_media_profiles_init (gconf);
 
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   combo = gm_audio_profile_choose_new ();

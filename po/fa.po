@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
+"Project-Id-Version: mate-media HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?product=libmate-media-profiles&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-04-23 19:05+0000\n"
 "PO-Revision-Date: 2011-04-25 01:02+0330\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
@@ -24,85 +24,85 @@ msgstr ""
 "X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "خطا در نمایش راهنما: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "ویرایش مجموعه تنظیمات «%s»"
 
-#: ../libgnome-media-profiles/audio-profile.c:96
+#: ../libmate-media-profiles/audio-profile.c:96
 msgid "<no name>"
 msgstr "<بدون نام>"
 
-#: ../libgnome-media-profiles/audio-profile.c:97
-#: ../libgnome-media-profiles/audio-profile.c:1006
+#: ../libmate-media-profiles/audio-profile.c:97
+#: ../libmate-media-profiles/audio-profile.c:1006
 msgid "<no description>"
 msgstr "<بدون شرح>"
 
-#: ../libgnome-media-profiles/audio-profile.c:212
+#: ../libmate-media-profiles/audio-profile.c:212
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "در گرفتن فهرست مجموعه‌های تنظیمات gm_audio خطایی رخ داد. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:713
+#: ../libmate-media-profiles/audio-profile.c:713
 #, c-format
 msgid "There was an error subscribing to notification of audio profile list changes. (%s)\n"
 msgstr "خطایی در هنگام اشتراک در اعلان فهرست تغییرات مجموعه تنظیمات صوتی وجود داشت. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:916
+#: ../libmate-media-profiles/audio-profile.c:916
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "در فراموش کردن مسیر مجموعه تنظیمات %s خطایی رخ داد. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "_ویرایش"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "این %Id مجموعه تنظیمات حذف شون؟\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "مجموعه تنظیمات «%s» حذف شود؟"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "حذف مجموعه تنظیمات"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
 msgstr "ویرایش مجموعه تنظیمات صوتی گنوم"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "_مجموعه‌های تنظیمات:"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "شما از قبل مجموعه تنظیماتی با نام «%s» دارید"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "خطای GConf (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid "The file \"%s\" is missing. This indicates that the application is installed incorrectly, so the dialog can't be displayed."
 msgstr "پرونده «%s» پیدا نمی‌شود. این بدان معنی‌ست که برنامه بصورت نادرست نصب شده است، بنابراین محاوره نمی‌تواند نمایش داده شود."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -111,139 +111,139 @@ msgstr ""
 "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "ویرایش مجموعه تنظیمات صوتی"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "_توضیحات مجموعه تنظیمات:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "_فعال شود؟"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "پسوند _پرونده:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "خط _لوله GStramer:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "نام _مجموعه تنظیمات:"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "مجموعه تنظیمات جدید"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "_ایجاد"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "شرحی برای مجموعه تنظیمات صوتی"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid "A description of the profile, containing more information and describing when to use this profile."
 msgstr "شرحی بر مجموعه تنظیمات، حاوی اطلاعات بیشتری است و توضیح می‌دهد چه زمان‌هایی از این مجموعه تنظیمات استفاده شود."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid "A filename extension to be used when storing files encoded with this profile."
 msgstr "یک پسوند نام پرونده که هنگام ذخیره کردن پرونده‌هایی که با این مجموعه تنظیمات کدگذاری شده‌اند استفاده شود."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "یک خط لوله‌ی جزئی GStreamer برای استفاده‌ی این مجموعه تنظیمات."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "یک نام کوتاه برای مجموعه تنظیمات صوتی"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid "A short name for the audio profile, to be used in selections and uniquely identifying the profile."
 msgstr "یک نام کوتاه برای مجموعه تنظیمات صوتی، که در انتخاب‌ها و تعیین هویت یکتای مجموعه تنظیمات استفاده شود."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "کیفیت سی‌دی، AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "کیفیت سی‌دی، بدون خش"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "کیفیت سی‌دی، خش‌دار"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "کیفیت سی‌دی، MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "کیفیت سی‌دی، MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid "List of audio recording profiles. The list contains strings naming subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 msgstr "فهرست مجموعه تنظیمات ضبط صدا. فهرست شامل رشته‌هایی است که زیرشاخه‌ها را به طور نسبی از /system/gstreamer/@GST_MAJORMINOR@/audio/profiles ذکر می‌کنند."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "فهرست مجموعه‌های تنظیمات"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "پسوند پرونده‌ی پیش‌فرض برای این مجموعه تنظیمات"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "خط لوله‌ی جزئی GStreamer استفاده شده"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid "Used for converting to CD-quality audio, but with a lossless compression codec. Use this if you later want to edit the file or burn it to CD."
 msgstr "برای تبدیل به صدای با کیفیت سی‌دی، اما با یک کُدِک فشرده‌سازی بدون خسارت استفاده می‌شود. اگر می‌خواهید بعداً پرونده را ویرایش کنید یا در سی‌دی ذخیره کنید از این استفاده کنید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid "Used for converting to CD-quality audio, but with a lossy compression codec. Use this for CD extraction and radio recordings."
 msgstr "برای تبدیل به صدای با کیفیت سی‌دی، اما با یک کُدِک فشرده‌سازی خسارت‌دار استفاده می‌شود. برای استخراج سی‌دی یا ضبط رادیو از این استفاده کنید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid "Used for converting to CD-quality audio, but with the lossy AAC codec. Use this for preparing files for copying to devices that only support the AAC codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
 msgstr "جهت تبدیل صوت‌هایی با کیفیت سی‌دی استفاده می‌شود، اما همراه با کُدِک خش‌دار AAC. از این مورد جهت رونوشت پرونده‌ها به دستگاه‌هایی که تنها از کُدِک AAC پشتیبانی می‌کنند استفاده کنید. توجه داشته باشید که استفاده از این قالب ممکن است در حوزه قضایی شما غیرقانونی باشد؛ با وکیل خود در این رابطه تماس بگیرید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use this for preparing files for copying to devices that only support the MP2 codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
 msgstr "جهت تبدیل صوت‌هایی با کیفیت سی‌دی استفاده می‌شود، اما همراه با کُدِک خش‌دار MP2. از این مورد جهت رونوشت پرونده‌ها به دستگاه‌هایی که تنها از کُدِک MP2 پشتیبانی می‌کنند استفاده کنید. توجه داشته باشید که استفاده از این قالب ممکن است در حوزه قضایی شما غیرقانونی باشد؛ با وکیل خود در این رابطه تماس بگیرید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use this for preparing files for copying to devices that only support the MP3 codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
 msgstr "جهت تبدیل صوت‌هایی با کیفیت سی‌دی استفاده می‌شود، اما همراه با کُدِک خش‌دار MP3. از این مورد جهت رونوشت پرونده‌ها به دستگاه‌هایی که تنها از کُدِک MP3 پشتیبانی می‌کنند استفاده کنید. توجه داشته باشید که استفاده از این قالب ممکن است در حوزه قضایی شما غیرقانونی باشد؛ با وکیل خود در این رابطه تماس بگیرید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid "Used for converting to lossless voice-quality audio. Use this for recording and editing speech."
 msgstr "برای تبدیل به صدا با کیفیت صدای انسان استفاده می‌شود. برای ویرایش سخنرانی‌ها از این استفاده کنید."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid "Used for converting to lossy voice-quality audio. Use this for recording speech that doesn't need to be edited."
 msgstr "برای تبدیل کیفیت صداهای خش‌دار. برای ضبط سخنرانی‌هایی از این استفاده کنید که نیازی به ویرایش نداشته باشند."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "صدا، بدون خش"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "صدا، خش‌دار"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "اینکه آیا این مجموعه تنظیمات استفاده خواهد شد"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "اینکه آیا این مجموعه استفاده و نمایش داده شود یا خیر."

@@ -1,16 +1,16 @@
 # French translation for mate-media.
-# Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-media package.
+# Copyright (C) 2010 mate-media's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mate-media package.
 #
 # Laurent Coudeur <laurentc@iol.ie>, 2009.
 # Bruno Brouard <annoa.b@gmail.com>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media master\n"
+"Project-Id-Version: mate-media master\n"
 "POT-Creation-Date: 2010-09-28 19:45+0000\n"
 "PO-Revision-Date: 2010-03-20 15:39+0100\n"
 "Last-Translator: Bruno Brouard <annoa.b@gmail.com>\n"
-"Language-Team: MATE French Team <gnomefr@traduc.org>\n"
+"Language-Team: MATE French Team <matefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,12 +35,12 @@ msgstr ""
 
 #: C/legal.xml:12(para)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
+"This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in "
 "section 6 of the license."
 msgstr ""
-"Ce manuel fait partie de la collection de manuels GNOME distribués selon les "
+"Ce manuel fait partie de la collection de manuels MATE distribués selon les "
 "termes de la licence de documentation libre GNU. Si vous souhaitez "
 "distribuer ce manuel indépendamment de la collection, vous devez joindre un "
 "exemplaire de la licence au document, comme indiqué dans la section 6 de "
@@ -49,15 +49,15 @@ msgstr ""
 #: C/legal.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any MATE "
+"documentation, and the members of the MATE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "La plupart des noms utilisés par les entreprises pour distinguer leurs "
 "produits et services sont des marques déposées. Lorsque ces noms "
-"apparaissent dans la documentation GNOME et que les membres du projet de "
-"documentation GNOME sont informés de l'existence de ces marques déposées, "
+"apparaissent dans la documentation MATE et que les membres du projet de "
+"documentation MATE sont informés de l'existence de ces marques déposées, "
 "soit ces noms entiers, soit leur première lettre est en majuscule."
 
 #: C/legal.xml:35(para)
@@ -120,180 +120,180 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-audio-profiles.xml:161(None)
+#: C/mate-audio-profiles.xml:161(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-audio-profiles.xml:194(None)
+#: C/mate-audio-profiles.xml:194(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 
-#: C/gnome-audio-profiles.xml:26(title)
-msgid "<application>GNOME Audio Profiles</application> Manual"
-msgstr "Manuel de <application>GNOME Audio Profiles</application>"
+#: C/mate-audio-profiles.xml:26(title)
+msgid "<application>MATE Audio Profiles</application> Manual"
+msgstr "Manuel de <application>MATE Audio Profiles</application>"
 
-#: C/gnome-audio-profiles.xml:28(para)
+#: C/mate-audio-profiles.xml:28(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> is a set of audio encoding "
+"<application>MATE Audio Profiles</application> is a set of audio encoding "
 "configurations for GStreamer based applications."
 msgstr ""
-"<application>GNOME Audio Profiles</application> est un ensemble de "
+"<application>MATE Audio Profiles</application> est un ensemble de "
 "configurations de codage audio pour les applications utilisant GStreamer."
 
-#: C/gnome-audio-profiles.xml:33(year)
+#: C/mate-audio-profiles.xml:33(year)
 msgid "2008-2009"
 msgstr "2008-2009"
 
-#: C/gnome-audio-profiles.xml:34(holder)
-#: C/gnome-audio-profiles.xml:39(publishername)
-#: C/gnome-audio-profiles.xml:80(para) C/gnome-audio-profiles.xml:88(para)
-msgid "GNOME Documentation Project"
-msgstr "Le projet de documentation GNOME"
+#: C/mate-audio-profiles.xml:34(holder)
+#: C/mate-audio-profiles.xml:39(publishername)
+#: C/mate-audio-profiles.xml:80(para) C/mate-audio-profiles.xml:88(para)
+msgid "MATE Documentation Project"
+msgstr "Le projet de documentation MATE"
 
-#: C/gnome-audio-profiles.xml:49(firstname)
+#: C/mate-audio-profiles.xml:49(firstname)
 msgid "Marc-Andre"
 msgstr "Marc-Andre"
 
-#: C/gnome-audio-profiles.xml:50(surname)
+#: C/mate-audio-profiles.xml:50(surname)
 msgid "Lureau"
 msgstr "Lureau"
 
-#: C/gnome-audio-profiles.xml:52(orgname)
-msgid "GNOME Project"
-msgstr "Projet GNOME"
+#: C/mate-audio-profiles.xml:52(orgname)
+msgid "MATE Project"
+msgstr "Projet MATE"
 
-#: C/gnome-audio-profiles.xml:53(email)
+#: C/mate-audio-profiles.xml:53(email)
 msgid "marcandre.lureau@gmail.com"
 msgstr "marcandre.lureau@gmail.com"
 
-#: C/gnome-audio-profiles.xml:74(revnumber)
+#: C/mate-audio-profiles.xml:74(revnumber)
 msgid "Audio Profiles Manual V2.27.0"
 msgstr "Manuel de Audio Profiles V2.27.0"
 
-#: C/gnome-audio-profiles.xml:75(date)
+#: C/mate-audio-profiles.xml:75(date)
 msgid "June 2009"
 msgstr "Juin 2009"
 
-#: C/gnome-audio-profiles.xml:77(para)
+#: C/mate-audio-profiles.xml:77(para)
 msgid "Fill some blanks, add screenshots."
 msgstr "Compléter des zone vides, ajouter des captures d'écran."
 
-#: C/gnome-audio-profiles.xml:78(para)
-msgid "Release with GNOME Media 2.27.3"
-msgstr "Version de GNOME Media 2.27.3"
+#: C/mate-audio-profiles.xml:78(para)
+msgid "Release with MATE Media 2.27.3"
+msgstr "Version de MATE Media 2.27.3"
 
-#: C/gnome-audio-profiles.xml:79(para) C/gnome-audio-profiles.xml:87(para)
+#: C/mate-audio-profiles.xml:79(para) C/mate-audio-profiles.xml:87(para)
 msgid "Marc-Andre Lureau"
 msgstr "Marc-Andre Lureau"
 
-#: C/gnome-audio-profiles.xml:84(revnumber)
+#: C/mate-audio-profiles.xml:84(revnumber)
 msgid "Audio Profiles Manual V0.1"
 msgstr "Manuel de Audio Profiles V0.1"
 
-#: C/gnome-audio-profiles.xml:85(date)
+#: C/mate-audio-profiles.xml:85(date)
 msgid "December 2008"
 msgstr "Décembre 2008"
 
-#: C/gnome-audio-profiles.xml:93(releaseinfo)
-msgid "This manual describes version 2.27.3 of GNOME Audio Profiles."
-msgstr "Ce manuel documente la version 2.27.3 de GNOME Audio Profiles."
+#: C/mate-audio-profiles.xml:93(releaseinfo)
+msgid "This manual describes version 2.27.3 of MATE Audio Profiles."
+msgstr "Ce manuel documente la version 2.27.3 de MATE Audio Profiles."
 
-#: C/gnome-audio-profiles.xml:96(title)
+#: C/mate-audio-profiles.xml:96(title)
 msgid "Feedback"
 msgstr "Votre avis"
 
-#: C/gnome-audio-profiles.xml:97(para)
+#: C/mate-audio-profiles.xml:97(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>GNOME Audio "
+"To report a bug or make a suggestion regarding the <application>MATE Audio "
 "Profiles</application> application or this manual, follow the directions in "
 "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
-"section of the GNOME User Guide</ulink>."
+"section of the MATE User Guide</ulink>."
 msgstr ""
 "Pour rapporter une anomalie ou émettre une suggestion concernant "
-"<application>GNOME Audio Profiles</application> ou ce manuel, procédez selon "
+"<application>MATE Audio Profiles</application> ou ce manuel, procédez selon "
 "les instructions de <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
-"\">la section « Votre avis » du Guide d'utilisation du bureau GNOME</ulink>."
+"\">la section « Votre avis » du Guide d'utilisation du bureau MATE</ulink>."
 
-#: C/gnome-audio-profiles.xml:106(primary)
-#: C/gnome-audio-profiles.xml:0(application)
-msgid "GNOME Audio Profiles"
-msgstr "GNOME Audio Profiles"
+#: C/mate-audio-profiles.xml:106(primary)
+#: C/mate-audio-profiles.xml:0(application)
+msgid "MATE Audio Profiles"
+msgstr "MATE Audio Profiles"
 
-#: C/gnome-audio-profiles.xml:113(title)
+#: C/mate-audio-profiles.xml:113(title)
 msgid "Introduction"
 msgstr "Introduction"
 
-#: C/gnome-audio-profiles.xml:114(para)
+#: C/mate-audio-profiles.xml:114(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you select and modify a "
-"list of pre-defined encoding formats. By default, <application>GNOME Audio "
+"<application>MATE Audio Profiles</application> let you select and modify a "
+"list of pre-defined encoding formats. By default, <application>MATE Audio "
 "Profiles</application> provides the following audio format:"
 msgstr ""
-"<application>GNOME Audio Profiles</application> vous permet de sélectionner "
+"<application>MATE Audio Profiles</application> vous permet de sélectionner "
 "et de modifier la liste de format de codage prédéfinis. Par défaut, "
-"<application>GNOME Audio Profile</application> fournit les format audio "
+"<application>MATE Audio Profile</application> fournit les format audio "
 "suivants :"
 
-#: C/gnome-audio-profiles.xml:118(para)
+#: C/mate-audio-profiles.xml:118(para)
 msgid "AAC-MP4 - The new standard of lossy compression."
 msgstr "AAC-MP4 - le nouveau standard de compression avec pertes,"
 
-#: C/gnome-audio-profiles.xml:121(para)
+#: C/mate-audio-profiles.xml:121(para)
 msgid "Ogg Vorbis - Xiph.Org lossy compression."
 msgstr "Ogg Vorbis - compression avec pertes de Xiph.Org,"
 
-#: C/gnome-audio-profiles.xml:124(para)
+#: C/mate-audio-profiles.xml:124(para)
 msgid "Speex - Xiph.Org lossy compression optimized for voice."
 msgstr "Speex - compression avec pertes optimisée pour la voix de Xiph.Org,"
 
-#: C/gnome-audio-profiles.xml:127(para)
+#: C/mate-audio-profiles.xml:127(para)
 msgid "FLAC - Xiph.Org lossless audio compression."
 msgstr "FLAC - compression audio sans perte de Xiph.Org,"
 
-#: C/gnome-audio-profiles.xml:130(para)
+#: C/mate-audio-profiles.xml:130(para)
 msgid "MP3 - The popular lossy compression format."
 msgstr "MP3 - le célèbre format de compression avec pertes,"
 
-#: C/gnome-audio-profiles.xml:133(para)
+#: C/mate-audio-profiles.xml:133(para)
 msgid "MP2 - MPEG-1 Audio Layer II, largely supported."
 msgstr "MP2 - MPEG-1 Audio Layer II, largement pris en charge,"
 
-#: C/gnome-audio-profiles.xml:136(para)
+#: C/mate-audio-profiles.xml:136(para)
 msgid "WAV - Lossless."
 msgstr "WAV - sans perte."
 
-#: C/gnome-audio-profiles.xml:141(para)
+#: C/mate-audio-profiles.xml:141(para)
 msgid "Some format may be illegal in your jurisdiction."
 msgstr ""
 "Certains formats peuvent être illégaux dans le ressort de votre juridiction."
 
-#: C/gnome-audio-profiles.xml:146(title)
+#: C/mate-audio-profiles.xml:146(title)
 msgid "Usage"
 msgstr "Utilisation"
 
-#: C/gnome-audio-profiles.xml:147(para)
+#: C/mate-audio-profiles.xml:147(para)
 msgid ""
-"Use <application>GNOME Audio Profiles</application> to modify a list of pre-"
+"Use <application>MATE Audio Profiles</application> to modify a list of pre-"
 "defined encoding formats."
 msgstr ""
-"Utilisez <application>GNOME Audio Profiles</application> pour modifier une "
+"Utilisez <application>MATE Audio Profiles</application> pour modifier une "
 "liste de formats de codage prédéfinis."
 
-#: C/gnome-audio-profiles.xml:150(title)
+#: C/mate-audio-profiles.xml:150(title)
 msgid "Profile selection dialog"
 msgstr "Boîte de dialogue de sélection de profils"
 
-#: C/gnome-audio-profiles.xml:152(para)
+#: C/mate-audio-profiles.xml:152(para)
 msgid ""
 "The following window is displayed to modify, add or remove the pre-defined "
 "formats."
@@ -301,11 +301,11 @@ msgstr ""
 "La fenêtre suivante est affichée pour modifier, ajouter ou supprimer des "
 "formats prédéfinis."
 
-#: C/gnome-audio-profiles.xml:157(title)
-msgid "<application>GNOME Audio Profiles</application> Window"
-msgstr "Fenêtre <application>GNOME Audio Profiles</application>"
+#: C/mate-audio-profiles.xml:157(title)
+msgid "<application>MATE Audio Profiles</application> Window"
+msgstr "Fenêtre <application>MATE Audio Profiles</application>"
 
-#: C/gnome-audio-profiles.xml:164(phrase)
+#: C/mate-audio-profiles.xml:164(phrase)
 msgid ""
 "Shows <placeholder-1/> main window. Contains list of profiles and "
 "modification options."
@@ -314,7 +314,7 @@ msgstr ""
 "des profils et les options de modifications."
 
 #. ==== End of Figure ====
-#: C/gnome-audio-profiles.xml:172(para)
+#: C/mate-audio-profiles.xml:172(para)
 msgid ""
 "Select one of the profiles and click \"Edit\" to modify it. The \"Profile "
 "modification window\" will be displayed."
@@ -322,13 +322,13 @@ msgstr ""
 "Sélectionnez un des profils et cliquez sur « Modifier » pour le modifier. La "
 "fenêtre « Modification du profil » s'affiche."
 
-#: C/gnome-audio-profiles.xml:175(para)
+#: C/mate-audio-profiles.xml:175(para)
 msgid ""
 "\"Delete\" will remove the currently selected profile from the list of "
 "profiles."
 msgstr "« Supprimer » enlève le profil sélectionné de la liste des profils."
 
-#: C/gnome-audio-profiles.xml:178(para)
+#: C/mate-audio-profiles.xml:178(para)
 msgid ""
 "To create a new profile, click \"New\". The \"Profile modification window\" "
 "will be displayed."
@@ -336,65 +336,65 @@ msgstr ""
 "Pour créer un nouveau profil, cliquez sur « Nouveau ». La « fenêtre modification du "
 "profil » s'affiche."
 
-#: C/gnome-audio-profiles.xml:184(title)
+#: C/mate-audio-profiles.xml:184(title)
 msgid "Profile editing"
 msgstr "Modification de profil"
 
-#: C/gnome-audio-profiles.xml:186(para)
+#: C/mate-audio-profiles.xml:186(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you modify the "
+"<application>MATE Audio Profiles</application> let you modify the "
 "parameters of an audio profile."
 msgstr ""
-"<application>GNOME Audio Profiles</application> vous permet de modifier les "
+"<application>MATE Audio Profiles</application> vous permet de modifier les "
 "paramètres d'un profil audio."
 
-#: C/gnome-audio-profiles.xml:190(title)
+#: C/mate-audio-profiles.xml:190(title)
 msgid "Profile modification window"
 msgstr "Fenêtre de modification du profil"
 
-#: C/gnome-audio-profiles.xml:197(phrase)
+#: C/mate-audio-profiles.xml:197(phrase)
 msgid "Shows <placeholder-1/> profile window."
 msgstr "Affiche la fenêtre <placeholder-1/> du profil."
 
-#: C/gnome-audio-profiles.xml:206(para)
+#: C/mate-audio-profiles.xml:206(para)
 msgid "Profile name - user friendly name of the profile."
 msgstr "Nom du profil - le nom convivial du profil,"
 
-#: C/gnome-audio-profiles.xml:209(para)
+#: C/mate-audio-profiles.xml:209(para)
 msgid "Profile description - long description of this profile."
 msgstr "Description du profil - la description complète de ce profil,"
 
-#: C/gnome-audio-profiles.xml:212(para)
+#: C/mate-audio-profiles.xml:212(para)
 msgid "GStreamer pipeline - the GStreamer encoding pipeline."
 msgstr "Pipeline GStreamer - le pipeline de codage de GStreamer,"
 
-#: C/gnome-audio-profiles.xml:215(para)
+#: C/mate-audio-profiles.xml:215(para)
 msgid "File extension - the filename extension associated to this profile."
 msgstr ""
 "Extension du fichier - l'extension du nom de fichier associée à ce profil,"
 
-#: C/gnome-audio-profiles.xml:219(para)
+#: C/mate-audio-profiles.xml:219(para)
 msgid "Active - whether this profile is listed in client application."
 msgstr ""
 "Actif - indique si le profil s'affiche dans la liste d'une application "
 "cliente."
 
-#: C/gnome-audio-profiles.xml:246(title)
-msgid "About <application>GNOME Audio Profiles</application>"
-msgstr "À propos de <application>GNOME Audio Profiles</application>"
+#: C/mate-audio-profiles.xml:246(title)
+msgid "About <application>MATE Audio Profiles</application>"
+msgstr "À propos de <application>MATE Audio Profiles</application>"
 
-#: C/gnome-audio-profiles.xml:247(para)
+#: C/mate-audio-profiles.xml:247(para)
 msgid ""
 "To report a bug or make a suggestion regarding this application or this "
 "manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+"bugs\" type=\"help\">Feedback section of the MATE User Guide</ulink>."
 msgstr ""
 "Pour rapporter une anomalie ou émettre une suggestion concernant cette "
 "application ou ce manuel, procédez selon les instructions de <ulink url="
 "\"ghelp:user-guide?feedback-bugs\" type=\"help\">la section « Votre avis » du "
-"Guide d'utilisation du bureau GNOME</ulink>."
+"Guide d'utilisation du bureau MATE</ulink>."
 
-#: C/gnome-audio-profiles.xml:253(para)
+#: C/mate-audio-profiles.xml:253(para)
 msgid ""
 "This program is distributed under the terms of the GNU Library General "
 "Public license as published by the Free Software Foundation; either version "
@@ -411,7 +411,7 @@ msgstr ""
 "avec la source du code de ce programme."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/gnome-audio-profiles.xml:0(None)
+#: C/mate-audio-profiles.xml:0(None)
 msgid "translator-credits"
 msgstr ""
 "Laurent Coudeur <laurentc@iol.ie>, 2009\n"

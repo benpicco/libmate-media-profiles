@@ -1,11 +1,11 @@
 # Danish translation for mate-media.
-# Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-media package.
+# Copyright (C) 2010 mate-media's COPYRIGHT HOLDER
+# This file is distributed under the same license as the mate-media package.
 # Anders Jenbo <anders@jenbo.dk>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media gnome-2-30\n"
+"Project-Id-Version: mate-media mate-2-30\n"
 "POT-Creation-Date: 2011-09-18 17:52+0200\n"
 "PO-Revision-Date: 2011-09-18 01:20+0100\n"
 "Last-Translator: Anders Jenbo <anders@jenbo.dk>\n"
@@ -41,7 +41,7 @@ msgid ""
 "you can do so by adding a copy of the license to the manual, as described in "
 "section 6 of the license."
 msgstr ""
-"Denne manual er en del af GNOME-manualsamlingen distribueret under GFDL. "
+"Denne manual er en del af MATE-manualsamlingen distribueret under GFDL. "
 "Hvis du vil distribuere denne manual separat fra denne samling, kan du gøre "
 "det ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion "
 "6 af licensen."
@@ -49,14 +49,14 @@ msgstr ""
 #: ../C/legal.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any MATE "
+"documentation, and the members of the MATE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester "
-"er betegnet som mærkevarer. Der hvor de navne optræder i en GNOME-"
-"dokumentation, og medlemmerne af GNOME-dokumentationsprojektet er blevet "
+"er betegnet som mærkevarer. Der hvor de navne optræder i en MATE-"
+"dokumentation, og medlemmerne af MATE-dokumentationsprojektet er blevet "
 "gjort opmærksomme på disse varemærker, så er navnene skrevet med store "
 "bogstaver eller store forbogstaver."
 
@@ -120,180 +120,180 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: ../C/gnome-audio-profiles.xml:161(None)
+#: ../C/mate-audio-profiles.xml:161(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: ../C/gnome-audio-profiles.xml:194(None)
+#: ../C/mate-audio-profiles.xml:194(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 
-#: ../C/gnome-audio-profiles.xml:26(title)
-msgid "<application>GNOME Audio Profiles</application> Manual"
-msgstr "Manual til <application>GNOME-lydprofiler</application>"
+#: ../C/mate-audio-profiles.xml:26(title)
+msgid "<application>MATE Audio Profiles</application> Manual"
+msgstr "Manual til <application>MATE-lydprofiler</application>"
 
-#: ../C/gnome-audio-profiles.xml:28(para)
+#: ../C/mate-audio-profiles.xml:28(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> is a set of audio encoding "
+"<application>MATE Audio Profiles</application> is a set of audio encoding "
 "configurations for GStreamer based applications."
 msgstr ""
-"<application>GNOME-lydprofiler</application> er et sæt af lyd "
+"<application>MATE-lydprofiler</application> er et sæt af lyd "
 "enkodningskonfigurationer for programmer baseret på GStreamer."
 
-#: ../C/gnome-audio-profiles.xml:33(year)
+#: ../C/mate-audio-profiles.xml:33(year)
 msgid "2008-2009"
 msgstr "2008-2009"
 
-#: ../C/gnome-audio-profiles.xml:34(holder)
-#: ../C/gnome-audio-profiles.xml:39(publishername)
-#: ../C/gnome-audio-profiles.xml:80(para)
-#: ../C/gnome-audio-profiles.xml:88(para)
-msgid "GNOME Documentation Project"
-msgstr "GNOME-dokumentationsprojektet"
+#: ../C/mate-audio-profiles.xml:34(holder)
+#: ../C/mate-audio-profiles.xml:39(publishername)
+#: ../C/mate-audio-profiles.xml:80(para)
+#: ../C/mate-audio-profiles.xml:88(para)
+msgid "MATE Documentation Project"
+msgstr "MATE-dokumentationsprojektet"
 
-#: ../C/gnome-audio-profiles.xml:49(firstname)
+#: ../C/mate-audio-profiles.xml:49(firstname)
 msgid "Marc-Andre"
 msgstr "Marc-Andre"
 
-#: ../C/gnome-audio-profiles.xml:50(surname)
+#: ../C/mate-audio-profiles.xml:50(surname)
 msgid "Lureau"
 msgstr "Lureau"
 
-#: ../C/gnome-audio-profiles.xml:52(orgname)
-msgid "GNOME Project"
-msgstr "GNOME-projekt"
+#: ../C/mate-audio-profiles.xml:52(orgname)
+msgid "MATE Project"
+msgstr "MATE-projekt"
 
-#: ../C/gnome-audio-profiles.xml:53(email)
+#: ../C/mate-audio-profiles.xml:53(email)
 msgid "marcandre.lureau@gmail.com"
 msgstr "marcandre.lureau@gmail.com"
 
-#: ../C/gnome-audio-profiles.xml:74(revnumber)
+#: ../C/mate-audio-profiles.xml:74(revnumber)
 msgid "Audio Profiles Manual V2.27.0"
 msgstr "Manual til Lydprofiler version 2.27.0"
 
-#: ../C/gnome-audio-profiles.xml:75(date)
+#: ../C/mate-audio-profiles.xml:75(date)
 msgid "June 2009"
 msgstr "Juli 2009"
 
-#: ../C/gnome-audio-profiles.xml:77(para)
+#: ../C/mate-audio-profiles.xml:77(para)
 msgid "Fill some blanks, add screenshots."
 msgstr "Udfyld nogle tomme, tilføj skærmbilleder."
 
-#: ../C/gnome-audio-profiles.xml:78(para)
-msgid "Release with GNOME Media 2.27.3"
-msgstr "Udgivelse sammen med GNOME Media 2.27.3"
+#: ../C/mate-audio-profiles.xml:78(para)
+msgid "Release with MATE Media 2.27.3"
+msgstr "Udgivelse sammen med MATE Media 2.27.3"
 
-#: ../C/gnome-audio-profiles.xml:79(para)
-#: ../C/gnome-audio-profiles.xml:87(para)
+#: ../C/mate-audio-profiles.xml:79(para)
+#: ../C/mate-audio-profiles.xml:87(para)
 msgid "Marc-Andre Lureau"
 msgstr "Marc-Andre Lureau"
 
-#: ../C/gnome-audio-profiles.xml:84(revnumber)
+#: ../C/mate-audio-profiles.xml:84(revnumber)
 msgid "Audio Profiles Manual V0.1"
 msgstr "Manual til Lydprofiler version 0.1"
 
-#: ../C/gnome-audio-profiles.xml:85(date)
+#: ../C/mate-audio-profiles.xml:85(date)
 msgid "December 2008"
 msgstr "December 2008"
 
-#: ../C/gnome-audio-profiles.xml:93(releaseinfo)
-msgid "This manual describes version 2.27.3 of GNOME Audio Profiles."
-msgstr "Denne manual beskriver version 2.27.3 af GNOME-lydprofiler."
+#: ../C/mate-audio-profiles.xml:93(releaseinfo)
+msgid "This manual describes version 2.27.3 of MATE Audio Profiles."
+msgstr "Denne manual beskriver version 2.27.3 af MATE-lydprofiler."
 
-#: ../C/gnome-audio-profiles.xml:96(title)
+#: ../C/mate-audio-profiles.xml:96(title)
 msgid "Feedback"
 msgstr "Tilbagemelding"
 
-#: ../C/gnome-audio-profiles.xml:97(para)
+#: ../C/mate-audio-profiles.xml:97(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>GNOME Audio "
+"To report a bug or make a suggestion regarding the <application>MATE Audio "
 "Profiles</application> application or this manual, follow the directions in "
 "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
-"section of the GNOME User Guide</ulink>."
+"section of the MATE User Guide</ulink>."
 msgstr ""
 "For at rapportere fejl eller foreslå forbedringer vedrørende programmet "
-"<application>GNOME-lydprofiler</application> eller denne manual, skal du "
+"<application>MATE-lydprofiler</application> eller denne manual, skal du "
 "følge instruktionerne på siden for <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">GNOME-tilbagemeldinger</ulink>."
+"bugs\" type=\"help\">MATE-tilbagemeldinger</ulink>."
 
-#: ../C/gnome-audio-profiles.xml:106(primary)
-#: ../C/gnome-audio-profiles.xml:0(application)
-msgid "GNOME Audio Profiles"
-msgstr "GNOME-lydprofiler"
+#: ../C/mate-audio-profiles.xml:106(primary)
+#: ../C/mate-audio-profiles.xml:0(application)
+msgid "MATE Audio Profiles"
+msgstr "MATE-lydprofiler"
 
-#: ../C/gnome-audio-profiles.xml:113(title)
+#: ../C/mate-audio-profiles.xml:113(title)
 msgid "Introduction"
 msgstr "Indledning"
 
-#: ../C/gnome-audio-profiles.xml:114(para)
+#: ../C/mate-audio-profiles.xml:114(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you select and modify a "
-"list of pre-defined encoding formats. By default, <application>GNOME Audio "
+"<application>MATE Audio Profiles</application> let you select and modify a "
+"list of pre-defined encoding formats. By default, <application>MATE Audio "
 "Profiles</application> provides the following audio format:"
 msgstr ""
-"<application>GNOME-lydprofiler</application> lader dig vælge og ændre en "
+"<application>MATE-lydprofiler</application> lader dig vælge og ændre en "
 "liste af prædefinerede formater til enkodning. Som standard, har "
-"<application>GNOME-lydprofiler</application> følgende lydformater:"
+"<application>MATE-lydprofiler</application> følgende lydformater:"
 
-#: ../C/gnome-audio-profiles.xml:118(para)
+#: ../C/mate-audio-profiles.xml:118(para)
 msgid "AAC-MP4 - The new standard of lossy compression."
 msgstr "AAC-MP4 - Den nye standard for komprimering med tab."
 
-#: ../C/gnome-audio-profiles.xml:121(para)
+#: ../C/mate-audio-profiles.xml:121(para)
 msgid "Ogg Vorbis - Xiph.Org lossy compression."
 msgstr "Ogg Vorbis - Xiph.Org komprimering med tab."
 
-#: ../C/gnome-audio-profiles.xml:124(para)
+#: ../C/mate-audio-profiles.xml:124(para)
 msgid "Speex - Xiph.Org lossy compression optimized for voice."
 msgstr "Speex - Xiph.Org komprimering af stemme med tab."
 
-#: ../C/gnome-audio-profiles.xml:127(para)
+#: ../C/mate-audio-profiles.xml:127(para)
 msgid "FLAC - Xiph.Org lossless audio compression."
 msgstr "FLAC - Xiph.Org komprimeret lyd uden tab."
 
-#: ../C/gnome-audio-profiles.xml:130(para)
+#: ../C/mate-audio-profiles.xml:130(para)
 msgid "MP3 - The popular lossy compression format."
 msgstr "MP3 - Det populære komprimerings format med tab."
 
-#: ../C/gnome-audio-profiles.xml:133(para)
+#: ../C/mate-audio-profiles.xml:133(para)
 msgid "MP2 - MPEG-1 Audio Layer II, largely supported."
 msgstr "MP2 - MPEG-1 Audio Layer II, stort set understøttet."
 
-#: ../C/gnome-audio-profiles.xml:136(para)
+#: ../C/mate-audio-profiles.xml:136(para)
 msgid "WAV - Lossless."
 msgstr "WAV - Uden tab."
 
-#: ../C/gnome-audio-profiles.xml:141(para)
+#: ../C/mate-audio-profiles.xml:141(para)
 msgid "Some format may be illegal in your jurisdiction."
 msgstr "Nogle formater kan være ulovlige under den lokale lovgivning."
 
-#: ../C/gnome-audio-profiles.xml:146(title)
+#: ../C/mate-audio-profiles.xml:146(title)
 msgid "Usage"
 msgstr "Brug"
 
-#: ../C/gnome-audio-profiles.xml:147(para)
+#: ../C/mate-audio-profiles.xml:147(para)
 msgid ""
-"Use <application>GNOME Audio Profiles</application> to modify a list of pre-"
+"Use <application>MATE Audio Profiles</application> to modify a list of pre-"
 "defined encoding formats."
 msgstr ""
-"Brug <application>GNOME-Lydprofiler</application> til at modificere listen "
+"Brug <application>MATE-Lydprofiler</application> til at modificere listen "
 "af prædefineret formater til enkodning."
 
-#: ../C/gnome-audio-profiles.xml:150(title)
+#: ../C/mate-audio-profiles.xml:150(title)
 msgid "Profile selection dialog"
 msgstr "Dialog til profilvælger"
 
-#: ../C/gnome-audio-profiles.xml:152(para)
+#: ../C/mate-audio-profiles.xml:152(para)
 msgid ""
 "The following window is displayed to modify, add or remove the pre-defined "
 "formats."
@@ -301,11 +301,11 @@ msgstr ""
 "Det følgende vindue vises for at ændre, tilføje eller fjerne de "
 "prædefinerede formater."
 
-#: ../C/gnome-audio-profiles.xml:157(title)
-msgid "<application>GNOME Audio Profiles</application> Window"
-msgstr "Vinduet til <application>GNOME-lydprofiler</application>"
+#: ../C/mate-audio-profiles.xml:157(title)
+msgid "<application>MATE Audio Profiles</application> Window"
+msgstr "Vinduet til <application>MATE-lydprofiler</application>"
 
-#: ../C/gnome-audio-profiles.xml:164(phrase)
+#: ../C/mate-audio-profiles.xml:164(phrase)
 msgid ""
 "Shows <placeholder-1/> main window. Contains list of profiles and "
 "modification options."
@@ -314,7 +314,7 @@ msgstr ""
 "ændringsmuligheder."
 
 #. ==== End of Figure ====
-#: ../C/gnome-audio-profiles.xml:172(para)
+#: ../C/mate-audio-profiles.xml:172(para)
 msgid ""
 "Select one of the profiles and click \"Edit\" to modify it. The \"Profile "
 "modification window\" will be displayed."
@@ -322,13 +322,13 @@ msgstr ""
 "Vælge en af profilerne og tryk \"Redigér\" for at ændre den. \"Vinduet til "
 "profilredigering\" vil blive vist."
 
-#: ../C/gnome-audio-profiles.xml:175(para)
+#: ../C/mate-audio-profiles.xml:175(para)
 msgid ""
 "\"Delete\" will remove the currently selected profile from the list of "
 "profiles."
 msgstr "\"Slet\" vil fjerne den valgte profil fra listen af profiler."
 
-#: ../C/gnome-audio-profiles.xml:178(para)
+#: ../C/mate-audio-profiles.xml:178(para)
 msgid ""
 "To create a new profile, click \"New\". The \"Profile modification window\" "
 "will be displayed."
@@ -336,61 +336,61 @@ msgstr ""
 "Tryk på \"Ny\", for at oprette en ny profil. Vinduet \"Profilredigering\" "
 "vil blive vist."
 
-#: ../C/gnome-audio-profiles.xml:184(title)
+#: ../C/mate-audio-profiles.xml:184(title)
 msgid "Profile editing"
 msgstr "Profil redigering"
 
-#: ../C/gnome-audio-profiles.xml:186(para)
+#: ../C/mate-audio-profiles.xml:186(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you modify the "
+"<application>MATE Audio Profiles</application> let you modify the "
 "parameters of an audio profile."
 msgstr ""
-"<application>GNOME-Lydprofiler</application> lader dig ændre parametrene for "
+"<application>MATE-Lydprofiler</application> lader dig ændre parametrene for "
 "en lydprofil."
 
-#: ../C/gnome-audio-profiles.xml:190(title)
+#: ../C/mate-audio-profiles.xml:190(title)
 msgid "Profile modification window"
 msgstr "Vinduet til profilredigering"
 
-#: ../C/gnome-audio-profiles.xml:197(phrase)
+#: ../C/mate-audio-profiles.xml:197(phrase)
 msgid "Shows <placeholder-1/> profile window."
 msgstr "Viser <placeholder-1/> profilevindue."
 
-#: ../C/gnome-audio-profiles.xml:206(para)
+#: ../C/mate-audio-profiles.xml:206(para)
 msgid "Profile name - user friendly name of the profile."
 msgstr "Profilnavn - brugervenligt navn for profilen."
 
-#: ../C/gnome-audio-profiles.xml:209(para)
+#: ../C/mate-audio-profiles.xml:209(para)
 msgid "Profile description - long description of this profile."
 msgstr "Profilbeskrivelse - lang beskrivelse for profilen."
 
-#: ../C/gnome-audio-profiles.xml:212(para)
+#: ../C/mate-audio-profiles.xml:212(para)
 msgid "GStreamer pipeline - the GStreamer encoding pipeline."
 msgstr "GStreamer-datakanal - GStreamer-datakanal til enkodning."
 
-#: ../C/gnome-audio-profiles.xml:215(para)
+#: ../C/mate-audio-profiles.xml:215(para)
 msgid "File extension - the filename extension associated to this profile."
 msgstr "Filtype - endelsen på filnavnet der associeres med denne profil."
 
-#: ../C/gnome-audio-profiles.xml:219(para)
+#: ../C/mate-audio-profiles.xml:219(para)
 msgid "Active - whether this profile is listed in client application."
 msgstr "Aktiv - om denne profil optræder i klientprogrammer."
 
-#: ../C/gnome-audio-profiles.xml:246(title)
-msgid "About <application>GNOME Audio Profiles</application>"
-msgstr "Om <application>GNOME-Lydprofiler</application>"
+#: ../C/mate-audio-profiles.xml:246(title)
+msgid "About <application>MATE Audio Profiles</application>"
+msgstr "Om <application>MATE-Lydprofiler</application>"
 
-#: ../C/gnome-audio-profiles.xml:247(para)
+#: ../C/mate-audio-profiles.xml:247(para)
 msgid ""
 "To report a bug or make a suggestion regarding this application or this "
 "manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+"bugs\" type=\"help\">Feedback section of the MATE User Guide</ulink>."
 msgstr ""
 "For at rapportere fejl eller foreslå forbedringer vedrørende dette program "
 "eller denne manual, skal du følge instruktionerne på <ulink url=\"ghelp:user-"
-"guide?feedback-bugs\" type=\"help\">GNOME-tilbagemeldinger</ulink>."
+"guide?feedback-bugs\" type=\"help\">MATE-tilbagemeldinger</ulink>."
 
-#: ../C/gnome-audio-profiles.xml:253(para)
+#: ../C/mate-audio-profiles.xml:253(para)
 msgid ""
 "This program is distributed under the terms of the GNU Library General "
 "Public license as published by the Free Software Foundation; either version "
@@ -407,7 +407,7 @@ msgstr ""
 "kildekoden til dette program."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: ../C/gnome-audio-profiles.xml:0(None)
+#: ../C/mate-audio-profiles.xml:0(None)
 msgid "translator-credits"
 msgstr ""
 "Anders Jenbo <anders@jenbo.dk>, 2010Nicky <nicky441@gmail.com>, 2010\n"
@@ -462,8 +462,8 @@ msgstr ""
 #~ msgid "Kalager Schaller"
 #~ msgstr "Kalager Schaller"
 
-#~ msgid "gnome.org"
-#~ msgstr "gnome.org"
+#~ msgid "mate.org"
+#~ msgstr "mate.org"
 
 #~ msgid "GStreamer Properties Manual V2.4"
 #~ msgstr "Manual til GStreamer-egenskaber version 2.4"
@@ -543,12 +543,12 @@ msgstr ""
 #~ msgid ""
 #~ "The GStreamer properties applet offers four drop down menus spread over "
 #~ "two tabs. There are two drop-menues for audio and two for video. These "
-#~ "choices set the default for most GNOME applications for output and input "
+#~ "choices set the default for most MATE applications for output and input "
 #~ "of Sound and Video."
 #~ msgstr ""
 #~ "Panelprogrammet til GStreamer egenskaber tilbyder fire rullemenuer der "
 #~ "strækker sig over to faner. Der er to rullemenuer for lyd og to for "
-#~ "video. Disse valg indstiller standarden for de fleste GNOME-programmers "
+#~ "video. Disse valg indstiller standarden for de fleste MATE-programmers "
 #~ "output og input af lyd og video."
 
 #~ msgid "Understanding the menu options"
@@ -557,8 +557,8 @@ msgstr ""
 #~ msgid ""
 #~ "Looking at the screen for setting audio options you notice that the two "
 #~ "sections are called Default Sink and Default Source. These are terms used "
-#~ "in the GStreamer framework that GNOME uses to describe where data is sent "
-#~ "and where it comes from. The Default sink is in other words where GNOME "
+#~ "in the GStreamer framework that MATE uses to describe where data is sent "
+#~ "and where it comes from. The Default sink is in other words where MATE "
 #~ "apps should output their sound, while Default source is where the sound "
 #~ "comes from."
 #~ msgstr ""
@@ -566,7 +566,7 @@ msgstr ""
 #~ "mærke til, at de to dele kaldes standarddatamodtager og standardkilde. "
 #~ "Disse er begreber, der anvendes i GStreamer rammen, Mate bruger til at "
 #~ "beskrive, hvor data sendes, og hvor det kommer fra. Standard kanalen er "
-#~ "med andre ord hvor GNOME-programmer skal sende deres lyd, mens Standard "
+#~ "med andre ord hvor MATE-programmer skal sende deres lyd, mens Standard "
 #~ "kilde er, hvor lyden kommer fra."
 
 #~ msgid ""
@@ -581,14 +581,14 @@ msgstr ""
 #~ "PulseAudio eller ALSA."
 
 #~ msgid ""
-#~ "If you wish that your GNOME applcations output their sound to the "
+#~ "If you wish that your MATE applcations output their sound to the "
 #~ "PulseAudio sound server you set the Default Sink to use PulseAudio. And "
-#~ "if you wish that your GNOME applications which has sound recording "
+#~ "if you wish that your MATE applications which has sound recording "
 #~ "capabilities use the ALSA sound system, choose ALSA as the Default Source."
 #~ msgstr ""
-#~ "Hvis du ønsker at dine GNOME-programmers sender deres lyd til PulseAudio-"
+#~ "Hvis du ønsker at dine MATE-programmers sender deres lyd til PulseAudio-"
 #~ "lydserveren, sætter du Standard kanalen til at bruge PulseAudio. Og hvis "
-#~ "du ønsker at dine GNOME-programmer, som har lydoptagelsekapacitet, bruger "
+#~ "du ønsker at dine MATE-programmer, som har lydoptagelsekapacitet, bruger "
 #~ "ALSA-lydsystemet til at optage, vælger du ALSA som Standard kilden."
 
 #~ msgid ""

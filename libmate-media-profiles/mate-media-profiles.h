@@ -19,9 +19,9 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include <libgnome-media-profiles/audio-profile.h>
-#include <libgnome-media-profiles/audio-profile-choose.h>
-#include <libgnome-media-profiles/audio-profile-edit.h>
-#include <libgnome-media-profiles/audio-profiles-edit.h>
+#include <libmate-media-profiles/audio-profile.h>
+#include <libmate-media-profiles/audio-profile-choose.h>
+#include <libmate-media-profiles/audio-profile-edit.h>
+#include <libmate-media-profiles/audio-profiles-edit.h>
 
-void gnome_media_profiles_init (MateConfClient *conf);
+void mate_media_profiles_init (MateConfClient *conf);

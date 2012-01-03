@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media gnome-2-32\n"
+"Project-Id-Version: mate-media mate-2-32\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-08-26 23:27+0300\n"
@@ -23,32 +23,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Грешка при показване на помощта: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "Редактиране на профила „%s“"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<без име>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<без описание>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "Грешка при получаването на списъка с профилите gm_audio. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -57,51 +57,51 @@ msgstr ""
 "Грешка при абонирането за известяване на промени в списъка с аудиопрофили. "
 "(%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Грешка при изтриването на пътя до профила %s. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "_Редактиране"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "Изтриване на този профил?\n"
 msgstr[1] "Изтриване на тези %d профила?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "Да бъде ли изтрит профилът „%s“?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "Изтриване на профил"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
-msgstr "Редактиране на аудио профилите към GNOME"
+msgstr "Редактиране на аудио профилите към MATE"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "Про_фили:"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "Вече имате профил под името „%s“"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "Грешка в GConf (дa се коригира): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -110,7 +110,7 @@ msgstr ""
 "Файлът „%s“ липсва. Това е признак, че приложението е инсталирано "
 "неправилно, така че диалоговата кутия не може да бъде показана."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -120,44 +120,44 @@ msgstr ""
 "Изпълнете „%s --help“, за да видите списъка с наличните опции на командния "
 "ред.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "Редактиране на звуковия профил"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "_Описание на профила:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "_Активиране?"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "_Разширение на файл:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "_Конвейер на GStreamer:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "_Име на профила:"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "Нов профил"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "_Създаване"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "Описание на звуковия профил"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -165,22 +165,22 @@ msgstr ""
 "Описание на профила, съдържащо повече информация и описващо кога да се "
 "използва този профил."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
 "Файлово разширение, което да се използва при запазване на файлове кодирани с "
 "този профил."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "Непълен канал на GStreamer, който да се ползва за този профил."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "Кратко име за звуковия профил"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -188,27 +188,27 @@ msgstr ""
 "Кратко име за звуковия профил, което да се използва в селекциите и уникално "
 "да идентифицира профила."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "Качество на CD — AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "Качество на CD без загуби"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "Качество на CD със загуби"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "Качество на CD — MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "Качество на CD — MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -216,19 +216,19 @@ msgstr ""
 "Списък с профили за запис на звук. Списъкът съдържа низове именуващи "
 "подпапки на /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "Списък на профилите"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "Стандартното файлово разширение за този профил"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "Непълният канал на GStreamer, който се използва"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -237,7 +237,7 @@ msgstr ""
 "загуба на качество. Използвайте този избор, ако искате да редактирате по-"
 "късно или да правите запис на CD."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -245,7 +245,7 @@ msgstr ""
 "Използва се а конвертиране на аудио с качеството на CD чрез кодек със загуба "
 "на качество. Използвайте този избор за сваляне на CD или за запис за радио."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -258,7 +258,7 @@ msgstr ""
 "използването на този формат може да е незаконно в страната ви. Свържете се с "
 "юрист за съвет."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -271,7 +271,7 @@ msgstr ""
 "използването на този формат може да е незаконно в страната ви. Свържете се с "
 "юрист за съвет."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -284,7 +284,7 @@ msgstr ""
 "използването на този формат може да е незаконно в страната ви. Свържете се с "
 "юрист за съвет."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -292,7 +292,7 @@ msgstr ""
 "Използва се за конвертиране към аудио формат без загуби, предназначено за "
 "запис на човешки глас. Използвайте за записване и редактиране на реч."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -301,18 +301,18 @@ msgstr ""
 "запис на човешки глас. Използвайте за записване на реч, която няма да бъде "
 "редактирана."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "Глас без загуби"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "Глас със загуби"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "Дали да се използва този профил или не"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Дали този профил да се използва и показва."

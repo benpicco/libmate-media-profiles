@@ -49,7 +49,7 @@
 #   submodule doesn't find us.  If you have configure.{in,ac} files in
 #   subdirs, add a proxy git.mk file in those dirs that simply does:
 #   "include $(top_srcdir)/../git.mk".  Add more ..'s to your taste.
-#   And add those files to git.  See vte/gnome-pty-helper/git.mk for
+#   And add those files to git.  See vte/mate-pty-helper/git.mk for
 #   example.
 #
 

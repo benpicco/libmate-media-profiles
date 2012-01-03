@@ -1,5 +1,5 @@
 # mate-media ko.po
-# This file is distributed under the same license as the gnome-media package.
+# This file is distributed under the same license as the mate-media package.
 #
 # Updated by Young-Ho, Cha <ganadist@chollian.net>, 2000, 2006, 2007.
 # Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003, 2004, 2006, 2008, 2009, 2010.
@@ -7,45 +7,45 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media\n"
+"Project-Id-Version: mate-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-09-26 00:48+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
-"Language-Team: MATE Korea <gnome-kr@googlegroups.com>\n"
+"Language-Team: MATE Korea <mate-kr@googlegroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "도움말을 보여주는 데 오류가 발생했습니다: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "프로파일 \"%s\" 편집"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<이름 없음>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<설명 없음>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr ""
 "그놈 미디어 오디오 프로파일 목록을 가져오는 데 오류가 발생했습니다. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -54,50 +54,50 @@ msgstr ""
 "오디오 프로파일 목록이 바뀌었을 때 알림하는 기능을 등록하는 데 오류가 발생했"
 "습니다. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "프로파일 경로 %s을(를) 지우는 데 오류가 발생했습니다. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "편집(_E)"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "이 %d개의 프로파일을 삭제하시겠습니까?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "\"%s\" 프로파일을 삭제하시겠습니까?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "프로파일 삭제"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
+msgid "Edit MATE Audio Profiles"
 msgstr "그놈 미디어 오디오 프로파일 편집"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "프로파일(_P):"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "이미 \"%s\" 프로파일이 있습니다"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf 오류 (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -106,7 +106,7 @@ msgstr ""
 "\"%s\" 파일이 빠졌습니다. 프로그램이 올바르게 설치되어 있지 않았다는 뜻입니"
 "다.  대화 상자를 표시할 수 없습니다."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -115,44 +115,44 @@ msgstr ""
 "%s\n"
 "사용할 수 있는 명령행 옵션을 모두 보려면 '%s --help' 명령을 실행하십시오.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "오디오 프로파일 편집"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "프로파일 설명(_D):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "활성화(_A)?"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "파일 확장자(_F):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "GStreamer 파이프라인(_G):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "프로파일 이름(_P):"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "새 프로파일"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "만들기(_C)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "오디오 프로파일에 대한 설명"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -160,20 +160,20 @@ msgstr ""
 "프로파일의 설명, 이 프로파일에 대한 자세한 정보 및 언제 사용할 지에 대한 설명"
 "이 들어 있습니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr "이 프로파일에 따라 인코딩해서 저장할 파일의 파일 이름 확장자."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "이 프로파일에 사용할 GStreamer 파이프라인 부분."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "오디오 프로파일의 짧은 이름"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -181,27 +181,27 @@ msgstr ""
 "오디오 프로파일의 짧은 이름. 프로파일을 선택할 경우 및 특정 프로파일을 지정하"
 "는 이름으로 쓰입니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "CD 수준, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "CD 수준, 손실 없음"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "CD 수준, 손실 있음"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "CD 수준, MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "CD 수준, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -209,19 +209,19 @@ msgstr ""
 "오디오 녹음 프로파일의 목록. 이 목록에는 /system/gstreamer/@GST_MAJORMINOR@/"
 "audio/profiles에 상대적인 하위 디렉토리의 이름이 들어 있습니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "프로파일의 목록"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "이 프로파일의 기본 파일 확장자"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "사용할 GStreamer 파이프라인 부분"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -229,7 +229,7 @@ msgstr ""
 "CD 수준의 오디오로 변환하는 데 사용합니다. 비손실 압축 코덱을 사용합니다. 파"
 "일을 편집하거나 CD로 구우려고 할 때 사용하십시오."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -237,7 +237,7 @@ msgstr ""
 "CD 수준의 오디오로 변환하는 데 사용합니다. 손실 압축 코덱을 사용합니다. CD에"
 "서 음악을 복사하거나 라디오를 녹음할 때 사용하십시오."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -248,7 +248,7 @@ msgstr ""
 "을 지원하는 장치로 파일을 복사할 때 사용하십시오. 이 형식을 사용하는 것은 지"
 "역에 따라 위법이 될 수 있습니다. 변호사에게 상담하시기 바랍니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -259,7 +259,7 @@ msgstr ""
 "덱을 지원하는 장치로 파일을 복사할 때 사용하십시오. 이 형식을 사용하는 것은 "
 "지역에 따라 위법이 될 수 있습니다. 변호사에게 상담하시기 바랍니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -270,7 +270,7 @@ msgstr ""
 "덱을 지원하는 장치로 파일을 복사할 때 사용하십시오. 이 형식을 사용하는 것은 "
 "지역에 따라 위법이 될 수 있습니다. 변호사에게 상담하시기 바랍니다."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -278,7 +278,7 @@ msgstr ""
 "음성 수준의 비손실 오디오로 변환하는 데 사용합니다. 음성을 녹음 및 편집할 때 "
 "사용하십시오."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -286,18 +286,18 @@ msgstr ""
 "음성 수준의 손실 오디오로 변환하는 데 사용합니다. 편집할 필요 없는 음성을 녹"
 "음할 때 사용하십시오."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "음성 수준, 손실 없음"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "음성 수준, 손실 있음"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "이 프로파일을 사용할 지 여부"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "이 프로파일을 사용하고 표시할 지 여부."

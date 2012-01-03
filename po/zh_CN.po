@@ -2,7 +2,7 @@
 # Copyright (C) 2002, 2003, 2004, 2007, 2009, 2010 Free Software Foundation, Inc.
 # Dillion Chen <dillon.chen@turbolinux.com.cn>, 1999
 # Replaced by He Qiangqiang <carton@linux.net.cn>, 2002
-# Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002
+# Sun G11n <mate_int_l10n@ireland.sun.com>, 2002
 # Funda Wang <fundawang@linux.net.cn>, 2003,2004.
 # Yang Zhang <zyangmath@gmail.com>, 2007.
 # Deng Xiyue <manphiz@gmail.com>, 2009.
@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media master\n"
+"Project-Id-Version: mate-media master\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-08-09 14:31+0800\n"
@@ -23,89 +23,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "显示帮助时出错：%s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "编辑配置文件“%s”"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<未命名>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<无描述>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "获得 gm_audio 配置文件列表出错。(%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr "订阅音频配置文件列表更改通知出错。(%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "丢弃配置文件路径 %s 出错。(%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "编辑(_E)"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "删除这%d个配置文件吗？\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "删除配置文件“%s”吗？"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "删除配置文件"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
-msgstr "编辑 GNOME 音频配置文件"
+msgstr "编辑 MATE 音频配置文件"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "配置文件(_P)："
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "您已经有名为“%s”的配置文件了"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf 错误(待修正)：%s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
 "incorrectly, so the dialog can't be displayed."
 msgstr "缺少文件“%s”。这表明应用程序安装不正确，所以无法显示对话框。"
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -114,90 +114,90 @@ msgstr ""
 "%s\n"
 "运行“%s --help”可查看可用的命令行选项的完整列表。\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "编辑音频配置文件"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "配置文件描述(_D)："
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "激活？(_A)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "文件扩展名(_F)："
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "_GStreamer 流水线："
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "配置文件名(_P)："
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "新建配置文件"
 
 # SUN NEW TRANSLATION
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "创建(_C)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "音频配置文件的描述"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
 msgstr "配置文件描述，其中包含了更多的信息并描述了何时使用此配置文件。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr "对用此配置文件编码的文件进行排序时要使用的文件扩展名。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "此配置文件要使用的部分 GStreamer 流水线。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "音频配置文件的短名称"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
 msgstr "音频配置文件的短名称，要在选择区中使用并唯一表示配置文件。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "CD 音质，AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "CD 音质，无损"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "CD 音质，有损"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "CD 音质，MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "CD 音质，MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -205,19 +205,19 @@ msgstr ""
 "列出音频录制配置文件。此列表包含的字符串会作为相对 /system/gstreamer/"
 "@GST_MAJORMINOR@/audio/profiles 起名之用。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "配置文件列表"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "此配置文件的默认文件扩展名"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "所用的部分 GStreamer 流水线"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -225,7 +225,7 @@ msgstr ""
 "用于转换为 CD 音质的音频，但是用无损压缩编码方式。如果您稍后想要编辑文件，或"
 "者将其刻录到 CD，请使用此方式。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -233,7 +233,7 @@ msgstr ""
 "用于转换为 CD 音质的音频，但使用有损压缩编码方式。进行 CD 提取或广播录音时请"
 "使用此方式。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -244,7 +244,7 @@ msgstr ""
 "编码方式的设备的文件时使用。注意使用此格式可能在您所在的司法制度下是违法的；"
 "请联系您的律师以获得建议。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -255,7 +255,7 @@ msgstr ""
 "编码方式的设备的文件时使用。注意使用此格式可能在您所在的司法制度下是违法的；"
 "请联系您的律师以获得建议。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -266,30 +266,30 @@ msgstr ""
 "编码方式的设备的文件时使用。注意使用此格式可能在您所在的司法制度下是违法的；"
 "请联系您的律师以获得建议。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
 msgstr "用于转换为无损的语音质量的音频。录制和编辑语音时请使用此方式。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
 msgstr "用于转换为有损语音质量的音频。录制无需编辑的语音时请使用此方式。"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "语音，无损"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "语音，有损"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "是否要使用此配置文件"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "是否要使用并显示此配置文件。"

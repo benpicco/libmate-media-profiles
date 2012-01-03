@@ -1,5 +1,5 @@
 # Thai translation of mate-media.
-# This file is distributed under the same license as the gnome-media package.
+# This file is distributed under the same license as the mate-media package.
 # Copyright (C) 2003-2011 Free Software Foundation, Inc.
 # Sawit Kasuriya <sawitk@hotmail.com>, 2003.
 # Sapa <sapac@hotmail.com>, 2003, 2004.
@@ -21,82 +21,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "เกิดข้อผิดพลาดในการแสดงแนะนำวิธี: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "แก้ไขโพรไฟล์ \"%s\""
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<ไม่ได้ตั้งชื่อ>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<ไม่มีคำอธิบายรายละเอียด>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "เกิดข้อผิดพลาดขณะเรียกดูโพรไฟล์ gmaudio (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr "เกิดข้อผิดพลาดขณะลงทะเบียนรับการแจ้งการเปลี่ยนแปลงโพรไฟล์เสียง (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "เกิดข้อผิดพลาดขณะลบโพรไฟล์ที่พาธ %s (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "แ_ก้ไข"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "ลบโพรไฟล์ทั้ง %d โพรไฟล์นี้หรือไม่?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "ลบโพรไฟล์ \"%s\" หรือไม่ ?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "ลบโพรไฟล์"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
-msgstr "แก้ไขโพรไฟล์ GNOME Audio"
+msgstr "แก้ไขโพรไฟล์ MATE Audio"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "โ_พรไฟล์:"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "คุณมีโพรไฟล์ที่เรียกว่า \"%s\" แล้ว"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "เกิดข้อผิดพลาดใน GConf (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 "ไฟล์ \"%s\" ขาดหายไป แสดงว่าติดตั้งโปรแกรมไม่ถูกต้อง ดังนั้นจึงไม่สามารถแสดงกรอบข้อความได้"
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -113,89 +113,89 @@ msgstr ""
 "%s\n"
 "เรียก '%s --help' เพื่อดูตัวเลือกบรรทัดคำสั่งที่มีทั้งหมด\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "แก้ไขโพรไฟล์เสียง"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "คำ_อธิบายโพรไฟล์:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "เ_ปิดใช้?"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "นาม_สกุลแฟ้ม:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "ไปป์ไ_ลน์ GStreamer:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "_ชื่อโพรไฟล์:"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "โพรไฟล์ใหม่"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "_สร้าง"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "คำอธิบายสำหรับโพรไฟล์เสียง"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
 msgstr "คำอธิบายของโพรไฟล์ประกอบด้วยข้อมูลจำนวนมาก และคำอธิบายนี้จะมีเมื่อใช้โพรไฟล์นี้"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr "นามสกุลแฟ้มที่จะใช้เมื่อจะบันทึกแฟ้มที่ลงรหัสด้วยโพรไฟล์นี้"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "ส่วนของไปป์ไลน์ GStreamer ที่จะใช้สำหรับโพรไฟล์นี้"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "ชื่อสั้นๆ ของโพรไฟล์เสียง"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
 msgstr "ชื่อสั้นๆ สำหรับโพรไฟล์เสียง เพื่อใช้ในการเลือกและระบุโพรไฟล์"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "คุณภาพซีดี, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "คุณภาพซีดี, ไม่เสียรายละเอียด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "คุณภาพซีดี, เสียรายละเอียด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "คุณภาพซีดี, MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "คุณภาพซีดี, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -203,19 +203,19 @@ msgstr ""
 "รายการโพรไฟล์สำหรับอัดเสียง รายการนี้ประกอบด้วยข้อความระบุชื่อไดเรกทอรีย่อยเทียบกับ /system/"
 "gstreamer/@GST_MAJORMINOR@/audio/profiles"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "รายการของโพรไฟล์"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "นามสกุลแฟ้มปริยายสำหรับโพรไฟล์นี้"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "ส่วนของไปป์ไลน์ GStreamer ที่จะใช้"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -223,7 +223,7 @@ msgstr ""
 "ใช้แปลงเป็นข้อมูลเสียงคุณภาพเท่าซีดี แต่ใช้ codec บีบอัดแบบไม่เสียรายละเอียด "
 "ใช้โพรไฟล์นี้ถ้าคุณต้องการกลับมาแก้ไขข้อมูลเสียงใหม่ หรือต้องการเขียนลงซีดี"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -231,7 +231,7 @@ msgstr ""
 "ใช้แปลงเป็นข้อมูลเสียงคุณภาพเท่าซีดี แต่ใช้ codec บีบอัดแบบเสียรายละเอียด "
 "ใช้โพรไฟล์นี้สำหรับดึงข้อมูลเสียงออกจากซีดี และกับการอัดเสียงจากวิทยุ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -242,7 +242,7 @@ msgstr ""
 "ใช้โพรไฟล์นี้ในการเตรียมแฟ้มสำหรับคัดลอกไปยังอุปกรณ์ที่รองรับเฉพาะ codec AAC เท่านั้น "
 "สังเกตว่าการใช้รูปแบบข้อมูลนี้อาจผิดกฎหมายโดยความรับผิดชอบเป็นของคุณ กรุณาปรึกษานักกฎหมาย"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -253,7 +253,7 @@ msgstr ""
 "ใช้โพรไฟล์นี้ในการเตรียมแฟ้มสำหรับคัดลอกไปยังอุปกรณ์ที่รองรับเฉพาะ codec MP2 เท่านั้น "
 "สังเกตว่าการใช้รูปแบบข้อมูลนี้อาจผิดกฎหมายโดยความรับผิดชอบเป็นของคุณ กรุณาปรึกษานักกฎหมาย"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -264,32 +264,32 @@ msgstr ""
 "ใช้โพรไฟล์นี้ในการเตรียมแฟ้มสำหรับคัดลอกไปยังอุปกรณ์ที่รองรับเฉพาะ codec MP3 เท่านั้น "
 "สังเกตว่าการใช้รูปแบบข้อมูลนี้อาจผิดกฎหมายโดยความรับผิดชอบเป็นของคุณ กรุณาปรึกษานักกฎหมาย"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
 msgstr ""
 "ใช้แปลงเป็นข้อมูลเสียงคุณภาพเสียงพูดแบบไม่เสียรายละเอียด ใช้โพรไฟล์นี้กับการอัดและแก้ไขเสียงพูด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
 msgstr ""
 "ใช้แปลงเป็นข้อมูลเสียงคุณภาพเสียงพูดแบบเสียรายละเอียด ใช้โพรไฟล์นี้กับการอัดและแก้ไขเสียงพูด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "เสียงพูด, ไม่เสียรายละเอียด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "เสียงพูด, เสียรายละเอียด"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "ใช้โพรไฟล์นี้หรือไม่"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "จะใช้และแสดงโพรไฟล์นี้หรือไม่"

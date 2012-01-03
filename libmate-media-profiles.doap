@@ -1,28 +1,28 @@
 <Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
-         xmlns:mate="http://api.gnome.org/doap-extensions#"
+         xmlns:mate="http://api.mate.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
 
-  <name xml:lang="en">libgnome-media-profiles</name>
+  <name xml:lang="en">libmate-media-profiles</name>
   <shortdesc xml:lang="en">MATE Media Profiles library</shortdesc>
-  <download-page rdf:resource="http://download.gnome.org/sources/libgnome-media-profiles/" />
-  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=libgnome-media-profiles" />
+  <download-page rdf:resource="http://download.mate.org/sources/libmate-media-profiles/" />
+  <bug-database rdf:resource="http://bugzilla.mate.org/browse.cgi?product=libmate-media-profiles" />
 
-  <category rdf:resource="http://api.gnome.org/doap-extensions#desktop" />
+  <category rdf:resource="http://api.mate.org/doap-extensions#desktop" />
 
   <maintainer>
     <foaf:Person>
       <foaf:name>Marc-Andre Lureau</foaf:name>
       <foaf:mbox rdf:resource="mailto:marcandre.lureau@gmail.com" />
-      <gnome:userid>malureau</gnome:userid>
+      <mate:userid>malureau</mate:userid>
     </foaf:Person>
   </maintainer>
   <maintainer>
     <foaf:Person>
       <foaf:name>Bastien Nocera</foaf:name>
       <foaf:mbox rdf:resource="mailto:hadess@hadess.net" />
-      <gnome:userid>hadess</gnome:userid>
+      <mate:userid>hadess</mate:userid>
     </foaf:Person>
   </maintainer>
 </Project>

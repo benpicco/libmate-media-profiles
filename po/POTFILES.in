@@ -1,10 +1,10 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
 libmate-media-profiles/audio-profile-edit.c
-libgnome-media-profiles/audio-profile.c
-libgnome-media-profiles/audio-profiles-edit.c
-libgnome-media-profiles/gmp-util.c
-libgnome-media-profiles/gnome-audio-profiles-properties.c
-[type: gettext/glade]data/gnome-audio-profile-edit.ui
-[type: gettext/glade]data/gnome-audio-profile-new.ui
-data/gnome-media-profiles.schemas.in.in
+libmate-media-profiles/audio-profile.c
+libmate-media-profiles/audio-profiles-edit.c
+libmate-media-profiles/gmp-util.c
+libmate-media-profiles/mate-audio-profiles-properties.c
+[type: gettext/glade]data/mate-audio-profile-edit.ui
+[type: gettext/glade]data/mate-audio-profile-new.ui
+data/mate-media-profiles.schemas.in.in

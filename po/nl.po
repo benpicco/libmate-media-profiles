@@ -1,26 +1,26 @@
 # Dutch translation for mate-media
 #
-# This package is distributed under the same license as the gnome-media package.
+# This package is distributed under the same license as the mate-media package.
 #
 # Wing Tung Leung <tg@skynet.be>, 1999.
 # Dennis Smit <synap@area101.penguin.nl>, 2002.
 # Huib Kleinhout <huib@stack.nl>, 2002.
 # Tino Meinen <a.t.meinen@chello.nl>, 2002, 2007, 2008.
 # Taco Witte <T.C.Witte@phys.uu.nl>, 2002.
-# Reinout van Schouwen <reinouts@gnome.org>, 2002–2006, 2009
-# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2010.
-# Mario Blättermann <mariobl@gnome.org>, 2010.
+# Reinout van Schouwen <reinouts@mate.org>, 2002–2006, 2009
+# Wouter Bolsterlee <wbolster@mate.org>, 2006–2010.
+# Mario Blättermann <mariobl@mate.org>, 2010.
 #
 # alert         - waarschuwing
 # event         - gebeurtenis
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media\n"
+"Project-Id-Version: mate-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-09-26 15:26+0200\n"
-"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@mate.org>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -28,34 +28,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Er is een fout opgetreden bij het weergeven van de hulptekst: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "Bewerken van profiel ‘%s’"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<zonder naam>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<zonder omschrijving>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr ""
 "Er is een fout opgetreden bij het ophalen van de lijst van gm_audio-"
 "profielen. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
@@ -64,51 +64,51 @@ msgstr ""
 "Er is een fout opgetreden bij het abonneren op mededelingen bij "
 "veranderingen van de audioprofielenlijst. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Er is een fout opgetreden bij het vergeten van profielpad %s. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "Be_werken"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "Dit profiel verwijderen?\n"
 msgstr[1] "Deze %d profielen verwijderen?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "Profiel ‘%s’ verwijderen?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "Profiel verwijderen"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
 msgstr "Mate-audioprofielen bewerken"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "_Profielen:"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "U heeft al een profiel met naam ‘%s’"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-fout (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -117,7 +117,7 @@ msgstr ""
 "Het bestand ‘%s’ ontbreekt. Dit geeft aan dat de toepassing incorrect is "
 "geïnstalleerd, het dialoogvenster kan dus niet worden weergegeven."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -126,45 +126,45 @@ msgstr ""
 "%s\n"
 "Voer ‘%s --help’ uit om een volledige lijst van opdrachtparameters te zien.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "Audioprofiel bewerken"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "Profiel_omschrijving:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "_Actief?"
 
 # extensie/achtervoegsel
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "B_estandsachtervoegsel:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "_GStreamerpijplijn:"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "Pro_fielnaam:"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "Nieuw profiel"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "Aan_maken"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "Een omschrijving van het audioprofiel"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -172,22 +172,22 @@ msgstr ""
 "Een omschrijving van het profiel, met daarin meer informatie en een "
 "beschrijving over wanneer dit profiel te gebruiken is."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
 "Een bestandsnaamachtervoegsel die gebruikt moet worden bij het opslaan "
 "vanbestanden die met dit profiel gecodeerd zijn."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "Een gedeeltelijke GStreamer-pijplijn om voor dit profiel te gebruiken."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "Een korte naam voor het audioprofiel"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -195,27 +195,27 @@ msgstr ""
 "Een korte naam voor het audioprofiel, te gebruiken in selecties en uniek "
 "voor dit profiel."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "Cd-kwaliteit, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "Cd-kwaliteit, zonder kwaliteitsverlies"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "Cd-kwaliteit, met kwaliteitsverlies"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "Cd-kwaliteit, MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "Cd-kwaliteit, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -223,19 +223,19 @@ msgstr ""
 "Lijst van audio-opnameprofielen. De lijst bevat tekenreeksen met de namen "
 "van submappen relatief aan /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "Lijst met profielen"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "Het standaard bestandsachtervoegsel voor dit profiel"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "De gebruikte gedeeltelijke GStreamer-pijplijn"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -244,7 +244,7 @@ msgstr ""
 "coderingsmethode zonder kwaliteitsverlies. Gebruik dit indien u het bestand "
 "later wilt bewerken of branden naar cd."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -253,7 +253,7 @@ msgstr ""
 "coderingsmethode die kwaliteitsverlies geeft. Gebruik dit voor het uitpakken "
 "vanaf cd en radio-opnamen."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -265,7 +265,7 @@ msgstr ""
 "die enkel het AAC-formaat ondersteunen. Let erop dat dit formaat niet overal "
 "ter wereld vrij (legaal) te gebruiken is."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -277,7 +277,7 @@ msgstr ""
 "die enkel het MP3-formaat ondersteunen. Let erop dat dit formaat niet overal "
 "ter wereld vrij (legaal) te gebruiken is."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -289,7 +289,7 @@ msgstr ""
 "die enkel het MP3-formaat ondersteunen. Let erop dat dit formaat niet overal "
 "ter wereld vrij (legaal) te gebruiken is."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -297,7 +297,7 @@ msgstr ""
 "Gebruikt voor het converteren naar stemkwaliteit-audio zonder verlies. "
 "Gebruik dit voor het opnemen en bewerken van spraak."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -305,19 +305,19 @@ msgstr ""
 "Gebruikt voor het converteren naar stemkwaliteit-audio met verlies. Gebruik "
 "dit voor het opnemen van spraak die geen verdere bewerking behoeft."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "Telefoonkwaliteit, wav (zonder kwaliteitsverlies)"
 
 # Dit is voor speex
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "Telefoonkwaliteit, speex (met kwaliteitsverlies)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "Of dit profiel gebruikt moet worden"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Of dit profiel gebruikt en weergegeven moet worden."

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<glade-catalog supports="gtkbuilder" name="mate-media-profiles" library="gnome-media-profiles" book="gnome-media" depends="gtk+">
+<glade-catalog supports="gtkbuilder" name="mate-media-profiles" library="mate-media-profiles" book="mate-media" depends="gtk+">
 
-  <init-function>gnome_media_profiles_catalog_init</init-function>
+  <init-function>mate_media_profiles_catalog_init</init-function>
 
   <glade-widget-classes>
     <glade-widget-class name="GMAudioProfileEdit" get-type-function="gm_audio_profile_edit_get_type"
@@ -21,7 +21,7 @@
     </glade-widget-class>
   </glade-widget-classes>
 
-  <glade-widget-group name="gnome-media" title="Mate Media">
+  <glade-widget-group name="mate-media" title="Mate Media">
     <glade-widget-class-ref name="GMAudioProfileEdit"/>
     <glade-widget-class-ref name="GMAudioProfileChoose"/>
   </glade-widget-group>

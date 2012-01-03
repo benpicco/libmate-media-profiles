@@ -1,15 +1,15 @@
 # Korean translation for libmate-media-profiles.
-# Copyright (C) 2011 libgnome-media-profiles's COPYRIGHT HOLDER
-# This file is distributed under the same license as the libgnome-media-profiles package.
+# Copyright (C) 2011 libmate-media-profiles's COPYRIGHT HOLDER
+# This file is distributed under the same license as the libmate-media-profiles package.
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: libgnome-media-profiles master\n"
+"Project-Id-Version: libmate-media-profiles master\n"
 "POT-Creation-Date: 2011-08-28 20:54+0000\n"
 "PO-Revision-Date: 2011-09-04 22:02+0900\n"
 "Last-Translator: Seong-ho, Cho <darkcircle.0426@gmail.com>\n"
-"Language-Team: Korean <gnome-kr@googlegroups.com>\n"
+"Language-Team: Korean <mate-kr@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -44,8 +44,8 @@ msgstr ""
 #: C/legal.xml:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any MATE "
+"documentation, and the members of the MATE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
@@ -112,188 +112,188 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-audio-profiles.xml:161(None)
+#: C/mate-audio-profiles.xml:161(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profiles-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profiles-window.png'; "
 "md5=08874167dcd48db9a9c2e9623706bb1b"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/gnome-audio-profiles.xml:194(None)
+#: C/mate-audio-profiles.xml:194(None)
 msgid ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 msgstr ""
-"@@image: 'figures/gnome-audio-profiles-profile-window.png'; "
+"@@image: 'figures/mate-audio-profiles-profile-window.png'; "
 "md5=21171454e8a63a62c751ce8fc3a8d11e"
 
-#: C/gnome-audio-profiles.xml:26(title)
-msgid "<application>GNOME Audio Profiles</application> Manual"
+#: C/mate-audio-profiles.xml:26(title)
+msgid "<application>MATE Audio Profiles</application> Manual"
 msgstr "<application>그놈 오디오 프로파일</application> 설명서"
 
-#: C/gnome-audio-profiles.xml:28(para)
+#: C/mate-audio-profiles.xml:28(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> is a set of audio encoding "
+"<application>MATE Audio Profiles</application> is a set of audio encoding "
 "configurations for GStreamer based applications."
 msgstr ""
 "<application>그놈 오디오 프로파일</application>은 GStreamer 기반 프로그램을 "
 "위한 오디오 인코딩 설정의 모음입니다."
 
-#: C/gnome-audio-profiles.xml:33(year)
+#: C/mate-audio-profiles.xml:33(year)
 msgid "2008-2009"
 msgstr "2008-2009"
 
-#: C/gnome-audio-profiles.xml:34(holder)
-#: C/gnome-audio-profiles.xml:39(publishername)
-#: C/gnome-audio-profiles.xml:80(para) C/gnome-audio-profiles.xml:88(para)
-msgid "GNOME Documentation Project"
+#: C/mate-audio-profiles.xml:34(holder)
+#: C/mate-audio-profiles.xml:39(publishername)
+#: C/mate-audio-profiles.xml:80(para) C/mate-audio-profiles.xml:88(para)
+msgid "MATE Documentation Project"
 msgstr "그놈 문서 프로젝트"
 
-#: C/gnome-audio-profiles.xml:49(firstname)
+#: C/mate-audio-profiles.xml:49(firstname)
 msgid "Marc-Andre"
 msgstr "Marc-Andre"
 
-#: C/gnome-audio-profiles.xml:50(surname)
+#: C/mate-audio-profiles.xml:50(surname)
 msgid "Lureau"
 msgstr "Lureau"
 
-#: C/gnome-audio-profiles.xml:52(orgname)
-msgid "GNOME Project"
+#: C/mate-audio-profiles.xml:52(orgname)
+msgid "MATE Project"
 msgstr "그놈 프로젝트"
 
-#: C/gnome-audio-profiles.xml:53(email)
+#: C/mate-audio-profiles.xml:53(email)
 msgid "marcandre.lureau@gmail.com"
 msgstr "marcandre.lureau@gmail.com"
 
-#: C/gnome-audio-profiles.xml:74(revnumber)
+#: C/mate-audio-profiles.xml:74(revnumber)
 msgid "Audio Profiles Manual V2.27.0"
 msgstr "오디오 프로파일 설명서 V2.27.0"
 
-#: C/gnome-audio-profiles.xml:75(date)
+#: C/mate-audio-profiles.xml:75(date)
 msgid "June 2009"
 msgstr "2009년 6월"
 
-#: C/gnome-audio-profiles.xml:77(para)
+#: C/mate-audio-profiles.xml:77(para)
 msgid "Fill some blanks, add screenshots."
 msgstr "빈 칸을 채우고, 스크린샷을 추가하십시오."
 
-#: C/gnome-audio-profiles.xml:78(para)
-msgid "Release with GNOME Media 2.27.3"
+#: C/mate-audio-profiles.xml:78(para)
+msgid "Release with MATE Media 2.27.3"
 msgstr "그놈 미디어 2.27.3과 함께 출시"
 
-#: C/gnome-audio-profiles.xml:79(para) C/gnome-audio-profiles.xml:87(para)
+#: C/mate-audio-profiles.xml:79(para) C/mate-audio-profiles.xml:87(para)
 msgid "Marc-Andre Lureau"
 msgstr "Marc-Andre Lureau"
 
-#: C/gnome-audio-profiles.xml:84(revnumber)
+#: C/mate-audio-profiles.xml:84(revnumber)
 msgid "Audio Profiles Manual V0.1"
 msgstr "오디오 프로파일 설명서 V0.1"
 
-#: C/gnome-audio-profiles.xml:85(date)
+#: C/mate-audio-profiles.xml:85(date)
 msgid "December 2008"
 msgstr "2008년 12월"
 
-#: C/gnome-audio-profiles.xml:93(releaseinfo)
-msgid "This manual describes version 2.27.3 of GNOME Audio Profiles."
+#: C/mate-audio-profiles.xml:93(releaseinfo)
+msgid "This manual describes version 2.27.3 of MATE Audio Profiles."
 msgstr "이 설명서는 그놈 오디오 프로파일 2.27.3을 설명합니다."
 
-#: C/gnome-audio-profiles.xml:96(title)
+#: C/mate-audio-profiles.xml:96(title)
 msgid "Feedback"
 msgstr "피드백"
 
-#: C/gnome-audio-profiles.xml:97(para)
+#: C/mate-audio-profiles.xml:97(para)
 msgid ""
-"To report a bug or make a suggestion regarding the <application>GNOME Audio "
+"To report a bug or make a suggestion regarding the <application>MATE Audio "
 "Profiles</application> application or this manual, follow the directions in "
 "the <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help\">Feedback "
-"section of the GNOME User Guide</ulink>."
+"section of the MATE User Guide</ulink>."
 msgstr ""
 "<application>그놈 오디오 프로파일</application>이나 이 설명서에 대한 버그나 "
 "제안을 보고하려면, <ulink url=\"ghelp:user-guide?feedback-bugs\" type=\"help"
 "\">그놈 사용자 안내서의 피드백 장</ulink>의 지시를 따릅니다."
 
-#: C/gnome-audio-profiles.xml:106(primary)
-#: C/gnome-audio-profiles.xml:0(application)
-msgid "GNOME Audio Profiles"
+#: C/mate-audio-profiles.xml:106(primary)
+#: C/mate-audio-profiles.xml:0(application)
+msgid "MATE Audio Profiles"
 msgstr "그놈 오디오 프로파일"
 
-#: C/gnome-audio-profiles.xml:113(title)
+#: C/mate-audio-profiles.xml:113(title)
 msgid "Introduction"
 msgstr "개요"
 
-#: C/gnome-audio-profiles.xml:114(para)
+#: C/mate-audio-profiles.xml:114(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you select and modify a "
-"list of pre-defined encoding formats. By default, <application>GNOME Audio "
+"<application>MATE Audio Profiles</application> let you select and modify a "
+"list of pre-defined encoding formats. By default, <application>MATE Audio "
 "Profiles</application> provides the following audio format:"
 msgstr ""
 "<application>그놈 오디오 프로파일</application>은 미리 정의된 인코딩 형식의 "
 "목록을 선택하고 수정할 수 있게 합니다. 기본적으로 <application>그놈 오디오 프"
 "로파일</application>은 다음 오디오 형식을 제공합니다:"
 
-#: C/gnome-audio-profiles.xml:118(para)
+#: C/mate-audio-profiles.xml:118(para)
 msgid "AAC-MP4 - The new standard of lossy compression."
 msgstr "AAC-MP4 - 새로운 손실압축 표준."
 
-#: C/gnome-audio-profiles.xml:121(para)
+#: C/mate-audio-profiles.xml:121(para)
 msgid "Ogg Vorbis - Xiph.Org lossy compression."
 msgstr "Ogg Vorbis - Xiph.Org 손실 압축."
 
-#: C/gnome-audio-profiles.xml:124(para)
+#: C/mate-audio-profiles.xml:124(para)
 msgid "Speex - Xiph.Org lossy compression optimized for voice."
 msgstr "Speex - Xiph.Org 음성을 위해 최적화된 손실 압축."
 
-#: C/gnome-audio-profiles.xml:127(para)
+#: C/mate-audio-profiles.xml:127(para)
 msgid "FLAC - Xiph.Org lossless audio compression."
 msgstr "FLAC - Xiph.Org 무손실 오디오 압축."
 
-#: C/gnome-audio-profiles.xml:130(para)
+#: C/mate-audio-profiles.xml:130(para)
 msgid "MP3 - The popular lossy compression format."
 msgstr "MP3 - 인기있는 손실 압축 형식."
 
-#: C/gnome-audio-profiles.xml:133(para)
+#: C/mate-audio-profiles.xml:133(para)
 msgid "MP2 - MPEG-1 Audio Layer II, largely supported."
 msgstr "MP2 - MPEG-1 오디오 계층 II, 널리 제공됨."
 
-#: C/gnome-audio-profiles.xml:136(para)
+#: C/mate-audio-profiles.xml:136(para)
 msgid "WAV - Lossless."
 msgstr "WAV - 무손실."
 
-#: C/gnome-audio-profiles.xml:141(para)
+#: C/mate-audio-profiles.xml:141(para)
 msgid "Some format may be illegal in your jurisdiction."
 msgstr "어떤 형식은 관할 거주지역에서의 사용은 불법이 될 수 있습니다."
 
-#: C/gnome-audio-profiles.xml:146(title)
+#: C/mate-audio-profiles.xml:146(title)
 msgid "Usage"
 msgstr "사용법"
 
-#: C/gnome-audio-profiles.xml:147(para)
+#: C/mate-audio-profiles.xml:147(para)
 msgid ""
-"Use <application>GNOME Audio Profiles</application> to modify a list of pre-"
+"Use <application>MATE Audio Profiles</application> to modify a list of pre-"
 "defined encoding formats."
 msgstr ""
 "미리 정의된 인코딩 형식을 수정하려면 <application>그놈 오디오 프로파일</"
 "application>을 사용합니다."
 
-#: C/gnome-audio-profiles.xml:150(title)
+#: C/mate-audio-profiles.xml:150(title)
 msgid "Profile selection dialog"
 msgstr "프로파일 선택 대화상자"
 
-#: C/gnome-audio-profiles.xml:152(para)
+#: C/mate-audio-profiles.xml:152(para)
 msgid ""
 "The following window is displayed to modify, add or remove the pre-defined "
 "formats."
 msgstr ""
 "다음 창은 미리 정의된 형식을 수정하거나 추가 혹은 제거하는 모습을 보여줍니다."
 
-#: C/gnome-audio-profiles.xml:157(title)
-msgid "<application>GNOME Audio Profiles</application> Window"
+#: C/mate-audio-profiles.xml:157(title)
+msgid "<application>MATE Audio Profiles</application> Window"
 msgstr "<application>그놈 오디오 프로파일</application> 창"
 
-#: C/gnome-audio-profiles.xml:164(phrase)
+#: C/mate-audio-profiles.xml:164(phrase)
 msgid ""
 "Shows <placeholder-1/> main window. Contains list of profiles and "
 "modification options."
@@ -302,7 +302,7 @@ msgstr ""
 "다."
 
 #. ==== End of Figure ====
-#: C/gnome-audio-profiles.xml:172(para)
+#: C/mate-audio-profiles.xml:172(para)
 msgid ""
 "Select one of the profiles and click \"Edit\" to modify it. The \"Profile "
 "modification window\" will be displayed."
@@ -310,14 +310,14 @@ msgstr ""
 "프로파일중 하나를 선택하고 \"편집\"을 눌러 수정합니다. \"프로파일 수정 창"
 "\"이 표시될 것입니다."
 
-#: C/gnome-audio-profiles.xml:175(para)
+#: C/mate-audio-profiles.xml:175(para)
 msgid ""
 "\"Delete\" will remove the currently selected profile from the list of "
 "profiles."
 msgstr ""
 "\"삭제\"는 프로파일 목록으로부터 현재 선택된 프로파일을 제거할 것입니다."
 
-#: C/gnome-audio-profiles.xml:178(para)
+#: C/mate-audio-profiles.xml:178(para)
 msgid ""
 "To create a new profile, click \"New\". The \"Profile modification window\" "
 "will be displayed."
@@ -325,61 +325,61 @@ msgstr ""
 "새 프로파일을 만드려면, \"새로 만들기\"를 누릅니다. \"프로파일 수정 창\"이 표"
 "시될 것입니다."
 
-#: C/gnome-audio-profiles.xml:184(title)
+#: C/mate-audio-profiles.xml:184(title)
 msgid "Profile editing"
 msgstr "프로파일 편집"
 
-#: C/gnome-audio-profiles.xml:186(para)
+#: C/mate-audio-profiles.xml:186(para)
 msgid ""
-"<application>GNOME Audio Profiles</application> let you modify the "
+"<application>MATE Audio Profiles</application> let you modify the "
 "parameters of an audio profile."
 msgstr ""
 "<application>그놈 오디오 프로파일</application>은 오디오 프로파일의 인자를 수"
 "정할 수 있도록 해줍니다."
 
-#: C/gnome-audio-profiles.xml:190(title)
+#: C/mate-audio-profiles.xml:190(title)
 msgid "Profile modification window"
 msgstr "프로파일 수정 창"
 
-#: C/gnome-audio-profiles.xml:197(phrase)
+#: C/mate-audio-profiles.xml:197(phrase)
 msgid "Shows <placeholder-1/> profile window."
 msgstr "<placeholder-1/> 프로파일 창을 보입니다."
 
-#: C/gnome-audio-profiles.xml:206(para)
+#: C/mate-audio-profiles.xml:206(para)
 msgid "Profile name - user friendly name of the profile."
 msgstr "프로파일 명칭 - 현재 프로파일에 대한 사용자 친화적 명칭."
 
-#: C/gnome-audio-profiles.xml:209(para)
+#: C/mate-audio-profiles.xml:209(para)
 msgid "Profile description - long description of this profile."
 msgstr "프로파일 설명 - 현재 프로파일에 대한 긴 설명."
 
-#: C/gnome-audio-profiles.xml:212(para)
+#: C/mate-audio-profiles.xml:212(para)
 msgid "GStreamer pipeline - the GStreamer encoding pipeline."
 msgstr "GStreamer 파이프라인 - GStreamer 인코딩 파이프라인."
 
-#: C/gnome-audio-profiles.xml:215(para)
+#: C/mate-audio-profiles.xml:215(para)
 msgid "File extension - the filename extension associated to this profile."
 msgstr "파일 확장자 - 프로파일과 관련된 파일 이름 확장자."
 
-#: C/gnome-audio-profiles.xml:219(para)
+#: C/mate-audio-profiles.xml:219(para)
 msgid "Active - whether this profile is listed in client application."
 msgstr "활성 - 현재 프로파일이 클라이언트 프로그램에 조회되었는지에 대한 여부."
 
-#: C/gnome-audio-profiles.xml:246(title)
-msgid "About <application>GNOME Audio Profiles</application>"
+#: C/mate-audio-profiles.xml:246(title)
+msgid "About <application>MATE Audio Profiles</application>"
 msgstr "<application>그놈 오디오 프로파일</application> 정보"
 
-#: C/gnome-audio-profiles.xml:247(para)
+#: C/mate-audio-profiles.xml:247(para)
 msgid ""
 "To report a bug or make a suggestion regarding this application or this "
 "manual, follow the directions in the <ulink url=\"ghelp:user-guide?feedback-"
-"bugs\" type=\"help\">Feedback section of the GNOME User Guide</ulink>."
+"bugs\" type=\"help\">Feedback section of the MATE User Guide</ulink>."
 msgstr ""
 "이 프로그램이나 설명서에 대한 버그나 제안을 보고하려면, <ulink url=\"ghelp:"
 "user-guide?feedback-bugs\" type=\"help\">그놈 사용자 안내서의 피드백 장</"
 "ulink>의 지시를 따릅니다."
 
-#: C/gnome-audio-profiles.xml:253(para)
+#: C/mate-audio-profiles.xml:253(para)
 msgid ""
 "This program is distributed under the terms of the GNU Library General "
 "Public license as published by the Free Software Foundation; either version "
@@ -395,6 +395,6 @@ msgstr ""
 "COPYING파일에서 찾을 수 있습니다."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/gnome-audio-profiles.xml:0(None)
+#: C/mate-audio-profiles.xml:0(None)
 msgid "translator-credits"
 msgstr "Seong-ho, Cho <darkcircle.0426@gmail.com>, 2011"

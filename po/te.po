@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
-"product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
+"product=libmate-media-profiles&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-04-23 19:05+0000\n"
 "PO-Revision-Date: 2010-04-05 14:38+0530\n"
 "Last-Translator: Hari Krishna <hari@swecha.net>\n"
@@ -20,83 +20,83 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "సహాయం ప్రదర్శించుటలో అక్కడ ఒక దోషం ఉంది: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "ప్రొఫైల్ \"%s\" సరికూర్చుట"
 
-#: ../libgnome-media-profiles/audio-profile.c:96
+#: ../libmate-media-profiles/audio-profile.c:96
 msgid "<no name>"
 msgstr "<ఏ నామములేదు>"
 
-#: ../libgnome-media-profiles/audio-profile.c:97
-#: ../libgnome-media-profiles/audio-profile.c:1006
+#: ../libmate-media-profiles/audio-profile.c:97
+#: ../libmate-media-profiles/audio-profile.c:1006
 msgid "<no description>"
 msgstr "<ఏ వివరణలేదు>"
 
-#: ../libgnome-media-profiles/audio-profile.c:212
+#: ../libmate-media-profiles/audio-profile.c:212
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "gm_audio ప్రోఫైల్స్ యొక్క జాబితా పొందుటలో అక్కడ ఒక దోషం ఉంది. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:713
+#: ../libmate-media-profiles/audio-profile.c:713
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr "ఆడియో ప్రొఫైల్స్  జాబితా మార్పులగురించిన ప్రకటనకు చందాదారుఅవుటకు దోషం ఉంది. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:916
+#: ../libmate-media-profiles/audio-profile.c:916
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "ప్రొఫైల్ పాత్ %s మర్చిపోవుటలో ఒక దోషం ఉంది. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "సవరించు(_E)"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "ఈ ప్రొఫైల్ ను తొలగించాలా?\n"
 msgstr[1] "ఈ %d ప్రొఫైల్స్ ను తొలగించాలా?\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "ప్రొఫైల్ \"%s\" ను తొలగించాలా?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "ప్రొఫైల్ ను తొలగించు"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
-msgstr "GNOME ఆడియో ఫైల్స్ ను సరిచేయుము"
+msgstr "MATE ఆడియో ఫైల్స్ ను సరిచేయుము"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "ప్రోఫైల్స్ (_P):"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "మీరు ఇప్పటికే \"%s\" అనబడే ప్రొఫైల్ ను కలిగిఉన్నారు"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf దోషం (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -105,7 +105,7 @@ msgstr ""
 "ఫైలు \"%s\" తప్పిపోయింది.ఇది అప్లికేషన్ తప్పుగా సంస్థాపించుటను సూచిస్తోంది, అందువలన డైలాగ్ "
 "ప్రదర్శించబడదు."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -114,91 +114,91 @@ msgstr ""
 "%s\n"
 "అందుబాటులో వున్న ఆదేశ వరుస ఐచ్చికముల పూర్తి జాబితా కొరకు '%s --help' నడుపుము.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "ఆడియో ప్రొఫైల్ ను సరిచేయి"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "ప్రొఫైల్ వివరణ(_d):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "చేతనంచేయాలా(_A)?"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "ఫైలు పొడిగింపులు(_F):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "GStreamer పైప్‌లైన్(_G):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "ప్రొఫైల్ నామము(_P):"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "కొత్త ప్రొఫైల్"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "సృష్టించు(_C)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "ఆడియో ప్రొఫైల్ కొరకు వివరణ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
 msgstr ""
 "ప్రొఫైల్ యొక్క వివరణ, ఎక్కువ సమాచారాన్ని కలిగిఉంటుంది మరియు ఈ ప్రొఫైల్ ను ఎప్పుడు ఉపయోగించాలో వివరిస్తుంది."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr "నిల్వఉంచిన ఫైళ్ళు ఈ ప్రొఫైల్ ద్వారా ఎన్‌కోడెడ్ చేయబడనప్పడు ఉపయోగించు ఫైలుపేరు పొడిగింపులు."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "ఈ ప్రొఫైల్ కొరకు ఉపయోగించుటకు ఒక పాక్షిక GStreamer పైప్‌లైన్."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "ఆడియో ప్రొఫైల్ కొరకు ఒక పొట్టినామము"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
 msgstr ""
 "ఆడియో ప్రొఫైల్ కొరకు పొట్టినామము, ఎంపికలలో ఉంపయోగించుటకు మరియు ప్రొఫైల్ ను ఏకంగా గుర్తించుటకు."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "CD నాణ్యత, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "CD నాణ్యత, లాస్‌లెస్"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "CD నాణ్యత, నష్టపూరితంగా"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "CD నాణ్యత, MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "CD నాణ్యత, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -206,19 +206,19 @@ msgstr ""
 "ఆడియో రికార్డింగ్ ప్రొఫైల్స్  జాబితా. జాబితా /system/gstreamer/@GST_MAJORMINOR@/audio/profiles "
 "కు సారూప్యంగా ఉన్న ఉపసంచయాల నామపు స్ట్రింగ్స్ ను కలిగిఉంటుంది."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "ప్రొఫైల్స్ జాబితా"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "ఈ ప్రొఫైల్ కు అప్రమేయ ఫైలు పొడిగింపు"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "పాక్షిక GStreamer పైప్‌లైన్ ఉపయోగించబడింది"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -226,7 +226,7 @@ msgstr ""
 "CD-నాణ్యతా ఆడియో కి మార్చుటలో ఉపయోగించబడింది, కాని నష్టంకాని కంప్రెషన్ కొడెక్స్ తో. మీరు తరువాత దస్త్రాన్ని "
 "సరికూర్చాలనుకున్నా లేదా CD కి వ్రాద్దామనుకున్నా దీనిని ఉపయోగించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -234,7 +234,7 @@ msgstr ""
 "CD-నాణ్యతా ఆడియో కి మార్చుటలో ఉపయోగించబడింది, అయితే నష్టంకాని కంప్రషన్ కొడెక్స్ తో. CD ఎక్సట్రాక్షన్ మరియు "
 "రేడియో రికార్డింగ్స్ కు ఉపయోగించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -245,7 +245,7 @@ msgstr ""
 "మద్దతునిచ్చే సాదనములకు నకలు తీయుటకు ఫైళ్ళను సిద్దపరుచుటలో ఉపయోగించుము. మీ ప్రాంతంలో ఈ ఫార్మాట్ "
 "ను ఉపయోగించుట న్యాయవిరోధం కావచ్చు, సలహా కొరకు మీ వకీలు ను సంప్రదించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -256,7 +256,7 @@ msgstr ""
 "మద్దతునిచ్చే సాదనములకు నకలు తీయుటకు ఫైళ్ళను సిద్దపరుచుటలో ఉపయోగించుము. మీ ప్రాంతంలో ఈ ఫార్మాట్ "
 "ను ఉపయోగించుట న్యాయవిరోధం కావచ్చు, సలహా కొరకు మీ వకీలు ను సంప్రదించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -267,7 +267,7 @@ msgstr ""
 "మద్దతునిచ్చే సాదనములకు నకలు తీయుటకు ఫైళ్ళను సిద్దపరుచుటలో ఉపయోగించుము. మీ ప్రాంతంలో ఈ ఫార్మాట్ "
 "ను ఉపయోగించుట న్యాయవిరోధం కావచ్చు, సలహా కొరకు మీ వకీలు ను సంప్రదించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -275,7 +275,7 @@ msgstr ""
 "స్వరం-నాణ్యత పొని ఆడియో మార్పులో ఉపయోగపడుతుంది. దీనిని రికార్డింగ్ మరియు సంభాషణ సరికూర్పునకు "
 "ఉపయెగించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -283,18 +283,18 @@ msgstr ""
 "దీనిని స్వరం-నాణ్యత కాని ఆడియో మార్పులో ఉపయోగించండి.దీనిని సరికూర్చ వలిసిన అవసరం లేని సంభాషణ రికార్డింగ్ లో "
 "ఉపయోగించండి."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "స్వరం, నష్టములేకుండా"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "స్వరం, నష్టపూరితంగా"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr "ఈ ప్రోఫైల్ ను ఉపయోగించవచ్చా"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "ఈ ప్రొఫైల్ ను ఉపయోగించి  మరియు ప్రదశించవచ్చా"

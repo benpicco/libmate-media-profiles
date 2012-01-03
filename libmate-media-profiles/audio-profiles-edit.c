@@ -519,7 +519,7 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
       GError *err = NULL;
 
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-		    "ghelp:mate-audio-profiles?gnome-audio-profiles-profile-edit",
+		    "ghelp:mate-audio-profiles?mate-audio-profiles-profile-edit",
 		    gtk_get_current_event_time (),
 		    &err);
 
@@ -853,7 +853,7 @@ new_profile_response_callback (GtkWidget *new_profile_dialog,
 
     /* FIXME: hm, not very proud of having to unstatic this function */
     GST_DEBUG ("new profile callback: syncing list\n");
-    //FIXME: in gnome-terminal, it's TRUE, &n, which then gets overruled
+    //FIXME: in mate-terminal, it's TRUE, &n, which then gets overruled
     // by some other sync call with the new list
     //audio_profile_sync_list (TRUE, &n);
     gm_audio_profile_sync_list (FALSE, NULL);
@@ -909,7 +909,7 @@ gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,
     GtkWidget *create_button;
     GtkSizeGroup *size_group, *size_group_labels;
 
-    builder = gmp_util_load_builder_file ("gnome-audio-profile-new.ui", transient_parent, &error);
+    builder = gmp_util_load_builder_file ("mate-audio-profile-new.ui", transient_parent, &error);
 
     if (error != NULL) {
       g_warning (error->message);

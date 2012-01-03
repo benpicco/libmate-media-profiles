@@ -23,7 +23,7 @@
 #include <config.h>
 #endif
 
-#include "gnome-media-profiles.h"
+#include "mate-media-profiles.h"
 
 #include <string.h>
 #include <glib/gi18n.h>
@@ -36,7 +36,7 @@
 
 /* do all necessary initialization to use this simple helper library */
 void
-gnome_media_profiles_init (MateConfClient *conf)
+mate_media_profiles_init (MateConfClient *conf)
 {
   GError *err = NULL;
 

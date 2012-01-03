@@ -1,7 +1,7 @@
-# translation of mate-media.gnome-2-30.or.po to Oriya
-# Oriya translation of gnome-media.HEAD.pot.
+# translation of mate-media.mate-2-30.or.po to Oriya
+# Oriya translation of mate-media.HEAD.pot.
 # Copyright (C) 2004, 2006, 2009, 2010 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gnome-media  package.
+# This file is distributed under the same license as the mate-media  package.
 # $Id: or.po,v 1.1 2006/04/03 23:09:31 gmohanty Exp $
 #
 # Parashar Nayak  <parasar_24@yahoo.com>, 2004.
@@ -9,7 +9,7 @@
 # Manoj Kumar Giri <mgiri@redhat.com>, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media.gnome-2-30.or\n"
+"Project-Id-Version: mate-media.mate-2-30.or\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-05-17 23:40+0530\n"
@@ -22,49 +22,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "ସହାୟତା ଦେଖାଇବାରେ ତୃଟି: %s"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "\"%s\" ରୂପରେଖ ସମ୍ପାଦିତ କରାଯାଉଛି"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<ନାମିତ ନୁହେଁ>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<ବର୍ଣ୍ଣନା ନାହିଁ>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "gm_audio ରୂପରେଖ ତାଲିକା ପ୍ରାପ୍ତ କରିବାରେ ତ୍ରୁଟି. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr "ଧ୍ବନି ରୂପରେଖ ତାଲିକା ପରିବର୍ତନର ସୂଚନା ପାଇବା ପାଇଁ ବ୍ଯବସ୍ଥା କରିବାରେ ତ୍ରୁଟି. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "%s ରୂପରେଖ ପଥ ଭୁଲିବାରେ ତ୍ରୁଟି. (%s)\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "ସମ୍ପାଦନ କରନ୍ତୁ (_E)"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
@@ -72,12 +72,12 @@ msgstr[0] "ଏହି ରୂପରେଖ ଲିଭାନ୍ତୁ?\n"
 msgstr[1] "ଏହି %d ରୂପରେଖକୁ ଲିଭାନ୍ତୁ?\n"
 
 #  the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "\"%s\" ରୂପରେଖ ଲିଭାନ୍ତୁ?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "ରୂପରେଖ ଲିଭାନ୍ତୁ"
 
@@ -91,25 +91,25 @@ msgstr "ରୂପରେଖ ଲିଭାନ୍ତୁ"
 #  GTK_RESPONSE_ACCEPT,
 #  NULL);
 #  FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
 msgstr "ନୋମ ଧ୍ବନି ରୂପରେଖ ସମ୍ପାଦନ କରନ୍ତୁ"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "ରୂପରେଖ: (_P)"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "ଆପଣଙ୍କର ପୂର୍ବରୁ \"%s\" ନାମର ଗୋଟିଏ ରୂପରେଖ ଅଛି"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "ଜିକନ୍ଫ ତ୍ରୁଟି (FIXME): %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -118,7 +118,7 @@ msgstr ""
 "\"%s\" ଫାଇଲ ମିଳିଲା ନାହିଁ. ଏହା ସୂଚିତ କରୁଛି କି ପ୍ରୟୋଗଟି ଠିକ ଭାବରେ ସ୍ଥାପିତ କରାଯାଇ ନାହିଁ, ଯାହା "
 "ଫଳେସଂଳାପଟି ପ୍ରଦର୍ଶିତ କରାଯାଇ ପାରିବ ନାହିଁ."
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
@@ -127,44 +127,44 @@ msgstr ""
 "%s\n"
 "ପାଠ୍ଯ ନିର୍ଦ୍ଦେଶ ବିକଲ୍ପର ସଂପୂର୍ଣ୍ଣ ତାଲିକା ଦେଖିବା ପାଇଁ '%s --help' ଚଳାନ୍ତୁ.\n"
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "ଧ୍ବନି ରୂପରେଖ ସମ୍ପାଦିତ କରନ୍ତୁ"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "ରୂପରେଖ ବର୍ଣ୍ଣନା (_d):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "ସକ୍ରିୟ? (_A)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "ଫାଇଲ ଅନୁଲଗ୍ନ (_F):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "GStreamer ପାଇପ୍ ଲାଇନ୍ (_G):"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "ରୂପରେଖ ନାମ: (_P)"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "ନୂତନ ରୂପରେଖ"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "ସୃଷ୍ଟି କରନ୍ତୁ (_C)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "ଧ୍ବନି ରୂପରେଖ ପାଇଁ ଗୋଟିଏ ବର୍ଣ୍ଣନା"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -172,22 +172,22 @@ msgstr ""
 "ରୂପରେଖର ବର୍ଣ୍ଣନା, ଯେଉଁଟାକି ଅଧିକ ସୂଚନା ଯୋଗାଏ, ଓ କେତେବେଳେ ଏହି ରୂପରେଖର ଉପଯୋଗ କରାଯିବା ଉଚିତ "
 "ଜଣାଏ."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
 "ଏହି ରୂପରେଖ ଦ୍ବାରା ସଙ୍କେତ କରାଯାଇଥିବା ଫାଇଲଗୁଡ଼ିକୁ ସଞ୍ଚିତ କରିବାରେ ବ୍ଯବହାର କରାଯିବା ଫାଇଲ ନାମ "
 "ଅନୁଲଗ୍ନ."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "ଏହି ରୂପରେଖ ପାଇଁ ବ୍ଯବହାର କରାଯିବା ନିମନ୍ତେ ଜିସ୍ଟ୍ରୀମରର ଗୋଟିଏ ଆଂଶିକ ପାଇପ୍ ଲାଇନ୍"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "ଧ୍ବନି ରୂପରେଖ ପାଇଁ ଗୋଟିଏ ସଂକ୍ଷିପ୍ତ ନାମ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -195,27 +195,27 @@ msgstr ""
 "ଧ୍ବନି ରୂପରେଖ ପାଇଁ ଗୋଟିଏ ସଂକ୍ଷିପ୍ତ ନାମ, ଯେଉଁଟାକି ଚୟନ କରିବାରେ ଓ ରୂପରେଖକୁ ଅନନ୍ଯ ପରିଚୟ ଦେବାରେ "
 "ବ୍ଯବହାର କରାଯିବ."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "CD ଗୁଣବତ୍ତା, AAC"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "ସି.ଡି. ଗୁଣବତ୍ତା, କ୍ଷତିହୀନ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "ସି.ଡି. ଗୁଣବତ୍ତା, କ୍ଷତିଯୁକ୍ତ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr "CD ଗୁଣବତ୍ତା, MP2"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "CD ଗୁଣବତ୍ତା, MP3"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -223,19 +223,19 @@ msgstr ""
 "ଧ୍ବନି ଲିପିବଦ୍ଧ ରୂପରେଖର ତାଲିକା. ଏହି ତାଲିକାରେ /system/gstreamer/@GST_MAJORMINOR@/audio/"
 "profiles ଅପେକ୍ଷାରେ ଉପଡିରେକ୍ଟୋରି ନାମ ରହିଛି."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "ରୂପରେଖର ତାଲିକା"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "ଏହି ରୂପରେଖ ପାଇଁ ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଫାଇଲ ଅନୁଲଗ୍ନ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "ବ୍ଯବହୃତ ଆଂଶିକ ଜିସ୍ଟ୍ରୀମର ପାଇପ୍ ଲାଇନ୍"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -244,7 +244,7 @@ msgstr ""
 "ଅବସଙ୍କେତକ ସହିତ. ପରେ ଫାଇଲକୁ ସମ୍ପାଦନ କରିବାକୁ ଚାହିଁଲେ, ବା ତାହାକୁ ସି.ଡି.ରେ ଲେଖିବାକୁ ଚାହିଁଲେ "
 "ଏହାକୁ ବ୍ଯବହାର କରନ୍ତୁ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -252,7 +252,7 @@ msgstr ""
 "ସି.ଡି. ଗୁଣବତ୍ତା ଧ୍ବନିକୁ ପରିବର୍ତନ କରିବା ପାଇଁ ବ୍ଯବହାର କରାଯାଇଛି, କିନ୍ତୁ କ୍ଷତିଯୁକ୍ତ ସଙ୍କୋଚନ ସଙ୍କେତକ/"
 "ଅବସଙ୍କେତକ ସହିତ. ସି.ଡି.ରୁ ବାହାର କରିବା ପାଇଁ ବା ରେଡିଓରୁ ଲିପିବଦ୍ଧ କରିବା ପାଇଁ ଏହାକୁ ବ୍ଯବହାର କରନ୍ତୁ."
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -264,7 +264,7 @@ msgstr ""
 "ସାଙ୍କେତିକକୁ ବ୍ୟବହାର କରିଥାଏ। ମନେରଖନ୍ତୁ ଏହି ଶୈଳୀକୁ ବ୍ୟବହାର କରିବା ଆପଣଙ୍କ ଅଞ୍ଚଳରେ ଅନୈତିକ "
 "ହୋଇପାରେ; ଉପଦେଶ ପାଇଁ ଆପଣଙ୍କ ଓକିଲ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -276,7 +276,7 @@ msgstr ""
 "ସାଙ୍କେତିକକୁ ବ୍ୟବହାର କରିଥାଏ। ମନେରଖନ୍ତୁ ଏହି ଶୈଳୀକୁ ବ୍ୟବହାର କରିବା ଆପଣଙ୍କ ଅଞ୍ଚଳରେ ଅନୈତିକ "
 "ହୋଇପାରେ; ଉପଦେଶ ପାଇଁ ଆପଣଙ୍କ ଓକିଲ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -288,7 +288,7 @@ msgstr ""
 "ସାଙ୍କେତିକକୁ ବ୍ୟବହାର କରିଥାଏ। ମନେରଖନ୍ତୁ ଏହି ଶୈଳୀକୁ ବ୍ୟବହାର କରିବା ଆପଣଙ୍କ ଅଞ୍ଚଳରେ ଅନୈତିକ "
 "ହୋଇପାରେ; ଉପଦେଶ ପାଇଁ ଆପଣଙ୍କ ଓକିଲ ସହିତ ଯୋଗାଯୋଗ କରନ୍ତୁ।"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -296,7 +296,7 @@ msgstr ""
 "କ୍ଷତିହୀନ କଥା ଗୁଣବତ୍ତା ଧ୍ବନିକୁ ପରିବର୍ତନ କରିବା ପାଇଁ ବ୍ଯବହାର କରାଯାଏ. ଭାଷଣ ଲିପିବଦ୍ଧ ଓ ସମ୍ପାଦନ "
 "ପାଇଁ ଏହାକୁ ବ୍ଯବହାର ପାଇଁ କରନ୍ତୁ "
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -304,18 +304,18 @@ msgstr ""
 "କ୍ଷତିଯୁକ୍ତ କଥା ଗୁଣବତ୍ତା ଧ୍ବନିକୁ ପରିବର୍ତନ କରିବା ପାଇଁ ବ୍ଯବହାର କରାଯାଏ. ଯଦି ସମ୍ପାଦନର ଆବଶ୍ଯକତା "
 "ନାହିଁ, ଭାଷଣ ଲିପିବଦ୍ଧ କରିବା ପାଇଁ ଏହାକୁ ବ୍ଯବହାର ପାଇଁ କରନ୍ତୁ "
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "କଥା, କ୍ଷତିହୀନ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "କଥା, କ୍ଷତିଯୁକ୍ତ"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""

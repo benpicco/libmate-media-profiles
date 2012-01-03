@@ -28,7 +28,7 @@
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
 
-#include "gnome-media-profiles.h"
+#include "mate-media-profiles.h"
 #include "audio-profile-private.h"
 
 static void
@@ -62,9 +62,9 @@ main (int argc, char *argv[])
   conf = mateconf_client_get_default ();
   textdomain (GETTEXT_PACKAGE);
 
-  gnome_media_profiles_init (conf);
+  mate_media_profiles_init (conf);
 
-  gtk_window_set_default_icon_name ("gnome-mime-audio");
+  gtk_window_set_default_icon_name ("mate-mime-audio");
 
   widget = GTK_WIDGET (gm_audio_profiles_edit_new (conf, NULL));
   g_assert (GTK_IS_WIDGET (widget));

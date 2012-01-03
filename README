@@ -32,10 +32,10 @@ audio-profiles-edit.c:
 gmp-util.c:
 	utility code
 
-gnome-media-profiles.c:
+mate-media-profiles.c:
         public library functions
 
-gnome-audio-profiles-properties.c:
+mate-audio-profiles-properties.c:
         property capplet for audio profiles, just shows the ProfilesEdit dialog
 
 WHAT IT PROVIDES
@@ -67,7 +67,7 @@ gm_audio_profile_choose ()
 TODO
 ----
 * make audio-profile.h have public functions, and move rest to .c
-* rename all functions in there to gnome_... so they won't clash in the
+* rename all functions in there to mate_... so they won't clash in the
   future
 * figure out a way to make the GMAudioSettingsMask private (we can't due
   to the signal in the parent class)

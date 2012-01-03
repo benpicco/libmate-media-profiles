@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
 AC_INIT([libmate-media-profiles], [3.0.0],
-        [http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles])
+        [http://bugzilla.mate.org/enter_bug.cgi?product=libmate-media-profiles])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-bzip2 no-dist-gzip])
 
@@ -13,7 +13,7 @@ IT_PROG_INTLTOOL([0.35.0])
 AC_PATH_PROG(MATECONFTOOL, mateconftool-2)
 AM_GCONF_SOURCE_2
 
-GETTEXT_PACKAGE=libgnome-media-profiles
+GETTEXT_PACKAGE=libmate-media-profiles
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Define to the Gettext package name])
 AM_GLIB_GNU_GETTEXT
@@ -85,11 +85,11 @@ AM_CONDITIONAL(HAVE_GSTREAMER, [test x$have_gst = xyes])
 
 
 AC_CONFIG_FILES([
-libgnome-media-profiles-3.0.pc
+libmate-media-profiles-3.0.pc
 Makefile
-libgnome-media-profiles/Makefile
+libmate-media-profiles/Makefile
 data/Makefile
-data/gnome-media-profiles.schemas.in
+data/mate-media-profiles.schemas.in
 glade/Makefile
 help/Makefile
 po/Makefile.in

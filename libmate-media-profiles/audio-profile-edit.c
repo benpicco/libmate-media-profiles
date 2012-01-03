@@ -111,7 +111,7 @@ gm_audio_profile_edit_response (GtkDialog *dialog,
       GError *err = NULL;
 
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-		    "ghelp:mate-audio-profiles?gnome-audio-profiles-edit",
+		    "ghelp:mate-audio-profiles?mate-audio-profiles-edit",
 		    gtk_get_current_event_time (),
 		    &err);
 
@@ -228,7 +228,7 @@ gm_audio_profile_edit_new (GConfClient *conf, const char *id)
   GError *error = NULL;
 
   /* get the dialog */
-  builder = gmp_util_load_builder_file ("gnome-audio-profile-edit.ui", NULL, &error);
+  builder = gmp_util_load_builder_file ("mate-audio-profile-edit.ui", NULL, &error);
   if (error != NULL) {
     g_warning (error->message);
     g_error_free (error);

@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media.HEAD.dz\n"
+"Project-Id-Version: mate-media.HEAD.dz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2007-03-20 11:51+0530\n"
@@ -19,83 +19,83 @@ msgstr ""
 "X-Poedit-Country: BHUTAN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
-#: ../libgnome-media-profiles/audio-profiles-edit.c:529
+#: ../libmate-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "གྲོགས་རམ་%sབཀྲམ་སྟོན་འབད་ནི་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:341
+#: ../libmate-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
 msgstr "གསལ་སྡུད་\"%s\"ཞུན་དག་བརྐྱབ་དོ།"
 
-#: ../libgnome-media-profiles/audio-profile.c:92
+#: ../libmate-media-profiles/audio-profile.c:92
 msgid "<no name>"
 msgstr "<མིང་མིན་འདུག>"
 
-#: ../libgnome-media-profiles/audio-profile.c:93
-#: ../libgnome-media-profiles/audio-profile.c:1002
+#: ../libmate-media-profiles/audio-profile.c:93
+#: ../libmate-media-profiles/audio-profile.c:1002
 msgid "<no description>"
 msgstr "<འགྲེལ་བཤད་མིན་འདུག་>"
 
-#: ../libgnome-media-profiles/audio-profile.c:208
+#: ../libmate-media-profiles/audio-profile.c:208
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "ཇི་ཨེམ་རྣར་ཉན་གསལ་སྡུད་(%s)གི་ ཐོ་ཡིག་ལེན་ནི་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག(_a)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:709
+#: ../libmate-media-profiles/audio-profile.c:709
 #, c-format
 msgid ""
 "There was an error subscribing to notification of audio profile list "
 "changes. (%s)\n"
 msgstr "རྣར་ཉན་གསལ་སྡུད་ཐོ་ཡིག་ བསྒྱུར་བཅོས་ཀྱི་ མཁོ་མངགས་འབད་ནི་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག(%s)\n"
 
-#: ../libgnome-media-profiles/audio-profile.c:912
+#: ../libmate-media-profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "གསལ་སྡུད་འགྲུལ་ལམ་%s. (%s)སེམས་ཁ་ལས་བརྗེད་ནི་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག\n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:78
+#: ../libmate-media-profiles/audio-profiles-edit.c:78
 msgid "_Edit"
 msgstr "ཞུན་དག་རྐྱབས།(_E)"
 
 #. the first argument will never be used since we only run for count > 1
-#: ../libgnome-media-profiles/audio-profiles-edit.c:456
+#: ../libmate-media-profiles/audio-profiles-edit.c:456
 #, c-format
 msgid "Delete this profile?\n"
 msgid_plural "Delete these %d profiles?\n"
 msgstr[0] "གསལ་སྡུད་དེ་ བཏོན་གཏང་ག? \n"
 msgstr[1] "གསལ་སྡུད་%d དེ་ཚུ་ བཏོན་གཏང་ག? \n"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:475
+#: ../libmate-media-profiles/audio-profiles-edit.c:475
 #, c-format
 msgid "Delete profile \"%s\"?"
 msgstr "གསལ་སྡུད་\"%s\"བཏོན་གཏང་ག?"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:497
+#: ../libmate-media-profiles/audio-profiles-edit.c:497
 msgid "Delete Profile"
 msgstr "གསལ་སྡུད་བཏོན་གཏང་།"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:590
+#: ../libmate-media-profiles/audio-profiles-edit.c:590
 msgid "Edit MATE Audio Profiles"
 msgstr "ཇི་ནོམ་རྣར་ཉན་གསལ་སྡུད་ཚུ་ ཞུན་དག་རྐྱབས།"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:638
+#: ../libmate-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
 msgstr "གསལ་སྡུད་ཚུ་:(_P)"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:822
+#: ../libmate-media-profiles/audio-profiles-edit.c:822
 #, c-format
 msgid "You already have a profile called \"%s\""
 msgstr "ཁྱོད་ལུ་གསལ་སྡུད་\"%s\"ཟེར་མི་ཅིག་ ཧེ་མ་ལས་རང་འདུག"
 
-#: ../libgnome-media-profiles/audio-profiles-edit.c:847
+#: ../libmate-media-profiles/audio-profiles-edit.c:847
 #, c-format
 msgid "MateConf Error (FIXME): %s\n"
 msgstr "ཇི་ཀཱོནཕ་གི་འཛོལ་བ། (ཕིགསི་མི་:)  %s\n"
 
-#: ../libgnome-media-profiles/gmp-util.c:61
+#: ../libmate-media-profiles/gmp-util.c:61
 #, c-format
 msgid ""
 "The file \"%s\" is missing. This indicates that the application is installed "
@@ -104,51 +104,51 @@ msgstr ""
 "ཡིག་སྣོད་\"%s\"དེ་བརླག་སྟོར་ཞུགས་ནུག འདི་གིས་གློག་རིམ་དེ་ ངེས་བདེན་སྦེ་ གཞི་བཙུགས་མ་འབད་བའི་ བརྡ་"
 "སྟོནམ་ཨིན་མས། འདི་གིས་སྦེ་ ཌའི་ལོག་དེ་ བཀྲམ་སྟོན་འབད་མི་ཚུགས།"
 
-#: ../libgnome-media-profiles/gnome-audio-profiles-properties.c:54
+#: ../libmate-media-profiles/mate-audio-profiles-properties.c:54
 #, c-format
 msgid ""
 "%s\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 
-#: ../data/gnome-audio-profile-edit.ui.h:1
+#: ../data/mate-audio-profile-edit.ui.h:1
 msgid "Edit Audio Profile"
 msgstr "རྣར་ཉན་གསལ་སྡུད་ ཞུན་དག་རྐྱབས།"
 
-#: ../data/gnome-audio-profile-edit.ui.h:2
+#: ../data/mate-audio-profile-edit.ui.h:2
 msgid "Profile _description:"
 msgstr "གསལ་སྡུད་ཀྱི་འགྲེལ་བཤད་:(__d)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:3
 msgid "_Active?"
 msgstr "ཤུགས་ལྡན་ཨིན་ན?(_A)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:4
+#: ../data/mate-audio-profile-edit.ui.h:4
 msgid "_File extension:"
 msgstr "ཡིག་སྣོད་རྒྱ་བསྐྱེད་:(__F)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:5
+#: ../data/mate-audio-profile-edit.ui.h:5
 msgid "_GStreamer pipeline:"
 msgstr "ཇི་སི་ཊི་མར་ རྒྱུད་དུང་འབྲེལ་ལམ་:(_G)"
 
-#: ../data/gnome-audio-profile-edit.ui.h:6
-#: ../data/gnome-audio-profile-new.ui.h:3
+#: ../data/mate-audio-profile-edit.ui.h:6
+#: ../data/mate-audio-profile-new.ui.h:3
 msgid "_Profile name:"
 msgstr "གསལ་སྡུད་ཀྱི་མིང་:(_P)"
 
-#: ../data/gnome-audio-profile-new.ui.h:1
+#: ../data/mate-audio-profile-new.ui.h:1
 msgid "New Profile"
 msgstr "གསལ་སྡུད་གསརཔ།"
 
-#: ../data/gnome-audio-profile-new.ui.h:2
+#: ../data/mate-audio-profile-new.ui.h:2
 msgid "_Create"
 msgstr "གསར་བསྐྲུན་འབད།(_C)"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:1
+#: ../data/mate-media-profiles.schemas.in.in.h:1
 msgid "A description for the audio profile"
 msgstr "རྣར་ཉན་གསལ་སྡུད་ཀྱི་དོན་ལུ་ འགྲེལ་བཤད་ཅིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:2
+#: ../data/mate-media-profiles.schemas.in.in.h:2
 msgid ""
 "A description of the profile, containing more information and describing "
 "when to use this profile."
@@ -156,22 +156,22 @@ msgstr ""
 "གསལ་སྡུད་འདི་ ནམ་ལག་ལེན་འཐབ་ནི་ཨིན་ན་གི་སྐོར་ལས་ བརྡ་དོན་དང་ འགྲེལ་བཤད་ཡོད་པའི་ གསལ་སྡུད་འགྲེལ་"
 "བཤད་ཅིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:3
+#: ../data/mate-media-profiles.schemas.in.in.h:3
 msgid ""
 "A filename extension to be used when storing files encoded with this profile."
 msgstr ""
 "གསལ་སྡུད་འདི་གིས་ ཨིན་ཀོ་ཌེཌི་ འབད་ཡོད་པའི་ ཡིག་སྣོད་ཚུ་གསོག་འཇོག་འབད་བའི་སྐབས་ ལག་ལེན་འཐབ་ནིའི་ "
 "ཡིག་སྣོད་མིང་གི་རྒྱ་བསྐྱེད་ཅིག།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:4
+#: ../data/mate-media-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
 msgstr "གསལ་སྡུད་འདི་གི་དོན་ལུ་ ལག་ལེན་འཐབ་ནིའི་ ཇི་སི་ཊི་མར་གྱི་ རྒྱུད་དུང་འབྲེལ་ལམ་གྱི་ཆ་ཤས་ཅིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:5
+#: ../data/mate-media-profiles.schemas.in.in.h:5
 msgid "A short name for the audio profile"
 msgstr "རྣར་ཉན་གསལ་སྡུད་ཀྱི་དོན་ལུ་ མིང་ཐུང་ཀུ་ཅིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:6
+#: ../data/mate-media-profiles.schemas.in.in.h:6
 msgid ""
 "A short name for the audio profile, to be used in selections and uniquely "
 "identifying the profile."
@@ -179,27 +179,27 @@ msgstr ""
 "སེལ་འཐུ་འབད་ནི་དང་ གསལ་སྡུད་དེ་མཐུན་མིན་སྦེ་ ངོས་འཛིན་འབད་ནི་ལུ་ ལག་ལེན་འཐབ་ནིའི་ རྣར་ཉན་གསལ་"
 "སྡུད་ཀྱི་ མིང་ཐུང་ཀུ་ཅིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:7
+#: ../data/mate-media-profiles.schemas.in.in.h:7
 msgid "CD Quality, AAC"
 msgstr "སི་ཌི་གི་སྤུས་ཚད་  ཨེ་ཨེ་སི་"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:8
+#: ../data/mate-media-profiles.schemas.in.in.h:8
 msgid "CD Quality, Lossless"
 msgstr "སི་ཌི་གི་སྤུས་ཚད། ལཱོསི་ལེསི།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:9
+#: ../data/mate-media-profiles.schemas.in.in.h:9
 msgid "CD Quality, Lossy"
 msgstr "སི་ཌི་གི་སྤུས་ཚད། ལཱོསི་སི།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:10
+#: ../data/mate-media-profiles.schemas.in.in.h:10
 msgid "CD Quality, MP2"
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:11
+#: ../data/mate-media-profiles.schemas.in.in.h:11
 msgid "CD Quality, MP3"
 msgstr "སི་ཌི་གི་སྤུས་ཚད་  ཨེམ་པི་༣"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:12
+#: ../data/mate-media-profiles.schemas.in.in.h:12
 msgid ""
 "List of audio recording profiles. The list contains strings naming "
 "subdirectories relative to /system/gstreamer/@GST_MAJORMINOR@/audio/profiles."
@@ -207,19 +207,19 @@ msgstr ""
 "རྣར་ཉན་སྒྲ་བཟུང་གསལ་སྡུད་ཀྱི་ཐོ་ཡིག  ཐོ་ཡིག་དེ་ནང་ /རིམ་ལུགས་/ཇི་སི་ཊི་མར་/@GST_MAJORMINOR@/"
 "audio/profiles ཚུ་དང་འབྲེལ་བའི་ ཡན་ལག་ཁ་བྱང་ཐོ་དེབ་ཀྱི་ མིང་བཀོད་པའི་ཡིག་རྒྱུན་ཚུ་ཡོད།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:13
+#: ../data/mate-media-profiles.schemas.in.in.h:13
 msgid "List of profiles"
 msgstr "གསལ་སྡུད་ཚུ་གི་ཐོ་ཡིག"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:14
+#: ../data/mate-media-profiles.schemas.in.in.h:14
 msgid "The default file extension for this profile"
 msgstr "གསལ་སྡུད་འདི་གི་དོན་ལུ་ སྔོན་སྒྲིག་འབད་ཡོད་པའི་ ཡིག་སྣོད་རྒྱ་བསྐྱེད།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:15
+#: ../data/mate-media-profiles.schemas.in.in.h:15
 msgid "The partial GStreamer pipeline used"
 msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ ཇི་སི་ཊི་མར་གྱི་ རྒྱུད་དུང་འབྲེལ་ལམ་གྱི་ཆ་ཤས།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:16
+#: ../data/mate-media-profiles.schemas.in.in.h:16
 msgid ""
 "Used for converting to CD-quality audio, but with a lossless compression "
 "codec. Use this if you later want to edit the file or burn it to CD."
@@ -228,7 +228,7 @@ msgstr ""
 "བཙུགས་ཀྱི་ ཀོ་ཌེཀ་དང་བཅསཔ་སྦེ་ཨིན། ཁྱོད་ཀྱིས་ཤུལ་ལས་ ཡིག་སྣོད་དེ་ཞུན་དག་བརྐྱབ་ནི་དང་ ཡང་ན་ སི་ཌི་ནང་"
 "བཙུགས་སྤྱོད་འབད་དགོ་མནོ་བ་ཅིན་ འདི་ལག་ལེན་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:17
+#: ../data/mate-media-profiles.schemas.in.in.h:17
 msgid ""
 "Used for converting to CD-quality audio, but with a lossy compression codec. "
 "Use this for CD extraction and radio recordings."
@@ -236,7 +236,7 @@ msgstr ""
 "སི་ཌི་གི་ སྤུས་ཚད་ཅན་གྱི་རྣར་ཉན་ལུ་ གཞི་བསྒྱུར་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་པ། དེ་འབདཝ་ད་ ལཱོསི་སི་ཨེབ་"
 "བཙུགས་ཀྱི་ ཀོ་ཌེཀ་དང་བཅསཔ་སྦེ་ཨིན། འདི་སི་ཌི་བཏོན་ནི་དང་ རེ་ཌིའོ་གི་སྒྲ་བཟུང་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:18
+#: ../data/mate-media-profiles.schemas.in.in.h:18
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy AAC codec. Use "
 "this for preparing files for copying to devices that only support the AAC "
@@ -248,7 +248,7 @@ msgstr ""
 "དོན་ལུ་ ཡིག་སྣོད་ཚུ་གྲ་སྒྲིག་འབད་ནིའི་དོན་ལས་ལག་ལེན་འཐབ། འ་ནི་རྩ་སྒྲིག་ལག་ལེན་འཐབ་ནི་འདི་ ཁྱོད་རའི་"
 "དབང་ཚད་ཁྱབ་ཁོངས་ནང་ཁྲིམས་འགལ་ཅིག་འོང་ བསླབ་བྱའི་དོན་ལུ་ཁྱོད་རའི་ཁྲིམས་རྩོདཔ་དང་འབྲེལ་བ་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:19
+#: ../data/mate-media-profiles.schemas.in.in.h:19
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use "
 "this for preparing files for copying to devices that only support the MP2 "
@@ -256,7 +256,7 @@ msgid ""
 "contact your lawyer for advice."
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:20
+#: ../data/mate-media-profiles.schemas.in.in.h:20
 msgid ""
 "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use "
 "this for preparing files for copying to devices that only support the MP3 "
@@ -268,7 +268,7 @@ msgstr ""
 "ནིའི་དོན་ལུ་ ཡིག་སྣོད་ཚུ་གྲ་སྒྲིག་འབད་ནིའི་དོན་ལས་ལག་ལེན་འཐབ། འ་ནི་རྩ་སྒྲིག་ལག་ལེན་འཐབ་ནི་འདི་ ཁྱོད་རའི་"
 "དབང་ཚད་ཁྱབ་ཁོངས་ནང་ཁྲིམས་འགལ་ཅིག་འོང་ བསླབ་བྱའི་དོན་ལུ་ཁྱོད་རའི་ཁྲིམས་རྩོདཔ་དང་འབྲེལ་བ་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:21
+#: ../data/mate-media-profiles.schemas.in.in.h:21
 msgid ""
 "Used for converting to lossless voice-quality audio. Use this for recording "
 "and editing speech."
@@ -276,7 +276,7 @@ msgstr ""
 "ལོསི་ལེསི་རྣར་ཉན་སྐད་ཀྱི་སྤུས་ཚད་ལུ་ གཞི་བསྒྱུར་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ཡོད། འདི་སྒྲ་བཟུང་དང་ གསུང་བཤད་"
 "ཞུན་དག་བརྐྱབ་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:22
+#: ../data/mate-media-profiles.schemas.in.in.h:22
 msgid ""
 "Used for converting to lossy voice-quality audio. Use this for recording "
 "speech that doesn't need to be edited."
@@ -284,18 +284,18 @@ msgstr ""
 "ལོ་སི་རྣར་ཉན་སྐད་ཀྱི་སྤུས་ཚད་ལུ་ གཞི་བསྒྱུར་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ཡོད། འདི་ཞུན་དག་བརྐྱབ་མ་དགོ་པའི་"
 "གསུང་བཤད་བཟུང་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:23
+#: ../data/mate-media-profiles.schemas.in.in.h:23
 msgid "Voice, Lossless"
 msgstr "སྐད། ལོསི་ལེསི།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:24
+#: ../data/mate-media-profiles.schemas.in.in.h:24
 msgid "Voice, Lossy"
 msgstr "སྐད་ ལོ་སི།"
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:25
+#: ../data/mate-media-profiles.schemas.in.in.h:25
 msgid "Whether this profile is to be used"
 msgstr ""
 
-#: ../data/gnome-media-profiles.schemas.in.in.h:26
+#: ../data/mate-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
