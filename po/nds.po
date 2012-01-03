@@ -1,4 +1,4 @@
-# Low German translation for gnome-media.
+# Low German translation for mate-media.
 # Copyright (C) 2009 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 # Nils-Christoph Fiedler <linux@medienkompanie.de>, 2009.
@@ -76,7 +76,7 @@ msgid "Delete Profile"
 msgstr "Profil löschen"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME Tonprofile bewarken"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr ""
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -273,4 +273,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

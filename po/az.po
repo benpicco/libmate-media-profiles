@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.az.po to Azerbaijani
+# translation of mate-media.HEAD.az.po to Azerbaijani
 # Copyright (C) 2000, 2004 Free Software Foundation, Inc.
 # Vasif Ismailoglu MD <azerb_linux@hotmail.com>, 2000.
 # Mətin Əmirov <metin@karegen.com>, 2004.
@@ -80,7 +80,7 @@ msgstr "Profili Sil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 #, fuzzy
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GMAudio Profillərini Düzəlt"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "\"%s\" adında onsuzda bir profiliniz mövcuddur"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf Xətası (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -289,4 +289,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

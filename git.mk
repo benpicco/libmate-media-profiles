@@ -40,7 +40,7 @@
 # build dir.
 #
 # This file knows how to handle autoconf, automake, libtool, gtk-doc,
-# gnome-doc-utils, intltool.
+# mate-doc-utils, intltool.
 #
 #
 # KNOWN ISSUES:

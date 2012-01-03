@@ -1,4 +1,4 @@
-# this is provided for editing gnome-media UI files, not for any other
+# this is provided for editing mate-media UI files, not for any other
 # purposes
 
 libgnome_media_profiles_la_SOURCES = gnome-media-profiles-catalog.c
@@ -10,7 +10,7 @@ glademodule_LTLIBRARIES = libgnome-media-profiles.la
 
 defines = \
 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
-	-DGNOMELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\" \
+	-DMATELOCALEDIR=\""$(prefix)/${DATADIRNAME}/locale"\" \
 	$(DISABLE_DEPRECATED)
 
 libgnome_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(GLADEUI_CFLAGS) $(defines) -I$(top_srcdir)

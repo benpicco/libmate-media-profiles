@@ -1,4 +1,4 @@
-# gnome-media ja.po.
+# mate-media ja.po.
 # Copyright (C) 1998-2000, 2002-2010 Free Software Foundation, Inc.
 # Mitsuru Oka <95i44@is.kochi-u.ac.jp>, 1998.
 # Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
@@ -85,7 +85,7 @@ msgid "Delete Profile"
 msgstr "プロファイルの削除"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME オーディオ・プロファイルの編集"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -99,7 +99,7 @@ msgstr "\"%s\" という名前のプロファイルが既に存在します"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf エラー (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

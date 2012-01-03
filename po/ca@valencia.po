@@ -1,4 +1,4 @@
-# Traducció del gnome-media de l'equip de Softcatalà.
+# Traducció del mate-media de l'equip de Softcatalà.
 # Copyright © 2000-2009 Free Software Foundation, Inc.
 # Softcatalà <info@softcatala.org>, 2000.
 # Antoni Lacasta i Sulla <als@tinet.org>, 2002.
@@ -82,7 +82,7 @@ msgid "Delete Profile"
 msgstr "Suprimeix el perfil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Edita els perfils d'àudio del GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -96,7 +96,7 @@ msgstr "Ja teniu un perfil anomenat «%s»"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "S'ha produït un error en el GConf: %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -312,4 +312,3 @@ msgstr "Si es pot usar este perfil"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Si s'ha d'usar i mostrar este perfil."
-

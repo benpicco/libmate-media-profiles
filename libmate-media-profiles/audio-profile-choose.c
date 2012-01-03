@@ -27,7 +27,7 @@
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include <gst/gst.h>
-#include <gconf/gconf-client.h>
+#include <mateconf/gconf-client.h>
 
 #include "gmp-util.h"
 #include "audio-profile-choose.h"

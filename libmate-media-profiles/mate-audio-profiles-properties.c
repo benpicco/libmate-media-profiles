@@ -1,4 +1,4 @@
-/* gnome-audio-profiles-properties.c:
+/* mate-audio-profiles-properties.c:
    properties capplet that shows the GapProfilesEdit dialog */
 
 /*
@@ -42,7 +42,7 @@ int
 main (int argc, char *argv[])
 {
   GtkWidget *widget;
-  GConfClient *conf;
+  MateConfClient *conf;
   GOptionContext *context;
   GError *error = NULL;
 
@@ -59,7 +59,7 @@ main (int argc, char *argv[])
   }
   g_option_context_free (context);
 
-  conf = gconf_client_get_default ();
+  conf = mateconf_client_get_default ();
   textdomain (GETTEXT_PACKAGE);
 
   gnome_media_profiles_init (conf);

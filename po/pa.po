@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.po to Punjabi
+# translation of mate-media.HEAD.po to Punjabi
 # Copyright (C) 2004 THE gnome-media.HEAD'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media.HEAD package.
 #
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "ਪਰੋਫਾਇਲ ਹਟਾਓ"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "ਗਨੋਮ ਆਡੀਓ ਪਰੋਫਾਇਲ ਸੋਧ"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਪਰੋਫਾ�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "ਜੀਕਾਨਫ ਗਲਤੀ (ਸੁਧਾਰੋ): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -299,4 +299,3 @@ msgstr "ਕੀ ਇਹ ਪਰੋਫਾਇਲ ਨੂੰ ਵਰਤਣਾ ਹੈ"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "ਕੀ ਇਹ ਪਰੋਫਾਇਲ ਨੂੰ ਵਰਤਣਾ ਤੇ ਵੇਖਾਉਣ ਹੈ"
-

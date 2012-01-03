@@ -1,4 +1,4 @@
-# Ukrainian translation of the gnome-media module.
+# Ukrainian translation of the mate-media module.
 # Copyright (C) 1999 Free Software Foundation, Inc.
 # Yuri Syrota <rasta@renome.rovno.ua> 1999
 # Maxim Dizumanenko <dziumanenko@gmail.com>, 2002-2007
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "Вилучити профіль"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Редагування звукових профілів GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "Профіль з назвою «%s» вже існує"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Помилка GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

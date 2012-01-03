@@ -1,4 +1,4 @@
-# Përkthimi i mesazheve të gnome-media në shqip
+# Përkthimi i mesazheve të mate-media në shqip
 # Copyright (C) 2003-2006, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-media package.
 #
@@ -77,7 +77,7 @@ msgid "Delete Profile"
 msgstr "Elemino profilin"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Ndrysho profilet audio të GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -91,7 +91,7 @@ msgstr "Një profil me emrin \"%s\" ekziston"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Gabim GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -299,4 +299,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

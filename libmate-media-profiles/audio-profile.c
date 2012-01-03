@@ -39,7 +39,7 @@
 
 struct _GMAudioProfilePrivate
 {
-  char *id;		     /* the GConf dir name */
+  char *id;		     /* the MateConf dir name */
   char *profile_dir;         /* full path in GConf to this profile */
   GConfClient *conf;
   guint notify_id;
@@ -136,7 +136,7 @@ gm_audio_profile_finalize (GObject *object)
 
   gm_audio_profile_forget (self);
 
-  gconf_client_notify_remove (self->priv->conf,
+  mateconf_client_notify_remove (self->priv->conf,
                               self->priv->notify_id);
   self->priv->notify_id = 0;
 
@@ -206,7 +206,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
       err = NULL;
       updated = gconf_client_get_list (_conf,
                                        CONF_GLOBAL_PREFIX"/profile_list",
-                                       GCONF_VALUE_STRING,
+                                       MATECONF_VALUE_STRING,
                                        &err);
       if (err)
         {           g_printerr (_("There was an error getting the list of gm_audio profiles. (%s)\n"),

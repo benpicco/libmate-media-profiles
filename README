@@ -23,7 +23,7 @@ audio-profile-edit.c:
         dialog for editing one given audio profile        
 audio-profile-edit.h:
         public API for GapProfileEdit dialog
-	included by gnome-media-profiles.h
+	included by mate-media-profiles.h
 
 audio-profiles-edit.c:
 	GapProfilesEdit dialog implementation

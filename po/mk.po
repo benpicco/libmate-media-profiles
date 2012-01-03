@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.mk.po to Macedonian
+# translation of mate-media.HEAD.mk.po to Macedonian
 # translation of gnome-media.HEAD.po to
 # translation of gnome-media.HEAD.po to
 # This file is distributed under the same license as the PACKAGE package.
@@ -87,7 +87,7 @@ msgid "Delete Profile"
 msgstr "Избриши профил"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Уредио профили за GNOME аудио"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -101,7 +101,7 @@ msgstr "Веќе имате профил наречен „%s“"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Грешка во Gconf (ПОПРАВИМЕ): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -309,4 +309,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

@@ -1,4 +1,4 @@
-# Irish translations for gnome-media package.
+# Irish translations for mate-media package.
 # Copyright (C) 1998-2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-media package.
 # Alastair McKinstry <mckinstry@computer.org>, 1999.
@@ -79,7 +79,7 @@ msgid "Delete Profile"
 msgstr ""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr ""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr ""
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -273,4 +273,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

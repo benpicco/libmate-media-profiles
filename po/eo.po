@@ -1,4 +1,4 @@
-# Esperanto translation of libgnome-media-profiles.
+# Esperanto translation of libmate-media-profiles.
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2011.
 #
@@ -75,7 +75,7 @@ msgid "Delete Profile"
 msgstr "Forigi profilon"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Redakti sonprofiloj de GNOMEo"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -89,7 +89,7 @@ msgstr "Vi jam nomis profilon \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-eraro (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

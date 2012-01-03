@@ -1,12 +1,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media HEAD\n"
+"Project-Id-Version: mate-media HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-08-06 18:33+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"Language-Team: GNOME Indonesian Translation Team <gnome@i15n.org>\n"
+"Language-Team: MATE Indonesian Translation Team <gnome@i15n.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -89,7 +89,7 @@ msgstr "Profil \"%s\" sudah ada"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Error GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -301,4 +301,3 @@ msgstr "Menentukan apakah profil ini akan dipakai"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Menentukan apakah memakai dan menampilkan profil ini."
-

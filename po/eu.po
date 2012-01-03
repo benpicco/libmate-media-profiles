@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libgnome-media-profiles/audio-profile-edit.c:121
+#: ../libmate-media-profiles/audio-profile-edit.c:121
 #: ../libgnome-media-profiles/audio-profiles-edit.c:529
 #, c-format
 msgid "There was an error displaying help: %s"
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "Ezabatu profila"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Editatu GNOME audio-profilak"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "\"%s\" izeneko profila badaukazu"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf errorea (finkatzeko): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -311,4 +311,3 @@ msgstr "Profila hau erabiliko den edo ez"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Profila hau erabili eta bistaratuko den edo ez."
-

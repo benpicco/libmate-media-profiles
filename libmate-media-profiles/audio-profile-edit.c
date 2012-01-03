@@ -35,7 +35,7 @@
 
 struct _GMAudioProfileEditPrivate
 {
-  GConfClient *conf;
+  MateConfClient *conf;
   GtkBuilder *builder;
   GMAudioProfile *profile;
   GtkWidget *content;
@@ -111,7 +111,7 @@ gm_audio_profile_edit_response (GtkDialog *dialog,
       GError *err = NULL;
 
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-		    "ghelp:gnome-audio-profiles?gnome-audio-profiles-edit",
+		    "ghelp:mate-audio-profiles?gnome-audio-profiles-edit",
 		    gtk_get_current_event_time (),
 		    &err);
 
@@ -423,4 +423,3 @@ gm_audio_profile_edit_get_widget (GMAudioProfileEdit *dialog,
 
   return w;
 }
-

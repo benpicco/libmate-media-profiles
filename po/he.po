@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.he.po to Hebrew
+# translation of mate-media.HEAD.he.po to Hebrew
 # translation of gnome-media.gnome-2-0-gstreamer.he.po to Hebrew
 # translation of gnome-media.gnome-2-0.he.po to Hebrew
 # This file is distributed under the same license as the PACKAGE package.
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "מחיקת פרופיל"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "עריכת פרופילי השמע של GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "פרופיל בשם \"%s\" כבר קיים"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "שגיאת GConf:‏ %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -305,4 +305,3 @@ msgstr "Whether this profile is to be used"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Whether to use and display this profile."
-

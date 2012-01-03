@@ -1,4 +1,4 @@
-# Chinese (Hong Kong) translation of gnome-media.
+# Chinese (Hong Kong) translation of mate-media.
 # Copyright (C) 1999-2007 Free Software Foundation, Inc.
 # Fernando <bv1al@journalist.com.tw>, 1999.
 # Abel Cheung <abel@oaka.org>, 2001-2003.
@@ -79,7 +79,7 @@ msgid "Delete Profile"
 msgstr "刪除設定組合"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "編輯 GNOME 音效設定組合"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -93,7 +93,7 @@ msgstr "你已經有一個設定組合稱為“%s”"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf 錯誤(FIXME):%s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -292,4 +292,3 @@ msgstr "是否使用這個設定組合"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "是否使用及顯示這個設定組合。"
-

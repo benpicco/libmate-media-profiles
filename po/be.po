@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media-profiles.master\n"
+"Project-Id-Version: mate-media-profiles.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-04-23 19:05+0000\n"
@@ -78,7 +78,7 @@ msgid "Delete Profile"
 msgstr "Выдаленне профіля"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Рэдагаванне аўдыяпрофіляў GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -92,7 +92,7 @@ msgstr "Вы ўжо маеце профіль з назвай \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Памылка GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

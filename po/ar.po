@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.po to Arabic
+# translation of mate-media.HEAD.po to Arabic
 # This file is distributed under the same license as the gnome-media.ar package.
 # Copyright (C) 2003 THE gnome-media.ar'S COPYRIGHT HOLDER.
 # Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
@@ -88,7 +88,7 @@ msgid "Delete Profile"
 msgstr "احذف الطور"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "حرّر أطوار صوت جنوم"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -102,7 +102,7 @@ msgstr "لديك طور باسم \"%s\" مسبقا"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "خطأ GConf (FIXME):·%s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -305,4 +305,3 @@ msgstr "فيما إذا سيستخدم هذا الطور"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "فيما إذا سيستخدم و يعرض هذا الطور."
-

@@ -5,6 +5,5 @@ Version 3.0.0:
 - Loads of translation fixes
 
 Version 2.91.2:
-- Move from gnome-media
+- Move from mate-media
 - GTK+ 3.x build fixes
-

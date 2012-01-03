@@ -1,4 +1,4 @@
-include $(top_srcdir)/gnome-doc-utils.make
+include $(top_srcdir)/mate-doc-utils.make
 dist-hook: doc-dist-hook
 DOC_MODULE = gnome-audio-profiles
 DOC_INCLUDES = legal.xml

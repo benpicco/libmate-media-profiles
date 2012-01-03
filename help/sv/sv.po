@@ -1,4 +1,4 @@
-# Swedish translation for gnome-media.
+# Swedish translation for mate-media.
 # Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -20,7 +20,7 @@ msgid "Permission is granted to copy, distribute and/or modify this document und
 msgstr "Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type=\"help\" url=\"ghelp:fdl\">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok."
 
 #: C/legal.xml:12(para)
-msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgid "This manual is part of a collection of MATE manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
 msgstr "Denna handbok utgör en av flera GNOME-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet."
 
 #: C/legal.xml:19(para)
@@ -257,4 +257,3 @@ msgstr ""
 #: C/gnome-audio-profiles.xml:0(None)
 msgid "translator-credits"
 msgstr "Daniel Nylander <po@danielnylander.se>, 2010"
-

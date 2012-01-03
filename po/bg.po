@@ -1,4 +1,4 @@
-# Bulgarian translation of gnome-media po-file.
+# Bulgarian translation of mate-media po-file.
 # Copyright (C) 2002, 2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
 # Copyright (C) 2009, 2010 Free Software Foundation, Inc.
 # Evgeni Boevski <linkej@yahoo.com>, 2002, 2003.
@@ -84,7 +84,7 @@ msgid "Delete Profile"
 msgstr "Изтриване на профил"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Редактиране на аудио профилите към GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -98,7 +98,7 @@ msgstr "Вече имате профил под името „%s“"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Грешка в GConf (дa се коригира): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -316,4 +316,3 @@ msgstr "Дали да се използва този профил или не"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Дали този профил да се използва и показва."
-

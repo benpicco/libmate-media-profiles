@@ -1,10 +1,10 @@
 
 uidir = $(pkgdatadir)
-ui_DATA = gnome-audio-profile-new.ui gnome-audio-profile-edit.ui
+ui_DATA = mate-audio-profile-new.ui gnome-audio-profile-edit.ui
 
 @INTLTOOL_SCHEMAS_RULE@
 
-schemasdir = $(GCONF_SCHEMA_FILE_DIR)
+schemasdir = $(MATECONF_SCHEMA_FILE_DIR)
 schemas_in_files = gnome-media-profiles.schemas.in
 schemas_DATA = $(schemas_in_files:.schemas.in=.schemas)
 

@@ -1,4 +1,4 @@
-# Greek translation for gnome-media.
+# Greek translation for mate-media.
 # Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 # Fotis Tsamis <ftsamis@gmail.com>, 2010.
@@ -29,7 +29,7 @@ msgstr ""
 "τον οδηγό."
 
 #: C/legal.xml:12(para)
-msgid "This manual is part of a collection of GNOME manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
+msgid "This manual is part of a collection of MATE manuals distributed under the GFDL. If you want to distribute this manual separately from the collection, you can do so by adding a copy of the license to the manual, as described in section 6 of the license."
 msgstr "Αυτό το εγχειρίδιο είναι μέρος της συλλογής τεκμηρίωσης του GNOME πού διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτό το εγχειρίδιο ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας."
 
 #: C/legal.xml:19(para)
@@ -266,5 +266,3 @@ msgstr "Το πρόγραμμα αυτό διανέμεται υπό τους ό
 #: C/gnome-audio-profiles.xml:0(None)
 msgid "translator-credits"
 msgstr "Fotis Tsamis <ftsamis@gmail.com>, 2010"
-
-

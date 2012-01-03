@@ -38,7 +38,7 @@
 
 struct _GMAudioProfilesEditPrivate
 {
-  GConfClient *conf;
+  MateConfClient *conf;
   GtkWidget *new_button;
   GtkWidget *new_profile_dialog;
   GtkWidget *edit_button;
@@ -519,7 +519,7 @@ on_gm_audio_profiles_edit_response (GtkWidget *dialog,
       GError *err = NULL;
 
       gtk_show_uri (gtk_widget_get_screen (GTK_WIDGET (dialog)),
-		    "ghelp:gnome-audio-profiles?gnome-audio-profiles-profile-edit",
+		    "ghelp:mate-audio-profiles?gnome-audio-profiles-profile-edit",
 		    gtk_get_current_event_time (),
 		    &err);
 
@@ -553,7 +553,7 @@ gm_audio_profiles_list_notify (GConfClient *client,
   GMAudioProfilesEdit *dialog;
 
   dialog = (GMAudioProfilesEdit *) user_data;
-  GST_DEBUG ("profile_list changed, notified from gconf, redrawing\n");
+  GST_DEBUG ("profile_list changed, notified from mateconf, redrawing\n");
   /* refill the profile tree view */
 
   refill_profile_treeview (dialog->priv->manage_profiles_list);
@@ -587,7 +587,7 @@ gm_audio_profiles_edit_init (GMAudioProfilesEdit *dialog)
                                  // FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
   dialog->priv = G_TYPE_INSTANCE_GET_PRIVATE (dialog, GM_AUDIO_TYPE_PROFILES_EDIT, GMAudioProfilesEditPrivate);
 
-  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit GNOME Audio Profiles"));
+  gtk_window_set_title (GTK_WINDOW (dialog), _("Edit MATE Audio Profiles"));
   gtk_window_set_default_size (GTK_WINDOW (dialog), 320, 240);
   gtk_dialog_add_buttons (GTK_DIALOG (dialog),
                                  GTK_STOCK_HELP,

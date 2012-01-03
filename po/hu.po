@@ -1,4 +1,4 @@
-# Hungarian translation of gnome-media.
+# Hungarian translation of mate-media.
 # Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-media package.
 #
@@ -86,7 +86,7 @@ msgid "Delete Profile"
 msgstr "Profil törlése"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME hangprofilok szerkesztése"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -100,7 +100,7 @@ msgstr "Önnek már van egy „%s” nevű profilja"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf hiba (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -313,4 +313,3 @@ msgstr "Használatban van-e ez a profil"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "A profil használata és megjelenítése."
-

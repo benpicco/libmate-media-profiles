@@ -1,4 +1,4 @@
-# Slovenian translations for gnome-media.
+# Slovenian translations for mate-media.
 # Copyright (C) 2005-2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-media package.
 #
@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-08-04 19:32+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
-"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language-Team: Slovenian MATE Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,7 +103,7 @@ msgstr "Profil z imenom \"%s\" že obstaja"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Napaka GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -320,4 +320,3 @@ msgstr "Ali naj se uporabi ta profil"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Ali naj se uporabi in prikaže ta profil."
-

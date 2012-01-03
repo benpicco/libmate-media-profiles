@@ -1,6 +1,6 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-libgnome-media-profiles/audio-profile-edit.c
+libmate-media-profiles/audio-profile-edit.c
 libgnome-media-profiles/audio-profile.c
 libgnome-media-profiles/audio-profiles-edit.c
 libgnome-media-profiles/gmp-util.c

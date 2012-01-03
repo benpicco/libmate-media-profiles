@@ -1,4 +1,4 @@
-# German gnome-media translation
+# German mate-media translation
 # Copyright (C) 2000-2004 Free Software Foundation, Inc.
 # Matthias Warkus <mawa@iname.com>, 1999.
 # Karl Eichwalder <ke@suse.de>, 1999, 2000.
@@ -85,7 +85,7 @@ msgid "Delete Profile"
 msgstr "Profil löschen"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME-Audio-Profile bearbeiten"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -99,7 +99,7 @@ msgstr "Es existiert bereits ein Profil namens »%s«"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-Fehler (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -320,5 +320,3 @@ msgstr "Dieses Profil verwenden?"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Soll dieses Profil verwendet und angezeigt werden?"
-
-

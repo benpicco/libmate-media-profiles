@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<gconfschemafile>
+<mateconfschemafile>
   <schemalist>
 
     <schema>
       <key>/schemas/system/gstreamer/@GST_MAJORMINOR@/audio/global/profile_list</key>
       <applyto>/system/gstreamer/@GST_MAJORMINOR@/audio/global/profile_list</applyto>
-      <owner>gnome-media</owner>
+      <owner>mate-media</owner>
       <type>list</type>
       <list_type>string</list_type>
       <default>[cdlossy,cdlossless,aac,mp2,mp3,voicelossy,voicelossless]</default>

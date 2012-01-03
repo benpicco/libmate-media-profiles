@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.po to Español
+# translation of mate-media.HEAD.po to Español
 # Copyright © 1998-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-media package.
 # Miguel de Icaza <miguel@metropolis.nuclecu.unam.mx> 1998.
@@ -95,8 +95,8 @@ msgid "Delete Profile"
 msgstr "Eliminar perfil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
-msgstr "Editar perfiles Gnome Audio"
+msgid "Edit MATE Audio Profiles"
+msgstr "Editar perfiles Mate Audio"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
@@ -109,7 +109,7 @@ msgstr "Ya existe un perfil llamado «%s»."
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Error de GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

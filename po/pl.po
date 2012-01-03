@@ -2,7 +2,7 @@
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
+# matepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 msgid ""
 msgstr ""
@@ -83,7 +83,7 @@ msgid "Delete Profile"
 msgstr "Usunięcie profilu"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Modyfikowanie profili dźwiękowych środowiska GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -97,7 +97,7 @@ msgstr "Profil o nazwie \"%s\" już istnieje"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Błąd GConf (do poprawy): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -312,5 +312,3 @@ msgstr "Określa, czy ten profil jest używany"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Określa, czy wyświetlać i używać ten profil."
-
-

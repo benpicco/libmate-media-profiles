@@ -1,11 +1,11 @@
-# Vietnamese translation for GNOME Media.
+# Vietnamese translation for MATE Media.
 # Copyright © 2009 GNOME i18n Project for Vietnamese.
 # Nguyễn Thái Ngọc Duy <pclouds@gmx.net>, 2002.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media TRUNK\n"
+"Project-Id-Version: mate-media TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2009-02-13 21:46+0930\n"
@@ -78,7 +78,7 @@ msgstr "Xoá hồ sơ"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 msgid "Edit GNOME Audio Profiles"
-msgstr "Sửa đổi hồ sơ Gnome Audio"
+msgstr "Sửa đổi hồ sơ Mate Audio"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
@@ -91,7 +91,7 @@ msgstr "Bạn đã có hồ sơ « %s »"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Lỗi GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -298,4 +298,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

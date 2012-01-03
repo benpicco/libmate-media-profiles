@@ -1,5 +1,5 @@
-# Canadian English translation of gnome-media
-# Copyright (C) 2004-2006 Adam Weinberger and the GNOME Foundation
+# Canadian English translation of mate-media
+# Copyright (C) 2004-2006 Adam Weinberger and the MATE Foundation
 # This file is distributed under the same licence as the gnome-media package.
 # Alexander Winston <alexander.winston@comcast.net>, 2004.
 # Adam Weinberger <adamw@gnome.org>, 2004, 2005, 2006.
@@ -93,7 +93,7 @@ msgstr "You already have a profile called \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf Error (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -290,4 +290,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

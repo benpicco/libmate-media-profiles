@@ -1,4 +1,4 @@
-# Korean translation for libgnome-media-profiles.
+# Korean translation for libmate-media-profiles.
 # Copyright (C) 2011 libgnome-media-profiles's COPYRIGHT HOLDER
 # This file is distributed under the same license as the libgnome-media-profiles package.
 # Seong-ho Cho <darkcircle.0426@gmail.com>, 2011.
@@ -32,7 +32,7 @@ msgstr ""
 
 #: C/legal.xml:12(para)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
+"This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in "
 "section 6 of the license."

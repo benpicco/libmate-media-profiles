@@ -1,4 +1,4 @@
-# gnome-media Italian translation
+# mate-media Italian translation
 # Copyright (C) 2000-2009, 2010 Free Software Foundation, Inc.
 # This file is distributed under the same licence of the gnome-media package
 # Salvatore Isaja <salvois@it.gnome.org>, 2000-2002.
@@ -82,7 +82,7 @@ msgid "Delete Profile"
 msgstr "Elimina profilo"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Modifica i profili audio di GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -96,7 +96,7 @@ msgstr "Esiste già un profilo di nome «%s»"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Errore di GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -314,5 +314,3 @@ msgstr "Indica se utilizzare o meno questo profilo"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Indica se usare e mostrare questo profilo oppure no."
-
-

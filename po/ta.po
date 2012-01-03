@@ -1,6 +1,6 @@
-# translation of gnome-media.master.ta.po to Tamil
+# translation of mate-media.master.ta.po to Tamil
 # translation of media.po to
-# Tamil translation of Tamil Gnome Media 2.4.
+# Tamil translation of Tamil Mate Media 2.4.
 # Copyright (C) 2003, 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
 #
 #
@@ -86,7 +86,7 @@ msgid "Delete Profile"
 msgstr "விவரகுறிப்புகளை அழி"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME கேட்பொலி விவரக்குறிப்புகளை தொகு"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -100,7 +100,7 @@ msgstr "ஏற்கனவே உள்ள விவரக்குறிப்�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Gகான்ஸ்சில் பிழை%s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -299,4 +299,3 @@ msgstr "இந்த வரியுருவை பயன்படுத்த 
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "இந்த வரியுருவை பயன்படுத்தவும் காட்டவும் வேண்டுமா."
-

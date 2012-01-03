@@ -1,8 +1,8 @@
-# Greek translation of GNOME media
+# Greek translation of MATE media
 # Copyright (C) 1999 - 2009 Free Software Foundation, Inc.
 # simos: around 250 messages (initial translation, started counting)
 # kostas: 05Jan2003, one more update
-# kostas: 03Aug2003, update for Gnome 2.4
+# kostas: 03Aug2003, update for Mate 2.4
 # nikos: 07Sep2003, Review translation
 # nikos: 07Sep2003, change some messages for better shape of vol control window
 # kostas:12Nov2003, fixes
@@ -16,7 +16,7 @@
 # kostas: 475 messages, 26Oct2002, completed translation.
 # kostas: fixed 3 typos, 21Nov2002 (thanks to Nikos Charonitakis).
 # kostas: 583 messages, 06Jan2003, updated translation for Gnome 2.1x.
-# Kostas Papadimas <pkst@gnome.org> 2002, 2003.
+# Kostas Papadimas <pkst@mate.org> 2002, 2003.
 # Simos Xenitellis <simos@hellug.gr>, 1999, 2000, 2001, 2002.
 # Nikos Charonitakis <frolix68@yahoo.gr>, 2002, 2003, 2004.
 # AARG! Anonymous <remailer@aarg.net>, 2002.
@@ -113,7 +113,7 @@ msgstr "Έχετε ήδη ένα προφίλ που ονομάζεται \"%s\"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf Error (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -332,4 +332,3 @@ msgstr "Αν θα χρησιμοποιηθεί αυτό το προφίλ"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Αν χρησιμοποιηθεί και εμφανιστεί αυτό το προφίλ."
-

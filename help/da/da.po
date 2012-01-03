@@ -1,4 +1,4 @@
-# Danish translation for gnome-media.
+# Danish translation for mate-media.
 # Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 # Anders Jenbo <anders@jenbo.dk>, 2010.
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../C/legal.xml:12(para)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
+"This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in "
 "section 6 of the license."
@@ -564,7 +564,7 @@ msgstr ""
 #~ msgstr ""
 #~ "Når du ser på skærmen for opsætning af lydindstillinger, vil du lægge "
 #~ "mærke til, at de to dele kaldes standarddatamodtager og standardkilde. "
-#~ "Disse er begreber, der anvendes i GStreamer rammen, Gnome bruger til at "
+#~ "Disse er begreber, der anvendes i GStreamer rammen, Mate bruger til at "
 #~ "beskrive, hvor data sendes, og hvor det kommer fra. Standard kanalen er "
 #~ "med andre ord hvor GNOME-programmer skal sende deres lyd, mens Standard "
 #~ "kilde er, hvor lyden kommer fra."

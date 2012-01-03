@@ -1,4 +1,4 @@
-# Dutch translation for gnome-media
+# Dutch translation for mate-media
 #
 # This package is distributed under the same license as the gnome-media package.
 #
@@ -91,8 +91,8 @@ msgid "Delete Profile"
 msgstr "Profiel verwijderen"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
-msgstr "Gnome-audioprofielen bewerken"
+msgid "Edit MATE Audio Profiles"
+msgstr "Mate-audioprofielen bewerken"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
 msgid "_Profiles:"
@@ -105,7 +105,7 @@ msgstr "U heeft al een profiel met naam ‘%s’"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-fout (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -321,5 +321,3 @@ msgstr "Of dit profiel gebruikt moet worden"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Of dit profiel gebruikt en weergegeven moet worden."
-
-

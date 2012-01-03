@@ -23,7 +23,7 @@
 #define GM_AUDIO_PROFILES_EDIT_H
 
 #include <gtk/gtk.h>
-#include <gconf/gconf-client.h>
+#include <mateconf/gconf-client.h>
 
 G_BEGIN_DECLS
 
@@ -55,7 +55,7 @@ struct _GMAudioProfilesEditClass
 
 GType gm_audio_profiles_edit_get_type (void) G_GNUC_CONST;
 
-GtkWidget*		gm_audio_profiles_edit_new	(GConfClient *conf,
+GtkWidget*		gm_audio_profiles_edit_new	(MateConfClient *conf,
                                                  GtkWindow *transient_parent);
 
 void			gm_audio_profiles_edit_new_profile (GMAudioProfilesEdit *dialog,

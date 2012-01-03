@@ -9,7 +9,7 @@
            url="ghelp:fdl">link</ulink> or in the file COPYING-DOCS
            distributed with this manual.
           </para>
-          <para> This manual is part of a collection of GNOME manuals
+          <para> This manual is part of a collection of MATE manuals
            distributed under the GFDL.  If you want to distribute this
            manual separately from the collection, you can do so by
            adding a copy of the license to the manual, as described in
@@ -70,4 +70,3 @@
            </orderedlist>
          </para>
    </legalnotice>
-

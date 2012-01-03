@@ -1,4 +1,4 @@
-# MALAGASY TRANSLATION OF GNOME-MEDIA.
+# MALAGASY TRANSLATION OF MATE-MEDIA.
 # Copyright (C) 2006-2009 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Thierry Randrianiriana <randrianiriana@gmail.com>, 2006-2009.
@@ -9,7 +9,7 @@ msgstr ""
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2009-01-16 17:03+0300\n"
 "Last-Translator: Fano Rajaonarisoa <rajfanhar@yahoo.fr>\n"
-"Language-Team: MALAGASY <i18n-malagasy-gnome@gna.org>\n"
+"Language-Team: MALAGASY <i18n-malagasy-mate@gna.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -91,7 +91,7 @@ msgstr "Efa manana profil antsoina hoe \"%s\" ianao"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Tsy fetezana GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -292,5 +292,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-
-

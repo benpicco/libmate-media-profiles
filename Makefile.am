@@ -1,5 +1,5 @@
 SUBDIRS = \
-	libgnome-media-profiles	\
+	libmate-media-profiles	\
 	data			\
 	glade			\
 	po			\

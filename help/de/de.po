@@ -1,4 +1,4 @@
-# German translation for gnome-media (audio profile manual).
+# German translation for mate-media (audio profile manual).
 # Copyright (C) 2009 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 # Mario Blättermann <mariobl@gnome.org>, 2009.
@@ -38,7 +38,7 @@ msgstr ""
 
 #: C/legal.xml:12(para)
 msgid ""
-"This manual is part of a collection of GNOME manuals distributed under the "
+"This manual is part of a collection of MATE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in "
 "section 6 of the license."

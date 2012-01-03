@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.ro.po to Română
+# translation of mate-media.HEAD.ro.po to Română
 # translation of gnome-media.HEAD.ro.po to
 # Romanian translation for gnome-media.
 # Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-09-26 12:08+0300\n"
 "Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Romanian Gnome Team <gnomero-list@lists.sourceforge.net>\n"
+"Language-Team: Romanian Mate Team <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -83,7 +83,7 @@ msgid "Delete Profile"
 msgstr "Ștergere profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Editare profile audio GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -97,8 +97,8 @@ msgstr "Aveți deja un profil numit „%s”"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
-msgstr "Eroare GCONF (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
+msgstr "Eroare MATECONF (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
 #, c-format
@@ -316,4 +316,3 @@ msgstr "Dacă acest profil să fie folosit"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Dacă acest profil să fie folosit și afișat."
-

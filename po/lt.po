@@ -1,4 +1,4 @@
-# Lithuanian translation of gnome-media
+# Lithuanian translation of mate-media
 # Copyright © 2000-2010 Free Software Foundation, Inc.
 # Gediminas Paulauskas <menesis@chatsubo.lt>, 2000-2003.
 # Žygimantas Beručka <zygis@gnome.org>, 2003-2006, 2009, 2010.
@@ -84,7 +84,7 @@ msgid "Delete Profile"
 msgstr "Trinti profilį"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Taisyti GNOME garso profilius"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -98,7 +98,7 @@ msgstr "Jau yra profilis pavadinimu „%s“"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf klaida (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -310,4 +310,3 @@ msgstr "Ar naudotinas šis profilis"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Ar rodyti ir naudoti šį profilį."
-

@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Amitakhya Phukan <amitakhya@svn.gnome.org>, 2008.
+# Amitakhya Phukan <amitakhya@svn.mate.org>, 2008.
 # Amitakhya Phukan <aphukan@fedoraproject.org>, 2009.
 # Nilamdyuti Goswami <ngoswami@redhat.com>, 2011.
 msgid ""
@@ -81,7 +81,7 @@ msgid "Delete Profile"
 msgstr "আলেখ্য অপসাৰণ কৰক"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GMAudio আলেখ্য সম্পাদনা কৰক"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -95,7 +95,7 @@ msgstr "\"%s\" নামৰ এটা আলেখ্য আপোনাৰ ই�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf ত্ৰুটি (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

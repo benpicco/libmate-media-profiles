@@ -22,7 +22,7 @@
 #ifndef AUDIO_PROFILE_PRIVATE_H
 #define AUDIO_PROFILE_PRIVATE_H
 
-#include <gconf/gconf-client.h>
+#include <mateconf/gconf-client.h>
 
 #include "gmp-conf.h"
 #include "audio-profile.h"
@@ -30,7 +30,7 @@
 G_BEGIN_DECLS
 
 GMAudioProfile*	gm_audio_profile_new		(const char *name,
-                                                 GConfClient *conf);
+                                                 MateConfClient *conf);
 char *          gm_audio_profile_create            (const char *name,
                                                  GConfClient *conf,
                                                  GError **error);

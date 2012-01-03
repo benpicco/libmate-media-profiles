@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.mate.org/enter_bug.cgi?"
 "product=libgnome-media-profiles&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-04-23 19:05+0000\n"
 "PO-Revision-Date: 2010-04-05 14:38+0530\n"
@@ -79,7 +79,7 @@ msgid "Delete Profile"
 msgstr "ప్రొఫైల్ ను తొలగించు"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME ఆడియో ఫైల్స్ ను సరిచేయుము"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -93,7 +93,7 @@ msgstr "మీరు ఇప్పటికే \"%s\" అనబడే ప్ర�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf దోషం (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

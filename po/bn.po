@@ -1,5 +1,5 @@
-# Bengali Translation of the gnome-media.
-# This file is distributed under the same license as the GNOME-MEDIA package.
+# Bengali Translation of the mate-media.
+# This file is distributed under the same license as the MATE-MEDIA package.
 # Copyright (C) 2003-2005 The GNOME Foundation.
 # 
 # Sayamindu Dasgupta <unmadindu@Softhome.net>, 2003.
@@ -101,7 +101,7 @@ msgstr "\"%s\" নামের একটি প্রোফাইল বর্�
 # FIXME: FIXME = ? ;-)
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf ত্রুটি (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -312,4 +312,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

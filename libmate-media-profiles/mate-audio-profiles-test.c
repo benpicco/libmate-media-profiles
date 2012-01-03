@@ -1,4 +1,4 @@
-/* gnome-audio-profiles-test.c: */
+/* mate-audio-profiles-test.c: */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -24,7 +24,7 @@
 
 #include <stdlib.h>
 #include <gtk/gtk.h>
-#include <gconf/gconf-client.h>
+#include <mateconf/gconf-client.h>
 #include <gst/gst.h>
 
 #include <libgnome-media-profiles/gnome-media-profiles.h>
@@ -147,7 +147,7 @@ int
 main (int argc, char **argv)
 {
   GtkWidget *window, *hbox, *combo, *edit, *test;
-  GConfClient *gconf;
+  MateConfClient *gconf;
   GOptionContext *context;
   GError *error = NULL;
 

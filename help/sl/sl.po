@@ -1,4 +1,4 @@
-# Slovenian translation for gnome-media-audio-profiles help.
+# Slovenian translation for mate-media-audio-profiles help.
 # Copyright (C) 2010 gnome-media's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-media package.
 #
@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2010-10-18 15:31+0000\n"
 "PO-Revision-Date: 2010-10-19 20:33+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
-"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language-Team: Slovenian MATE Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

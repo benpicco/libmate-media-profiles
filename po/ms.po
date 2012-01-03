@@ -1,10 +1,10 @@
-# Gnome-media Bahasa Melayu (ms)
+# Mate-media Bahasa Melayu (ms)
 # Jika takut risiko, Jangan bicara tentang Perjuangan
 # Hasbullah Bin Pit (sebol) <sebol@ikhlas.com>, 2001,2002, 2003
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media 2.3.x HEAD\n"
+"Project-Id-Version: mate-media 2.3.x HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2004-09-29 18:49+0800\n"
@@ -24,7 +24,7 @@ msgstr "Terdapat rakat memapar bantuan: %s"
 #: ../libgnome-media-profiles/audio-profile-edit.c:341
 #, c-format
 msgid "Editing profile \"%s\""
-msgstr "Mengedit profi \"%s\""
+msgstr "Menpluma profi \"%s\""
 
 #: ../libgnome-media-profiles/audio-profile.c:92
 #, fuzzy
@@ -78,7 +78,7 @@ msgstr "Padam Profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 #, fuzzy
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Edit Profil GMAudio"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -92,7 +92,7 @@ msgstr "Anda sudah ada profil yang dipanggil \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Ralat GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -283,4 +283,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

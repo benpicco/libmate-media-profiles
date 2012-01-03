@@ -1,5 +1,5 @@
-# Shavian translation for gnome-media.
-# Copyright (C) 2009 The Gnome Foundation.
+# Shavian translation for mate-media.
+# Copyright (C) 2009 The Mate Foundation.
 # Thomas Thurman <tthurman@gnome.org>, 2009.
 msgid ""
 msgstr ""
@@ -74,7 +74,7 @@ msgid "Delete Profile"
 msgstr "𐑛𐑦𐑤𐑰𐑑 𐑐𐑮𐑴𐑓𐑲𐑤"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "𐑧𐑛𐑦𐑑 ·𐑜𐑯𐑴𐑥 𐑷𐑛𐑦𐑴 𐑐𐑮𐑴𐑓𐑲𐑤𐑟"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -88,7 +88,7 @@ msgstr "𐑿 𐑷𐑤𐑮𐑧𐑛𐑦 𐑣𐑨𐑝 𐑩 𐑐𐑮𐑴𐑓𐑲𐑤
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr ""
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -276,4 +276,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

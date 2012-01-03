@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([libgnome-media-profiles], [3.0.0],
+AC_INIT([libmate-media-profiles], [3.0.0],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-bzip2 no-dist-gzip])
@@ -10,7 +10,7 @@ PKG_PROG_PKG_CONFIG([0.19])
 AC_PROG_SED
 IT_PROG_INTLTOOL([0.35.0])
 
-AC_PATH_PROG(GCONFTOOL, gconftool-2)
+AC_PATH_PROG(MATECONFTOOL, mateconftool-2)
 AM_GCONF_SOURCE_2
 
 GETTEXT_PACKAGE=libgnome-media-profiles
@@ -18,7 +18,7 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Define to the Gettext package name])
 AM_GLIB_GNU_GETTEXT
 
-GNOME_DOC_INIT
+MATE_DOC_INIT
 
 AM_PROG_LIBTOOL
 AM_PROG_CC_C_O

@@ -1,4 +1,4 @@
-/* gnome-media-profiles.h: public library API */
+/* gmp-conf.h: MATE Media Profiles defines */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -19,9 +19,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-#include <libgnome-media-profiles/audio-profile.h>
-#include <libgnome-media-profiles/audio-profile-choose.h>
-#include <libgnome-media-profiles/audio-profile-edit.h>
-#include <libgnome-media-profiles/audio-profiles-edit.h>
-
-void gnome_media_profiles_init (GConfClient *conf);
+/* #define DEBUG */
+#define CONF_PREFIX "/system/gstreamer/" GST_MAJORMINOR_QUOTED "/audio"
+#define CONF_GLOBAL_PREFIX CONF_PREFIX "/global"
+#define CONF_PROFILES_PREFIX CONF_PREFIX "/profiles"

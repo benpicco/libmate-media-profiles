@@ -1,4 +1,4 @@
-# Uyghur translations for gnome-media.
+# Uyghur translations for mate-media.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Sahran <sahran@live.com>, 2010-09-22.
@@ -79,7 +79,7 @@ msgid "Delete Profile"
 msgstr "سەپلىمە ھۆججەت ئۆچۈر"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "GNOME ئاۋاز سەپلىمە ھۆججەت تەھرىر"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -93,7 +93,7 @@ msgstr "\"%s\" ئاتلىق سەپلىمە ھۆججىتىڭىز بار"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf خاتالىقى(ئوڭشاڭ): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -311,4 +311,3 @@ msgstr "بۇ سەپلىمە ھۆججەت ئىشلىتىلەمدۇ يوق"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "بۇ سەپلىمە ھۆججەتنى ئىشلىتىپ كۆرسىتەمدۇ يوق."
-

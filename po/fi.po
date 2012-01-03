@@ -1,4 +1,4 @@
-# Finnish translation of the gnome-media module.
+# Finnish translation of the mate-media module.
 # Copyright (C) 1998-2009 Free Software Foundation, Inc.
 # Tuomas J. Lukka <lukka@iki.fi>, 1998.
 # Mikko Rauhala <mjr@iki.fi>, 1999.
@@ -81,8 +81,8 @@ msgid "Delete Profile"
 msgstr "Poista profiili"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
-msgstr "Muokkaa Gnomen ääniprofiileja"
+msgid "Edit MATE Audio Profiles"
+msgstr "Muokkaa Maten ääniprofiileja"
 
 #
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -96,7 +96,7 @@ msgstr "Sinulla on jo profiili nimeltä ”%s”"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-virhe (KORJAA): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61

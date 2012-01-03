@@ -1,4 +1,4 @@
-# Persian translation of gnome-media.
+# Persian translation of mate-media.
 # Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team
 # Copyright (C) 2003, 2005 Sharif FarsiWeb, Inc.
 # Roozbeh Pournader <roozbeh@farsiweb.info>, 2003, 2005.
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "حذف مجموعه تنظیمات"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "ویرایش مجموعه تنظیمات صوتی گنوم"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "شما از قبل مجموعه تنظیماتی با نام «%s» دا
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "خطای GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -247,4 +247,3 @@ msgstr "اینکه آیا این مجموعه تنظیمات استفاده خو
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "اینکه آیا این مجموعه استفاده و نمایش داده شود یا خیر."
-

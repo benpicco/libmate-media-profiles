@@ -1,9 +1,9 @@
-# GNOME-meedia eesti keele tõlge.
+# MATE-meedia eesti keele tõlge.
 # Estonian translation of GNOME-media.
 #
 # Copyright (C) 1999, 2002, 2003, 2005, 2006 Free Software Foundation, Inc.
 # Copyright (C) 2007, 2009, 2010 The GNOME Project.
-# This file is distributed under the same license as the gnome-media package.
+# This file is distributed under the same license as the mate-media package.
 #
 # Lauris Kaplinski <lauris@ariman.ee>, 1999.
 # Tõivo Leedjärv <toivo@linux.ee>, 2002, 2003.
@@ -97,7 +97,7 @@ msgstr "Profiil nimega \"%s\" on juba olemas"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf viga (PARANDA): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -315,4 +315,3 @@ msgstr "Millal seda profiili kasutama peaks"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Millal seda profiili kasutama ja kuvama peaks."
-

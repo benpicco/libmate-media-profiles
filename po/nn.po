@@ -1,6 +1,6 @@
 # translation of nn.po to
 # translation of nn.po to Norwegian Nynorsk
-# Norwegian (nynorsk) translation of gnome-media.
+# Norwegian (nynorsk) translation of mate-media.
 # Copyright (C) 2000-2002 Free Software Foundation
 #
 # Kjartan Maraas <kmaraas@gnome.org>, 2001.
@@ -47,7 +47,7 @@ msgstr "<inga skildring>"
 #, c-format
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr ""
-"Ein feil oppstod då lista over lydprofilar (gdm_audio) vart henta. (%s)\n"
+"Ein feil oppstod då lista over lydprofilar (mdm_audio) vart henta. (%s)\n"
 
 # TRN: Faen til ord.
 #: ../libgnome-media-profiles/audio-profile.c:709
@@ -86,7 +86,7 @@ msgid "Delete Profile"
 msgstr "Slett profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Rediger GNOME-lydprofilar"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -100,7 +100,7 @@ msgstr "Du har allereie ein profil som heiter «%s»"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf-feil (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -308,5 +308,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-
-

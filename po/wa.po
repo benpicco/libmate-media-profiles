@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media 1.2.3\n"
+"Project-Id-Version: mate-media 1.2.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2004-03-31 00:27+0200\n"
@@ -78,7 +78,7 @@ msgstr "Disfacer profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 #, fuzzy
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Candjî profils GMAudio"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -92,7 +92,7 @@ msgstr "Vos avoz ddja on profil lomé «%s»"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Aroke GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -279,4 +279,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

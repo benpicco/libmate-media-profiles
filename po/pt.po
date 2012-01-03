@@ -1,4 +1,4 @@
-# gnome-media's Portuguese Translation
+# mate-media's Portuguese Translation
 # Copyright © 1998, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 gnome-media
 # Distributed under the same licence as the gnome-media package
 # Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1998.
@@ -79,7 +79,7 @@ msgid "Delete Profile"
 msgstr "Apagar Perfil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Editar Perfis Audio GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -93,7 +93,7 @@ msgstr "Já possui um perfil denominado \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Erro GConf (CORRIGE-ME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -311,4 +311,3 @@ msgstr "Se este perfil é ou não para ser utilizado"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Se este perfil é ou não para ser utilizado e apresentado."
-

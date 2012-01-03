@@ -1,6 +1,6 @@
-# Brazilian Portuguese translation of GNOME Media.
+# Brazilian Portuguese translation of MATE Media.
 # Copyright (C) 2001-2009 the GNOME Media authors.
-# This file is distributed under the same license as the gnome-media package.
+# This file is distributed under the same license as the mate-media package.
 # Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2001.
 # Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2003.
 # Raphael Higino <In Memoriam>, 2004-2005.
@@ -105,7 +105,7 @@ msgstr "Você já tem um perfil chamado \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Erro no GConf (CONSERTE-ME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -319,4 +319,3 @@ msgstr "Se esse perfil deve ser usado"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Se esse perfil deve ser usado e exibido."
-

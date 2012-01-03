@@ -1,4 +1,4 @@
-bin_PROGRAMS = gnome-audio-profiles-properties
+bin_PROGRAMS = mate-audio-profiles-properties
 noinst_PROGRAMS =
 
 uidir = $(pkgdatadir)
@@ -7,7 +7,7 @@ defines = \
 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
 	-DDATADIR="\"$(pkgdatadir)\"" \
 	-DGMP_UIDIR=\"$(uidir)\" \
-	-DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
+	-DMATELOCALEDIR=\""$(datadir)/locale"\" \
 	$(DISABLE_DEPRECATED)
 
 if HAVE_GSTREAMER

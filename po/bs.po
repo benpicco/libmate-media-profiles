@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.bs.po to Bosnian
+# translation of mate-media.HEAD.bs.po to Bosnian
 # This file is distributed under the same license as the gnome-media package.
 # Copyright (C) 2004 Free Software Foundation, Inc.
 # Mehemed Sacirovic <mesa@tesanj.net>, 2004.
@@ -84,7 +84,7 @@ msgstr "Obriši profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
 #, fuzzy
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Izmijeni GMAudio profile4"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -98,7 +98,7 @@ msgstr "Već imate profile koji se zove \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf Error (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -298,4 +298,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

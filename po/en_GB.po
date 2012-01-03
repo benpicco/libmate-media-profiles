@@ -6,7 +6,7 @@
 # Bruce Cowan <bruce@bcowan.me.uk>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-media\n"
+"Project-Id-Version: mate-media\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-11 05:19+0200\n"
 "PO-Revision-Date: 2010-08-31 15:59+0100\n"
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "Delete Profile"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Edit GNOME Audio Profiles"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "You already have a profile called \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf Error (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -305,4 +305,3 @@ msgstr "Whether this profile is to be used"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Whether to use and display this profile."
-

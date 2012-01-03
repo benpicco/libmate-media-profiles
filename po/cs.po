@@ -1,4 +1,4 @@
-# Czech messages for gnome-media.
+# Czech messages for mate-media.
 # Copyright (C) 2001, 2007, 2008, 2009, 2010 the author(s) of gnome-media.
 # Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
 # Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
@@ -86,7 +86,7 @@ msgid "Delete Profile"
 msgstr "Odstranit profil"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Upravit profily zvuku GNOME"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -100,7 +100,7 @@ msgstr "Máte již profil zvuku nazvaný \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "Chyba GConf (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -313,4 +313,3 @@ msgstr "Jestli bude tento profil použit"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "Jestli používat a zobrazovat tento profil."
-

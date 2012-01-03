@@ -1,4 +1,4 @@
-# Afrikaans translation of gnome-media.
+# Afrikaans translation of mate-media.
 # Copyright (C) 2010
 # This file is distributed under the same license as the gnome-media package.
 # Contributors:
@@ -77,7 +77,7 @@ msgid "Delete Profile"
 msgstr "Skrap profiel"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "Redigeer GNOME-oudioprofiele"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -91,7 +91,7 @@ msgstr "Daar is reeds 'n profiel genaamd \"%s\""
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr ""
 
 #: ../libgnome-media-profiles/gmp-util.c:61

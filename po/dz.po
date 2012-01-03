@@ -1,4 +1,4 @@
-# Dzongkha translation of gnome-media
+# Dzongkha translation of mate-media
 # Copyright @ 2006, Free Software Foundation, Inc.
 # Mindu Dorji
 #
@@ -78,7 +78,7 @@ msgid "Delete Profile"
 msgstr "གསལ་སྡུད་བཏོན་གཏང་།"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "ཇི་ནོམ་རྣར་ཉན་གསལ་སྡུད་ཚུ་ ཞུན་དག་རྐྱབས།"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -92,7 +92,7 @@ msgstr "ཁྱོད་ལུ་གསལ་སྡུད་\"%s\"ཟེར་མ
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "ཇི་ཀཱོནཕ་གི་འཛོལ་བ། (ཕིགསི་མི་:)  %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -299,4 +299,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-

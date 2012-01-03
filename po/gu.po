@@ -1,4 +1,4 @@
-# translation of gnome-media.master.gu.po to Gujarati
+# translation of mate-media.master.gu.po to Gujarati
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
@@ -80,7 +80,7 @@ msgid "Delete Profile"
 msgstr "રુપરેખા કાઢી નાખો"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "જીનોમ ઓડિયો રૂપરેખાઓમાં ફેરફાર કરો"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -94,7 +94,7 @@ msgstr "તમારી પાસે પહેલાથી જ \"%s\" તરી�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "જીકોન્ફ ભૂલ (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -300,4 +300,3 @@ msgstr "શું આ રૂપરેખા વાપરેલ છે"
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr "શું આ રૂપરેખાને દર્શાવવી અને વાપરવી."
-

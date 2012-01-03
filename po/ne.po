@@ -1,4 +1,4 @@
-# translation of gnome-media.HEAD.ne.po to Nepali
+# translation of mate-media.HEAD.ne.po to Nepali
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -85,7 +85,7 @@ msgid "Delete Profile"
 msgstr "प्रोफाइल मेट्नुहोस्"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "जिनोम अडियो प्रोफाइल सम्पादन गर्नुहोस्"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -99,7 +99,7 @@ msgstr "तपाईँसँग \"%s\" नाम भएको प्रोफ�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "GConf त्रुटि (FIXME): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -303,5 +303,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-
-

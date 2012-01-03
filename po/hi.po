@@ -1,4 +1,4 @@
-# translation of gnome-media.master.po to Hindi
+# translation of mate-media.master.po to Hindi
 # Copyright (C) 2003, 2004, 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
 #
 # G Karunakar <karunakar@freedomink.org>, 2003.
@@ -90,7 +90,7 @@ msgstr "प्रोफ़ाइल मिटाएँ"
 #  NULL);
 #  FIXME: GTK_DIALOG_DESTROY_WITH_PARENT,
 #: ../libgnome-media-profiles/audio-profiles-edit.c:590
-msgid "Edit GNOME Audio Profiles"
+msgid "Edit MATE Audio Profiles"
 msgstr "गनोम ऑडियो प्रोफ़ाइल संपादित करें"
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:638
@@ -104,7 +104,7 @@ msgstr "आपके पास प्रोफ़ाइल \"%s\" नाम स�
 
 #: ../libgnome-media-profiles/audio-profiles-edit.c:847
 #, c-format
-msgid "GConf Error (FIXME): %s\n"
+msgid "MateConf Error (FIXME): %s\n"
 msgstr "जी-कॉन्फ त्रुटी (फ़िक्समी): %s\n"
 
 #: ../libgnome-media-profiles/gmp-util.c:61
@@ -317,5 +317,3 @@ msgstr ""
 #: ../data/gnome-media-profiles.schemas.in.in.h:26
 msgid "Whether to use and display this profile."
 msgstr ""
-
-

@@ -1,4 +1,4 @@
-/* gnome-media-profiles.c: public library code */
+/* mate-media-profiles.c: public library code */
 
 /*
  * Copyright (C) 2003 Thomas Vander Stichele
@@ -27,7 +27,7 @@
 
 #include <string.h>
 #include <glib/gi18n.h>
-#include <gconf/gconf-client.h>
+#include <mateconf/gconf-client.h>
 
 #include "audio-profile-private.h"
 #include "audio-profile-edit.h"
@@ -36,12 +36,12 @@
 
 /* do all necessary initialization to use this simple helper library */
 void
-gnome_media_profiles_init (GConfClient *conf)
+gnome_media_profiles_init (MateConfClient *conf)
 {
   GError *err = NULL;
 
   /* i18n */
-  bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
+  bindtextdomain (GETTEXT_PACKAGE, MATELOCALEDIR);
 #ifdef HAVE_BIND_TEXTDOMAIN_CODESET
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 #endif
@@ -53,7 +53,7 @@ gnome_media_profiles_init (GConfClient *conf)
 
     /* initialize GConf */
     gconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
-			  GCONF_CLIENT_PRELOAD_ONELEVEL,
+			  MATECONF_CLIENT_PRELOAD_ONELEVEL,
 			  &err);
   if (err)
   {
