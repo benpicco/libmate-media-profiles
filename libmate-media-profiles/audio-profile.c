@@ -306,7 +306,7 @@ gm_audio_profile_new (const char *id, MateConfClient *conf)
   GST_DEBUG ("loading config from MateConf dir %s\n",
            self->priv->profile_dir);
   mateconf_client_add_dir (conf, self->priv->profile_dir,
-                        GCONF_CLIENT_PRELOAD_ONELEVEL,
+                        MATECONF_CLIENT_PRELOAD_ONELEVEL,
                         &err);
   if (err)
     {
@@ -594,7 +594,7 @@ else if (strcmp (key, KName) == 0)                                      \
   {                                                                     \
     const char * setting = (Preset);                                    \
                                                                         \
-    if (val && val->type == GCONF_VALUE_STRING)                         \
+    if (val && val->type == MATECONF_VALUE_STRING)                         \
       setting = mateconf_value_get_string (val);                           \
                                                                         \
     mask.FName = set_##FName (self, setting);                           \
@@ -608,7 +608,7 @@ else if (strcmp (key, KName) == 0)                                      \
   {                                                                     \
     gboolean setting = (Preset);                                        \
                                                                         \
-    if (val && val->type == GCONF_VALUE_BOOL)                           \
+    if (val && val->type == MATECONF_VALUE_BOOL)                           \
       setting = mateconf_value_get_bool (val);                             \
                                                                         \
     if (setting != self->priv->FName)                                   \
@@ -655,8 +655,8 @@ gm_audio_profile_list_notify (MateConfClient *client,
   val = mateconf_entry_get_value (entry);
 
   if (val == NULL ||
-      val->type != GCONF_VALUE_LIST ||
-      mateconf_value_get_list_type (val) != GCONF_VALUE_STRING)
+      val->type != MATECONF_VALUE_LIST ||
+      mateconf_value_get_list_type (val) != MATECONF_VALUE_STRING)
     value_list = NULL;
   else
     value_list = mateconf_value_get_list (val);
@@ -1049,7 +1049,7 @@ gm_audio_profile_create (const char  *name,
   err = NULL;
   mateconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
-                         GCONF_VALUE_STRING,
+                         MATECONF_VALUE_STRING,
                          id_list,
                          &err);
   BAIL_OUT_CHECK ();
@@ -1125,7 +1125,7 @@ gm_audio_profile_delete_list (MateConfClient *conf,
   GST_DEBUG ("setting profile_list in MateConf\n");
   mateconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
-                         GCONF_VALUE_STRING,
+                         MATECONF_VALUE_STRING,
                          id_list,
                          &err);
 
