@@ -193,7 +193,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
   if (use_this_list)
     GST_DEBUG ("Using given list of length %d\n", g_slist_length (this_list));
   else
-    GST_DEBUG ("using list from gconf\n");
+    GST_DEBUG ("using list from mateconf\n");
   known = gm_audio_profile_get_list ();
     GST_DEBUG ("list of known profiles: size %d\n", g_list_length (known));
 
@@ -204,7 +204,7 @@ gm_audio_profile_sync_list (gboolean use_this_list,
   else
     {
       err = NULL;
-      updated = gconf_client_get_list (_conf,
+      updated = mateconf_client_get_list (_conf,
                                        CONF_GLOBAL_PREFIX"/profile_list",
                                        MATECONF_VALUE_STRING,
                                        &err);
@@ -299,13 +299,13 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
   g_object_ref (G_OBJECT (conf));
 
   self->priv->id = g_strdup (id);
-  self->priv->profile_dir = gconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
+  self->priv->profile_dir = mateconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
                                                          self->priv->id);
 
   err = NULL;
   GST_DEBUG ("loading config from GConf dir %s\n",
            self->priv->profile_dir);
-  gconf_client_add_dir (conf, self->priv->profile_dir,
+  mateconf_client_add_dir (conf, self->priv->profile_dir,
                         GCONF_CLIENT_PRELOAD_ONELEVEL,
                         &err);
   if (err)
@@ -318,7 +318,7 @@ gm_audio_profile_new (const char *id, GConfClient *conf)
   err = NULL;
   GST_DEBUG ("adding notify for GConf profile\n");
   self->priv->notify_id =
-    gconf_client_notify_add (conf,
+    mateconf_client_notify_add (conf,
                              self->priv->profile_dir,
                              profile_change_notify,
                              self,
@@ -362,10 +362,10 @@ gm_audio_profile_set_name (GMAudioProfile *self,
 
   RETURN_IF_NOTIFYING (self);
 
-  key = gconf_concat_dir_and_key (self->priv->profile_dir,
+  key = mateconf_concat_dir_and_key (self->priv->profile_dir,
                                   KEY_NAME);
 
-  gconf_client_set_string (self->priv->conf,
+  mateconf_client_set_string (self->priv->conf,
                            key,
                            name,
                            NULL);
@@ -387,10 +387,10 @@ gm_audio_profile_set_description (GMAudioProfile *self,
 
   RETURN_IF_NOTIFYING (self);
 
-  key = gconf_concat_dir_and_key (self->priv->profile_dir,
+  key = mateconf_concat_dir_and_key (self->priv->profile_dir,
                                   KEY_DESCRIPTION);
 
-  gconf_client_set_string (self->priv->conf,
+  mateconf_client_set_string (self->priv->conf,
                            key,
                            description,
                            NULL);
@@ -412,10 +412,10 @@ gm_audio_profile_set_pipeline (GMAudioProfile *self,
 
   RETURN_IF_NOTIFYING (self);
 
-  key = gconf_concat_dir_and_key (self->priv->profile_dir,
+  key = mateconf_concat_dir_and_key (self->priv->profile_dir,
                                   KEY_PIPELINE);
 
-  gconf_client_set_string (self->priv->conf,
+  mateconf_client_set_string (self->priv->conf,
                            key,
                            pipeline,
                            NULL);
@@ -437,10 +437,10 @@ gm_audio_profile_set_extension (GMAudioProfile *self,
 
   RETURN_IF_NOTIFYING (self);
 
-  key = gconf_concat_dir_and_key (self->priv->profile_dir,
+  key = mateconf_concat_dir_and_key (self->priv->profile_dir,
                                   KEY_EXTENSION);
 
-  gconf_client_set_string (self->priv->conf,
+  mateconf_client_set_string (self->priv->conf,
                            key,
                            extension,
                            NULL);
@@ -462,10 +462,10 @@ gm_audio_profile_set_active (GMAudioProfile *self,
 
   RETURN_IF_NOTIFYING (self);
 
-  key = gconf_concat_dir_and_key (self->priv->profile_dir,
+  key = mateconf_concat_dir_and_key (self->priv->profile_dir,
                                   KEY_ACTIVE);
 
-  gconf_client_set_bool (self->priv->conf,
+  mateconf_client_set_bool (self->priv->conf,
                          key,
                          active,
                          NULL);
@@ -583,9 +583,9 @@ profile_change_notify (GConfClient *client,
   GST_DEBUG ("profile_change_notify: start in profile with name %s\n",
            self->priv->name);
 
-  val = gconf_entry_get_value (entry);
+  val = mateconf_entry_get_value (entry);
 
-  key = find_key (gconf_entry_get_key (entry));
+  key = find_key (mateconf_entry_get_key (entry));
 
 /* strings are set through static set_ functions */
 #define UPDATE_STRING(KName, FName, Preset)                             \
@@ -595,11 +595,11 @@ else if (strcmp (key, KName) == 0)                                      \
     const char * setting = (Preset);                                    \
                                                                         \
     if (val && val->type == GCONF_VALUE_STRING)                         \
-      setting = gconf_value_get_string (val);                           \
+      setting = mateconf_value_get_string (val);                           \
                                                                         \
     mask.FName = set_##FName (self, setting);                           \
                                                                         \
-    self->priv->locked.FName = !gconf_entry_get_is_writable (entry);
+    self->priv->locked.FName = !mateconf_entry_get_is_writable (entry);
 
 /* booleans are set directly on the profile priv variable */
 #define UPDATE_BOOLEAN(KName, FName, Preset)                            \
@@ -609,7 +609,7 @@ else if (strcmp (key, KName) == 0)                                      \
     gboolean setting = (Preset);                                        \
                                                                         \
     if (val && val->type == GCONF_VALUE_BOOL)                           \
-      setting = gconf_value_get_bool (val);                             \
+      setting = mateconf_value_get_bool (val);                             \
                                                                         \
     if (setting != self->priv->FName)                                   \
       {                                                                 \
@@ -617,7 +617,7 @@ else if (strcmp (key, KName) == 0)                                      \
         self->priv->FName = setting;                                    \
       }                                                                 \
                                                                         \
-    self->priv->locked.FName = !gconf_entry_get_is_writable (entry);
+    self->priv->locked.FName = !mateconf_entry_get_is_writable (entry);
 
   if (0)
   {
@@ -652,21 +652,21 @@ gm_audio_profile_list_notify (GConfClient *client,
   GSList *tmp;
 
   GST_DEBUG ("profile_list changed\n");
-  val = gconf_entry_get_value (entry);
+  val = mateconf_entry_get_value (entry);
 
   if (val == NULL ||
       val->type != GCONF_VALUE_LIST ||
-      gconf_value_get_list_type (val) != GCONF_VALUE_STRING)
+      mateconf_value_get_list_type (val) != GCONF_VALUE_STRING)
     value_list = NULL;
   else
-    value_list = gconf_value_get_list (val);
+    value_list = mateconf_value_get_list (val);
 
   string_list = NULL;
   tmp = value_list;
   while (tmp != NULL)
     {
       string_list = g_slist_prepend (string_list,
-                                     g_strdup (gconf_value_get_string ((GConfValue*) tmp->data)));
+                                     g_strdup (mateconf_value_get_string ((GConfValue*) tmp->data)));
 
       tmp = tmp->next;
     }
@@ -702,7 +702,7 @@ gm_audio_profile_initialize (GConfClient *conf)
 
   /* subscribe to changes to profile list */
   err = NULL;
-  gconf_client_notify_add (conf,
+  mateconf_client_notify_add (conf,
                            CONF_GLOBAL_PREFIX"/profile_list",
                            gm_audio_profile_list_notify,
                            NULL,
@@ -718,7 +718,7 @@ gm_audio_profile_initialize (GConfClient *conf)
 
   /* FIXME: no defaults
   err = NULL;
-  gconf_client_notify_add (conf,
+  mateconf_client_notify_add (conf,
                            CONF_GLOBAL_PREFIX"/default_profile",                            default_change_notify,
                            NULL,
                            NULL, &err);
@@ -729,13 +729,13 @@ gm_audio_profile_initialize (GConfClient *conf)
       g_error_free (err);
     }
 
-  str = gconf_client_get_string (conf,
+  str = mateconf_client_get_string (conf,
                                  CONF_GLOBAL_PREFIX"/default_profile",
                                  NULL);
   if (str)
     {
       update_default_profile (str,
-                              !gconf_client_key_is_writable (conf,
+                              !mateconf_client_key_is_writable (conf,
                                                              CONF_GLOBAL_PREFIX"/default_profile",
                                                              NULL));
       g_free (str);
@@ -765,8 +765,8 @@ gm_audio_profile_update (GMAudioProfile *self)
 
 #define UPDATE_BOOLEAN(KName, FName)                                    \
 {                                                                       \
-  char *key = gconf_concat_dir_and_key (self->priv->profile_dir, KName); \
-  gboolean val = gconf_client_get_bool (self->priv->conf, key, NULL);   \
+  char *key = mateconf_concat_dir_and_key (self->priv->profile_dir, KName); \
+  gboolean val = mateconf_client_get_bool (self->priv->conf, key, NULL);   \
                                                                         \
   if (val != self->priv->FName)                                         \
   {                                                                     \
@@ -775,19 +775,19 @@ gm_audio_profile_update (GMAudioProfile *self)
   }                                                                     \
                                                                         \
   locked.FName =                                                        \
-    !gconf_client_key_is_writable (self->priv->conf, key, NULL);        \
+    !mateconf_client_key_is_writable (self->priv->conf, key, NULL);        \
                                                                         \
   g_free (key);                                                         \
 }
 #define UPDATE_STRING(KName, FName)                                     \
 {                                                                       \
-  char *key = gconf_concat_dir_and_key (self->priv->profile_dir, KName); \
-  char *val = gconf_client_get_string (self->priv->conf, key, NULL);    \
+  char *key = mateconf_concat_dir_and_key (self->priv->profile_dir, KName); \
+  char *val = mateconf_client_get_string (self->priv->conf, key, NULL);    \
                                                                         \
   mask.FName = set_##FName (self, val);                                 \
                                                                         \
   locked.FName =                                                        \
-    !gconf_client_key_is_writable (self->priv->conf, key, NULL);        \
+    !mateconf_client_key_is_writable (self->priv->conf, key, NULL);        \
                                                                         \
   g_free (val);                                                         \
   g_free (key);                                                         \
@@ -905,10 +905,10 @@ gm_audio_profile_forget (GMAudioProfile *self)
     GError *err;
 
     err = NULL;
-    GST_DEBUG ("audio_profile_forget: removing from gconf\n");
+    GST_DEBUG ("audio_profile_forget: removing from mateconf\n");
     /* FIXME: remove_dir doesn't actually work.  Either unset all keys
      * manually or use recursive_unset on HEAD */
-    gconf_client_remove_dir (self->priv->conf,
+    mateconf_client_remove_dir (self->priv->conf,
                              self->priv->profile_dir,
                              &err);
     if (err)
@@ -969,8 +969,8 @@ gm_audio_profile_create (const char  *name,
        goto cleanup;                                    \
   } while (0)
 
-  /* Pick a unique name for storing in gconf (based on visible name) */
-  profile_id = gconf_escape_key (name, -1);
+  /* Pick a unique name for storing in mateconf (based on visible name) */
+  profile_id = mateconf_escape_key (name, -1);
   s = g_strdup (profile_id);
   GST_DEBUG ("profile_id: %s\n", s);
   i = 0;
@@ -983,14 +983,14 @@ gm_audio_profile_create (const char  *name,
   g_free (profile_id);
   profile_id = s;
 
-  profile_dir = gconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
+  profile_dir = mateconf_concat_dir_and_key (CONF_PROFILES_PREFIX,
                                           profile_id);
 
   /* Store a copy of default profile values at under that directory */
-  key = gconf_concat_dir_and_key (profile_dir,
+  key = mateconf_concat_dir_and_key (profile_dir,
                                   KEY_NAME);
 
-  gconf_client_set_string (conf,
+  mateconf_client_set_string (conf,
                            key,
                            name,
                            &err);
@@ -998,10 +998,10 @@ gm_audio_profile_create (const char  *name,
   BAIL_OUT_CHECK ();
   g_free (key);
 
-  key = gconf_concat_dir_and_key (profile_dir,
+  key = mateconf_concat_dir_and_key (profile_dir,
                                   KEY_DESCRIPTION);
 
-  gconf_client_set_string (conf,
+  mateconf_client_set_string (conf,
                            key,
                            _("<no description>"),
                            &err);
@@ -1009,10 +1009,10 @@ gm_audio_profile_create (const char  *name,
   BAIL_OUT_CHECK ();
   g_free (key);
 
-  key = gconf_concat_dir_and_key (profile_dir,
+  key = mateconf_concat_dir_and_key (profile_dir,
                                   KEY_PIPELINE);
 
-  gconf_client_set_string (conf,
+  mateconf_client_set_string (conf,
                            key,
                            "identity",
                            &err);
@@ -1020,10 +1020,10 @@ gm_audio_profile_create (const char  *name,
   BAIL_OUT_CHECK ();
   g_free (key);
 
-  key = gconf_concat_dir_and_key (profile_dir,
+  key = mateconf_concat_dir_and_key (profile_dir,
                                   KEY_EXTENSION);
 
-  gconf_client_set_string (conf,
+  mateconf_client_set_string (conf,
                            key,
                            "wav",
                            &err);
@@ -1045,9 +1045,9 @@ gm_audio_profile_create (const char  *name,
 
   id_list = g_slist_prepend (id_list, g_strdup (profile_id));
 
-  GST_DEBUG ("setting gconf list\n");
+  GST_DEBUG ("setting mateconf list\n");
   err = NULL;
-  gconf_client_set_list (conf,
+  mateconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
                          GCONF_VALUE_STRING,
                          id_list,
@@ -1085,7 +1085,7 @@ gm_audio_profile_create (const char  *name,
   return profile_id;
 }
 
-/* delete the given list of profiles from the gconf profile_list key */
+/* delete the given list of profiles from the mateconf profile_list key */
 void
 gm_audio_profile_delete_list (GConfClient *conf,
                            GList       *deleted_profiles,
@@ -1123,7 +1123,7 @@ gm_audio_profile_delete_list (GConfClient *conf,
   g_list_free (current_profiles);
   err = NULL;
   GST_DEBUG ("setting profile_list in GConf\n");
-  gconf_client_set_list (conf,
+  mateconf_client_set_list (conf,
                          CONF_GLOBAL_PREFIX"/profile_list",
                          GCONF_VALUE_STRING,
                          id_list,

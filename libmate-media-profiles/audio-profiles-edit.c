@@ -767,7 +767,7 @@ gm_audio_profiles_edit_new (GConfClient *conf, GtkWindow *transient_parent)
 /*
   err = NULL;
   GST_DEBUG ("gap_p_e_new: subscribing to profile_list changes\n");
-  gconf_client_notify_add (dialog->priv->conf,
+  mateconf_client_notify_add (dialog->priv->conf,
                            CONF_GLOBAL_PREFIX"/profile_list",
                            gm_audio_profiles_list_notify,
                            dialog,

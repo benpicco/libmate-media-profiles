@@ -5,8 +5,8 @@ SUBDIRS = \
 	po			\
 	help
 
-pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libmate-media-profiles.pc
+pkmateconfigdir = $(libdir)/pkmateconfig
+pkmateconfig_DATA = libmate-media-profiles.pc
 
 EXTRA_DIST =                    \
         libmate-media-profiles.pc.in

@@ -27,7 +27,7 @@
 
 #include <string.h>
 #include <glib/gi18n.h>
-#include <mateconf/gconf-client.h>
+#include <mateconf/mateconf-client.h>
 
 #include "audio-profile-private.h"
 #include "audio-profile-edit.h"
@@ -47,12 +47,12 @@ mate_media_profiles_init (MateConfClient *conf)
 #endif
 
   if (conf == NULL)
-    conf = gconf_client_get_default ();
+    conf = mateconf_client_get_default ();
   else
     g_object_ref (G_OBJECT (conf));
 
     /* initialize GConf */
-    gconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
+    mateconf_client_add_dir (conf, CONF_GLOBAL_PREFIX,
 			  MATECONF_CLIENT_PRELOAD_ONELEVEL,
 			  &err);
   if (err)

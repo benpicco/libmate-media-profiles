@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
 AC_INIT([libmate-media-profiles], [1.1.0],
-        [http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles])
+        [http://bugzilla.mate.org/enter_bug.cgi?product=libmate-media-profiles])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-bzip2 no-dist-gzip])
 
@@ -30,7 +30,7 @@ GTK_REQUIRED_VERSION=2.24.0
 PKG_CHECK_MODULES(GMP, [
     gtk+-2.0 >= $GTK_REQUIRED_VERSION
     gstreamer-0.10
-    gconf-2.0
+    mateconf-2.0
     gio-2.0],
     have_profiles=yes)
 
@@ -72,7 +72,7 @@ PKG_CHECK_MODULES(GST, [
   gstreamer-plugins-base-$GST_MAJORMINOR >= $GST_REQ
   gtk+-2.0 >= 2.6.0
   gio-2.0
-  gconf-2.0],
+  mateconf-2.0],
   have_gst=yes,
   [
     AC_MSG_RESULT(no)

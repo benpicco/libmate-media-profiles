@@ -23,7 +23,7 @@
 #define GM_AUDIO_PROFILE_EDIT_H
 
 #include <gtk/gtk.h>
-#include <mateconf/gconf-client.h>
+#include <mateconf/mateconf-client.h>
 
 G_BEGIN_DECLS
 

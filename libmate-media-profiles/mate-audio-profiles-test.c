@@ -24,7 +24,7 @@
 
 #include <stdlib.h>
 #include <gtk/gtk.h>
-#include <mateconf/gconf-client.h>
+#include <mateconf/mateconf-client.h>
 #include <gst/gst.h>
 
 #include <libmate-media-profiles/mate-media-profiles.h>
@@ -33,7 +33,7 @@ static void
 edit_clicked_cb (GtkButton *button, GtkWindow *window)
 {
   GtkWidget *edit_dialog = NULL;
-  edit_dialog = gm_audio_profiles_edit_new (gconf_client_get_default (), window);
+  edit_dialog = gm_audio_profiles_edit_new (mateconf_client_get_default (), window);
   g_assert (edit_dialog != NULL);
   gtk_widget_show_all (GTK_WIDGET (edit_dialog));
 }
@@ -147,7 +147,7 @@ int
 main (int argc, char **argv)
 {
   GtkWidget *window, *hbox, *combo, *edit, *test;
-  MateConfClient *gconf;
+  MateConfClient *mateconf;
   GOptionContext *context;
   GError *error = NULL;
 
@@ -164,8 +164,8 @@ main (int argc, char **argv)
   }
   g_option_context_free (context);
 
-  gconf = gconf_client_get_default ();
-  mate_media_profiles_init (gconf);
+  mateconf = mateconf_client_get_default ();
+  mate_media_profiles_init (mateconf);
 
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   combo = gm_audio_profile_choose_new ();

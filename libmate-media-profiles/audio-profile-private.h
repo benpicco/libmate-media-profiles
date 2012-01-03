@@ -22,7 +22,7 @@
 #ifndef AUDIO_PROFILE_PRIVATE_H
 #define AUDIO_PROFILE_PRIVATE_H
 
-#include <mateconf/gconf-client.h>
+#include <mateconf/mateconf-client.h>
 
 #include "gmp-conf.h"
 #include "audio-profile.h"
