@@ -14,7 +14,7 @@ defines = \
 	$(DISABLE_DEPRECATED)
 
 libmate_media_profiles_la_CFLAGS = $(GMP_CFLAGS) $(GLADEUI_CFLAGS) $(defines) -I$(top_srcdir)
-libmate_media_profiles_la_LIBADD = $(GMP_LIBS) $(GLADEUI_LIBS) $(top_builddir)/libmate-media-profiles/libmate-media-profiles-3.0.la
+libmate_media_profiles_la_LIBADD = $(GMP_LIBS) $(GLADEUI_LIBS) $(top_builddir)/libmate-media-profiles/libmate-media-profiles.la
 libmate_media_profiles_la_LDFLAGS = -export-dynamic -module -avoid-version -no-undefined
 
 gladecatalog_DATA = $(gladecatalog_DATA_dist)

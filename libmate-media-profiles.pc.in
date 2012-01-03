@@ -1,12 +1,12 @@
 prefix=@prefix@
 exec_prefix=@exec_prefix@
 libdir=@libdir@
-includedir=@includedir@/libmate-media-profiles-3.0
+includedir=@includedir@/libmate-media-profiles
 toolsdir=${exec_prefix}/bin
 
 Name: MATE Media Profiles
 Description: Media Profiles describing audio codec settings for output
 Requires: mateconf-2.0, gtk+-3.0
 Version: @VERSION@
-Libs: -L${libdir} -lmate-media-profiles-3.0
+Libs: -L${libdir} -lmate-media-profiles
 Cflags: -I${includedir}

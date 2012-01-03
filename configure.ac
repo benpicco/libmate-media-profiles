@@ -85,7 +85,7 @@ AM_CONDITIONAL(HAVE_GSTREAMER, [test x$have_gst = xyes])
 
 
 AC_CONFIG_FILES([
-libmate-media-profiles-3.0.pc
+libmate-media-profiles.pc
 Makefile
 libmate-media-profiles/Makefile
 data/Makefile

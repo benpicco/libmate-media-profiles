@@ -6,10 +6,10 @@ SUBDIRS = \
 	help
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libmate-media-profiles-3.0.pc
+pkgconfig_DATA = libmate-media-profiles.pc
 
 EXTRA_DIST =                    \
-        libmate-media-profiles-3.0.pc.in
+        libmate-media-profiles.pc.in
 
 MAINTAINERCLEANFILES =			\
 	Makefile.in			\
