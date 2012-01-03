@@ -1,8 +1,8 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.53)
 
-AC_INIT([libmate-media-profiles], [3.0.0],
-        [http://bugzilla.mate.org/enter_bug.cgi?product=libmate-media-profiles])
+AC_INIT([libmate-media-profiles], [1.1.0],
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=libgnome-media-profiles])
 
 AM_INIT_AUTOMAKE([1.9 tar-ustar foreign dist-bzip2 no-dist-gzip])
 
@@ -26,9 +26,9 @@ AM_PROG_CC_C_O
 # Workaround to make aclocal get the right flags
 AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
 
-GTK_REQUIRED_VERSION=2.91.0
+GTK_REQUIRED_VERSION=2.24.0
 PKG_CHECK_MODULES(GMP, [
-    gtk+-3.0 >= $GTK_REQUIRED_VERSION
+    gtk+-2.0 >= $GTK_REQUIRED_VERSION
     gstreamer-0.10
     gconf-2.0
     gio-2.0],
@@ -70,7 +70,7 @@ have_gst=no
 PKG_CHECK_MODULES(GST, [
   gstreamer-$GST_MAJORMINOR >= $GST_REQ
   gstreamer-plugins-base-$GST_MAJORMINOR >= $GST_REQ
-  gtk+-3.0 >= 2.6.0
+  gtk+-2.0 >= 2.6.0
   gio-2.0
   gconf-2.0],
   have_gst=yes,
